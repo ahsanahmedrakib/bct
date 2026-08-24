@@ -1,4 +1,4 @@
-@extends('layouts.page')
+@extends('layouts.app')
 
 @section('title', 'Zero Trust Framework | Bismillah Computer & Technology')
 
@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="flex justify-center lg:justify-end">
-      <img alt="Zero Trust Framework" loading="lazy" class="rounded-2xl shadow-lg max-w-md w-full" src="/images/it-support/cyber-security.png"/>
+      <img alt="Zero Trust Framework" loading="lazy" class="rounded-2xl shadow-lg max-w-md w-full" src="/images/it-support/cyber-security/zero-trust-framework/zero-trust.png"/>
     </div>
   </div>
   <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
@@ -40,7 +40,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
 
-      <div class="reveal reveal-fade-up bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow">
+      <div class="reveal reveal-fade-up bg-slate-50 rounded-xl p-8 border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300">
         <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
           <span class="text-xl font-bold text-brand-blue">1</span>
         </div>
@@ -48,7 +48,7 @@
         <p class="text-slate-600 leading-relaxed">Reduces the impact area of potential incidents and segments access. Confirms end-to-end encryption and leverages analytics for enhanced visibility, proactive threat detection, and fortified defenses.</p>
       </div>
 
-      <div class="reveal reveal-fade-up bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow" style="animation-delay: 0.1s">
+      <div class="reveal reveal-fade-up bg-slate-50 rounded-xl p-8 border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.1s">
         <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
           <span class="text-xl font-bold text-brand-blue">2</span>
         </div>
@@ -56,7 +56,7 @@
         <p class="text-slate-600 leading-relaxed">Authenticates and grants authorization based on a comprehensive range of data points, encompassing user identity, location, device condition, service or workload, data classification, and any anomalies detected.</p>
       </div>
 
-      <div class="reveal reveal-fade-up bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow" style="animation-delay: 0.2s">
+      <div class="reveal reveal-fade-up bg-slate-50 rounded-xl p-8 border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.2s">
         <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
           <span class="text-xl font-bold text-brand-blue">3</span>
         </div>

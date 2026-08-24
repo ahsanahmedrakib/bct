@@ -1,4 +1,4 @@
-@extends('layouts.page')
+@extends('layouts.app')
 
 @section('title', 'Incident Response | Bismillah Computer & Technology')
 
@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="flex justify-center lg:justify-end">
-      <img alt="Incident Response" loading="lazy" class="rounded-2xl shadow-lg max-w-md w-full" src="/images/it-support/cyber-security.png"/>
+      <img alt="Incident Response" loading="lazy" class="rounded-2xl shadow-lg max-w-md w-full" src="/images/it-support/cyber-security/incident-response/hero.jpg"/>
     </div>
   </div>
   <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
@@ -47,7 +47,7 @@
     </div>
 
     <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-      <div class="reveal reveal-fade-up bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow">
+      <div class="reveal reveal-fade-up bg-slate-50 rounded-xl p-8 border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300">
         <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
           <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
@@ -57,7 +57,7 @@
         <p class="text-slate-600 leading-relaxed">Our incident response team swiftly isolates the affected segment of devices to limit damage and prevent further harm, halting the spread and progression of the attack.</p>
       </div>
 
-      <div class="reveal reveal-fade-up bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow" style="animation-delay: 0.1s">
+      <div class="reveal reveal-fade-up bg-slate-50 rounded-xl p-8 border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.1s">
         <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
           <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
@@ -68,7 +68,7 @@
         <p class="text-slate-600 leading-relaxed">We collaborate with our partners to help your business regain control and visibility of your network. While restoring affected systems, our team thoroughly validates them to ensure they are free from any compromise.</p>
       </div>
 
-      <div class="reveal reveal-fade-up bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow">
+      <div class="reveal reveal-fade-up bg-slate-50 rounded-xl p-8 border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300">
         <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
           <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
@@ -78,7 +78,7 @@
         <p class="text-slate-600 leading-relaxed">Post-attack, we gather crucial information—such as logs, errors, and resources from intrusion detection systems—to inform our forensic analysis. Our team examines the causes, impacts, and potential mitigation strategies.</p>
       </div>
 
-      <div class="reveal reveal-fade-up bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow" style="animation-delay: 0.1s">
+      <div class="reveal reveal-fade-up bg-slate-50 rounded-xl p-8 border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.1s">
         <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
           <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
@@ -120,7 +120,7 @@
     </div>
 
     <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
-      <div class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow">
+      <div class="reveal reveal-fade-up bg-white rounded-xl p-8 shadow-[0_5px_30px_-10px_rgba(0,0,0,0.05)] border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300">
         <div class="w-14 h-14 bg-red-50 rounded-xl flex items-center justify-center mb-6">
           <svg class="w-7 h-7 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
@@ -130,7 +130,7 @@
         <p class="text-slate-600 leading-relaxed">Safeguarding against malware, phishing, denial of service attacks, and insider threats.</p>
       </div>
 
-      <div class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow" style="animation-delay: 0.1s">
+      <div class="reveal reveal-fade-up bg-white rounded-xl p-8 shadow-[0_5px_30px_-10px_rgba(0,0,0,0.05)] border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.1s">
         <div class="w-14 h-14 bg-red-50 rounded-xl flex items-center justify-center mb-6">
           <svg class="w-7 h-7 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
@@ -140,7 +140,7 @@
         <p class="text-slate-600 leading-relaxed">Preventing the exposure of customer data, personally identifiable information, and other sensitive information.</p>
       </div>
 
-      <div class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow">
+      <div class="reveal reveal-fade-up bg-white rounded-xl p-8 shadow-[0_5px_30px_-10px_rgba(0,0,0,0.05)] border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300">
         <div class="w-14 h-14 bg-red-50 rounded-xl flex items-center justify-center mb-6">
           <svg class="w-7 h-7 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -150,7 +150,7 @@
         <p class="text-slate-600 leading-relaxed">Defending against extortion, ransomware, payment card theft, and more.</p>
       </div>
 
-      <div class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow" style="animation-delay: 0.1s">
+      <div class="reveal reveal-fade-up bg-white rounded-xl p-8 shadow-[0_5px_30px_-10px_rgba(0,0,0,0.05)] border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.1s">
         <div class="w-14 h-14 bg-red-50 rounded-xl flex items-center justify-center mb-6">
           <svg class="w-7 h-7 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />

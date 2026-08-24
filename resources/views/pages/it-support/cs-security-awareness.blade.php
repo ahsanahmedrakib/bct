@@ -1,4 +1,4 @@
-@extends('layouts.page')
+@extends('layouts.app')
 
 @section('title', 'Security Awareness Training | Bismillah Computer & Technology')
 
@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="flex justify-center lg:justify-end">
-      <img alt="Security Awareness Training" loading="lazy" class="rounded-2xl shadow-lg max-w-md w-full" src="/images/it-support/cyber-security.png"/>
+      <img alt="Security Awareness Training" loading="lazy" class="rounded-2xl shadow-lg max-w-md w-full" src="/images/it-support/cyber-security/security.jpg"/>
     </div>
   </div>
   <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
@@ -46,22 +46,22 @@
     </div>
 
     <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-      <div class="reveal reveal-fade-up bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow">
+      <div class="reveal reveal-fade-up bg-slate-50 rounded-xl p-8 border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300">
         <h3 class="text-xl font-bold text-slate-900 mb-3">Engaging Content</h3>
         <p class="text-slate-600 leading-relaxed">Our platform offers intuitive phishing simulation kits, short animated videos, and interactive quizzes, ensuring that security lessons are both informative and memorable.</p>
       </div>
 
-      <div class="reveal reveal-fade-up bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow" style="animation-delay: 0.1s">
+      <div class="reveal reveal-fade-up bg-slate-50 rounded-xl p-8 border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.1s">
         <h3 class="text-xl font-bold text-slate-900 mb-3">Customised Material</h3>
         <p class="text-slate-600 leading-relaxed">We create personalized phishing emails that mimic industry-specific scams and threats, enhancing the effectiveness of the training.</p>
       </div>
 
-      <div class="reveal reveal-fade-up bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow">
+      <div class="reveal reveal-fade-up bg-slate-50 rounded-xl p-8 border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300">
         <h3 class="text-xl font-bold text-slate-900 mb-3">User-Friendly</h3>
         <p class="text-slate-600 leading-relaxed">Our tailored, easy-to-use portals make security training accessible and convenient for all employees, regardless of their tech proficiency.</p>
       </div>
 
-      <div class="reveal reveal-fade-up bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow" style="animation-delay: 0.1s">
+      <div class="reveal reveal-fade-up bg-slate-50 rounded-xl p-8 border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.1s">
         <h3 class="text-xl font-bold text-slate-900 mb-3">Always Current</h3>
         <p class="text-slate-600 leading-relaxed">Stay updated with new phishing kits and videos released monthly, reflecting the latest threat trends and keeping your employees informed about current cybersecurity risks.</p>
       </div>
@@ -92,7 +92,7 @@
     </div>
 
     <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-      <div class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow">
+      <div class="reveal reveal-fade-up bg-white rounded-xl p-8 shadow-[0_5px_30px_-10px_rgba(0,0,0,0.05)] border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300">
         <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
           <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
@@ -102,7 +102,7 @@
         <p class="text-slate-600 leading-relaxed">Cybersecurity incidents can be costly and disrupt business operations. When employees understand cybersecurity principles and their role in mitigating risks, the likelihood of successful cyberattacks is greatly reduced, ensuring that critical systems remain operational.</p>
       </div>
 
-      <div class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow" style="animation-delay: 0.1s">
+      <div class="reveal reveal-fade-up bg-white rounded-xl p-8 shadow-[0_5px_30px_-10px_rgba(0,0,0,0.05)] border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.1s">
         <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
           <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />

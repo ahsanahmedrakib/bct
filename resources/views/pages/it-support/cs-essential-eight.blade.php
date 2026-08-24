@@ -1,4 +1,4 @@
-@extends('layouts.page')
+@extends('layouts.app')
 
 @section('title', 'Essential Eight | Bismillah Computer & Technology')
 
@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="flex justify-center lg:justify-end">
-      <img alt="Essential Eight" loading="lazy" class="rounded-2xl shadow-lg max-w-md w-full" src="/images/it-support/cyber-security.png"/>
+      <img alt="Essential Eight" loading="lazy" class="rounded-2xl shadow-lg max-w-md w-full" src="/images/it-support/cyber-security/essential-eight/acsc.png"/>
     </div>
   </div>
   <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
@@ -50,7 +50,7 @@
     <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
 
       {{-- 1. Application Control --}}
-      <div class="reveal reveal-fade-up bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow">
+      <div class="reveal reveal-fade-up bg-slate-50 rounded-xl p-8 border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300">
         <div class="flex items-center gap-3 mb-4">
           <span class="w-10 h-10 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">1</span>
           <h3 class="text-xl font-bold text-slate-900">Application Control</h3>
@@ -59,7 +59,7 @@
       </div>
 
       {{-- 2. Application Patching --}}
-      <div class="reveal reveal-fade-up bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow" style="animation-delay: 0.1s">
+      <div class="reveal reveal-fade-up bg-slate-50 rounded-xl p-8 border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.1s">
         <div class="flex items-center gap-3 mb-4">
           <span class="w-10 h-10 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">2</span>
           <h3 class="text-xl font-bold text-slate-900">Application Patching</h3>
@@ -68,7 +68,7 @@
       </div>
 
       {{-- 3. Configure Microsoft Office Macro Settings --}}
-      <div class="reveal reveal-fade-up bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow">
+      <div class="reveal reveal-fade-up bg-slate-50 rounded-xl p-8 border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300">
         <div class="flex items-center gap-3 mb-4">
           <span class="w-10 h-10 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">3</span>
           <h3 class="text-xl font-bold text-slate-900">Configure Microsoft Office Macro Settings</h3>
@@ -77,7 +77,7 @@
       </div>
 
       {{-- 4. User Application Hardening --}}
-      <div class="reveal reveal-fade-up bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow" style="animation-delay: 0.1s">
+      <div class="reveal reveal-fade-up bg-slate-50 rounded-xl p-8 border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.1s">
         <div class="flex items-center gap-3 mb-4">
           <span class="w-10 h-10 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">4</span>
           <h3 class="text-xl font-bold text-slate-900">User Application Hardening</h3>
@@ -86,7 +86,7 @@
       </div>
 
       {{-- 5. Restrict Administrative Privileges --}}
-      <div class="reveal reveal-fade-up bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow">
+      <div class="reveal reveal-fade-up bg-slate-50 rounded-xl p-8 border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300">
         <div class="flex items-center gap-3 mb-4">
           <span class="w-10 h-10 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">5</span>
           <h3 class="text-xl font-bold text-slate-900">Restrict Administrative Privileges</h3>
@@ -95,7 +95,7 @@
       </div>
 
       {{-- 6. Patch Operating Systems --}}
-      <div class="reveal reveal-fade-up bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow" style="animation-delay: 0.1s">
+      <div class="reveal reveal-fade-up bg-slate-50 rounded-xl p-8 border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.1s">
         <div class="flex items-center gap-3 mb-4">
           <span class="w-10 h-10 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">6</span>
           <h3 class="text-xl font-bold text-slate-900">Patch Operating Systems</h3>
@@ -104,7 +104,7 @@
       </div>
 
       {{-- 7. Multi-factor Authentication --}}
-      <div class="reveal reveal-fade-up bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow">
+      <div class="reveal reveal-fade-up bg-slate-50 rounded-xl p-8 border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300">
         <div class="flex items-center gap-3 mb-4">
           <span class="w-10 h-10 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">7</span>
           <h3 class="text-xl font-bold text-slate-900">Multi-factor Authentication</h3>
@@ -113,7 +113,7 @@
       </div>
 
       {{-- 8. Daily Backups --}}
-      <div class="reveal reveal-fade-up bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-shadow" style="animation-delay: 0.1s">
+      <div class="reveal reveal-fade-up bg-slate-50 rounded-xl p-8 border-2 border-blue-100 hover:border-blue-300 hover:-translate-y-1 transition-all duration-300" style="animation-delay: 0.1s">
         <div class="flex items-center gap-3 mb-4">
           <span class="w-10 h-10 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">8</span>
           <h3 class="text-xl font-bold text-slate-900">Daily Backups</h3>
