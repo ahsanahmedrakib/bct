@@ -430,26 +430,41 @@
                 installation, and management.</p>
         </div>
     </div>
-    <section class="relative min-h-150 w-full overflow-hidden bg-slate-900 text-white">
+    <section class="what-we-offer relative min-h-150 w-full overflow-hidden bg-slate-900 text-white" data-active="0">
         <div class="absolute inset-0 z-0 transition-all duration-700 ease-in-out">
-            <div class="absolute inset-0 transition-opacity duration-700 ease-in-out opacity-100">
+            <div class="wwog-bg absolute inset-0 transition-opacity duration-700 ease-in-out opacity-100"
+                data-index="0">
                 <img alt="IT Consulting &amp; Strategy" decoding="async" class="object-cover object-center"
                     style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                     src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1600" />
+            </div>
+            <div class="wwog-bg absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0"
+                data-index="1">
+                <img alt="Website Design &amp; Development" loading="lazy" decoding="async"
+                    class="object-cover object-center"
+                    style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1600" />
+            </div>
+            <div class="wwog-bg absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0"
+                data-index="2">
+                <img alt="Domain &amp; Hosting Services" loading="lazy" decoding="async"
+                    class="object-cover object-center"
+                    style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                    src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=1600" />
             </div>
             <div class="absolute inset-0 bg-black/20"></div>
         </div>
         <div
             class="relative z-10 grid min-h-150 w-full grid-cols-1 divide-y divide-white/20 border-t border-b border-white/20 md:grid-cols-3 md:divide-x md:divide-y-0">
             {{-- Card 1 --}}
-            <div
-                class="group flex flex-col justify-between p-8 md:p-10 transition-all duration-500 ease-in-out bg-slate-950/75 backdrop-blur-sm">
+            <div class="wwog-card group flex flex-col justify-between p-8 md:p-10 transition-all duration-500 ease-in-out bg-slate-950/75 backdrop-blur-sm"
+                data-index="0">
                 <div>
                     <h3 class="whitespace-pre-line text-2xl font-bold leading-snug tracking-tight text-white md:text-3xl">
                         IT Consulting &amp;
                         Strategy</h3>
                 </div>
-                <div class="flex flex-col gap-6 pt-12 transition-all duration-500 opacity-100 translate-y-0">
+                <div class="wwog-content flex flex-col gap-6 pt-12 transition-all duration-500 opacity-100 translate-y-0">
                     <p class="text-sm font-light leading-relaxed text-gray-200 md:text-base">We help businesses plan,
                         manage, and scale their IT infrastructure with expert guidance and on-site support.</p>
                     <a href="{{ route('it-support') }}"><button
@@ -462,15 +477,15 @@
                 </div>
             </div>
             {{-- Card 2 --}}
-            <div
-                class="group flex flex-col justify-between p-8 md:p-10 transition-all duration-500 ease-in-out bg-transparent hover:bg-slate-950/50 hover:backdrop-blur-sm">
+            <div class="wwog-card group flex flex-col justify-between p-8 md:p-10 transition-all duration-500 ease-in-out bg-transparent hover:bg-slate-950/50 hover:backdrop-blur-sm"
+                data-index="1">
                 <div>
                     <h3 class="whitespace-pre-line text-2xl font-bold leading-snug tracking-tight text-white md:text-3xl">
                         Website Design
                         &amp; Development</h3>
                 </div>
                 <div
-                    class="flex flex-col gap-6 pt-12 transition-all duration-500 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0">
+                    class="wwog-content flex flex-col gap-6 pt-12 transition-all duration-500 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0">
                     <p class="text-sm font-light leading-relaxed text-gray-200 md:text-base">Crafting stunning, responsive
                         websites tailored to elevate your brand identity and drive user engagement.</p>
                     <a href="{{ route('web.development') }}"><button
@@ -483,15 +498,15 @@
                 </div>
             </div>
             {{-- Card 3 --}}
-            <div
-                class="group flex flex-col justify-between p-8 md:p-10 transition-all duration-500 ease-in-out bg-transparent hover:bg-slate-950/50 hover:backdrop-blur-sm">
+            <div class="wwog-card group flex flex-col justify-between p-8 md:p-10 transition-all duration-500 ease-in-out bg-transparent hover:bg-slate-950/50 hover:backdrop-blur-sm"
+                data-index="2">
                 <div>
                     <h3 class="whitespace-pre-line text-2xl font-bold leading-snug tracking-tight text-white md:text-3xl">
                         Domain &amp;
                         Hosting Services</h3>
                 </div>
                 <div
-                    class="flex flex-col gap-6 pt-12 transition-all duration-500 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0">
+                    class="wwog-content flex flex-col gap-6 pt-12 transition-all duration-500 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0">
                     <p class="text-sm font-light leading-relaxed text-gray-200 md:text-base">Reliable, high-speed cloud
                         hosting and domain registration solutions to keep your web apps online 24/7.</p>
                     <a href="{{ route('web.hosting') }}"><button
@@ -1107,6 +1122,42 @@
                     updateHeroIndicators(window.heroSwiper.realIndex);
                 }
             }, 500);
+
+            // What We Offer - hover active state
+            var wwoSection = document.querySelector('.what-we-offer');
+            if (wwoSection) {
+                var wwoCards = wwoSection.querySelectorAll('.wwog-card');
+                var wwoBgs = wwoSection.querySelectorAll('.wwog-bg');
+
+                wwoCards.forEach(function(card) {
+                    card.addEventListener('mouseenter', function() {
+                        var idx = card.getAttribute('data-index');
+
+                        wwoCards.forEach(function(c) {
+                            c.classList.remove('bg-slate-950/75', 'backdrop-blur-sm');
+                            c.classList.add('bg-transparent');
+                            var content = c.querySelector('.wwog-content');
+                            if (content) {
+                                content.classList.remove('opacity-100', 'translate-y-0');
+                                content.classList.add('opacity-0', 'translate-y-4');
+                            }
+                        });
+
+                        card.classList.remove('bg-transparent');
+                        card.classList.add('bg-slate-950/75', 'backdrop-blur-sm');
+                        var activeContent = card.querySelector('.wwog-content');
+                        if (activeContent) {
+                            activeContent.classList.remove('opacity-0', 'translate-y-4');
+                            activeContent.classList.add('opacity-100', 'translate-y-0');
+                        }
+
+                        wwoBgs.forEach(function(bg) {
+                            bg.classList.toggle('opacity-0', bg.getAttribute('data-index') !== idx);
+                            bg.classList.toggle('opacity-100', bg.getAttribute('data-index') === idx);
+                        });
+                    });
+                });
+            }
 
             // Blog slider
             new Swiper('.blog-swiper', {
