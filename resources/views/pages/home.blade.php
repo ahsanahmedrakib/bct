@@ -1166,5 +1166,13 @@
             border-radius: 9999px;
             background-color: #da3825 !important;
         }
+
+        .hero-indicator:hover {
+            border-top-color: #157cc1 !important;
+        }
+
+        .hero-indicator:hover span:last-child {
+            color: #157cc1 !important;
+        }
     </style>
 @endpush
