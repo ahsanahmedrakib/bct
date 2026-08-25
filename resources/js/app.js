@@ -200,31 +200,12 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
     // ── Hero slider (handled in blade @push after Swiper CDN loads) ──
-
-    // ── Blog slider ──
-    var blogEl = document.querySelector(".blog-swiper");
-    if (blogEl && typeof Swiper !== "undefined") {
-        new Swiper(".blog-swiper", {
-            loop: true,
-            autoplay: { delay: 4000, disableOnInteraction: false },
-            slidesPerView: 1,
-            spaceBetween: 32,
-            breakpoints: {
-                640: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
-            },
-        });
-    }
+    // ── Blog slider (handled in blade @push) ──
 
     // ── Partners slider ──
     var partnersEl = document.querySelector(".partners-swiper");
     if (partnersEl && typeof Swiper !== "undefined") {
         new Swiper(".partners-swiper", {
-            modules: [
-                typeof SwiperAutoplay !== "undefined"
-                    ? SwiperAutoplay
-                    : undefined,
-            ],
             autoplay: { delay: 2500, disableOnInteraction: false },
             loop: true,
             slidesPerView: 2,
@@ -237,25 +218,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // ── Testimonial slider ──
-    var testEl = document.querySelector(".testimonial-swiper");
-    if (testEl && typeof Swiper !== "undefined") {
-        new Swiper(".testimonial-swiper", {
-            loop: true,
-            autoplay: { delay: 5000, disableOnInteraction: false },
-            slidesPerView: 1,
-            spaceBetween: 30,
-            navigation: {
-                prevEl: ".testimonial-prev",
-                nextEl: ".testimonial-next",
-            },
-            pagination: {
-                el: ".testimonial-pagination",
-                clickable: true,
-                bulletClass:
-                    "w-2 h-2 rounded-full bg-gray-600 cursor-pointer transition-all",
-                bulletActiveClass: "!w-6 !bg-brand-secondary",
-            },
-        });
-    }
+    // ── Testimonial slider (handled in blade @push) ──
 });

@@ -432,21 +432,18 @@
     </div>
     <section class="what-we-offer relative min-h-150 w-full overflow-hidden bg-slate-900 text-white" data-active="0">
         <div class="absolute inset-0 z-0 transition-all duration-700 ease-in-out">
-            <div class="wwog-bg absolute inset-0 transition-opacity duration-700 ease-in-out opacity-100"
-                data-index="0">
+            <div class="wwog-bg absolute inset-0 transition-opacity duration-700 ease-in-out opacity-100" data-index="0">
                 <img alt="IT Consulting &amp; Strategy" decoding="async" class="object-cover object-center"
                     style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                     src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1600" />
             </div>
-            <div class="wwog-bg absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0"
-                data-index="1">
+            <div class="wwog-bg absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0" data-index="1">
                 <img alt="Website Design &amp; Development" loading="lazy" decoding="async"
                     class="object-cover object-center"
                     style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                     src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1600" />
             </div>
-            <div class="wwog-bg absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0"
-                data-index="2">
+            <div class="wwog-bg absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0" data-index="2">
                 <img alt="Domain &amp; Hosting Services" loading="lazy" decoding="async"
                     class="object-cover object-center"
                     style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
@@ -604,7 +601,7 @@
                         ];
                     @endphp
                     @foreach ($blogs as $blog)
-                        @foreach ([$blog, $blog, $blog] as $b)
+                        @foreach ($blogs as $b)
                             <div class="swiper-slide h-auto">
                                 <article
                                     class="group relative flex flex-col h-full bg-white rounded-2xl shadow-[0_4px_25px_-5px_rgba(0,0,0,0.04)] duration-300 outline-none overflow-hidden border border-blue-200 hover:border-blue-400 hover:shadow-lg hover:-translate-y-1 transition-all">
@@ -653,6 +650,33 @@
                         @endforeach
                     @endforeach
                 </div>
+            </div>
+            {{-- Blog Navigation & Pagination --}}
+            <div class="mt-10 flex items-center justify-center gap-6">
+                <button
+                    class="blog-swiper-prev p-2.5 rounded-full border border-gray-200 bg-white text-gray-500 shadow-sm transition-all cursor-pointer hover:text-white hover:bg-brand-secondary hover:border-brand-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M19 12H5"></path>
+                        <path d="m12 19-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <div class="flex items-center space-x-2">
+                    @foreach ($blogs as $i => $blog)
+                        <button aria-label="Go to slide {{ $i + 1 }}" data-index="{{ $i }}"
+                            class="blog-custom-bullet w-2 h-2 rounded-full bg-gray-600 cursor-pointer transition-all {{ $i === 0 ? 'blog-bullet-active' : '' }}"></button>
+                    @endforeach
+                </div>
+                <button
+                    class="blog-swiper-next p-2.5 rounded-full border border-gray-200 bg-white text-gray-500 shadow-sm transition-all cursor-pointer hover:text-white hover:bg-brand-secondary hover:border-brand-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
@@ -1152,22 +1176,29 @@
                         }
 
                         wwoBgs.forEach(function(bg) {
-                            bg.classList.toggle('opacity-0', bg.getAttribute('data-index') !== idx);
-                            bg.classList.toggle('opacity-100', bg.getAttribute('data-index') === idx);
+                            bg.classList.toggle('opacity-0', bg.getAttribute(
+                                'data-index') !== idx);
+                            bg.classList.toggle('opacity-100', bg.getAttribute(
+                                'data-index') === idx);
                         });
                     });
                 });
             }
 
-            // Blog slider
-            new Swiper('.blog-swiper', {
-                loop: true,
+            // Blog slider with navigation & pagination
+            var blogBullets = document.querySelectorAll('.blog-custom-bullet');
+            window.blogSwiper = new Swiper('.blog-swiper', {
+                loop: false,
                 autoplay: {
                     delay: 4000,
                     disableOnInteraction: false
                 },
                 slidesPerView: 1,
                 spaceBetween: 32,
+                navigation: {
+                    prevEl: '.blog-swiper-prev',
+                    nextEl: '.blog-swiper-next'
+                },
                 breakpoints: {
                     640: {
                         slidesPerView: 2
@@ -1175,7 +1206,35 @@
                     1024: {
                         slidesPerView: 3
                     }
-                },
+                }
+            });
+
+            function updateBlogIndicators(activeIndex) {
+                blogBullets.forEach(function(b, i) {
+                    if (i === activeIndex) {
+                        b.classList.add('blog-bullet-active');
+                    } else {
+                        b.classList.remove('blog-bullet-active');
+                    }
+                });
+            }
+
+            window.blogSwiper.on('slideChange', function(swiper) {
+                updateBlogIndicators(swiper.activeIndex);
+            });
+
+            setInterval(function() {
+                if (window.blogSwiper) {
+                    updateBlogIndicators(window.blogSwiper.activeIndex);
+                }
+            }, 500);
+
+            blogBullets.forEach(function(bullet) {
+                bullet.addEventListener('click', function() {
+                    var idx = parseInt(bullet.getAttribute('data-index'));
+                    window.blogSwiper.slideTo(idx);
+                    updateBlogIndicators(idx);
+                });
             });
 
             // Testimonial slider
@@ -1224,6 +1283,23 @@
 
         .hero-indicator:hover span:last-child {
             color: #157cc1 !important;
+        }
+
+        .blog-custom-bullet {
+            width: 8px;
+            height: 8px;
+            display: inline-block;
+            border-radius: 50%;
+            background-color: #64748b;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .blog-bullet-active {
+            width: 24px;
+            height: 8px;
+            border-radius: 9999px;
+            background-color: #da3825 !important;
         }
     </style>
 @endpush
