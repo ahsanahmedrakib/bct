@@ -600,8 +600,7 @@
                             ],
                         ];
                     @endphp
-                    @foreach ($blogs as $blog)
-                        @foreach ($blogs as $b)
+                    @foreach (array_merge($blogs, $blogs) as $b)
                             <div class="swiper-slide h-auto">
                                 <article
                                     class="group relative flex flex-col h-full bg-white rounded-2xl shadow-[0_4px_25px_-5px_rgba(0,0,0,0.04)] duration-300 outline-none overflow-hidden border border-blue-200 hover:border-blue-400 hover:shadow-lg hover:-translate-y-1 transition-all">
@@ -648,7 +647,6 @@
                                 </article>
                             </div>
                         @endforeach
-                    @endforeach
                 </div>
             </div>
             {{-- Blog Navigation & Pagination --}}
@@ -1188,7 +1186,7 @@
             // Blog slider with navigation & pagination
             var blogBullets = document.querySelectorAll('.blog-custom-bullet');
             window.blogSwiper = new Swiper('.blog-swiper', {
-                loop: false,
+                loop: true,
                 autoplay: {
                     delay: 4000,
                     disableOnInteraction: false
@@ -1209,9 +1207,10 @@
                 }
             });
 
-            function updateBlogIndicators(activeIndex) {
+            function updateBlogIndicators(realIndex) {
+                var idx = realIndex % 3;
                 blogBullets.forEach(function(b, i) {
-                    if (i === activeIndex) {
+                    if (i === idx) {
                         b.classList.add('blog-bullet-active');
                     } else {
                         b.classList.remove('blog-bullet-active');
@@ -1220,19 +1219,19 @@
             }
 
             window.blogSwiper.on('slideChange', function(swiper) {
-                updateBlogIndicators(swiper.activeIndex);
+                updateBlogIndicators(swiper.realIndex);
             });
 
             setInterval(function() {
                 if (window.blogSwiper) {
-                    updateBlogIndicators(window.blogSwiper.activeIndex);
+                    updateBlogIndicators(window.blogSwiper.realIndex);
                 }
             }, 500);
 
             blogBullets.forEach(function(bullet) {
                 bullet.addEventListener('click', function() {
                     var idx = parseInt(bullet.getAttribute('data-index'));
-                    window.blogSwiper.slideTo(idx);
+                    window.blogSwiper.slideToLoop(idx);
                     updateBlogIndicators(idx);
                 });
             });
