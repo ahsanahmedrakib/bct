@@ -224,3 +224,15 @@ body {
 @utility font-logo-bold {
   font-weight: 800;
 }
+
+/* ── Desktop nav link hover underline ─────────────────────── */
+#desktopNav > a {
+  text-decoration: none;
+  text-underline-offset: 4px;
+  transition: color 150ms, text-decoration-color 150ms;
+}
+
+#desktopNav > a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
