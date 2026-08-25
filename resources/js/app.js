@@ -199,37 +199,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { passive: true },
     );
 
-    // ── Hero slider ──
-    var heroEl = document.querySelector(".hero-swiper");
-    if (heroEl && typeof Swiper !== "undefined") {
-        var heroSwiper = new Swiper(".hero-swiper", {
-            loop: true,
-            autoplay: { delay: 5000, disableOnInteraction: false },
-            slidesPerView: 1,
-            onSlideChange: function (swiper) {
-                document
-                    .querySelectorAll(".hero-indicator")
-                    .forEach(function (btn, idx) {
-                        var active = idx === swiper.realIndex;
-                        btn.classList.toggle("border-t-brand-blue", active);
-                        btn.classList.toggle("border-t-white", !active);
-                        var bar = btn.querySelector("span:first-child");
-                        if (bar) {
-                            bar.className = active
-                                ? "absolute top-0 left-0 h-[3px] transition-all duration-300 w-full bg-blue-500"
-                                : "absolute top-0 left-0 h-[3px] transition-all duration-300 w-0 bg-transparent group-hover:w-1/2 group-hover:bg-gray-300";
-                        }
-                        var label = btn.querySelector("span:last-child");
-                        if (label) {
-                            label.className = active
-                                ? "mt-1 text-xs font-bold leading-tight md:text-sm text-heading"
-                                : "mt-1 text-xs font-bold leading-tight md:text-sm text-gray-500";
-                        }
-                    });
-            },
-        });
-        window.heroSwiper = heroSwiper;
-    }
+    // ── Hero slider (handled in blade @push after Swiper CDN loads) ──
 
     // ── Blog slider ──
     var blogEl = document.querySelector(".blog-swiper");

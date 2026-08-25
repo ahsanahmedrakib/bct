@@ -163,18 +163,17 @@
                 <div
                     class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:flex md:items-stretch md:justify-between md:gap-0 divide-x-0 md:divide-x divide-gray-200">
                     <button onclick="heroSwiper.slideToLoop(0)"
-                        class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t-[3px] border-t-white"
+                        class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t border-t-brand-blue"
                         data-index="0">
-                        <span
-                            class="absolute top-0 left-0 h-0.75 transition-all duration-300  w-0 bg-transparent group-hover:w-full group-hover:bg-blue-500"></span>
+                        <span class="absolute top-0 left-0 h-0.75 transition-all duration-300 w-full bg-blue-500"></span>
                         <span
                             class="text-[11px] leading-tight text-gray-400 font-medium md:text-xs line-clamp-2 min-h-8">Cloud
                             Services &amp; Microsoft 365</span>
-                        <span class="mt-1 text-xs font-bold leading-tight md:text-sm text-gray-500">Modern cloud
+                        <span class="mt-1 text-xs font-bold leading-tight md:text-sm text-blue-500">Modern cloud
                             tools</span>
                     </button>
                     <button onclick="heroSwiper.slideToLoop(1)"
-                        class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t-[3px] border-t-white"
+                        class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t border-t-white"
                         data-index="1">
                         <span
                             class="absolute top-0 left-0 h-0.75 transition-all duration-300 w-0 bg-transparent group-hover:w-full group-hover:bg-blue-500"></span>
@@ -184,7 +183,7 @@
                             AdHoc</span>
                     </button>
                     <button onclick="heroSwiper.slideToLoop(2)"
-                        class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t-[3px] border-t-white"
+                        class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t border-t-white"
                         data-index="2">
                         <span
                             class="absolute top-0 left-0 h-0.75 transition-all duration-300 w-0 bg-transparent group-hover:w-full group-hover:bg-blue-500"></span>
@@ -195,7 +194,7 @@
                             Security</span>
                     </button>
                     <button onclick="heroSwiper.slideToLoop(3)"
-                        class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t-[3px] border-t-white"
+                        class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t border-t-white"
                         data-index="3">
                         <span
                             class="absolute top-0 left-0 h-0.75 transition-all duration-300 w-0 bg-transparent group-hover:w-full group-hover:bg-blue-500"></span>
@@ -206,7 +205,7 @@
                             solutions</span>
                     </button>
                     <button onclick="heroSwiper.slideToLoop(4)"
-                        class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t-[3px] border-t-white"
+                        class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t border-t-white"
                         data-index="4">
                         <span
                             class="absolute top-0 left-0 h-0.75 transition-all duration-300 w-0 bg-transparent group-hover:w-full group-hover:bg-blue-500"></span>
@@ -1081,26 +1080,33 @@
                 }
             });
             window.heroSwiper = heroSwiper;
+            updateHeroIndicators(0);
 
             function updateHeroIndicators(activeIndex) {
                 document.querySelectorAll('.hero-indicator').forEach(function(btn, idx) {
-                    if (idx === activeIndex) {
-                        btn.classList.remove('border-t-white');
-                        btn.classList.add('border-t-brand-blue');
-                        btn.querySelector('span:first-child').className =
-                            'absolute top-0 left-0 h-0.75 transition-all duration-300 w-full bg-blue-500';
-                        btn.querySelector('span:last-child').className =
-                            'mt-1 text-xs font-bold leading-tight md:text-sm text-heading';
-                    } else {
-                        btn.classList.remove('border-t-brand-blue');
-                        btn.classList.add('border-t-white');
-                        btn.querySelector('span:first-child').className =
+                    var active = idx === activeIndex;
+                    btn.classList.toggle('border-t-brand-blue', active);
+                    btn.classList.toggle('border-t-white', !active);
+                    var bar = btn.querySelector('span:first-child');
+                    if (bar) {
+                        bar.className = active ?
+                            'absolute top-0 left-0 h-0.75 transition-all duration-300 w-full bg-blue-500' :
                             'absolute top-0 left-0 h-0.75 transition-all duration-300 w-0 bg-transparent group-hover:w-full group-hover:bg-blue-500';
-                        btn.querySelector('span:last-child').className =
+                    }
+                    var label = btn.querySelector('span:last-child');
+                    if (label) {
+                        label.className = active ?
+                            'mt-1 text-xs font-bold leading-tight md:text-sm text-blue-500' :
                             'mt-1 text-xs font-bold leading-tight md:text-sm text-gray-500';
                     }
                 });
             }
+
+            setInterval(function() {
+                if (window.heroSwiper) {
+                    updateHeroIndicators(window.heroSwiper.realIndex);
+                }
+            }, 500);
 
             // Blog slider
             new Swiper('.blog-swiper', {
