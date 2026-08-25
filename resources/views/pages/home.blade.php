@@ -13,7 +13,7 @@
 
     {{-- ======================== HERO SLIDER ======================== --}}
     <section class="relative w-full overflow-hidden bg-white py-8 md:pt-16">
-        <div class="reveal reveal-fade-up mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal reveal-fade-up px-4 sm:px-6 lg:px-8">
             <div class="swiper hero-swiper w-full">
                 <div class="swiper-wrapper">
                     {{-- Slide 1: Cloud --}}
@@ -163,19 +163,21 @@
                 <div
                     class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:flex md:items-stretch md:justify-between md:gap-0 divide-x-0 md:divide-x divide-gray-200">
                     <button onclick="heroSwiper.slideToLoop(0)"
-                        class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t-[3px] border-t-brand-blue"
+                        class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t-[3px] border-t-white"
                         data-index="0">
-                        <span class="absolute top-0 left-0 h-0.75 transition-all duration-300 w-full bg-blue-500"></span>
+                        <span
+                            class="absolute top-0 left-0 h-0.75 transition-all duration-300  w-0 bg-transparent group-hover:w-full group-hover:bg-blue-500"></span>
                         <span
                             class="text-[11px] leading-tight text-gray-400 font-medium md:text-xs line-clamp-2 min-h-8">Cloud
                             Services &amp; Microsoft 365</span>
-                        <span class="mt-1 text-xs font-bold leading-tight md:text-sm text-heading">Modern cloud tools</span>
+                        <span class="mt-1 text-xs font-bold leading-tight md:text-sm text-gray-500">Modern cloud
+                            tools</span>
                     </button>
                     <button onclick="heroSwiper.slideToLoop(1)"
                         class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t-[3px] border-t-white"
                         data-index="1">
                         <span
-                            class="absolute top-0 left-0 h-0.75 transition-all duration-300 w-0 bg-transparent group-hover:w-1/2 group-hover:bg-gray-300"></span>
+                            class="absolute top-0 left-0 h-0.75 transition-all duration-300 w-0 bg-transparent group-hover:w-full group-hover:bg-blue-500"></span>
                         <span class="text-[11px] leading-tight text-gray-400 font-medium md:text-xs line-clamp-2 min-h-8">IT
                             Services for Business and Home</span>
                         <span class="mt-1 text-xs font-bold leading-tight md:text-sm text-gray-500">Fully Managed &amp;
@@ -185,7 +187,7 @@
                         class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t-[3px] border-t-white"
                         data-index="2">
                         <span
-                            class="absolute top-0 left-0 h-0.75 transition-all duration-300 w-0 bg-transparent group-hover:w-1/2 group-hover:bg-gray-300"></span>
+                            class="absolute top-0 left-0 h-0.75 transition-all duration-300 w-0 bg-transparent group-hover:w-full group-hover:bg-blue-500"></span>
                         <span
                             class="text-[11px] leading-tight text-gray-400 font-medium md:text-xs line-clamp-2 min-h-8">Cyber
                             Security &amp; Data Protection</span>
@@ -196,7 +198,7 @@
                         class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t-[3px] border-t-white"
                         data-index="3">
                         <span
-                            class="absolute top-0 left-0 h-0.75 transition-all duration-300 w-0 bg-transparent group-hover:w-1/2 group-hover:bg-gray-300"></span>
+                            class="absolute top-0 left-0 h-0.75 transition-all duration-300 w-0 bg-transparent group-hover:w-full group-hover:bg-blue-500"></span>
                         <span
                             class="text-[11px] leading-tight text-gray-400 font-medium md:text-xs line-clamp-2 min-h-8">Telecommunications
                             &amp; Phone Systems</span>
@@ -207,7 +209,7 @@
                         class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t-[3px] border-t-white"
                         data-index="4">
                         <span
-                            class="absolute top-0 left-0 h-0.75 transition-all duration-300 w-0 bg-transparent group-hover:w-1/2 group-hover:bg-gray-300"></span>
+                            class="absolute top-0 left-0 h-0.75 transition-all duration-300 w-0 bg-transparent group-hover:w-full group-hover:bg-blue-500"></span>
                         <span
                             class="text-[11px] leading-tight text-gray-400 font-medium md:text-xs line-clamp-2 min-h-8">NBN
                             &amp; Business Internet</span>
@@ -1093,7 +1095,7 @@
                         btn.classList.remove('border-t-brand-blue');
                         btn.classList.add('border-t-white');
                         btn.querySelector('span:first-child').className =
-                            'absolute top-0 left-0 h-0.75 transition-all duration-300 w-0 bg-transparent group-hover:w-1/2 group-hover:bg-gray-300';
+                            'absolute top-0 left-0 h-0.75 transition-all duration-300 w-0 bg-transparent group-hover:w-full group-hover:bg-blue-500';
                         btn.querySelector('span:last-child').className =
                             'mt-1 text-xs font-bold leading-tight md:text-sm text-gray-500';
                     }
