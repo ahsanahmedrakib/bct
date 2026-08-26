@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 // ─── Home & Contact ─────────────────────────────────────────────
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact');
+Route::post('/contact', [App\Http\Controllers\ContactController::class, 'store'])->name('contact.submit');
 Route::get('/industries', [App\Http\Controllers\IndustriesController::class, 'index'])->name('industries');
 
 // ─── IT Support ─────────────────────────────────────────────────
