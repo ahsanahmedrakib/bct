@@ -18,15 +18,38 @@
                     with Defence. This page explains DISP membership, security domains, and obligations, helping businesses
                     understand how to qualify for Defence contracts and implement the necessary controls to protect sensitive
                     Defence information and systems.</p>
-                <div class="flex flex-wrap gap-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 md:w-3/4 w-full">
                     <a href="#overview"
-                        class="inline-flex items-center gap-2 bg-brand-blue text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-700 transition-colors text-sm">OVERVIEW</a>
+                        class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md transition-all hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">
+                        OVERVIEW
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </a>
                     <a href="#domains"
-                        class="inline-flex items-center gap-2 bg-white text-brand-blue border-2 border-brand-blue font-semibold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm">SECURITY
-                        DOMAINS</a>
+                        class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md transition-all hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">
+                        SECURITY DOMAINS
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </a>
                     <a href="#prepare"
-                        class="inline-flex items-center gap-2 bg-white text-brand-blue border-2 border-brand-blue font-semibold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm">HOW
-                        TO PREPARE</a>
+                        class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md transition-all hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">
+                        HOW TO PREPARE
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="pt-6 border-t border-slate-200/60 flex flex-col items-start gap-3">
+                    <p class="text-sky-700 font-semibold text-sm">Need help?</p>
+                    <a href="{{ route('contact') }}"
+                        class="px-6 py-2.5 bg-white border border-brand text-sky-700 text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer hover:bg-navy hover:text-white transition-colors">
+                        Contact Us
+                    </a>
                 </div>
             </div>
             <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
