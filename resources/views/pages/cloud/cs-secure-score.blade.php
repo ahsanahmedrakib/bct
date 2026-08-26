@@ -17,28 +17,36 @@
                 </h1>
                 <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">Microsoft Secure Score
                     is a built-in security measurement tool that helps organizations identify risks, implement recommended
-                    security controls, and continuously improve their Microsoft 365 security posture. By reviewing your Secure
-                    Score and applying Microsoft's best-practice recommendations, businesses can reduce vulnerabilities, improve
+                    security controls, and continuously improve their Microsoft 365 security posture. By reviewing your
+                    Secure
+                    Score and applying Microsoft's best-practice recommendations, businesses can reduce vulnerabilities,
+                    improve
                     compliance, and gain greater visibility into their organization's security health.</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 md:w-3/4 w-full">
                     <a href="#overview"
                         class="group flex items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg transition-all">
                         OVERVIEW
-                        <svg class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <svg class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
                     </a>
                     <a href="#how-it-works"
                         class="group flex items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg transition-all">
                         HOW IT WORKS
-                        <svg class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <svg class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
                     </a>
                     <a href="#improve"
                         class="group flex items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg transition-all">
                         IMPROVE YOUR SCORE
-                        <svg class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <svg class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
                     </a>
@@ -68,30 +76,41 @@
     <section class="py-16 lg:py-24 bg-white" id="overview">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="flex justify-center">
-                <div class="relative h-80 w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
+                <div
+                    class="relative h-80 w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
                     <img src="/images/cloud/cyber-security/secure-score/section-1.jpg"
                         alt="Microsoft Secure Score Dashboard" class="w-full h-full object-cover" loading="lazy" />
                 </div>
             </div>
             <div class="reveal reveal-fade-up h-full">
-                <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative h-full">
+                <div
+                    class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative h-full">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <span class="text-blue-500 font-bold text-sm tracking-wide mb-3 block">Microsoft Secure Score</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6 leading-tight">What is Microsoft Secure Score?</h2>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">Microsoft Secure Score is a built-in security
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6 leading-tight">What is Microsoft Secure
+                        Score?</h2>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">Microsoft Secure Score is a built-in
+                        security
                         measurement tool within Microsoft 365 and Microsoft Defender that helps organisations understand and
                         improve their cybersecurity posture. It provides a numerical score that represents how well your
-                        Microsoft 365 environment is protected against common security threats such as phishing, malware, and
+                        Microsoft 365 environment is protected against common security threats such as phishing, malware,
+                        and
                         unauthorised access.</p>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">The score is calculated based on the security
-                        controls and configurations enabled across your Microsoft 365 services. As recommended security settings
-                        are implemented, the score increases, giving businesses a clear way to track improvements and identify
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">The score is calculated based on the
+                        security
+                        controls and configurations enabled across your Microsoft 365 services. As recommended security
+                        settings
+                        are implemented, the score increases, giving businesses a clear way to track improvements and
+                        identify
                         areas that require attention.</p>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-8 text-justify">Microsoft Secure Score is more than just a number —
-                        it provides organisations with a clear and measurable view of their Microsoft 365 security posture. By
+                    <p class="text-slate-500 text-sm leading-relaxed mb-8 text-justify">Microsoft Secure Score is more than
+                        just a number —
+                        it provides organisations with a clear and measurable view of their Microsoft 365 security posture.
+                        By
                         analysing security configurations across identities, devices, applications, and data, Secure Score
                         highlights areas where improvements can significantly reduce cybersecurity risks.</p>
-                    <a href="#how-it-works" class="text-blue-600 font-medium flex items-center hover:text-blue-800">How It Works
+                    <a href="#how-it-works" class="text-blue-600 font-medium flex items-center hover:text-blue-800">How It
+                        Works
                         <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -154,7 +173,8 @@
                         class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all relative">
                         <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                         <div class="flex items-center gap-3 mb-3">
-                            <div class="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 shrink-0">
+                            <div
+                                class="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 shrink-0">
                                 <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor">{!! $benefit['icon'] !!}</svg>
                             </div>
@@ -171,33 +191,45 @@
     <section class="py-16 lg:py-24 bg-white" id="how-it-works">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="reveal reveal-fade-up h-full order-2 lg:order-1">
-                <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative h-full">
+                <div
+                    class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative h-full">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <span class="text-blue-500 font-bold text-sm tracking-wide mb-3 block">How It Works</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6 leading-tight">How is Microsoft Secure Score Calculated?</h2>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">Understanding how your Microsoft Secure Score
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6 leading-tight">How is Microsoft Secure
+                        Score Calculated?</h2>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">Understanding how your Microsoft
+                        Secure Score
                         is calculated is key to improving your Microsoft 365 security posture and strengthening your overall
                         cybersecurity framework. Secure Score provides a measurable benchmark to assess how effectively your
                         organisation protects identities, devices, data, and applications.</p>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">Your Microsoft Secure Score is displayed as a
-                        percentage that reflects how your current security configuration compares to Microsoft's recommended best
-                        practices. The score is calculated based on the security controls and configurations enabled across your
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">Your Microsoft Secure Score is
+                        displayed as a
+                        percentage that reflects how your current security configuration compares to Microsoft's recommended
+                        best
+                        practices. The score is calculated based on the security controls and configurations enabled across
+                        your
                         Microsoft 365 services.</p>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-8 text-justify">While Secure Score isn't a compliance tool,
-                        improving your score often aligns with regulatory frameworks like ISO 27001, NIST, and GDPR. It's a solid
-                        step in your compliance journey. As recommended security settings are implemented, the score increases,
+                    <p class="text-slate-500 text-sm leading-relaxed mb-8 text-justify">While Secure Score isn't a
+                        compliance tool,
+                        improving your score often aligns with regulatory frameworks like ISO 27001, NIST, and GDPR. It's a
+                        solid
+                        step in your compliance journey. As recommended security settings are implemented, the score
+                        increases,
                         giving businesses a clear way to track improvements and identify areas that require attention.</p>
-                    <a href="#improve" class="text-blue-600 font-medium flex items-center hover:text-blue-800">Improve Your Score
+                    <a href="#improve" class="text-blue-600 font-medium flex items-center hover:text-blue-800">Improve
+                        Your Score
                         <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg></a>
                 </div>
             </div>
             <div class="flex justify-center order-1 lg:order-2">
-                <div class="relative h-80 w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
-                    <img src="/images/cloud/cyber-security/secure-score/section-2.jpg"
-                        alt="Secure Score Calculation" class="w-full h-full object-cover" loading="lazy" />
+                <div
+                    class="relative h-80 w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
+                    <img src="/images/cloud/cyber-security/secure-score/section-2.jpg" alt="Secure Score Calculation"
+                        class="w-full h-full object-cover" loading="lazy" />
                 </div>
             </div>
         </div>
@@ -242,7 +274,7 @@
                             'title' => 'Application Security',
                             'desc' =>
                                 'Safe configuration of Microsoft 365 services, Microsoft Defender for Office 365, Safe Links, Safe Attachments, anti-phishing policies, and impersonation protection.',
-                            'image' => '',
+                            'image' => '/images/cloud/cyber-security/secure-score/section-4.jpg',
                             'icon' =>
                                 '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />',
                         ],
@@ -259,9 +291,11 @@
                         @endif
                         <div class="p-6">
                             <div class="flex items-center gap-3 mb-4">
-                                <div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
-                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor">{!! $category['icon'] !!}</svg>
+                                <div
+                                    class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor">{!! $category['icon'] !!}</svg>
                                 </div>
                                 <h3 class="text-lg font-bold text-slate-900">{{ $category['title'] }}</h3>
                             </div>
@@ -276,9 +310,10 @@
     {{-- ================= HOW TO IMPROVE ================= --}}
     <section class="py-16 lg:py-24 bg-white" id="improve">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-start">
-            <div class="relative h-80 lg:h-full min-h-[24rem] rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 lg:sticky lg:top-24">
-                <img src="/images/cloud/cyber-security/secure-score/section-3.jpg"
-                    alt="Improve Your Secure Score" class="w-full h-full object-cover" loading="lazy" />
+            <div
+                class="relative h-80 lg:h-full min-h-96 rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 lg:sticky lg:top-24">
+                <img src="/images/cloud/cyber-security/secure-score/section-3.jpg" alt="Improve Your Secure Score"
+                    class="w-full h-full object-cover" loading="lazy" />
             </div>
             <div>
                 <h2 class="text-3xl font-bold text-blue-900 mb-4">How to Improve Your Secure Score</h2>
@@ -353,9 +388,11 @@
                                 <div class="flex items-center gap-3">
                                     <span
                                         class="text-blue-600 font-bold text-sm shrink-0">{{ str_pad($loop->index + 1, 2, '0', STR_PAD_LEFT) }}</span>
-                                    <div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
-                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor">{!! $item['icon'] !!}</svg>
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5"
+                                            stroke="currentColor">{!! $item['icon'] !!}</svg>
                                     </div>
                                     <h3 class="font-medium text-slate-900 text-sm">{{ $item['title'] }}</h3>
                                 </div>
@@ -374,14 +411,17 @@
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl font-bold text-blue-900 mb-4">How Often Should You Review Your Secure Score?</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">Regularly reviewing your Microsoft Secure Score is
-                    essential for maintaining a strong Microsoft 365 security posture. We recommend reviewing your Secure Score
+                    essential for maintaining a strong Microsoft 365 security posture. We recommend reviewing your Secure
+                    Score
                     monthly, or weekly for high-risk industries such as healthcare, finance, or legal services.</p>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div class="bg-white border-2 border-blue-100 rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
                     <h3 class="text-xl font-bold text-blue-900 mb-4">Monthly Reviews</h3>
-                    <p class="text-slate-600 text-sm text-justify mb-4">As your environment evolves — adding new users, devices,
-                        applications, or licences — new security recommendations may appear. Making Secure Score reviews part of
+                    <p class="text-slate-600 text-sm text-justify mb-4">As your environment evolves — adding new users,
+                        devices,
+                        applications, or licences — new security recommendations may appear. Making Secure Score reviews
+                        part of
                         your ongoing IT security checklist ensures continuous improvement and proactive risk management.</p>
                     <ul class="space-y-3">
                         @php
@@ -394,8 +434,8 @@
                         @endphp
                         @foreach ($monthlyItems as $item)
                             <li class="flex items-start gap-3">
-                                <svg class="w-4 h-4 text-blue-600 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <svg class="w-4 h-4 text-blue-600 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                                 </svg>
                                 <span class="text-slate-600 text-sm">{{ $item }}</span>
@@ -417,8 +457,8 @@
                         @endphp
                         @foreach ($bestPractices as $item)
                             <li class="flex items-start gap-3">
-                                <svg class="w-4 h-4 text-blue-600 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <svg class="w-4 h-4 text-blue-600 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                                 </svg>
                                 <span class="text-slate-600 text-sm">{{ $item }}</span>
@@ -470,10 +510,12 @@
                 <h2 class="text-3xl font-bold mb-6">Need Help Improving Your Secure Score?</h2>
                 <p class="text-blue-100 text-sm leading-relaxed mb-8 max-w-3xl text-justify">Microsoft Secure Score is a
                     powerful tool for organizations looking to enhance their Microsoft 365 security posture. It offers
-                    visibility, direction, and measurable goals in a format that's easy to understand. Whether you're an SMB or
+                    visibility, direction, and measurable goals in a format that's easy to understand. Whether you're an SMB
+                    or
                     an enterprise, reviewing your Secure Score regularly and acting on its recommendations should be a core
                     part of your cybersecurity strategy. Partnering with a proven and skilled Microsoft 365 Security partner
-                    can help you achieve the best combination between a secure IT environment and a great user experience.</p>
+                    can help you achieve the best combination between a secure IT environment and a great user experience.
+                </p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                     @php
                         $services = [
@@ -516,23 +558,29 @@
                     $usefulLinks = [
                         [
                             'title' => 'Microsoft Secure Score Portal',
-                            'desc' => "Access your organisation's Microsoft Secure Score directly in the Microsoft Defender portal to review recommendations and track improvements.",
+                            'desc' =>
+                                "Access your organisation's Microsoft Secure Score directly in the Microsoft Defender portal to review recommendations and track improvements.",
                             'href' => 'https://security.microsoft.com/securescore',
                         ],
                         [
                             'title' => 'Microsoft Secure Score Documentation',
-                            'desc' => "Official Microsoft documentation explaining how Secure Score works, how it's calculated, and how to interpret your results.",
-                            'href' => 'https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-secure-score',
+                            'desc' =>
+                                "Official Microsoft documentation explaining how Secure Score works, how it's calculated, and how to interpret your results.",
+                            'href' =>
+                                'https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-secure-score',
                         ],
                         [
                             'title' => 'Microsoft 365 Cyber Security',
-                            'desc' => 'Learn how Microsoft 365 provides comprehensive cybersecurity features to protect your business from modern threats.',
+                            'desc' =>
+                                'Learn how Microsoft 365 provides comprehensive cybersecurity features to protect your business from modern threats.',
                             'href' => '#',
                         ],
                         [
                             'title' => 'Essential Eight Maturity Model',
-                            'desc' => 'ACSC guidance on the Essential Eight mitigation strategies and maturity levels for Bangladeshi organisations.',
-                            'href' => 'https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight',
+                            'desc' =>
+                                'ACSC guidance on the Essential Eight mitigation strategies and maturity levels for Bangladeshi organisations.',
+                            'href' =>
+                                'https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight',
                         ],
                     ];
                 @endphp
@@ -562,46 +610,56 @@
                     $faqs = [
                         [
                             'question' => 'What is Microsoft Secure Score?',
-                            'answer' => 'Microsoft Secure Score is a built-in tool in Microsoft 365 that helps organizations understand and improve their security posture. It analyzes your current configuration and behaviors and provides a score along with recommended actions to enhance security. It provides a numerical score representing how well your Microsoft 365 environment is protected against common security threats.',
+                            'answer' =>
+                                'Microsoft Secure Score is a built-in tool in Microsoft 365 that helps organizations understand and improve their security posture. It analyzes your current configuration and behaviors and provides a score along with recommended actions to enhance security. It provides a numerical score representing how well your Microsoft 365 environment is protected against common security threats.',
                         ],
                         [
                             'question' => 'How is my Secure Score calculated?',
-                            'answer' => "Your Secure Score is displayed as a percentage that reflects how your current security configuration compares to Microsoft's recommended best practices. It is calculated based on the security controls and configurations enabled across your Microsoft 365 services, including identity protection, device security, data protection, and application security.",
+                            'answer' =>
+                                "Your Secure Score is displayed as a percentage that reflects how your current security configuration compares to Microsoft's recommended best practices. It is calculated based on the security controls and configurations enabled across your Microsoft 365 services, including identity protection, device security, data protection, and application security.",
                         ],
                         [
                             'question' => 'How often should I review my Secure Score?',
-                            'answer' => "We recommend reviewing your Secure Score at least monthly, or weekly if you're in a regulated industry or working toward compliance. Secure Score updates automatically as your environment changes — adding new users, devices, applications, or licences may trigger new recommendations.",
+                            'answer' =>
+                                "We recommend reviewing your Secure Score at least monthly, or weekly if you're in a regulated industry or working toward compliance. Secure Score updates automatically as your environment changes — adding new users, devices, applications, or licences may trigger new recommendations.",
                         ],
                         [
                             'question' => 'Can Bismillah Computer & Technology help us improve our Secure Score?',
-                            'answer' => 'Absolutely. We specialize in Microsoft 365 security, and we can assess your current score, implement best-practice policies, remediate high-risk items, monitor improvements over time, and provide Secure Score reports in our quarterly IT reviews.',
+                            'answer' =>
+                                'Absolutely. We specialize in Microsoft 365 security, and we can assess your current score, implement best-practice policies, remediate high-risk items, monitor improvements over time, and provide Secure Score reports in our quarterly IT reviews.',
                         ],
                         [
                             'question' => 'Is a higher Secure Score always better?',
-                            'answer' => 'While a higher score generally indicates stronger security configurations, Secure Score is not a guarantee of protection. It is a baseline framework to guide cybersecurity improvements. Some recommendations may not apply to your licensing or business needs, and not all third-party security tools are reflected in your score.',
+                            'answer' =>
+                                'While a higher score generally indicates stronger security configurations, Secure Score is not a guarantee of protection. It is a baseline framework to guide cybersecurity improvements. Some recommendations may not apply to your licensing or business needs, and not all third-party security tools are reflected in your score.',
                         ],
                         [
                             'question' => 'Does Secure Score cover all security frameworks?',
-                            'answer' => "While Secure Score isn't a compliance tool, improving your score often aligns with regulatory frameworks like ISO 27001, NIST, and GDPR. Many recommendations also support frameworks such as the ACSC Essential Eight. It's a solid step in your compliance journey.",
+                            'answer' =>
+                                "While Secure Score isn't a compliance tool, improving your score often aligns with regulatory frameworks like ISO 27001, NIST, and GDPR. Many recommendations also support frameworks such as the ACSC Essential Eight. It's a solid step in your compliance journey.",
                         ],
                         [
                             'question' => 'What are the main categories of Secure Score?',
-                            'answer' => 'Secure Score is divided into four main categories: Identity (user accounts, authentication, Conditional Access), Device (endpoint compliance, Defender for Endpoint, Intune), Data (classification, sensitivity labels, DLP policies), and Apps (Defender for Office 365, Exchange Online Protection, Teams, SharePoint).',
+                            'answer' =>
+                                'Secure Score is divided into four main categories: Identity (user accounts, authentication, Conditional Access), Device (endpoint compliance, Defender for Endpoint, Intune), Data (classification, sensitivity labels, DLP policies), and Apps (Defender for Office 365, Exchange Online Protection, Teams, SharePoint).',
                         ],
                         [
                             'question' => 'Can Secure Score detect actual threats?',
-                            'answer' => 'No. Secure Score is a configuration score, not a threat score. It measures how many of Microsoft\'s recommended settings are enabled in your tenant. It does not tell you whether you are currently under attack or compromised. Use it as a configuration hygiene baseline alongside other security monitoring tools.',
+                            'answer' =>
+                                'No. Secure Score is a configuration score, not a threat score. It measures how many of Microsoft\'s recommended settings are enabled in your tenant. It does not tell you whether you are currently under attack or compromised. Use it as a configuration hygiene baseline alongside other security monitoring tools.',
                         ],
                     ];
                 @endphp
                 @foreach ($faqs as $faq)
                     <div class="reveal reveal-fade-up border-2 border-blue-100 rounded-xl overflow-hidden relative">
                         <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                        <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')"
+                        <button
+                            onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')"
                             class="w-full flex justify-between items-center px-6 py-5 text-left">
                             <span class="font-medium text-slate-900 pr-4">{{ $faq['question'] }}</span>
-                            <svg class="w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <svg class="w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                             </svg>
                         </button>
