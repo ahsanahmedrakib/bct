@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.page')
 
 @section('title', 'Microsoft 365 Modern Workplace | Bismillah Computer & Technology')
 @section('description', 'Transform your workplace with Microsoft Teams, SharePoint, and modern collaboration tools.')
@@ -18,7 +18,7 @@
                 <div class="flex flex-wrap gap-4">
                     <a href="#overview"
                         class="inline-flex items-center gap-2 bg-brand-blue text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-700 transition-colors text-sm">OVERVIEW</a>
-                    <a href="#features"
+                    <a href="#core-apps"
                         class="inline-flex items-center gap-2 bg-white text-brand-blue border-2 border-brand-blue font-semibold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm">FEATURES</a>
                     <a href="#approach"
                         class="inline-flex items-center gap-2 bg-white text-brand-blue border-2 border-brand-blue font-semibold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm">OUR
@@ -39,24 +39,25 @@
         </div>
     </section>
 
-    <section class="py-24 bg-white" id="overview">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+    <section class="py-16 lg:py-24 bg-white" id="overview">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="flex justify-center">
                 <img src="/images/cloud/services/modern-workplace/section-1.png" alt="Microsoft 365 Modern Workplace"
                     class="rounded-xl shadow-lg w-full" loading="lazy" />
             </div>
-            <div class="reveal reveal-fade-up space-y-6">
-                <span class="text-blue-500 font-bold text-sm tracking-wide">Microsoft 365 Modern Workplace</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">What is Microsoft 365 Modern Workplace?</h2>
-                <p class="text-slate-600 leading-relaxed text-justify">Microsoft 365 Modern Workplace is a cloud-first
+            <div class="border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all relative">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <span class="text-blue-500 font-bold text-sm tracking-wide mb-3 block">Microsoft 365 Modern Workplace</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6 leading-tight">What is Microsoft 365 Modern Workplace?</h2>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">Microsoft 365 Modern Workplace is a cloud-first
                     approach to how businesses work, collaborate, and stay secure in today's digital environment. Built on
                     Microsoft 365, it brings together productivity tools, collaboration platforms, security, and device
                     management into a single, integrated solution.</p>
-                <p class="text-slate-600 leading-relaxed text-justify">The modern workplace enables employees to work from
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">The modern workplace enables employees to work from
                     anywhere, collaborate in real time, and securely access business data across multiple devices. Tools
                     such as Microsoft Teams, SharePoint, OneDrive, and Exchange Online support seamless communication, file
                     sharing, and teamwork.</p>
-                <p class="text-slate-600 leading-relaxed text-justify">Security and management are core components of the
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">Security and management are core components of the
                     modern workplace. With identity protection, multi-factor authentication, conditional access, and device
                     management through Intune, businesses can protect users, devices, and data without relying on
                     traditional on-premises infrastructure.</p>
@@ -69,13 +70,11 @@
         </div>
     </section>
 
-    <section class="py-24 bg-slate-50" id="core-apps">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 reveal reveal-fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Microsoft 365 Core Applications</h2>
-                <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Microsoft 365 includes the essential tools
-                    businesses need to communicate, collaborate, and manage data securely in the cloud</p>
-            </div>
+    <section class="py-16 lg:py-24 bg-white" id="core-apps">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Microsoft 365 Core Applications</h2>
+            <p class="text-slate-600 text-center max-w-2xl mx-auto mb-12">Microsoft 365 includes the essential tools
+                businesses need to communicate, collaborate, and manage data securely in the cloud</p>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 @php
                     $apps = [
@@ -141,14 +140,107 @@
         </div>
     </section>
 
-    <section class="py-24 bg-white" id="benefits">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 reveal reveal-fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Benefits of Microsoft 365 Modern Workplace</h2>
-                <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">By combining productivity, flexibility, cyber
-                    security, and scalability, Microsoft 365 Modern Workplace helps organisations improve efficiency,
-                    support remote work, and adapt confidently to changing business needs</p>
+    <section class="py-16 lg:py-24 bg-slate-50" id="platforms">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Workplace Collaboration Platforms</h2>
+            <p class="text-slate-600 text-center max-w-2xl mx-auto mb-12">Together, these Microsoft 365 essentials create a modern workplace
+                platform designed for productivity, collaboration, and secure cloud-based business operations</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                @php
+                    $platforms = [
+                        [
+                            'title' => 'Microsoft Teams',
+                            'desc' => 'Central hub for teamwork with chat, video meetings, and file collaboration.',
+                            'image' => '/images/cloud/services/modern-workplace/section-2.jpg',
+                        ],
+                        [
+                            'title' => 'SharePoint Online',
+                            'desc' => 'Team sites and intranet for document management and collaboration.',
+                            'image' => '/images/cloud/services/modern-workplace/section-3.jpg',
+                        ],
+                        [
+                            'title' => 'OneDrive for Business',
+                            'desc' => 'Personal cloud storage for file access and sharing from anywhere.',
+                            'image' => '/images/cloud/services/modern-workplace/section-4.jpg',
+                        ],
+                        [
+                            'title' => 'Exchange Online',
+                            'desc' => 'Enterprise email hosting with calendar and contacts.',
+                            'image' => '/images/cloud/services/modern-workplace/section-5.jpg',
+                        ],
+                    ];
+                @endphp
+                @foreach ($platforms as $platform)
+                    <div
+                        class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all overflow-hidden flex flex-col">
+                        <div class="relative h-48 w-full overflow-hidden">
+                            <img src="{{ $platform['image'] }}" alt="{{ $platform['title'] }}"
+                                class="w-full h-full object-cover" loading="lazy" />
+                        </div>
+                        <div class="p-6 flex flex-col grow">
+                            <h3 class="text-lg font-bold text-slate-900 mb-3">{{ $platform['title'] }}</h3>
+                            <p class="text-slate-600 text-sm text-justify">{{ $platform['desc'] }}</p>
+                        </div>
+                    </div>
+                @endforeach
             </div>
+        </div>
+    </section>
+
+    <section class="py-16 lg:py-24 bg-white" id="advanced">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Advanced Features &amp; Security</h2>
+            <p class="text-slate-600 text-center max-w-2xl mx-auto mb-12">Microsoft 365 Advanced Features provide organisations with powerful
+                tools that go beyond everyday productivity, helping businesses improve security, manage devices, automate processes, and maintain compliance</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                @php
+                    $advancedFeatures = [
+                        [
+                            'title' => 'Microsoft Defender',
+                            'desc' => 'Advanced threat protection for email, endpoints, and cloud applications.',
+                            'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />',
+                        ],
+                        [
+                            'title' => 'Microsoft Intune',
+                            'desc' => 'Cloud-based device management for Windows, macOS, iOS, and Android.',
+                            'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />',
+                        ],
+                        [
+                            'title' => 'Conditional Access',
+                            'desc' => 'Identity-based access policies for secure resource access.',
+                            'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />',
+                        ],
+                        [
+                            'title' => 'Microsoft Copilot',
+                            'desc' => 'AI-powered assistant for enhanced productivity across Microsoft 365.',
+                            'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />',
+                        ],
+                    ];
+                @endphp
+                @foreach ($advancedFeatures as $feature)
+                    <div
+                        class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 shadow-sm bg-white transition-all relative">
+                        <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center text-blue-600">
+                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">{!! $feature['icon'] !!}</svg>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900">{{ $feature['title'] }}</h3>
+                        </div>
+                        <p class="text-slate-600 text-sm text-justify">{{ $feature['desc'] }}</p>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 lg:py-24 bg-slate-50" id="benefits">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Benefits of Microsoft 365 Modern Workplace</h2>
+            <p class="text-slate-600 text-center max-w-2xl mx-auto mb-12">By combining productivity, flexibility, cyber
+                security, and scalability, Microsoft 365 Modern Workplace helps organisations improve efficiency,
+                support remote work, and adapt confidently to changing business needs</p>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 @php
                     $benefits = [
@@ -200,12 +292,12 @@
                     <div
                         class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 shadow-sm bg-white transition-all relative">
                         <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                        <div class="flex items-center gap-3 mb-3">
-                            <div class="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center text-blue-600">
-                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-600">
+                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor">{!! $benefit['icon'] !!}</svg>
                             </div>
-                            <h3 class="text-lg font-bold text-slate-900">{{ $benefit['title'] }}</h3>
+                            <h3 class="text-xl font-bold text-slate-900">{{ $benefit['title'] }}</h3>
                         </div>
                         <p class="text-slate-600 text-sm text-justify">{{ $benefit['desc'] }}</p>
                     </div>
@@ -214,15 +306,111 @@
         </div>
     </section>
 
-    <section class="py-16 bg-slate-50" id="help">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="reveal reveal-fade-up bg-linear-to-br from-blue-600 to-blue-800 rounded-2xl p-8 lg:p-12 text-white">
-                <h2 class="text-3xl font-bold mb-6">Partner with a Modern Workplace Specialist</h2>
-                <p class="text-blue-100 text-sm leading-relaxed mb-8 max-w-3xl text-justify">Total Solutions IT helps
+    <section class="py-16 lg:py-24 bg-white" id="services-section">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Our Microsoft 365 Consulting Services</h2>
+            <p class="text-slate-600 text-center max-w-2xl mx-auto mb-12">Microsoft 365 Consulting from Total Solutions IT helps businesses
+                plan, deploy, and optimise their Microsoft 365 environment to improve productivity, security, and collaboration</p>
+            <div class="grid lg:grid-cols-3 gap-8">
+                @php
+                    $consultingServices = [
+                        [
+                            'title' => 'Migration & Setup',
+                            'desc' => 'Complete Microsoft 365 migration and tenant setup for your organisation.',
+                            'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />',
+                        ],
+                        [
+                            'title' => 'Security Configuration',
+                            'desc' => 'Configure Conditional Access, Defender, and security policies for protection.',
+                            'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />',
+                        ],
+                        [
+                            'title' => 'Device Management',
+                            'desc' => 'Deploy and configure Microsoft Intune for centralised device management.',
+                            'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />',
+                        ],
+                    ];
+                @endphp
+                @foreach ($consultingServices as $service)
+                    <div
+                        class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 shadow-sm bg-white transition-all relative">
+                        <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-600">
+                                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">{!! $service['icon'] !!}</svg>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900">{{ $service['title'] }}</h3>
+                        </div>
+                        <p class="text-slate-600 text-sm text-justify">{{ $service['desc'] }}</p>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 lg:py-24 bg-slate-50" id="teams">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all relative order-2 lg:order-1">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <span class="text-blue-500 font-bold text-sm tracking-wide mb-3 block">Team Collaboration</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6 leading-tight">Microsoft Teams</h2>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">Since the 2020 pandemic, Microsoft Teams has become a crucial
+                    tool for businesses, with usage soaring. If your business is moving towards permanent remote work arrangements, Total
+                    Solutions IT can help you set up Microsoft Teams for seamless collaboration.</p>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">Microsoft Teams is a powerful collaboration platform within
+                    Microsoft 365 that brings chat, video meetings, calling, file sharing, and teamwork into one secure workspace. Designed for
+                    modern businesses, Teams helps staff communicate in real time, collaborate on documents, and manage projects without switching
+                    between multiple apps.</p>
+                <div class="space-y-3 mb-8">
+                    @php
+                        $teamsFeatures = [
+                            'Instant messaging and presence awareness',
+                            'Secure online meetings with recording',
+                            'Centralised document collaboration',
+                            'Business calling capabilities',
+                            'Integration with Microsoft 365 apps',
+                        ];
+                    @endphp
+                    @foreach ($teamsFeatures as $feature)
+                        <div class="flex items-start gap-3">
+                            <svg class="w-4 h-4 text-blue-600 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                            </svg>
+                            <span class="text-slate-600 text-sm">{{ $feature }}</span>
+                        </div>
+                    @endforeach
+                </div>
+                <a href="#help"
+                    class="text-blue-600 font-medium flex items-center hover:text-blue-800">Get Started
+                    <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg></a>
+            </div>
+            <div class="flex justify-center order-1 lg:order-2">
+                <div class="relative h-80 w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
+                    <img src="/images/cloud/services/modern-workplace/section-5.jpg" alt="Microsoft Teams Collaboration"
+                        class="w-full h-full object-cover" loading="lazy" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 lg:py-24 bg-white" id="help">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="relative h-80 lg:h-96 rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
+                <img src="/images/cloud/services/modern-workplace/section-6.jpg" alt="Microsoft 365 Support"
+                    class="w-full h-full object-cover" loading="lazy" />
+            </div>
+            <div class="bg-linear-to-br from-blue-600 to-blue-800 rounded-2xl p-8 lg:p-10 text-white">
+                <h2 class="text-2xl lg:text-3xl font-bold mb-6">Partner with a Modern Workplace Specialist</h2>
+                <p class="text-blue-100 text-sm leading-relaxed mb-6 text-justify">Total Solutions IT helps
                     businesses unlock the full potential of Microsoft 365. Our experienced consultants work with
                     organisations to ensure Microsoft 365 is configured correctly, aligned with best practices, and
                     delivering maximum value from your cloud investment.</p>
-                <div class="grid md:grid-cols-2 gap-4 mb-8">
+                <div class="space-y-3 mb-6">
                     @php
                         $services = [
                             'Microsoft 365 migration and tenant setup',
@@ -243,12 +431,100 @@
                         </div>
                     @endforeach
                 </div>
+                <p class="text-blue-100 text-sm mb-6">With the right strategy and implementation, Microsoft 365 enables
+                    businesses to work smarter, collaborate more effectively, and protect critical business data while supporting modern hybrid work
+                    environments.</p>
                 <a href="/contact"
                     class="inline-flex items-center gap-2 bg-white text-blue-700 font-semibold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm">Get
                     in Touch <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke-width="1.5" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                     </svg></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-8 lg:py-10 bg-slate-50" id="useful-links">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Useful Links</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                @php
+                    $usefulLinks = [
+                        [
+                            'title' => 'Microsoft 365',
+                            'description' => 'Official Microsoft 365 website for productivity and collaboration solutions.',
+                            'href' => 'https://www.microsoft.com/en-us/microsoft-365',
+                        ],
+                        [
+                            'title' => 'Microsoft Teams',
+                            'description' => 'Learn more about Microsoft Teams for business communication.',
+                            'href' => 'https://www.microsoft.com/en-us/microsoft-teams',
+                        ],
+                        [
+                            'title' => 'Microsoft Intune',
+                            'description' => 'Cloud-based device management for your organisation.',
+                            'href' => 'https://www.microsoft.com/en-us/security/business/device-security/microsoft-intune',
+                        ],
+                        [
+                            'title' => 'Microsoft Defender',
+                            'description' => 'Advanced threat protection for your business.',
+                            'href' => 'https://www.microsoft.com/en-us/security/business/security-101/what-is-microsoft-defender',
+                        ],
+                    ];
+                @endphp
+                @foreach ($usefulLinks as $link)
+                    <div
+                        class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 relative rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                        <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-3">{{ $link['title'] }}</h3>
+                        <p class="text-slate-600 text-sm mb-4">{{ $link['description'] }}</p>
+                        <a href="{{ $link['href'] }}" target="_blank"
+                            class="text-blue-600 font-semibold text-sm hover:underline">Find Out More &rarr;</a>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 lg:py-24 bg-white" id="faq">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Frequently Asked Questions</h2>
+            <p class="text-slate-600 text-center mb-12">Common questions about Microsoft 365 Modern Workplace</p>
+            <div class="space-y-4">
+                @php
+                    $faqs = [
+                        [
+                            'question' => 'What is Microsoft 365 Modern Workplace?',
+                            'answer' => 'Microsoft 365 Modern Workplace is a cloud-first approach to how businesses work, collaborate, and stay secure. It brings together productivity tools, collaboration platforms, security, and device management into a single, integrated solution.',
+                        ],
+                        [
+                            'question' => 'How does Teams improve collaboration?',
+                            'answer' => 'Microsoft Teams provides chat, video meetings, calling, file sharing, and teamwork in one secure workspace. It integrates with all Microsoft 365 apps for seamless collaboration.',
+                        ],
+                        [
+                            'question' => 'What security features are included?',
+                            'answer' => 'Microsoft 365 includes identity protection, multi-factor authentication, conditional access policies, Microsoft Defender for threat protection, and device management through Intune.',
+                        ],
+                        [
+                            'question' => 'Can employees work from anywhere?',
+                            'answer' => 'Yes, Microsoft 365 enables employees to work from anywhere, on any device, with secure access to business data through cloud-based services.',
+                        ],
+                        [
+                            'question' => 'How does device management work?',
+                            'answer' => 'Microsoft Intune provides cloud-based device management for Windows, macOS, iOS, and Android devices from a single console, enabling centralised policy enforcement and compliance.',
+                        ],
+                    ];
+                @endphp
+                @foreach ($faqs as $faq)
+                    <div
+                        class="reveal reveal-fade-up border-2 border-blue-100 rounded-xl overflow-hidden relative">
+                        <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                        <div class="px-6 py-5">
+                            <h3 class="font-medium text-slate-900">{{ $faq['question'] }}</h3>
+                            <p class="mt-3 text-sm text-slate-600 leading-relaxed">{{ $faq['answer'] }}</p>
+                        </div>
+                    </div>
+                @endforeach
             </div>
         </div>
     </section>

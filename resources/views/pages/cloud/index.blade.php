@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title', 'Cloud Services | Bismillah Computer & Technology')
+@section('description', 'Microsoft 365, Azure, cloud migration, and cybersecurity solutions to keep your business
+    connected and secure.')
+
 @section('content')
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
@@ -58,10 +62,10 @@
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div
-                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white">
-                    <div class="h-1 bg-blue-600 rounded-t-xl -mt-6 -mx-6 mb-4 rounded-tr-2xl"
-                        style="width: calc(100% + 3rem)"></div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3"><span class="text-blue-600 mr-2">•</span>Scalability
+                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 relative rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                    <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3"><span
+                            class="text-blue-600 mr-2">&bull;</span>Scalability
                     </h3>
                     <p class="text-slate-600 leading-relaxed text-sm">Easily scale your IT resources up or down based on
                         demand. Cloud solutions allow your business to grow without the need for significant upfront
@@ -70,11 +74,11 @@
                         More →</a>
                 </div>
 
-                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white"
-                    style="transition-delay:80ms">
-                    <div class="h-1 bg-blue-600 rounded-t-xl -mt-6 -mx-6 mb-4 rounded-tr-2xl"
-                        style="width: calc(100% + 3rem)"></div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3"><span class="text-blue-600 mr-2">•</span>Accessibility
+                <div
+                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 relative rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                    <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3"><span
+                            class="text-blue-600 mr-2">&bull;</span>Accessibility
                     </h3>
                     <p class="text-slate-600 leading-relaxed text-sm">Access your data and applications from anywhere in the
                         world with an internet connection. Enable remote work and ensure your team stays connected and
@@ -83,11 +87,10 @@
                         More →</a>
                 </div>
 
-                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white"
-                    style="transition-delay:160ms">
-                    <div class="h-1 bg-blue-600 rounded-t-xl -mt-6 -mx-6 mb-4 rounded-tr-2xl"
-                        style="width: calc(100% + 3rem)"></div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3"><span class="text-blue-600 mr-2">•</span>Enhanced
+                <div
+                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 relative rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                    <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3"><span class="text-blue-600 mr-2">&bull;</span>Enhanced
                         security</h3>
                     <p class="text-slate-600 leading-relaxed text-sm">Benefit from enterprise-grade security measures
                         including encryption, multi-factor authentication, and regular security updates to protect your
@@ -96,11 +99,10 @@
                         More →</a>
                 </div>
 
-                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white"
-                    style="transition-delay:240ms">
-                    <div class="h-1 bg-blue-600 rounded-t-xl -mt-6 -mx-6 mb-4 rounded-tr-2xl"
-                        style="width: calc(100% + 3rem)"></div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3"><span class="text-blue-600 mr-2">•</span>Cost
+                <div
+                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 relative rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                    <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3"><span class="text-blue-600 mr-2">&bull;</span>Cost
                         efficiencies</h3>
                     <p class="text-slate-600 leading-relaxed text-sm">Reduce capital expenditure by moving to an operational
                         expense model. Pay only for the resources you use and eliminate the costs of maintaining on-premises
@@ -109,11 +111,10 @@
                         More →</a>
                 </div>
 
-                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white"
-                    style="transition-delay:320ms">
-                    <div class="h-1 bg-blue-600 rounded-t-xl -mt-6 -mx-6 mb-4 rounded-tr-2xl"
-                        style="width: calc(100% + 3rem)"></div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3"><span class="text-blue-600 mr-2">•</span>Business
+                <div
+                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 relative rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                    <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3"><span class="text-blue-600 mr-2">&bull;</span>Business
                         continuity</h3>
                     <p class="text-slate-600 leading-relaxed text-sm">Ensure your business operations continue uninterrupted
                         with built-in disaster recovery, automatic backups, and redundant infrastructure across multiple
@@ -122,11 +123,10 @@
                         More →</a>
                 </div>
 
-                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white"
-                    style="transition-delay:400ms">
-                    <div class="h-1 bg-blue-600 rounded-t-xl -mt-6 -mx-6 mb-4 rounded-tr-2xl"
-                        style="width: calc(100% + 3rem)"></div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3"><span class="text-blue-600 mr-2">•</span>Rapid
+                <div
+                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 relative rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                    <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3"><span class="text-blue-600 mr-2">&bull;</span>Rapid
                         deployment</h3>
                     <p class="text-slate-600 leading-relaxed text-sm">Deploy new services and applications in minutes rather
                         than weeks. Cloud platforms enable rapid prototyping and faster time-to-market for your business
@@ -135,11 +135,11 @@
                         More →</a>
                 </div>
 
-                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white"
-                    style="transition-delay:480ms">
-                    <div class="h-1 bg-blue-600 rounded-t-xl -mt-6 -mx-6 mb-4 rounded-tr-2xl"
-                        style="width: calc(100% + 3rem)"></div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3"><span class="text-blue-600 mr-2">•</span>Innovation
+                <div
+                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 relative rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                    <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3"><span
+                            class="text-blue-600 mr-2">&bull;</span>Innovation
                         and agility</h3>
                     <p class="text-slate-600 leading-relaxed text-sm">Leverage cutting-edge technologies like AI, machine
                         learning, and advanced analytics without significant investment. Stay ahead of the competition with
@@ -158,11 +158,10 @@
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <div
-                    class="reveal reveal-fade-up bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 transition-colors">
-                    <div class="h-48 overflow-hidden">
+                    class="reveal reveal-fade-up bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+                    <div class="relative h-48 w-full overflow-hidden">
                         <img src="/images/cloud/microsoft365.jpg" alt="Microsoft 365"
-                            style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                            class="object-cover" />
+                            class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-lg font-bold text-slate-900 mb-2">Microsoft 365</h3>
@@ -171,12 +170,11 @@
                     </div>
                 </div>
 
-                <div class="reveal reveal-fade-up bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 transition-colors"
-                    style="transition-delay:80ms">
-                    <div class="h-48 overflow-hidden">
+                <div
+                    class="reveal reveal-fade-up bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+                    <div class="relative h-48 w-full overflow-hidden">
                         <img src="/images/cloud/windows365.jpg" alt="Windows 365"
-                            style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                            class="object-cover" />
+                            class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-lg font-bold text-slate-900 mb-2">Windows 365</h3>
@@ -185,12 +183,11 @@
                     </div>
                 </div>
 
-                <div class="reveal reveal-fade-up bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 transition-colors"
-                    style="transition-delay:160ms">
-                    <div class="h-48 overflow-hidden">
+                <div
+                    class="reveal reveal-fade-up bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+                    <div class="relative h-48 w-full overflow-hidden">
                         <img src="/images/cloud/azure.png" alt="Microsoft Azure"
-                            style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                            class="object-cover" />
+                            class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-lg font-bold text-slate-900 mb-2">Microsoft Azure</h3>
@@ -199,12 +196,11 @@
                     </div>
                 </div>
 
-                <div class="reveal reveal-fade-up bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 transition-colors"
-                    style="transition-delay:240ms">
-                    <div class="h-48 overflow-hidden">
+                <div
+                    class="reveal reveal-fade-up bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+                    <div class="relative h-48 w-full overflow-hidden">
                         <img src="/images/cloud/entra.jpg" alt="Entra ID"
-                            style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                            class="object-cover" />
+                            class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-lg font-bold text-slate-900 mb-2">Entra ID</h3>
@@ -213,12 +209,11 @@
                     </div>
                 </div>
 
-                <div class="reveal reveal-fade-up bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 transition-colors"
-                    style="transition-delay:320ms">
-                    <div class="h-48 overflow-hidden">
+                <div
+                    class="reveal reveal-fade-up bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+                    <div class="relative h-48 w-full overflow-hidden">
                         <img src="/images/cloud/backup.jpg" alt="Data Backup"
-                            style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                            class="object-cover" />
+                            class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-lg font-bold text-slate-900 mb-2">Data Backup</h3>
@@ -227,12 +222,11 @@
                     </div>
                 </div>
 
-                <div class="reveal reveal-fade-up bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 transition-colors"
-                    style="transition-delay:400ms">
-                    <div class="h-48 overflow-hidden">
+                <div
+                    class="reveal reveal-fade-up bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+                    <div class="relative h-48 w-full overflow-hidden">
                         <img src="/images/cloud/email.jpg" alt="Email Signature Management"
-                            style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                            class="object-cover" />
+                            class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-lg font-bold text-slate-900 mb-2">Email Signature Management</h3>

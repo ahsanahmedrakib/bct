@@ -113,12 +113,12 @@
                 <img src="/images/web/web.png" alt="Web Development" class="w-full h-auto rounded-2xl">
             </div>
             <div class="reveal reveal-fade-up">
-                <x-hoverable-content-card
-                    heading="Your website represents your company."
-                    text="In today's digital age, your website is often the first impression potential customers have of your business. A well-designed, professional website builds trust, showcases your expertise, and converts visitors into loyal clients. We craft websites that not only look stunning but also deliver results."
-                    link="#"
-                    link-text="More"
-                />
+                <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                    <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                    <h2 class="text-3xl font-bold text-blue-900 mb-6 mt-2">Your website represents your company.</h2>
+                    <p class="text-slate-600 mb-6 leading-relaxed">In today's digital age, your website is often the first impression potential customers have of your business. A well-designed, professional website builds trust, showcases your expertise, and converts visitors into loyal clients. We craft websites that not only look stunning but also deliver results.</p>
+                    <a href="#" class="text-blue-600 font-medium flex items-center hover:text-blue-800">More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+                </div>
             </div>
         </div>
     </div>
@@ -129,12 +129,12 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div class="reveal reveal-fade-up order-2 lg:order-1">
-                <x-hoverable-content-card
-                    heading="Keeping you online, without the hassle."
-                    text="Reliable hosting and domain management are the backbone of your online presence. We handle all the technical complexities so you can focus on what matters most &mdash; running your business. From fast load times to secure connections, we keep your website running smoothly around the clock."
-                    link="#"
-                    link-text="More"
-                />
+                <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                    <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                    <h2 class="text-3xl font-bold text-blue-900 mb-6 mt-2">Keeping you online, without the hassle.</h2>
+                    <p class="text-slate-600 mb-6 leading-relaxed">Reliable hosting and domain management are the backbone of your online presence. We handle all the technical complexities so you can focus on what matters most &mdash; running your business. From fast load times to secure connections, we keep your website running smoothly around the clock.</p>
+                    <a href="#" class="text-blue-600 font-medium flex items-center hover:text-blue-800">More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+                </div>
             </div>
             <div class="reveal reveal-fade-up order-1 lg:order-2">
                 <img src="/images/web/seo.png" alt="SEO" class="w-full h-auto rounded-2xl">
