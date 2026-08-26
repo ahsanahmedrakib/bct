@@ -11,25 +11,30 @@
             class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">Microsoft 365
-                    <span class="text-brand-blue">Cyber Security</span> Business Protection
+                    <br/>
+                    <span class="text-blue-600 block mt-2">Cyber Security</span>
                 </h1>
                 <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">In today's
                     digital-first world, cybersecurity is no longer optional — it's a necessity. Businesses of all sizes face
                     increasingly sophisticated threats, making robust security solutions critical for safeguarding sensitive
                     data. Microsoft 365 stands out as a comprehensive suite designed to not only enhance productivity but also
                     provide top-tier cybersecurity features.</p>
-                <div class="flex flex-wrap gap-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 md:w-3/4 w-full">
                     <a href="#overview"
-                        class="inline-flex items-center gap-2 bg-brand-blue text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-700 transition-colors text-sm">OVERVIEW</a>
+                        class="group flex cursor-pointer items-center justify-between px-6 py-4 text-white text-sm font-semibold rounded-xl shadow-md transition-all bg-navy hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">OVERVIEW <svg class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6" /></svg></a>
                     <a href="#features"
-                        class="inline-flex items-center gap-2 bg-white text-brand-blue border-2 border-brand-blue font-semibold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm">FEATURES</a>
+                        class="group flex cursor-pointer items-center justify-between px-6 py-4 text-white text-sm font-semibold rounded-xl shadow-md transition-all bg-navy hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">FEATURES <svg class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6" /></svg></a>
                     <a href="#approach"
-                        class="inline-flex items-center gap-2 bg-white text-brand-blue border-2 border-brand-blue font-semibold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm">OUR
-                        APPROACH</a>
+                        class="group flex cursor-pointer items-center justify-between px-6 py-4 text-white text-sm font-semibold rounded-xl shadow-md transition-all bg-navy hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">OUR APPROACH <svg class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6" /></svg></a>
+                </div>
+                <div class="pt-6 border-t border-slate-200/60 flex flex-col items-start gap-3">
+                    <p class="text-sky-700 font-semibold text-sm">Need help?</p>
+                    <a href="/contact"
+                        class="px-6 py-2.5 bg-white border border-slate-200 text-sky-700 text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer transition-colors hover:bg-navy-active hover:text-white">Contact Us</a>
                 </div>
             </div>
             <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
-                <img alt="Microsoft 365 Cyber Security" loading="lazy" class="rounded-lg w-full max-w-md lg:max-w-lg"
+                <img alt="Microsoft 365 Cyber Security" loading="lazy" class="rounded-lg w-full"
                     src="/images/it-support/cyber-security/cloud-and-network/hero.png" />
             </div>
         </div>
@@ -46,9 +51,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="flex justify-center h-75">
                 <img src="/images/cloud/cyber-security/m365-security/section-1.jpg" alt="Microsoft 365 Cyber Security"
-                    class="object-cover rounded-xl" loading="lazy" />
+                    class="w-full object-cover rounded-xl" loading="lazy" />
             </div>
-            <div class="reveal reveal-fade-up bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative h-full">
+            <div class="reveal reveal-fade-up bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 transition-all relative h-full">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                 <span class="text-blue-500 font-bold text-sm tracking-wide mb-3 block">Microsoft 365 Cyber Security</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6 leading-tight">Why Microsoft 365 Cyber Security Matters</h2>
@@ -273,7 +278,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="reveal reveal-fade-up bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative h-full">
+                <div class="reveal reveal-fade-up bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 transition-all relative h-full">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <span class="text-blue-500 font-bold text-sm tracking-wide mb-3 block">Identity Security</span>
                     <h3 class="text-xl font-bold text-slate-800 mb-4">Password Policy & Identity Security</h3>
@@ -315,7 +320,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                         </svg></a>
                 </div>
-                <div class="reveal reveal-fade-up bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative h-full">
+                <div class="reveal reveal-fade-up bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 transition-all relative h-full">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <span class="text-blue-500 font-bold text-sm tracking-wide mb-3 block">Compliance & Governance</span>
                     <h3 class="text-xl font-bold text-slate-800 mb-4">Data Protection & Compliance</h3>
@@ -556,22 +561,47 @@
                     ];
                 @endphp
                 @foreach ($faqs as $faq)
-                    <div class="reveal reveal-fade-up border-2 border-blue-100 rounded-xl overflow-hidden relative">
+                    <div class="faq-item border-2 border-blue-100 rounded-xl overflow-hidden relative">
                         <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                        <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.chevron').classList.toggle('rotate-180')"
+                        <button onclick="toggleFaq(this)"
                             class="w-full flex justify-between items-center px-6 py-5 text-left">
                             <span class="font-medium text-slate-900 pr-4">{{ $faq['question'] }}</span>
-                            <svg class="w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300 chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <svg class="faq-chevron w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                             </svg>
                         </button>
-                        <div class="hidden px-6 pb-5">
-                            <p class="text-sm text-slate-600 leading-relaxed">{{ $faq['answer'] }}</p>
+                        <div class="faq-answer grid transition-all duration-300 grid-rows-[0fr]">
+                            <div class="overflow-hidden">
+                                <p class="px-6 pb-5 text-sm text-slate-600 leading-relaxed">{{ $faq['answer'] }}</p>
+                            </div>
                         </div>
                     </div>
                 @endforeach
             </div>
         </div>
     </section>
+
+    <script>
+        function toggleFaq(btn) {
+            const item = btn.closest('.faq-item');
+            const answer = item.querySelector('.faq-answer');
+            const chevron = item.querySelector('.faq-chevron');
+            const isOpen = answer.classList.contains('grid-rows-[1fr]');
+
+            document.querySelectorAll('.faq-answer').forEach(el => {
+                el.classList.remove('grid-rows-[1fr]');
+                el.classList.add('grid-rows-[0fr]');
+            });
+            document.querySelectorAll('.faq-chevron').forEach(el => {
+                el.classList.remove('rotate-180');
+            });
+
+            if (!isOpen) {
+                answer.classList.remove('grid-rows-[0fr]');
+                answer.classList.add('grid-rows-[1fr]');
+                chevron.classList.add('rotate-180');
+            }
+        }
+    </script>
 
 @endsection
