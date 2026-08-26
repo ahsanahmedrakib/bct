@@ -92,50 +92,52 @@
   <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
     <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
       <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
-        <span class="text-blue-600">IT Support Services</span><br>
-        <span class="text-blue-900">for Professionals</span>
+        IT Support Services <br>
+        <span class="text-blue-600 block mt-2"> for Professionals</span>
       </h1>
       <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">We provide enterprise-grade IT support and secure digital workspaces for small to medium businesses. Focus on your growth while we handle the technology.</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 md:w-3/4 w-full">
+        <a href="#partners" class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg text-white text-sm font-semibold rounded-xl shadow-md transition-all">
+          Our Partners
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform"><path d="m9 18 6-6-6-6"></path></svg>
+        </a>
+        <a href="#capabilities" class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg text-white text-sm font-semibold rounded-xl shadow-md transition-all">
+          Our Capabilities
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform"><path d="m9 18 6-6-6-6"></path></svg>
+        </a>
+        <a href="#security" class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg text-white text-sm font-semibold rounded-xl shadow-md transition-all">
+          Cyber Security
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform"><path d="m9 18 6-6-6-6"></path></svg>
+        </a>
+        <a href="#networking" class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg text-white text-sm font-semibold rounded-xl shadow-md transition-all">
+          Servers &amp; Networking
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform"><path d="m9 18 6-6-6-6"></path></svg>
+        </a>
+        <a href="#it" class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg text-white text-sm font-semibold rounded-xl shadow-md transition-all">
+          IT Services
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform"><path d="m9 18 6-6-6-6"></path></svg>
+        </a>
+        <a href="#repair" class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg text-white text-sm font-semibold rounded-xl shadow-md transition-all">
+          Device Repair
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform"><path d="m9 18 6-6-6-6"></path></svg>
+        </a>
+      </div>
+
+      <div class="pt-6 border-t border-slate-200/60 flex flex-col items-start gap-3">
+        <p class="text-sky-700 font-semibold text-sm">Need help?</p>
+        <a href="{{ route('contact') }}" class="px-6 py-2.5 bg-white border border-sky-700 text-sky-700 text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer hover:bg-navy-active hover:text-white transition-colors">
+          Contact Us
+        </a>
+      </div>
     </div>
     <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
       <img alt="IT Support Hero" loading="lazy" class="rounded-lg" src="/images/it-support/hero.png" />
     </div>
   </div>
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mt-8">
-    <div class="bg-navy rounded-xl p-6">
-      <div class="grid grid-cols-2 gap-3">
-        <a href="#partners" class="flex items-center justify-center px-4 py-3 bg-white/10 hover:bg-white/20 rounded-lg text-white font-medium text-sm transition-colors">
-          Our Partners
-        </a>
-        <a href="#capabilities" class="flex items-center justify-center px-4 py-3 bg-white/10 hover:bg-white/20 rounded-lg text-white font-medium text-sm transition-colors">
-          Our Capabilities
-        </a>
-        <a href="#security" class="flex items-center justify-center px-4 py-3 bg-white/10 hover:bg-white/20 rounded-lg text-white font-medium text-sm transition-colors">
-          Cyber Security
-        </a>
-        <a href="#networking" class="flex items-center justify-center px-4 py-3 bg-white/10 hover:bg-white/20 rounded-lg text-white font-medium text-sm transition-colors">
-          Servers &amp; Networking
-        </a>
-        <a href="#it" class="flex items-center justify-center px-4 py-3 bg-white/10 hover:bg-white/20 rounded-lg text-white font-medium text-sm transition-colors">
-          IT Services
-        </a>
-        <a href="#repair" class="flex items-center justify-center px-4 py-3 bg-white/10 hover:bg-white/20 rounded-lg text-white font-medium text-sm transition-colors">
-          Device Repair
-        </a>
-      </div>
-    </div>
-
-    <div class="mt-8 flex items-center gap-4">
-      <span class="text-slate-500 text-sm font-medium">Need help?</span>
-      <a href="{{ route('contact') }}" class="inline-flex items-center px-6 py-3 rounded-full bg-blue-600 text-white font-semibold text-sm hover:bg-blue-700 transition-colors duration-300 shadow-lg shadow-blue-500/25">
-        Contact Us
-      </a>
-    </div>
-  </div>
-
   <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-    <svg class="relative block w-full h-16" viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <svg class="relative block w-full h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
       <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C73.23,28.79,158.46,59.39,235.9,67.65,264.44,70.67,293.12,61.7,321.39,56.44Z" fill="#f8fafc"></path>
     </svg>
   </div>
