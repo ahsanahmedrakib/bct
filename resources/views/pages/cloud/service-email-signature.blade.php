@@ -454,18 +454,46 @@
                     ];
                 @endphp
                 @foreach ($faqs as $faq)
-                    <div
-                        class="reveal reveal-fade-up border-2 border-blue-100 rounded-xl overflow-hidden relative">
+                    <div class="reveal reveal-fade-up border-2 border-blue-100 rounded-xl overflow-hidden relative faq-item">
                         <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                        <div class="px-6 py-5">
-                            <h3 class="font-medium text-slate-900">{{ $faq['question'] }}</h3>
-                            <p class="mt-3 text-sm text-slate-600 leading-relaxed">{{ $faq['answer'] }}</p>
+                        <button onclick="toggleFaq(this)"
+                            class="w-full flex justify-between items-center px-6 py-5 text-left cursor-pointer hover:bg-slate-50 transition-colors">
+                            <span class="font-medium text-slate-900 pr-4">{{ $faq['question'] }}</span>
+                            <svg class="faq-chevron w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                            <p class="px-6 pb-5 text-sm text-slate-600 leading-relaxed">{{ $faq['answer'] }}</p>
                         </div>
                     </div>
                 @endforeach
             </div>
         </div>
     </section>
+
+    <script>
+        function toggleFaq(btn) {
+            const item = btn.closest('.faq-item');
+            const answer = item.querySelector('.faq-answer');
+            const chevron = item.querySelector('.faq-chevron');
+            const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+
+            document.querySelectorAll('.faq-answer').forEach(el => {
+                el.style.maxHeight = '0px';
+            });
+            document.querySelectorAll('.faq-chevron').forEach(el => {
+                el.classList.remove('rotate-180');
+            });
+
+            if (!isOpen) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                chevron.classList.add('rotate-180');
+            }
+        }
+    </script>
 
 
 @endsection
