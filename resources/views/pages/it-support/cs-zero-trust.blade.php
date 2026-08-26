@@ -14,6 +14,13 @@
                         <span class="text-blue-600 block mt-2">Framework</span>
                     </h1>
                     <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">Endpoint security protects devices like computers, smartphones, and servers from cyber threats. It includes antivirus, anti-malware, firewalls, and real-time threat detection to prevent unauthorized access, malware, and data breaches. This protection is vital for securing individual devices and the broader network they connect to.</p>
+
+                    <div class="pt-6 border-t border-slate-200/60 flex flex-col items-start gap-3">
+                        <p class="text-sky-700 font-semibold text-sm">Need help?</p>
+                        <a href="/contact" class="px-6 py-2.5 bg-white border border-brand text-sky-700 text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer hover:bg-navy hover:text-white transition-colors">
+                            Contact Us
+                        </a>
+                    </div>
                 </div>
                 <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
                     <img src="/images/it-support/cyber-security/cloud-and-network/hero.png" alt="Zero Trust Framework Hero" height="400" width="600" class="rounded-lg" />
@@ -72,6 +79,7 @@
             <div class="reveal reveal-fade-up grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-justify">
                 {{-- Principle 1 --}}
                 <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                    <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <div class="space-y-3">
                         <div class="flex items-center gap-2 border-b border-blue-100 pb-2">
                             <h3 class="text-sm sm:text-base font-bold text-slate-800">
@@ -89,6 +97,7 @@
 
                 {{-- Principle 2 --}}
                 <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                    <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <div class="space-y-3">
                         <div class="flex items-center gap-2 border-b border-blue-100 pb-2">
                             <h3 class="text-sm sm:text-base font-bold text-slate-800">
@@ -106,6 +115,7 @@
 
                 {{-- Principle 3 --}}
                 <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                    <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <div class="space-y-3">
                         <div class="flex items-center gap-2 border-b border-blue-100 pb-2">
                             <h3 class="text-sm sm:text-base font-bold text-slate-800">
