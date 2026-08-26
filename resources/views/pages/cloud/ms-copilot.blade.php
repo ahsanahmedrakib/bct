@@ -9,13 +9,46 @@
             class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">Microsoft 365
-                    <span class="text-blue-600 block mt-2">Co-Pilot</span>
+                    <span class="text-brand-blue block mt-2">Co-Pilot</span>
                 </h1>
                 <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">Microsoft 365 Copilot is
                     an AI-powered tool designed to enhance productivity and efficiency across Microsoft 365 applications, such as
                     Word, Excel, PowerPoint, Outlook, and Teams. Leveraging the power of large language models combined with your
                     organisation's data in Microsoft Graph, Copilot assists users by automating repetitive tasks, generating
                     content, and offering intelligent insights.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 md:w-3/4 w-full">
+                    <a href="#overview"
+                        class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md transition-all hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">
+                        OVERVIEW
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </a>
+                    <a href="#features"
+                        class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md transition-all hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">
+                        FEATURES
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </a>
+                    <a href="#copilot-chat"
+                        class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md transition-all hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">
+                        COPILOT CHAT
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="pt-6 border-t border-slate-200/60 flex flex-col items-start gap-3">
+                    <p class="text-sky-700 font-semibold text-sm">Need help?</p>
+                    <a href="{{ route('contact') }}"
+                        class="px-6 py-2.5 bg-white border border-brand text-sky-700 text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer hover:bg-navy hover:text-white transition-colors">
+                        Contact Us
+                    </a>
+                </div>
             </div>
             <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
                 <img alt="Microsoft Copilot" loading="lazy" class="rounded-lg"
@@ -147,9 +180,10 @@
             @endphp
             <div class="space-y-4">
                 @foreach ($copilotFeatures as $feature)
-                    <div class="border-2 border-blue-100 rounded-xl overflow-hidden relative">
+                    <div class="border-2 border-blue-100 rounded-xl overflow-hidden relative"
+                        x-data="{ open: false }">
                         <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                        <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.chevron').classList.toggle('rotate-180')"
+                        <button @click="open = !open"
                             class="w-full flex justify-between items-center px-6 py-5 text-left cursor-pointer hover:bg-slate-50 transition-colors">
                             <div class="flex items-center gap-3">
                                 <span class="text-blue-600 font-bold text-sm shrink-0">
@@ -157,20 +191,24 @@
                                 </span>
                                 <span class="font-medium text-slate-900">{{ $feature['category'] }}</span>
                             </div>
-                            <svg class="chevron w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor"
+                                class="w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300"
+                                :class="{ 'rotate-180': open }">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                             </svg>
                         </button>
-                        <div class="hidden">
-                            <div class="px-6 pb-5 space-y-4">
-                                @foreach ($feature['items'] as $item)
-                                    <div>
-                                        <h4 class="text-sm font-bold text-slate-900 mb-1">{{ $item['title'] }}</h4>
-                                        <p class="text-sm text-slate-600 text-justify">{{ $item['desc'] }}</p>
-                                    </div>
-                                @endforeach
+                        <div class="grid transition-all duration-300 ease-in-out"
+                            :class="open ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                            <div class="overflow-hidden">
+                                <div class="px-6 pb-5 space-y-4">
+                                    @foreach ($feature['items'] as $item)
+                                        <div>
+                                            <h4 class="text-sm font-bold text-slate-900 mb-1">{{ $item['title'] }}</h4>
+                                            <p class="text-sm text-slate-600 text-justify">{{ $item['desc'] }}</p>
+                                        </div>
+                                    @endforeach
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -226,30 +264,35 @@
                 @endphp
                 <div class="space-y-4">
                     @foreach ($copilotChatFeatures as $feature)
-                        <div class="border-2 border-blue-100 hover:border-blue-300 rounded-xl overflow-hidden relative transition-all">
+                        <div class="border-2 border-blue-100 hover:border-blue-300 rounded-xl overflow-hidden relative transition-all"
+                            x-data="{ open: false }">
                             <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                            <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.chevron').classList.toggle('rotate-180')"
+                            <button @click="open = !open"
                                 class="w-full flex justify-between items-center px-6 py-4 text-left cursor-pointer hover:bg-slate-50 transition-colors">
                                 <span class="font-medium text-slate-900 text-sm">{{ $feature['title'] }}</span>
-                                <svg class="chevron w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor"
+                                    class="w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300"
+                                    :class="{ 'rotate-180': open }">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                 </svg>
                             </button>
-                            <div class="hidden">
-                                <div class="px-6 pb-4">
-                                    <p class="text-sm text-slate-600 mb-3 text-justify">{{ $feature['desc'] }}</p>
-                                    <ul class="space-y-2">
-                                        @foreach ($feature['items'] as $item)
-                                            <li class="flex items-start gap-2">
-                                                <svg class="text-blue-600 shrink-0 mt-0.5 w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                </svg>
-                                                <span class="text-xs text-slate-600">{{ $item }}</span>
-                                            </li>
-                                        @endforeach
-                                    </ul>
+                            <div class="grid transition-all duration-300 ease-in-out"
+                                :class="open ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                <div class="overflow-hidden">
+                                    <div class="px-6 pb-4">
+                                        <p class="text-sm text-slate-600 mb-3 text-justify">{{ $feature['desc'] }}</p>
+                                        <ul class="space-y-2">
+                                            @foreach ($feature['items'] as $item)
+                                                <li class="flex items-start gap-2">
+                                                    <svg class="text-blue-600 shrink-0 mt-0.5 w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                    </svg>
+                                                    <span class="text-xs text-slate-600">{{ $item }}</span>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -257,7 +300,7 @@
                 </div>
             </div>
             <div class="flex justify-center order-1 lg:order-2">
-                <img src="/images/cloud/microsoft-solutions/copilot/section.png" alt="Microsoft Copilot Chat"
+                <img src="/images/cloud/microsoft-solutions/copilot/section-chat.svg" alt="Microsoft Copilot Chat"
                     class="object-cover rounded-2xl" loading="lazy" />
             </div>
         </div>
@@ -305,30 +348,35 @@
                 @endphp
                 <div class="space-y-4">
                     @foreach ($copilotPagesFeatures as $feature)
-                        <div class="border-2 border-blue-100 hover:border-blue-300 rounded-xl overflow-hidden relative transition-all">
+                        <div class="border-2 border-blue-100 hover:border-blue-300 rounded-xl overflow-hidden relative transition-all"
+                            x-data="{ open: false }">
                             <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                            <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.chevron').classList.toggle('rotate-180')"
+                            <button @click="open = !open"
                                 class="w-full flex justify-between items-center px-6 py-4 text-left cursor-pointer hover:bg-slate-50 transition-colors">
                                 <span class="font-medium text-slate-900 text-sm">{{ $feature['title'] }}</span>
-                                <svg class="chevron w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor"
+                                    class="w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300"
+                                    :class="{ 'rotate-180': open }">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                 </svg>
                             </button>
-                            <div class="hidden">
-                                <div class="px-6 pb-4">
-                                    <p class="text-sm text-slate-600 mb-3 text-justify">{{ $feature['desc'] }}</p>
-                                    <ul class="space-y-2">
-                                        @foreach ($feature['items'] as $item)
-                                            <li class="flex items-start gap-2">
-                                                <svg class="text-blue-600 shrink-0 mt-0.5 w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                </svg>
-                                                <span class="text-xs text-slate-600">{{ $item }}</span>
-                                            </li>
-                                        @endforeach
-                                    </ul>
+                            <div class="grid transition-all duration-300 ease-in-out"
+                                :class="open ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                <div class="overflow-hidden">
+                                    <div class="px-6 pb-4">
+                                        <p class="text-sm text-slate-600 mb-3 text-justify">{{ $feature['desc'] }}</p>
+                                        <ul class="space-y-2">
+                                            @foreach ($feature['items'] as $item)
+                                                <li class="flex items-start gap-2">
+                                                    <svg class="text-blue-600 shrink-0 mt-0.5 w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                    </svg>
+                                                    <span class="text-xs text-slate-600">{{ $item }}</span>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -336,7 +384,7 @@
                 </div>
             </div>
             <div class="flex justify-center order-1 lg:order-2">
-                <img src="/images/cloud/microsoft-solutions/copilot/section.png" alt="Microsoft Copilot Pages"
+                <img src="/images/cloud/microsoft-solutions/copilot/section-pages.svg" alt="Microsoft Copilot Pages"
                     class="object-cover rounded-2xl" loading="lazy" />
             </div>
         </div>
@@ -384,30 +432,35 @@
                 @endphp
                 <div class="space-y-4">
                     @foreach ($imageGenFeatures as $feature)
-                        <div class="border-2 border-blue-100 hover:border-blue-300 rounded-xl overflow-hidden relative transition-all">
+                        <div class="border-2 border-blue-100 hover:border-blue-300 rounded-xl overflow-hidden relative transition-all"
+                            x-data="{ open: false }">
                             <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                            <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.chevron').classList.toggle('rotate-180')"
+                            <button @click="open = !open"
                                 class="w-full flex justify-between items-center px-6 py-4 text-left cursor-pointer hover:bg-slate-50 transition-colors">
                                 <span class="font-medium text-slate-900 text-sm">{{ $feature['title'] }}</span>
-                                <svg class="chevron w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor"
+                                    class="w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300"
+                                    :class="{ 'rotate-180': open }">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                 </svg>
                             </button>
-                            <div class="hidden">
-                                <div class="px-6 pb-4">
-                                    <p class="text-sm text-slate-600 mb-3 text-justify">{{ $feature['desc'] }}</p>
-                                    <ul class="space-y-2">
-                                        @foreach ($feature['items'] as $item)
-                                            <li class="flex items-start gap-2">
-                                                <svg class="text-blue-600 shrink-0 mt-0.5 w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                </svg>
-                                                <span class="text-xs text-slate-600">{{ $item }}</span>
-                                            </li>
-                                        @endforeach
-                                    </ul>
+                            <div class="grid transition-all duration-300 ease-in-out"
+                                :class="open ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                <div class="overflow-hidden">
+                                    <div class="px-6 pb-4">
+                                        <p class="text-sm text-slate-600 mb-3 text-justify">{{ $feature['desc'] }}</p>
+                                        <ul class="space-y-2">
+                                            @foreach ($feature['items'] as $item)
+                                                <li class="flex items-start gap-2">
+                                                    <svg class="text-blue-600 shrink-0 mt-0.5 w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                    </svg>
+                                                    <span class="text-xs text-slate-600">{{ $item }}</span>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -415,7 +468,7 @@
                 </div>
             </div>
             <div class="flex justify-center order-1 lg:order-2">
-                <img src="/images/cloud/microsoft-solutions/copilot/section.png" alt="Microsoft Copilot Image Generator"
+                <img src="/images/cloud/microsoft-solutions/copilot/section-image.svg" alt="Microsoft Copilot Image Generator"
                     class="object-cover rounded-2xl" loading="lazy" />
             </div>
         </div>
@@ -542,23 +595,43 @@
             @endphp
             <div class="space-y-4 mx-auto">
                 @foreach ($faqs as $faq)
-                    <div class="reveal reveal-fade-up border-2 border-blue-100 rounded-xl overflow-hidden relative">
+                    <div class="reveal reveal-fade-up border-2 border-blue-100 rounded-xl overflow-hidden relative faq-item">
                         <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                        <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.chevron').classList.toggle('rotate-180')"
+                        <button onclick="toggleFaq(this)"
                             class="w-full flex justify-between items-center px-6 py-5 text-left cursor-pointer hover:bg-slate-50 transition-colors">
                             <span class="font-medium text-slate-900 pr-4">{{ $faq['question'] }}</span>
-                            <svg class="chevron w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            <svg class="faq-chevron w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                                 stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                             </svg>
                         </button>
-                        <div class="hidden">
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
                             <p class="px-6 pb-5 text-sm text-slate-600 leading-relaxed">{{ $faq['answer'] }}</p>
                         </div>
                     </div>
                 @endforeach
             </div>
+            <script>
+                function toggleFaq(btn) {
+                    const item = btn.closest('.faq-item');
+                    const answer = item.querySelector('.faq-answer');
+                    const chevron = item.querySelector('.faq-chevron');
+                    const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+
+                    document.querySelectorAll('.faq-answer').forEach(el => {
+                        el.style.maxHeight = '0px';
+                    });
+                    document.querySelectorAll('.faq-chevron').forEach(el => {
+                        el.classList.remove('rotate-180');
+                    });
+
+                    if (!isOpen) {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        chevron.classList.add('rotate-180');
+                    }
+                }
+            </script>
         </div>
     </section>
 
