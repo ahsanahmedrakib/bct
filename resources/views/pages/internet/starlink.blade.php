@@ -4,19 +4,31 @@
 
 @section('content')
 
-    <section class="relative bg-linear-to-br from-hero-gradient to-white pt-28 pb-20 lg:pt-36 lg:pb-28 overflow-hidden">
+    <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center relative z-10">
-            <div class="space-y-6">
-                <span
-                    class="inline-block px-4 py-1.5 bg-brand-blue/10 text-brand-blue text-sm font-semibold rounded-full">Internet</span>
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
-                    Starlink Satellite Internet</h1>
-                <p class="text-lg md:text-xl text-slate-700 leading-relaxed">High-speed satellite internet with Starlink for
+            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
+                    Starlink Satellite Internet
+                    <span class="text-blue-600 block mt-2">Internet Without Boundaries</span>
+                </h1>
+                <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">High-speed satellite internet with Starlink for
                     rural, remote, and regional areas across Bangladesh.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 md:w-3/4 w-full">
+                    <a href="#features"
+                        class="group flex cursor-pointer items-center justify-between px-6 py-4 text-white text-sm font-semibold rounded-xl shadow-md transition-all bg-navy hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">EXPLORE FEATURES <svg class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6" /></svg></a>
+                    <a href="#contact"
+                        class="group flex cursor-pointer items-center justify-between px-6 py-4 text-white text-sm font-semibold rounded-xl shadow-md transition-all bg-navy hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">GET A QUOTE <svg class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6" /></svg></a>
+                </div>
+                <div class="pt-6 border-t border-slate-200/60 flex flex-col items-start gap-3">
+                    <p class="text-sky-700 font-semibold text-sm">Need help?</p>
+                    <a href="tel:+8801972721388"
+                        class="px-6 py-2.5 bg-white border border-slate-200 text-sky-700 text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer transition-colors hover:bg-navy-active hover:text-white">Call
+                        Us</a>
+                </div>
             </div>
-            <div class="flex justify-center lg:justify-end">
-                <img alt="Starlink Satellite Internet" loading="lazy" class="rounded-2xl shadow-lg max-w-md w-full"
+            <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
+                <img alt="Starlink Satellite Internet" loading="lazy" class="rounded-lg w-full"
                     src="/images/internet/hero.png" />
             </div>
         </div>
