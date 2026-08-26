@@ -67,7 +67,7 @@
                 </div>
                 <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
                     <img src="/images/it-support/cyber-security/incident-response/hero.jpg" alt="Incident Response Hero"
-                        height="400" width="600" class="rounded-lg" />
+                        height="400" width="600" class="rounded-lg w-full max-w-md lg:max-w-lg" />
                 </div>
             </div>
             <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">

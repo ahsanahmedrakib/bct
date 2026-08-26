@@ -17,7 +17,7 @@
                     commitment to quality, creativity, and delivering results for our clients.</p>
             </div>
             <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
-                <img alt="Our Portfolio" loading="lazy" class="rounded-lg" src="/images/web/web.png" />
+                <img alt="Our Portfolio" loading="lazy" class="rounded-lg w-full max-w-md lg:max-w-lg" src="/images/web/web.png" />
             </div>
         </div>
         <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">

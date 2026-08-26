@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
-                <img alt="Defence Industry Security Program" loading="lazy" class="rounded-lg"
+                <img alt="Defence Industry Security Program" loading="lazy" class="rounded-lg w-full max-w-md lg:max-w-lg"
                     src="/images/cloud/cyber-security/disp/bg.png" />
             </div>
         </div>

@@ -11,13 +11,46 @@
             class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">Microsoft
-                    <span class="text-blue-600 block mt-2"> Intune</span></h1>
+                    <span class="text-brand-blue block mt-2"> Intune</span></h1>
                 <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">Microsoft Intune is a
                     cloud-based endpoint management solution that helps organisations manage and secure devices, apps, and
                     data across their entire fleet — whether corporate-owned or personal.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 md:w-3/4 w-full">
+                    <a href="#overview"
+                        class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md transition-all hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">
+                        OVERVIEW
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </a>
+                    <a href="#features"
+                        class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md transition-all hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">
+                        FEATURES
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </a>
+                    <a href="#all-features"
+                        class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md transition-all hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">
+                        ALL FEATURES
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="pt-6 border-t border-slate-200/60 flex flex-col items-start gap-3">
+                    <p class="text-sky-700 font-semibold text-sm">Need help?</p>
+                    <a href="{{ route('contact') }}"
+                        class="px-6 py-2.5 bg-white border border-brand text-sky-700 text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer hover:bg-navy hover:text-white transition-colors">
+                        Contact Us
+                    </a>
+                </div>
             </div>
             <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
-                <img alt="Microsoft Intune" loading="lazy" class="rounded-lg"
+                <img alt="Microsoft Intune" loading="lazy" class="rounded-lg w-full max-w-md lg:max-w-lg"
                     src="/images/cloud/microsoft-solutions/intune/intune.svg" />
             </div>
         </div>
@@ -35,7 +68,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="reveal reveal-fade-up flex justify-center">
                 <img src="/images/cloud/microsoft-solutions/intune/section.svg" alt="Microsoft Intune"
-                    class="object-cover" loading="lazy" />
+                    class="w-full max-w-lg object-cover" loading="lazy" />
             </div>
             <div class="reveal reveal-fade-up bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 relative h-full">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>

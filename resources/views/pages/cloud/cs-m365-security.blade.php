@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
-                <img alt="Microsoft 365 Cyber Security" loading="lazy" class="rounded-lg"
+                <img alt="Microsoft 365 Cyber Security" loading="lazy" class="rounded-lg w-full max-w-md lg:max-w-lg"
                     src="/images/it-support/cyber-security/cloud-and-network/hero.png" />
             </div>
         </div>

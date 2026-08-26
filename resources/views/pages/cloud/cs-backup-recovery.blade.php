@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
-                <img alt="Backup and Recovery Solutions" loading="lazy" class="rounded-lg"
+                <img alt="Backup and Recovery Solutions" loading="lazy" class="rounded-lg w-full max-w-md lg:max-w-lg"
                     src="/images/cloud/cyber-security/backup-recovery/bg.png" />
             </div>
         </div>

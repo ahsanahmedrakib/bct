@@ -16,7 +16,7 @@
                     and always-current computing environment without the need for traditional on-premise hardware.</p>
             </div>
             <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
-                <img alt="Windows 365" loading="lazy" class="rounded-lg"
+                <img alt="Windows 365" loading="lazy" class="rounded-lg w-full max-w-md lg:max-w-lg"
                     src="/images/cloud/microsoft-solutions/windows-365/windows-365.png" />
             </div>
         </div>
