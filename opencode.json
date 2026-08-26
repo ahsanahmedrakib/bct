@@ -1,0 +1,14 @@
+{
+    "$schema": "https://opencode.ai/config.json",
+    "references": {
+        "bismillah-it": {
+            "repository": "ahsanahmedrakib/bismillah-it",
+            "branch": "main",
+            "description": "Bismillah IT project - use for cross-referencing features, code patterns, and implementation details"
+        },
+        "bismillah-it-local": {
+            "path": "C:\\Users\\Rakib\\Desktop\\Projects\\bismillah-it",
+            "description": "Local Bismillah IT project directory"
+        }
+    }
+}

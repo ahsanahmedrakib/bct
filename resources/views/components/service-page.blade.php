@@ -5,7 +5,7 @@
 
 @section('content')
 
-<section class="relative bg-gradient-to-br from-hero-gradient to-white pt-28 pb-20 lg:pt-36 lg:pb-28 overflow-hidden">
+<section class="relative bg-linear-to-br from-hero-gradient to-white pt-28 pb-20 lg:pt-36 lg:pb-28 overflow-hidden">
     <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center relative z-10">
         <div class="space-y-6">
             @if(!empty($tagline))
@@ -156,6 +156,6 @@
     @endforeach
 @endif
 
-@include('components.cta')
+
 
 @endsection

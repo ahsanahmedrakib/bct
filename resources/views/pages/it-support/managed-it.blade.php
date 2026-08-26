@@ -1,95 +1,228 @@
 @extends('layouts.app')
 
+@section('title', 'Managed IT Services | Bismillah Computer & Technology')
+@section('description', 'Proactive managed IT services including monitoring, maintenance, helpdesk, and strategic IT
+    planning for your business.')
+
 @section('content')
-<section class="relative bg-gradient-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
-  <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
-    <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
-      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">Managed IT Services</h1>
-      <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">Focus on your business while we handle your IT. Our managed services ensure your technology runs smoothly and efficiently.</p>
-    </div>
-    <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
-      <img alt="Managed IT Services" loading="lazy" class="rounded-lg" src="/images/it-support/managed-it.png"/>
-    </div>
-  </div>
-  <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-    <svg class="relative block w-full h-16" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C73.23,28.79,158.46,59.39,235.9,67.65,264.44,70.67,293.12,61.7,321.39,56.44Z" fill="#f8fafc"></path>
-    </svg>
-  </div>
-</section>
+    <main class="flex min-h-screen flex-col font-sans text-slate-800 bg-slate-50">
 
-<section class="py-24 bg-slate-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-16 reveal reveal-fade-up">
-      <h2 class="text-3xl md:text-4xl font-bold text-slate-900">What We Offer</h2>
-      <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Comprehensive managed IT services tailored to your business needs.</p>
-    </div>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {{-- HERO SECTION --}}
+        <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
+            <div
+                class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+                <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
+                    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
+                        Managed Services that reduce downtime
+                        <span class="text-blue-600 block mt-2">and enhance productivity</span>
+                    </h1>
+                    <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">Collaborate with
+                        Bismillah IT to craft, deploy, and oversee your IT solution. Our solutions are designed to fuel your
+                        success, foster growth, and ensure business continuity by equipping your team with cutting-edge
+                        technology. We provide a diverse array of IT solutions, encompassing Cloud, Networking, WiFi, and
+                        Server infrastructure solutions, all supported by top-tier Managed IT Services.</p>
+                    <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">If your current IT
+                        solution falls short of meeting your business's competitive needs and growth aspirations, reach out
+                        to a Bismillah IT consultant to explore enhancements for your systems.</p>
+                </div>
+                <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
+                    <img src="/images/it-support/managed-it.png" alt="Managed IT Services" height="400" width="600"
+                        class="rounded-lg" />
+                </div>
+            </div>
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+                <svg class="relative block w-full h-16" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C73.23,28.79,158.46,59.39,235.9,67.65,264.44,70.67,293.12,61.7,321.39,56.44Z"
+                        fill="#f8fafc"></path>
+                </svg>
+            </div>
+        </section>
 
-      <div class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow">
-        <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
-          <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-slate-900 mb-3">24/7 Monitoring</h3>
-        <p class="text-slate-600 leading-relaxed">Continuous monitoring of your IT infrastructure to detect and resolve issues before they impact your business.</p>
-      </div>
+        {{-- WHY CHOOSE US SECTION --}}
+        <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="reveal reveal-fade-up">
+                <h2 class="text-3xl text-center font-bold text-blue-900 mb-6">Why Choose Us?</h2>
+                <p class="text-slate-600 mb-12 leading-relaxed text-center max-w-3xl mx-auto">
+                    Bismillah IT is committed to meeting the IT needs of your business.
+                    Our dedication to providing exceptional managed IT services stems from
+                    an extensive understanding of the unique obstacles faced by small to
+                    medium-sized businesses (SMBs).
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    @php
+                        $features = [
+                            [
+                                'title' => 'Access to Expertise',
+                                'desc' =>
+                                    'Tap into our deep pool of IT expertise and cutting-edge technologies to keep your business at the forefront of innovation and efficiency.',
+                                'icon' => 'user',
+                            ],
+                            [
+                                'title' => 'Increase Business Productivity & Efficiency',
+                                'desc' =>
+                                    'Experience seamless IT operations that enable your team to focus on core business activities without the distractions of technical issues.',
+                                'icon' => 'star',
+                            ],
+                            [
+                                'title' => 'Scalable & Growth-Focused Solutions',
+                                'desc' =>
+                                    'Our services are designed to grow with your business, ensuring your IT environment can support your expanding requirements and scale as you need.',
+                                'icon' => 'ruler',
+                            ],
+                            [
+                                'title' => 'Cost Management & Control',
+                                'desc' =>
+                                    'Benefit from predictable IT spending with our fixed monthly plans, allowing for better financial planning and control over your IT budget.',
+                                'icon' => 'dollar',
+                            ],
+                            [
+                                'title' => 'Enhance User Experience',
+                                'desc' =>
+                                    'Gain fast, reliable IT support that minimises downtime and keeps your operations running smoothly, delivering a positive experience for your team and your customers.',
+                                'icon' => 'users',
+                            ],
+                            [
+                                'title' => 'Improve Compliance & Risk Management',
+                                'desc' =>
+                                    'Stay ahead of compliance requirements and reduce your risk profile with our proactive security measures and industry-best practices.',
+                                'icon' => 'briefcase',
+                            ],
+                        ];
+                    @endphp
+                    @foreach ($features as $feature)
+                        <div
+                            class="relative bg-white rounded-xl shadow-[0_5px_30px_-10px_rgba(0,0,0,0.05)] border-2 p-6 pt-10 text-center flex flex-col items-center z-10 transition-all duration-300 border-blue-100 hover:border-blue-300 hover:-translate-y-1">
+                            <div
+                                class="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center border-4 border-white shadow-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" class="text-white">
+                                    @if ($feature['icon'] === 'user')
+                                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    @elseif ($feature['icon'] === 'star')
+                                        <polygon
+                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                        </polygon>
+                                    @elseif ($feature['icon'] === 'ruler')
+                                        <path
+                                            d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z">
+                                        </path>
+                                        <path d="m14.5 12.5 2-2"></path>
+                                        <path d="m11.5 9.5 2-2"></path>
+                                        <path d="m8.5 6.5 2-2"></path>
+                                        <path d="m17.5 15.5 2-2"></path>
+                                    @elseif ($feature['icon'] === 'dollar')
+                                        <line x1="12" x2="12" y1="2" y2="22"></line>
+                                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                    @elseif ($feature['icon'] === 'users')
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    @elseif ($feature['icon'] === 'briefcase')
+                                        <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                        <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+                                    @endif
+                                </svg>
+                            </div>
+                            <h4 class="font-bold text-slate-800 mb-3 text-[15px] leading-tight">{{ $feature['title'] }}</h4>
+                            <p class="text-[13px] text-slate-500 leading-relaxed mb-5 grow text-justify">
+                                {{ $feature['desc'] }}</p>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </section>
 
-      <div class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow" style="animation-delay: 0.1s">
-        <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
-          <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17l-5.384 3.18A1.125 1.125 0 014.5 17.25V5.25a1.125 1.125 0 011.536-1.048l5.384 3.18a1.125 1.125 0 010 1.938zM18 12a6 6 0 11-12 0 6 6 0 0112 0z" />
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-slate-900 mb-3">Help Desk Support</h3>
-        <p class="text-slate-600 leading-relaxed">Friendly and knowledgeable support staff ready to assist your team with any IT issues or questions.</p>
-      </div>
+        {{-- SECTION 3: Harness Decades of IT Excellence --}}
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="networking">
+            <div class="reveal reveal-fade-up grid lg:grid-cols-2 gap-12 items-center my-12">
+                <div class="order-2 lg:order-1">
+                    <div
+                        class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                        <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                        <span class="text-blue-500 font-bold text-sm tracking-wide mb-3 block">Managed IT Services</span>
+                        <h2 class="text-3xl font-bold text-blue-900 mb-6 mt-2">Harness Decades of IT Excellence to Enhance
+                            Your Business Operations</h2>
+                        <p class="text-slate-600 mb-6 leading-relaxed">With over 20 years of experience providing managed IT
+                            services
+                            to businesses, Bismillah IT delivers unparalleled expertise and accountability. We recognize the
+                            vital role IT systems play in your operations and take the time to understand their
+                            complexities.</p>
+                        <p class="text-slate-600 mb-6 leading-relaxed">Our team offers 24/7 system monitoring to ensure
+                            seamless
+                            business continuity, proactively identifying and resolving
+                            potential issues before they cause disruptions. With unlimited
+                            support, we're always available to provide swift solutions to
+                            your IT challenges.</p>
+                        <p class="text-slate-600 mb-6 leading-relaxed">Our managed IT plans go beyond basic support—they
+                            transform your
+                            IT environment into a strategic asset that propels your business
+                            forward.</p>
+                        <a href="{{ route('contact') }}"
+                            class="text-blue-600 font-medium flex items-center hover:text-blue-800">
+                            Book a free consultation
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 ml-2">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="relative h-75 w-full order-1 lg:order-2">
+                    <img src="/images/it-support/managed-it/section-1.jpg" alt="Servers" height="1600" width="1200"
+                        class="object-cover rounded-2xl w-full h-full" />
+                </div>
+            </div>
+        </section>
 
-      <div class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow" style="animation-delay: 0.2s">
-        <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
-          <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-slate-900 mb-3">Data Backup & Recovery</h3>
-        <p class="text-slate-600 leading-relaxed">Automated backup solutions and disaster recovery planning to protect your critical business data.</p>
-      </div>
-
-      <div class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow">
-        <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
-          <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-slate-900 mb-3">IT Strategy & Planning</h3>
-        <p class="text-slate-600 leading-relaxed">Strategic IT consulting to align your technology investments with your long-term business goals.</p>
-      </div>
-
-      <div class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow" style="animation-delay: 0.1s">
-        <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
-          <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-slate-900 mb-3">Vendor Management</h3>
-        <p class="text-slate-600 leading-relaxed">We manage your relationships with technology vendors to ensure you get the best value and support.</p>
-      </div>
-
-      <div class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow" style="animation-delay: 0.2s">
-        <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
-          <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-slate-900 mb-3">Network Management</h3>
-        <p class="text-slate-600 leading-relaxed">Complete network administration including setup, configuration, monitoring, and optimization for peak performance.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-@include('components.cta')
+        {{-- SECTION 4: Drive Your Digital Transformation --}}
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="it">
+            <div class="reveal reveal-fade-up grid lg:grid-cols-2 gap-12 items-center mb-12">
+                <div class="relative h-75 w-full">
+                    <img src="/images/it-support/managed-it/section-2.jpg" alt="Managed Services" height="1600"
+                        width="1200" class="object-cover rounded-2xl w-full h-full" />
+                </div>
+                <div>
+                    <div
+                        class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                        <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                        <span class="text-blue-500 font-bold text-sm tracking-wide mb-3 block">Cost-Effective Managed
+                            Services</span>
+                        <h2 class="text-3xl font-bold text-blue-900 mb-6 mt-2">Drive Your Digital Transformation with
+                            Cost-Effective Managed Services</h2>
+                        <p class="text-slate-600 mb-6 leading-relaxed">At Bismillah IT, we believe your IT systems should
+                            align
+                            with your business needs—not be constrained by your service
+                            provider's limitations.</p>
+                        <p class="text-slate-600 mb-6 leading-relaxed">We take the time to gain a thorough understanding of
+                            your
+                            business, including your IT infrastructure, long-term
+                            strategies, objectives, and daily operations. With this insight,
+                            we craft a tailored service level agreement (SLA) that delivers
+                            the right technology solutions—rather than a generic,
+                            one-size-fits-all approach.</p>
+                        <p class="text-slate-600 mb-6 leading-relaxed">Our commitment to exceptional customer service has
+                            earned us
+                            prestigious awards, highlighting our dedication to consistently
+                            exceeding your expectations.</p>
+                        <a href="{{ route('contact') }}"
+                            class="text-blue-600 font-medium flex items-center hover:text-blue-800">
+                            Book a free consultation
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4 ml-2">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 @endsection
