@@ -4,28 +4,33 @@
 
 @section('content')
 
-    <section class="relative bg-linear-to-br from-hero-gradient to-white pt-28 pb-20 lg:pt-36 lg:pb-28 overflow-hidden">
+    <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center relative z-10">
-            <div class="space-y-6">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
-                    <span class="text-brand-blue">Ask us about</span><br>
+            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
+                    <span class="text-blue-600">Ask us about</span><br>
                     Microsoft 365 for your business
                 </h1>
-                <p class="text-lg md:text-xl text-slate-700 leading-relaxed">If you are considering migrating to the
+                <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">If you are considering migrating to the
                     cloud, let Total Solutions IT guide you on your journey. Our team of accredited specialists have the
                     expertise and reputation to support a smooth and successful cloud transition. We will work closely with
                     you to assess your needs and choose the platform that is right for you. Our team will assist with each
                     step of the journey - from implementation, through adoption and to optimisation.</p>
-                <div class="flex flex-wrap gap-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 md:w-3/4 w-full">
                     <a href="#benefits"
-                        class="inline-flex items-center gap-2 bg-brand-blue text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-700 transition-colors text-sm">BENEFITS</a>
+                        class="group flex cursor-pointer items-center justify-between px-6 py-4 text-white text-sm font-semibold rounded-xl shadow-md transition-all bg-navy hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">BENEFITS <svg class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6" /></svg></a>
                     <a href="#services"
-                        class="inline-flex items-center gap-2 bg-white text-brand-blue border-2 border-brand-blue font-semibold px-6 py-3 rounded-xl hover:bg-blue-50 transition-colors text-sm">SERVICES</a>
+                        class="group flex cursor-pointer items-center justify-between px-6 py-4 text-white text-sm font-semibold rounded-xl shadow-md transition-all bg-navy hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">SERVICES <svg class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6" /></svg></a>
+                </div>
+                <div class="pt-6 border-t border-slate-200/60 flex flex-col items-start gap-3">
+                    <p class="text-sky-700 font-semibold text-sm">Need help?</p>
+                    <a href="/contact"
+                        class="px-6 py-2.5 bg-white border border-slate-200 text-sky-700 text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer transition-colors hover:bg-navy-active hover:text-white">Contact Us</a>
                 </div>
             </div>
-            <div class="flex justify-center lg:justify-end">
-                <img alt="Cloud Services" loading="lazy" class="rounded-2xl shadow-lg max-w-md w-full"
+            <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
+                <img alt="Cloud Services" loading="lazy" class="rounded-lg w-full"
                     src="/images/cloud/hero.png" />
             </div>
         </div>

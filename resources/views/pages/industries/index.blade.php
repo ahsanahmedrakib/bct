@@ -3,44 +3,36 @@
 @section('content')
 <!-- Hero Section -->
 <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32 overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-            <div class="reveal reveal-fade-up">
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
-                    {{ $title1 ?? 'Industry-Specific' }}
-                    <span class="text-blue-600 block">{{ $title2 ?? 'IT Solutions' }}</span>
-                </h1>
-                <p class="text-lg text-slate-600 mb-8 max-w-xl">
-                    {{ $description ?? 'Tailored technology support designed to meet the unique demands of your industry, ensuring compliance, efficiency, and growth.' }}
-                </p>
-                <div class="flex flex-wrap gap-3 mb-8">
-                    @foreach($actionButtons ?? ['Healthcare', 'Construction', 'Logistics', 'Accounting'] as $button)
-                        <a href="#industries" class="px-5 py-2.5 bg-navy hover:bg-navy/90 text-white rounded-full text-sm font-medium transition-all duration-300 shadow-md hover:shadow-lg">
-                            {{ $button }}
-                        </a>
-                    @endforeach
-                </div>
-                <div class="flex items-center gap-4">
-                    <span class="text-slate-500 text-sm">Need help?</span>
-                    <a href="{{ $contactUrl ?? '/contact' }}" class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl">
-                        Contact Us
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                    </a>
-                </div>
+    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+        <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
+                {{ $title1 ?? 'Industry-Specific' }}
+                <br/>
+                <span class="text-blue-600 block mt-2">{{ $title2 ?? 'IT Solutions' }}</span>
+            </h1>
+            <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">
+                {{ $description ?? 'Tailored technology support designed to meet the unique demands of your industry, ensuring compliance, efficiency, and growth.' }}
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 md:w-3/4 w-full">
+                @foreach($actionButtons ?? ['Healthcare', 'Construction', 'Logistics', 'Accounting'] as $button)
+                    <a href="#industries"
+                        class="group flex cursor-pointer items-center justify-between px-6 py-4 text-white text-sm font-semibold rounded-xl shadow-md transition-all bg-navy hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">{{ $button }} <svg class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6" /></svg></a>
+                @endforeach
             </div>
-            <div class="reveal reveal-fade-up hidden lg:block" style="transition-delay:200ms">
-                <div class="relative w-full aspect-square max-w-lg mx-auto">
-                    <img src="{{ $heroImage ?? '/images/industry/hero.png' }}" alt="Industry-Specific IT Solutions" class="object-contain drop-shadow-2xl" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
-                </div>
+            <div class="pt-6 border-t border-slate-200/60 flex flex-col items-start gap-3">
+                <p class="text-sky-700 font-semibold text-sm">Need help?</p>
+                <a href="{{ $contactUrl ?? '/contact' }}"
+                    class="px-6 py-2.5 bg-white border border-slate-200 text-sky-700 text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer transition-colors hover:bg-navy-active hover:text-white">Contact Us</a>
             </div>
+        </div>
+        <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
+            <img src="{{ $heroImage ?? '/images/industry/hero.png' }}" alt="Industry-Specific IT Solutions" class="rounded-lg w-full" />
         </div>
     </div>
     <!-- Curved Bottom SVG -->
-    <div class="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
-            <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="#f8fafc"/>
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+        <svg class="relative block w-full h-16" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C73.23,28.79,158.46,59.39,235.9,67.65,264.44,70.67,293.12,61.7,321.39,56.44Z" fill="#f8fafc"></path>
         </svg>
     </div>
 </section>
@@ -57,52 +49,52 @@
                     [
                         'title' => 'Professional Services',
                         'image' => '/images/industry/industry-1.png',
-                        'description' => 'Specialized IT solutions for law firms, consultancies, and professional service providers to enhance productivity and client management.',
+                        'description' => 'Delivering specialized IT support for the legal profession by integrating technologies like Smokeball, providing trust for lawyers and legal services.',
                     ],
                     [
                         'title' => 'Freight + Logistics',
                         'image' => '/images/industry/industry-2.png',
-                        'description' => 'Technology infrastructure and systems to optimize supply chain operations, fleet management, and real-time tracking.',
+                        'description' => 'Empowering the efficiency of freight and logistics services with industry-specific IT support for streamlined operations and enhanced logistics management.',
                     ],
                     [
                         'title' => 'Agriculture, farming, breeding + microbials',
                         'image' => '/images/industry/industry-3.png',
-                        'description' => 'Smart farming solutions, IoT integration, and data-driven agriculture technology for modern farming operations.',
+                        'description' => 'Cultivating growth in agriculture and microbial services through specialized IT support, fostering technological resiliency and innovation in the field.',
                     ],
                     [
                         'title' => 'Community + aged care facilities',
                         'image' => '/images/industry/industry-4.png',
-                        'description' => 'Secure, compliant IT systems for aged care and community facilities supporting resident care and administration.',
+                        'description' => 'Compassionate and reliable IT support tailored to enhance the well-being of individuals and organizations in this sector.',
                     ],
                     [
                         'title' => 'Vet, healthcare, fertility + medical',
                         'image' => '/images/industry/industry-5.png',
-                        'description' => 'HIPAA-compliant healthcare IT solutions including EHR systems, telehealth platforms, and secure data management.',
+                        'description' => 'Experienced with Genie and MedicalDirector, providing for a seamless blend of technology and compassion for enhanced patient care.',
                     ],
                     [
                         'title' => 'Real estate + storage facilities',
                         'image' => '/images/industry/industry-6.png',
-                        'description' => 'Property management systems, smart storage solutions, and digital platforms for real estate operations.',
+                        'description' => 'Operational excellence in real estate and storage facilities through specialized IT support services.',
                     ],
                     [
                         'title' => 'Engineering + Science',
                         'image' => '/images/industry/industry-7.png',
-                        'description' => 'High-performance computing, CAD/CAM integration, and specialized scientific software infrastructure.',
+                        'description' => 'IT support services catering to the distinctive requirements of smooth, reliable operation and compliance within the engineering industry.',
                     ],
                     [
                         'title' => 'Accounting, bookkeeping + financial',
                         'image' => '/images/industry/industry-8.png',
-                        'description' => 'Secure financial systems, cloud accounting platforms, and compliance tools for financial service providers.',
+                        'description' => 'Explore our security-focused IT support services, elevating efficiency and compliance for accounting and financial sectors.',
                     ],
                     [
                         'title' => 'Construction + project management',
                         'image' => '/images/industry/industry-9.png',
-                        'description' => 'Project management software, BIM integration, and on-site technology solutions for construction firms.',
+                        'description' => 'Discover our specialized IT support services catering to ensuring seamless operations and efficiency in the building industry.',
                     ],
                     [
                         'title' => 'Non-profit, government + professional',
                         'image' => '/images/industry/industry-10.png',
-                        'description' => 'Affordable, scalable IT solutions meeting compliance requirements for government and non-profit organizations.',
+                        'description' => 'Driving meaningful impact and success to organizations of all sizes, budgets and institutions.',
                     ],
                 ];
             @endphp
