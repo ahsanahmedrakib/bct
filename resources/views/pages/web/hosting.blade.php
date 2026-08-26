@@ -40,28 +40,28 @@
                         with easy-to-use control panel.</p>
                     <ul class="space-y-3 mb-8">
                         <li class="flex items-center text-slate-600">
-                            <svg class="w-5 h-5 text-brand-green mr-3 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
+                            <svg class="w-5 h-5 text-brand-green mr-3 shrink-0" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                             </svg>
                             10GB SSD Storage
                         </li>
                         <li class="flex items-center text-slate-600">
-                            <svg class="w-5 h-5 text-brand-green mr-3 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
+                            <svg class="w-5 h-5 text-brand-green mr-3 shrink-0" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                             </svg>
                             100GB Bandwidth
                         </li>
                         <li class="flex items-center text-slate-600">
-                            <svg class="w-5 h-5 text-brand-green mr-3 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
+                            <svg class="w-5 h-5 text-brand-green mr-3 shrink-0" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                             </svg>
                             Free SSL Certificate
                         </li>
                         <li class="flex items-center text-slate-600">
-                            <svg class="w-5 h-5 text-brand-green mr-3 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
+                            <svg class="w-5 h-5 text-brand-green mr-3 shrink-0" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                             </svg>
@@ -85,28 +85,28 @@
                         with priority support.</p>
                     <ul class="space-y-3 mb-8">
                         <li class="flex items-center text-slate-600">
-                            <svg class="w-5 h-5 text-brand-blue mr-3 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
+                            <svg class="w-5 h-5 text-brand-blue mr-3 shrink-0" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                             </svg>
                             50GB SSD Storage
                         </li>
                         <li class="flex items-center text-slate-600">
-                            <svg class="w-5 h-5 text-brand-blue mr-3 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
+                            <svg class="w-5 h-5 text-brand-blue mr-3 shrink-0" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                             </svg>
                             Unlimited Bandwidth
                         </li>
                         <li class="flex items-center text-slate-600">
-                            <svg class="w-5 h-5 text-brand-blue mr-3 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
+                            <svg class="w-5 h-5 text-brand-blue mr-3 shrink-0" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                             </svg>
                             Free SSL & Domain
                         </li>
                         <li class="flex items-center text-slate-600">
-                            <svg class="w-5 h-5 text-brand-blue mr-3 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
+                            <svg class="w-5 h-5 text-brand-blue mr-3 shrink-0" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                             </svg>
@@ -127,28 +127,28 @@
                         full root access for advanced users.</p>
                     <ul class="space-y-3 mb-8">
                         <li class="flex items-center text-slate-600">
-                            <svg class="w-5 h-5 text-brand-blue mr-3 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
+                            <svg class="w-5 h-5 text-brand-blue mr-3 shrink-0" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                             </svg>
                             200GB SSD Storage
                         </li>
                         <li class="flex items-center text-slate-600">
-                            <svg class="w-5 h-5 text-brand-blue mr-3 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
+                            <svg class="w-5 h-5 text-brand-blue mr-3 shrink-0" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                             </svg>
                             4 vCPU / 8GB RAM
                         </li>
                         <li class="flex items-center text-slate-600">
-                            <svg class="w-5 h-5 text-brand-blue mr-3 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
+                            <svg class="w-5 h-5 text-brand-blue mr-3 shrink-0" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                             </svg>
                             Full Root Access
                         </li>
                         <li class="flex items-center text-slate-600">
-                            <svg class="w-5 h-5 text-brand-blue mr-3 flex-shrink-0" xmlns="http://www.w3.org/2000/svg"
+                            <svg class="w-5 h-5 text-brand-blue mr-3 shrink-0" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                             </svg>

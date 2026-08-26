@@ -24,9 +24,36 @@
                     <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">If your current IT
                         solution falls short of meeting your business's competitive needs and growth aspirations, reach out
                         to a Bismillah IT consultant to explore enhancements for your systems.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 md:w-3/4 w-full">
+                        <a href="#why-choose-us"
+                            class="group flex cursor-pointer items-center justify-between px-6 py-4 text-white text-sm font-semibold rounded-xl shadow-md transition-all bg-navy hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">
+                            WHY CHOOSE US
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor"
+                                class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </a>
+                        <a href="#services"
+                            class="group flex cursor-pointer items-center justify-between px-6 py-4 text-white text-sm font-semibold rounded-xl shadow-md transition-all bg-navy hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">
+                            OUR SERVICES
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor"
+                                class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="pt-6 border-t border-slate-200/60 flex flex-col items-start gap-3">
+                        <p class="text-sky-700 font-semibold text-sm">Need help?</p>
+                        <a href="{{ route('contact') }}"
+                            class="px-6 py-2.5 bg-white border border-brand text-sky-700 text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer hover:bg-navy hover:text-white transition-colors">
+                            Contact Us
+                        </a>
+                    </div>
                 </div>
                 <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
-                    <img src="/images/it-support/managed-it.png" alt="Managed IT Services" height="400" width="600"
+                    <img src="/images/it-support/hero.png" alt="Managed IT Services" height="400" width="600"
                         class="rounded-lg" />
                 </div>
             </div>
@@ -40,7 +67,7 @@
         </section>
 
         {{-- WHY CHOOSE US SECTION --}}
-        <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" id="why-choose-us">
             <div class="reveal reveal-fade-up">
                 <h2 class="text-3xl text-center font-bold text-blue-900 mb-6">Why Choose Us?</h2>
                 <p class="text-slate-600 mb-12 leading-relaxed text-center max-w-3xl mx-auto">
@@ -91,45 +118,25 @@
                         ];
                     @endphp
                     @foreach ($features as $feature)
-                        <div
-                            class="relative bg-white rounded-xl shadow-[0_5px_30px_-10px_rgba(0,0,0,0.05)] border-2 p-6 pt-10 text-center flex flex-col items-center z-10 transition-all duration-300 border-blue-100 hover:border-blue-300 hover:-translate-y-1">
-                            <div
-                                class="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center border-4 border-white shadow-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
-                                    stroke-linejoin="round" class="text-white">
-                                    @if ($feature['icon'] === 'user')
-                                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                                        <circle cx="12" cy="7" r="4"></circle>
-                                    @elseif ($feature['icon'] === 'star')
-                                        <polygon
-                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                        </polygon>
-                                    @elseif ($feature['icon'] === 'ruler')
-                                        <path
-                                            d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z">
-                                        </path>
-                                        <path d="m14.5 12.5 2-2"></path>
-                                        <path d="m11.5 9.5 2-2"></path>
-                                        <path d="m8.5 6.5 2-2"></path>
-                                        <path d="m17.5 15.5 2-2"></path>
-                                    @elseif ($feature['icon'] === 'dollar')
-                                        <line x1="12" x2="12" y1="2" y2="22"></line>
-                                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                                    @elseif ($feature['icon'] === 'users')
-                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                                        <circle cx="9" cy="7" r="4"></circle>
-                                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                    @elseif ($feature['icon'] === 'briefcase')
-                                        <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                                        <rect width="20" height="14" x="2" y="6" rx="2"></rect>
-                                    @endif
-                                </svg>
+                        <div class="border-2 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                            <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                            <div class="flex justify-center pb-6 text-blue-600">
+                                @if ($feature['icon'] === 'user')
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                @elseif ($feature['icon'] === 'star')
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                @elseif ($feature['icon'] === 'ruler')
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"></path><path d="m14.5 12.5 2-2"></path><path d="m11.5 9.5 2-2"></path><path d="m8.5 6.5 2-2"></path><path d="m17.5 15.5 2-2"></path></svg>
+                                @elseif ($feature['icon'] === 'dollar')
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                                @elseif ($feature['icon'] === 'users')
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                @elseif ($feature['icon'] === 'briefcase')
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg>
+                                @endif
                             </div>
-                            <h4 class="font-bold text-slate-800 mb-3 text-[15px] leading-tight">{{ $feature['title'] }}</h4>
-                            <p class="text-[13px] text-slate-500 leading-relaxed mb-5 grow text-justify">
-                                {{ $feature['desc'] }}</p>
+                            <h3 class="text-xl font-bold text-blue-900 text-center mb-3">{{ $feature['title'] }}</h3>
+                            <p class="text-slate-600 text-sm text-justify">{{ $feature['desc'] }}</p>
                         </div>
                     @endforeach
                 </div>
@@ -137,7 +144,7 @@
         </section>
 
         {{-- SECTION 3: Harness Decades of IT Excellence --}}
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="networking">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="services">
             <div class="reveal reveal-fade-up grid lg:grid-cols-2 gap-12 items-center my-12">
                 <div class="order-2 lg:order-1">
                     <div
