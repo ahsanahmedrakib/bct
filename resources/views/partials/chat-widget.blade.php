@@ -78,7 +78,7 @@
         <button onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Scroll to top"
             aria-label="Scroll to top"
             style="width:40px;height:40px;border-radius:50%;background:#1e293b;color:#fff;display:flex;align-items:center;justify-content:center;border:none;cursor:pointer;transition:transform 0.2s,background 0.2s;box-shadow:0 2px 8px rgba(0,0,0,0.2)"
-            onmouseenter="this.style.transform='scale(1.12)';this.style.background='#0f172a'"
+            onmouseenter="this.style.transform='scale(1.12)';this.style.background='#da3825'"
             onmouseleave="this.style.transform='scale(1)';this.style.background='#1e293b'">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">

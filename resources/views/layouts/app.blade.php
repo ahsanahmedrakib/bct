@@ -12,7 +12,7 @@
     {{-- SEO Meta --}}
     <title>@yield('title', 'Bismillah Computer & Technology | IT Solutions, Cloud, Cyber Security & Telecom')</title>
     <meta name="description" content="@yield('description', 'Bismillah Computer & Technology (BCT) provides enterprise IT solutions, cloud services, cyber security, voice & internet solutions in Bangladesh.')">
-    <meta name="keywords" content="@yield('keywords', 'IT solutions, cloud services, cyber security, managed IT, voice solutions, internet, NBN, web development, Bangladesh, BCT')">
+    <meta name="keywords" content="@yield('keywords', 'IT solutions, cloud services, cyber security, managed IT, voice solutions, internet, BCT, web development, Bangladesh, BCT')">
     <meta name="author" content="Bismillah Computer & Technology">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="@yield('canonical', url('/'))">
@@ -206,138 +206,52 @@
                     ],
                 ],
             ],
-            'VOICE' => [
+            'WEB' => [
                 [
-                    'title' => 'Phone Systems',
-                    'href' => route('voice.phone-systems'),
-                    'desc' => '',
+                    'title' => 'Development',
+                    'href' => route('web.development'),
+                    'desc' => 'Designed and developed for your business.',
                     'icon' =>
-                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path><path d="M14.5 2c.5 2.5 2 4 4 6.5"></path></svg>',
-                    'links' => [
-                        [
-                            'label' => 'Small Business',
-                            'href' => route('voice.ps-small-business'),
-                            'icon' =>
-                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>',
-                        ],
-                        [
-                            'label' => 'Medium Business',
-                            'href' => route('voice.ps-medium-business'),
-                            'icon' =>
-                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path><path d="M8 6h.01"></path><path d="M16 6h.01"></path><path d="M12 6h.01"></path><path d="M12 10h.01"></path><path d="M12 14h.01"></path><path d="M16 10h.01"></path><path d="M16 14h.01"></path><path d="M8 10h.01"></path><path d="M8 14h.01"></path></svg>',
-                        ],
-                        [
-                            'label' => 'Enterprise Business',
-                            'href' => route('voice.ps-enterprise-business'),
-                            'icon' =>
-                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>',
-                        ],
-                    ],
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><circle cx="12" cy="12" r="10"></circle><line x1="2" x2="22" y1="12" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>',
+                    'links' => [],
                 ],
                 [
-                    'title' => 'Brands',
-                    'href' => route('voice.brands'),
-                    'desc' => '',
+                    'title' => 'Hosting',
+                    'href' => route('web.hosting'),
+                    'desc' => 'Domain and web hosting services.',
                     'icon' =>
-                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>',
-                    'links' => [
-                        [
-                            'label' => 'Vodia (Cloud System)',
-                            'href' => route('voice.brand-vodia'),
-                            'icon' =>
-                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>',
-                        ],
-                        [
-                            'label' => 'Grandstream',
-                            'href' => route('voice.brand-grandstream'),
-                            'icon' =>
-                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>',
-                        ],
-                        [
-                            'label' => 'Avaya IP Office',
-                            'href' => route('voice.brand-avaya'),
-                            'icon' =>
-                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>',
-                        ],
-                        [
-                            'label' => 'LG iPECS',
-                            'href' => route('voice.brand-lg-ipecs'),
-                            'icon' =>
-                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>',
-                        ],
-                    ],
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>',
+                    'links' => [],
                 ],
                 [
-                    'title' => 'Hardware',
-                    'href' => '#',
-                    'desc' => '',
+                    'title' => 'SEO',
+                    'href' => route('web.seo'),
+                    'desc' => 'Reach your target audience.',
                     'icon' =>
-                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><path d="M12 18a4 4 0 0 0-4-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-4a4 4 0 0 0-4 4z"></path><path d="M12 18v4"></path></svg>',
-                    'links' => [
-                        [
-                            'label' => 'Headsets',
-                            'href' => route('voice.hardware-headsets'),
-                            'icon' =>
-                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path></svg>',
-                        ],
-                        [
-                            'label' => 'Cordless Phones',
-                            'href' => route('voice.hardware-cordless'),
-                            'icon' =>
-                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><rect x="5" y="2" width="14" height="20" rx="7"></rect><line x1="12" x2="12" y1="18" y2="18.01"></line></svg>',
-                        ],
-                        [
-                            'label' => 'Cel-Fi 4G Repeater',
-                            'href' => route('voice.hardware-celfi'),
-                            'icon' =>
-                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"></path><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"></path><circle cx="12" cy="12" r="2"></circle><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"></path><path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"></path></svg>',
-                        ],
-                    ],
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg>',
+                    'links' => [],
                 ],
                 [
-                    'title' => 'Features',
-                    'href' => '#',
-                    'desc' => '',
+                    'title' => 'eCommerce',
+                    'href' => route('web.ecommerce'),
+                    'desc' => 'Get started on your online business.',
                     'icon' =>
-                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>',
-                    'links' => [
-                        [
-                            'label' => 'Unified Comms',
-                            'href' => route('voice.feature-unified-comms'),
-                            'icon' =>
-                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line></svg>',
-                        ],
-                        [
-                            'label' => 'Conferencing Solutions',
-                            'href' => route('voice.feature-conferencing'),
-                            'icon' =>
-                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="m22 8-6 4 6 4V8Z"></path><rect x="2" y="6" width="14" height="12" rx="2"></rect></svg>',
-                        ],
-                        [
-                            'label' => 'Hold Music',
-                            'href' => route('voice.feature-hold-music'),
-                            'icon' =>
-                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>',
-                        ],
-                        [
-                            'label' => 'Microsoft Teams',
-                            'href' => route('voice.feature-microsoft-teams'),
-                            'icon' =>
-                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>',
-                        ],
-                        [
-                            'label' => 'More Features',
-                            'href' => route('voice.feature-more-features'),
-                            'icon' =>
-                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><circle cx="12" cy="12" r="10"></circle><path d="M8 12h8"></path><path d="M12 8v8"></path></svg>',
-                        ],
-                    ],
+                        '<svg xmlns="http://www4 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>',
+                    'links' => [],
+                ],
+                [
+                    'title' => 'Portfolio',
+                    'href' => route('web.portfolio'),
+                    'desc' => 'View our range of websites.',
+                    'icon' =>
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><rect width="7" height="7" x="3" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="14" rx="1"></viewBox></svg>',
+                    'links' => [],
                 ],
             ],
             'INTERNET' => [
                 [
-                    'title' => 'NBN',
-                    'href' => route('internet.nbn'),
+                    'title' => 'BCT',
+                    'href' => '',
                     'desc' =>
                         'Access Bangladesh\'s National Broadband Network (NBN) to delivery quality internet to your premises.',
                     'icon' =>
@@ -345,37 +259,37 @@
                     'links' => [
                         [
                             'label' => 'Free Fibre Upgrade',
-                            'href' => route('internet.nbn-free-fibre-upgrade'),
+                            'href' => '',
                             'icon' =>
                                 '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 1 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 1 11 14z"></path></svg>',
                         ],
                         [
                             'label' => 'Home and Small Business',
-                            'href' => route('internet.nbn-home-small'),
+                            'href' => '',
                             'icon' =>
                                 '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>',
                         ],
                         [
                             'label' => 'Business',
-                            'href' => route('internet.nbn-business'),
+                            'href' => '',
                             'icon' =>
                                 '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path><path d="M8 6h.01"></path><path d="M16 6h.01"></path><path d="M12 6h.01"></path><path d="M12 10h.01"></path><path d="M12 14h.01"></path><path d="M16 10h.01"></path><path d="M16 14h.01"></path><path d="M8 10h.01"></path><path d="M8 14h.01"></path></svg>',
                         ],
                         [
                             'label' => 'Enterprise Fibre',
-                            'href' => route('internet.nbn-enterprise-fibre'),
+                            'href' => '',
                             'icon' =>
                                 '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path><path d="M8 6h.01"></path><path d="M16 6h.01"></path><path d="M12 6h.01"></path><path d="M12 10h.01"></path><path d="M12 14h.01"></path><path d="M16 10h.01"></path><path d="M16 14h.01"></path><path d="M8 10h.01"></path><path d="M8 14h.01"></path></svg>',
                         ],
                         [
                             'label' => 'Fixed Wireless (FW)',
-                            'href' => route('internet.nbn-fixed-wireless'),
+                            'href' => '',
                             'icon' =>
                                 '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M12 20h.01"></path><path d="M2 8.82a15 15 0 0 1 20 0"></path><path d="M5 12.859a10 10 0 0 1 14 0"></path><path d="M8.5 16.429a5 5 0 0 1 7 0"></path></svg>',
                         ],
                         [
                             'label' => 'Sky Muster',
-                            'href' => route('internet.nbn-sky-muster'),
+                            'href' => '',
                             'icon' =>
                                 '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path></svg>',
                         ],
@@ -540,46 +454,132 @@
                     ],
                 ],
             ],
-            'WEB' => [
+            'VOICE' => [
                 [
-                    'title' => 'Development',
-                    'href' => route('web.development'),
-                    'desc' => 'Designed and developed for your business.',
+                    'title' => 'Phone Systems',
+                    'href' => route('voice.phone-systems'),
+                    'desc' => '',
                     'icon' =>
-                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><circle cx="12" cy="12" r="10"></circle><line x1="2" x2="22" y1="12" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>',
-                    'links' => [],
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path><path d="M14.5 2c.5 2.5 2 4 4 6.5"></path></svg>',
+                    'links' => [
+                        [
+                            'label' => 'Small Business',
+                            'href' => route('voice.ps-small-business'),
+                            'icon' =>
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>',
+                        ],
+                        [
+                            'label' => 'Medium Business',
+                            'href' => route('voice.ps-medium-business'),
+                            'icon' =>
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path><path d="M8 6h.01"></path><path d="M16 6h.01"></path><path d="M12 6h.01"></path><path d="M12 10h.01"></path><path d="M12 14h.01"></path><path d="M16 10h.01"></path><path d="M16 14h.01"></path><path d="M8 10h.01"></path><path d="M8 14h.01"></path></svg>',
+                        ],
+                        [
+                            'label' => 'Enterprise Business',
+                            'href' => route('voice.ps-enterprise-business'),
+                            'icon' =>
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>',
+                        ],
+                    ],
                 ],
                 [
-                    'title' => 'Hosting',
-                    'href' => route('web.hosting'),
-                    'desc' => 'Domain and web hosting services.',
+                    'title' => 'Brands',
+                    'href' => route('voice.brands'),
+                    'desc' => '',
                     'icon' =>
-                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>',
-                    'links' => [],
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>',
+                    'links' => [
+                        [
+                            'label' => 'Vodia (Cloud System)',
+                            'href' => route('voice.brand-vodia'),
+                            'icon' =>
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>',
+                        ],
+                        [
+                            'label' => 'Grandstream',
+                            'href' => route('voice.brand-grandstream'),
+                            'icon' =>
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>',
+                        ],
+                        [
+                            'label' => 'Avaya IP Office',
+                            'href' => route('voice.brand-avaya'),
+                            'icon' =>
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>',
+                        ],
+                        [
+                            'label' => 'LG iPECS',
+                            'href' => route('voice.brand-lg-ipecs'),
+                            'icon' =>
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>',
+                        ],
+                    ],
                 ],
                 [
-                    'title' => 'SEO',
-                    'href' => route('web.seo'),
-                    'desc' => 'Reach your target audience.',
+                    'title' => 'Hardware',
+                    'href' => '#',
+                    'desc' => '',
                     'icon' =>
-                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg>',
-                    'links' => [],
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><path d="M12 18a4 4 0 0 0-4-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-4a4 4 0 0 0-4 4z"></path><path d="M12 18v4"></path></svg>',
+                    'links' => [
+                        [
+                            'label' => 'Headsets',
+                            'href' => route('voice.hardware-headsets'),
+                            'icon' =>
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path></svg>',
+                        ],
+                        [
+                            'label' => 'Cordless Phones',
+                            'href' => route('voice.hardware-cordless'),
+                            'icon' =>
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><rect x="5" y="2" width="14" height="20" rx="7"></rect><line x1="12" x2="12" y1="18" y2="18.01"></line></svg>',
+                        ],
+                        [
+                            'label' => 'Cel-Fi 4G Repeater',
+                            'href' => route('voice.hardware-celfi'),
+                            'icon' =>
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"></path><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"></path><circle cx="12" cy="12" r="2"></circle><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"></path><path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"></path></svg>',
+                        ],
+                    ],
                 ],
                 [
-                    'title' => 'eCommerce',
-                    'href' => route('web.ecommerce'),
-                    'desc' => 'Get started on your online business.',
+                    'title' => 'Features',
+                    'href' => '#',
+                    'desc' => '',
                     'icon' =>
-                        '<svg xmlns="http://www4 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>',
-                    'links' => [],
-                ],
-                [
-                    'title' => 'Portfolio',
-                    'href' => route('web.portfolio'),
-                    'desc' => 'View our range of websites.',
-                    'icon' =>
-                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><rect width="7" height="7" x="3" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="14" rx="1"></viewBox></svg>',
-                    'links' => [],
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>',
+                    'links' => [
+                        [
+                            'label' => 'Unified Comms',
+                            'href' => route('voice.feature-unified-comms'),
+                            'icon' =>
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line></svg>',
+                        ],
+                        [
+                            'label' => 'Conferencing Solutions',
+                            'href' => route('voice.feature-conferencing'),
+                            'icon' =>
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="m22 8-6 4 6 4V8Z"></path><rect x="2" y="6" width="14" height="12" rx="2"></rect></svg>',
+                        ],
+                        [
+                            'label' => 'Hold Music',
+                            'href' => route('voice.feature-hold-music'),
+                            'icon' =>
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>',
+                        ],
+                        [
+                            'label' => 'Microsoft Teams',
+                            'href' => route('voice.feature-microsoft-teams'),
+                            'icon' =>
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>',
+                        ],
+                        [
+                            'label' => 'More Features',
+                            'href' => route('voice.feature-more-features'),
+                            'icon' =>
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><circle cx="12" cy="12" r="10"></circle><path d="M8 12h8"></path><path d="M12 8v8"></path></svg>',
+                        ],
+                    ],
                 ],
             ],
             'INDUSTRIES' => [
@@ -743,18 +743,17 @@
                             <span>IT</span>
                         </span>
                     </a>
-                    {{-- VOICE --}}
-                    <a href="{{ route('voice') }}" data-mega="VOICE"
+                    {{-- WEB --}}
+                    <a href="{{ route('web') }}" data-mega="WEB"
                         class="py-2 cursor-pointer text-brand-blue hover:text-brand-hover transition-colors duration-150">
                         <span class="flex items-center gap-1.5 text-nav-item font-nav">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="w-4 h-4 stroke-[2.5]">
-                                <path
-                                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
-                                </path>
+                                <path d="m16 18 6-6-6-6"></path>
+                                <path d="m8 6-6 6 6 6"></path>
                             </svg>
-                            <span>VOICE</span>
+                            <span>WEB</span>
                         </span>
                     </a>
                     {{-- INTERNET --}}
@@ -782,17 +781,18 @@
                             <span>CLOUD</span>
                         </span>
                     </a>
-                    {{-- WEB --}}
-                    <a href="{{ route('web') }}" data-mega="WEB"
+                    {{-- VOICE --}}
+                    <a href="{{ route('voice') }}" data-mega="VOICE"
                         class="py-2 cursor-pointer text-brand-blue hover:text-brand-hover transition-colors duration-150">
                         <span class="flex items-center gap-1.5 text-nav-item font-nav">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-[2.5]">
-                                <path d="m16 18 6-6-6-6"></path>
-                                <path d="m8 6-6 6 6 6"></path>
+                                <path
+                                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
+                                </path>
                             </svg>
-                            <span>WEB</span>
+                            <span>VOICE</span>
                         </span>
                     </a>
                     {{-- INDUSTRIES --}}
@@ -876,11 +876,11 @@
                                     '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-[2.5]"><rect x="16" y="16" width="6" height="6" rx="1"></rect><rect x="2" y="16" width="6" height="6" rx="1"></rect><rect x="9" y="2" width="6" height="6" rx="1"></rect><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path><path d="M12 12V8"></path></svg>',
                             ],
                             [
-                                'label' => 'VOICE',
-                                'route' => 'voice',
+                                'label' => 'WEB',
+                                'route' => 'web',
                                 'hasMega' => true,
                                 'icon' =>
-                                    '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-[2.5]"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>',
+                                    '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-[2.5]"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg>',
                             ],
                             [
                                 'label' => 'INTERNET',
@@ -897,11 +897,11 @@
                                     '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-[2.5]"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path></svg>',
                             ],
                             [
-                                'label' => 'WEB',
-                                'route' => 'web',
+                                'label' => 'VOICE',
+                                'route' => 'voice',
                                 'hasMega' => true,
                                 'icon' =>
-                                    '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-[2.5]"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg>',
+                                    '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-[2.5]"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>',
                             ],
                             [
                                 'label' => 'INDUSTRIES',
@@ -1117,18 +1117,6 @@
                             <img src="/logo-white.svg" alt="Logo" width="180" height="70"
                                 style="width:auto;height:auto">
                         </a>
-                        <div class="flex items-center space-x-3">
-                            <div class="grid grid-cols-2 gap-0.5 w-8 h-8">
-                                <div class="bg-ms-red"></div>
-                                <div class="bg-ms-green"></div>
-                                <div class="bg-ms-blue"></div>
-                                <div class="bg-ms-yellow"></div>
-                            </div>
-                            <div class="leading-tight">
-                                <span class="block text-lg font-bold">Microsoft</span>
-                                <span class="block text-sm font-medium">Solutions Partner</span>
-                            </div>
-                        </div>
                     </div>
                     <p class="text-[15px] leading-relaxed text-gray-200 pr-4">Bismillah Computer & Technology is a
                         Licensed ISP by Bangladesh Telecommunication Regulatory Commission providing Internet service.

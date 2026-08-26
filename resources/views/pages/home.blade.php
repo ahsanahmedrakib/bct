@@ -6,7 +6,7 @@
     systems, internet connectivity, and managed IT support across Bangladesh.')
 @section('keywords',
     'IT services,managed IT support,cyber security,cloud services,Microsoft 365,Azure,web design,web
-    development,SEO,business phone systems,VoIP,NBN,internet service provider,Uttara Dhaka,Bismillah Computer & Technology')
+    development,SEO,business phone systems,VoIP,BCT,internet service provider,Uttara Dhaka,Bismillah Computer & Technology')
 @section('canonical', 'https://bct.com.bd/')
 
 @section('content')
@@ -601,52 +601,52 @@
                         ];
                     @endphp
                     @foreach (array_merge($blogs, $blogs) as $b)
-                            <div class="swiper-slide h-auto">
-                                <article
-                                    class="group relative flex flex-col h-full bg-white rounded-2xl shadow-[0_4px_25px_-5px_rgba(0,0,0,0.04)] duration-300 outline-none overflow-hidden border border-blue-200 hover:border-blue-400 hover:shadow-lg hover:-translate-y-1 transition-all">
-                                    <div class="relative w-full aspect-4/3 bg-gray-100 overflow-hidden">
-                                        <img src="{{ $b['image'] }}" alt="{{ $b['title'] }}" loading="lazy"
-                                            class="object-cover transition-transform duration-500 group-hover:scale-105 w-full h-full" />
-                                        <div
-                                            class="absolute bottom-4 left-4 z-20 flex flex-col items-center justify-center bg-brand-secondary text-white w-16 h-16 rounded-xl shadow-lg">
-                                            <span
-                                                class="text-lg font-black tracking-tight leading-none">{{ $b['day'] }}</span>
-                                            <span
-                                                class="text-[10px] font-bold tracking-wider uppercase mt-0.5">{{ $b['month'] }}</span>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col flex-1 p-6 sm:p-8 pt-8">
+                        <div class="swiper-slide h-auto">
+                            <article
+                                class="group relative flex flex-col h-full bg-white rounded-2xl shadow-[0_4px_25px_-5px_rgba(0,0,0,0.04)] duration-300 outline-none overflow-hidden border border-blue-200 hover:border-blue-400 hover:shadow-lg hover:-translate-y-1 transition-all">
+                                <div class="relative w-full aspect-4/3 bg-gray-100 overflow-hidden">
+                                    <img src="{{ $b['image'] }}" alt="{{ $b['title'] }}" loading="lazy"
+                                        class="object-cover transition-transform duration-500 group-hover:scale-105 w-full h-full" />
+                                    <div
+                                        class="absolute bottom-4 left-4 z-20 flex flex-col items-center justify-center bg-brand-secondary text-white w-16 h-16 rounded-xl shadow-lg">
                                         <span
-                                            class="text-xs font-bold text-brand-secondary tracking-wider uppercase mb-3">{{ $b['category'] }}</span>
-                                        <h3
-                                            class="text-xl font-bold text-gray-900 leading-snug tracking-tight transition-colors cursor-pointer mb-6 hover:text-brand-blue">
-                                            {{ $b['title'] }}</h3>
-                                        <div
-                                            class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between text-sm text-gray-500 font-medium">
-                                            <div class="flex items-center space-x-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="text-brand-blue/60">
-                                                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                                                    <circle cx="12" cy="7" r="4"></circle>
-                                                </svg>
-                                                <span>{{ $b['author'] }}</span>
-                                            </div>
-                                            <div class="flex items-center space-x-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="text-brand-blue/60">
-                                                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"></path>
-                                                </svg>
-                                                <span>0</span>
-                                            </div>
+                                            class="text-lg font-black tracking-tight leading-none">{{ $b['day'] }}</span>
+                                        <span
+                                            class="text-[10px] font-bold tracking-wider uppercase mt-0.5">{{ $b['month'] }}</span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col flex-1 p-6 sm:p-8 pt-8">
+                                    <span
+                                        class="text-xs font-bold text-brand-secondary tracking-wider uppercase mb-3">{{ $b['category'] }}</span>
+                                    <h3
+                                        class="text-xl font-bold text-gray-900 leading-snug tracking-tight transition-colors cursor-pointer mb-6 hover:text-brand-blue">
+                                        {{ $b['title'] }}</h3>
+                                    <div
+                                        class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between text-sm text-gray-500 font-medium">
+                                        <div class="flex items-center space-x-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="text-brand-blue/60">
+                                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                                <circle cx="12" cy="7" r="4"></circle>
+                                            </svg>
+                                            <span>{{ $b['author'] }}</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="text-brand-blue/60">
+                                                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"></path>
+                                            </svg>
+                                            <span>0</span>
                                         </div>
                                     </div>
-                                </article>
-                            </div>
-                        @endforeach
+                                </div>
+                            </article>
+                        </div>
+                    @endforeach
                 </div>
             </div>
             {{-- Blog Navigation & Pagination --}}
@@ -757,7 +757,7 @@
     </section>
 
     {{-- ======================== HOW WE DO (Partner Logos) ======================== --}}
-    <section class="bg-linear-to-b from-gray-50 via-white to-gray-50 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden relative">
+    {{-- <section class="bg-linear-to-b from-gray-50 via-white to-gray-50 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden relative">
         <div class="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto relative z-10">
             <div class="reveal fade-up text-center md:text-left mb-12">
                 <span
@@ -795,7 +795,7 @@
                 @endforeach
             </div>
         </div>
-    </section>
+    </section> --}}
 
     {{-- ======================== OUR APPROACH ======================== --}}
     <section class="bg-dark-deep text-white py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
