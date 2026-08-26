@@ -14,6 +14,13 @@
                         <span class="text-blue-600 block mt-2"> Protecting Your Digital Assets</span>
                     </h1>
                     <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">In an era where digital transformation is at the core of business operations, ensuring the security of cloud environments and networks is more critical than ever. With cyber threats evolving rapidly, organizations must adopt robust security measures to protect sensitive data, applications, and infrastructure. This blog post explores key aspects of cloud and network security, best practices, and emerging trends to help businesses stay ahead of potential threats.</p>
+
+                    <div class="pt-6 border-t border-slate-200/60 flex flex-col items-start gap-3">
+                        <p class="text-sky-700 font-semibold text-sm">Need help?</p>
+                        <a href="{{ route('contact') }}" class="px-6 py-2.5 bg-white border border-sky-700 text-sky-700 text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer hover:bg-navy-active hover:text-white transition-colors">
+                            Contact Us
+                        </a>
+                    </div>
                 </div>
                 <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
                     <img src="/images/it-support/cyber-security/cloud-and-network/hero.png" alt="BG Image" height="400" width="600" class="rounded-lg" />
