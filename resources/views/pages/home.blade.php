@@ -16,34 +16,8 @@
         <div class="reveal reveal-fade-up px-4 sm:px-6 lg:px-8">
             <div class="swiper hero-swiper w-full">
                 <div class="swiper-wrapper">
-                    {{-- Slide 1: Cloud --}}
-                    <div class="swiper-slide">
-                        <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 pb-8">
-                            <div class="flex flex-col items-start space-y-4 md:space-y-6 text-left order-2 md:order-1">
-                                <span
-                                    class="inline-block bg-brand-green text-white text-xs font-semibold px-3 py-1.5 rounded-sm hover:bg-brand-green-hover transition-colors">Quick
-                                    Support &gt;</span>
-                                <h1
-                                    class="whitespace-pre-line text-xl font-extrabold tracking-tight text-heading sm:text-4xl md:text-5xl lg:text-5xl leading-tight">
-                                    Microsoft 365 &amp;
-                                    Cloud Services</h1>
-                                <p class="max-w-md text-base text-body-muted md:text-lg">Secure email, collaboration and
-                                    cloud services — set up the right way.</p>
-                                <a href="{{ route('cloud') }}"><button
-                                        class="rounded-full bg-blue-500 px-8 cursor-pointer py-3.5 text-sm font-bold text-white tracking-wide shadow-md transition-all hover:bg-blue-600 hover:shadow-lg focus:outline-none">FIND
-                                        OUT MORE &gt;</button></a>
-                            </div>
-                            <div class="flex justify-center order-1 md:order-2">
-                                <div
-                                    class="relative w-full aspect-4/3 max-w-85 sm:max-w-105 md:max-w-full h-75 sm:h-87.5 md:h-112.5">
-                                    <img alt="Microsoft 365 &amp; Cloud Services" decoding="async" class="object-contain"
-                                        style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                        src="/images/home/hero/cloud-hero.png" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {{-- Slide 2: IT --}}
+
+                    {{-- Slide 1: IT --}}
                     <div class="swiper-slide">
                         <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 pb-8">
                             <div class="flex flex-col items-start space-y-4 md:space-y-6 text-left order-2 md:order-1">
@@ -67,6 +41,34 @@
                                         class="object-contain"
                                         style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
                                         src="/images/home/hero/administrator-hero.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{-- Slide 2: Internet --}}
+                    <div class="swiper-slide">
+                        <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 pb-8">
+                            <div class="flex flex-col items-start space-y-4 md:space-y-6 text-left order-2 md:order-1">
+                                <span
+                                    class="inline-block bg-brand-green text-white text-xs font-semibold px-3 py-1.5 rounded-sm hover:bg-brand-green-hover transition-colors">Internet
+                                    &gt;</span>
+                                <h1
+                                    class="whitespace-pre-line text-xl font-extrabold tracking-tight text-heading sm:text-4xl md:text-5xl lg:text-5xl leading-tight">
+                                    BCT &amp; Business
+                                    Internet</h1>
+                                <p class="max-w-md text-base text-body-muted md:text-lg">High-speed, redundant pipelines
+                                    keeping your office fast and reliable.</p>
+                                <a href="{{ route('internet.nbn') }}"><button
+                                        class="rounded-full bg-blue-500 px-8 cursor-pointer py-3.5 text-sm font-bold text-white tracking-wide shadow-md transition-all hover:bg-blue-600 hover:shadow-lg focus:outline-none">FIND
+                                        OUT MORE &gt;</button></a>
+                            </div>
+                            <div class="flex justify-center order-1 md:order-2">
+                                <div
+                                    class="relative w-full aspect-4/3 max-w-85 sm:max-w-105 md:max-w-full h-75 sm:h-87.5 md:h-112.5">
+                                    <img alt="NBN &amp; Business Internet" loading="lazy" decoding="async"
+                                        class="object-contain"
+                                        style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                                        src="/images/home/hero/internet-hero.png" />
                                 </div>
                             </div>
                         </div>
@@ -99,7 +101,34 @@
                             </div>
                         </div>
                     </div>
-                    {{-- Slide 4: Telecoms --}}
+                    {{-- Slide 4: Cloud --}}
+                    <div class="swiper-slide">
+                        <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 pb-8">
+                            <div class="flex flex-col items-start space-y-4 md:space-y-6 text-left order-2 md:order-1">
+                                <span
+                                    class="inline-block bg-brand-green text-white text-xs font-semibold px-3 py-1.5 rounded-sm hover:bg-brand-green-hover transition-colors">Quick
+                                    Support &gt;</span>
+                                <h1
+                                    class="whitespace-pre-line text-xl font-extrabold tracking-tight text-heading sm:text-4xl md:text-5xl lg:text-5xl leading-tight">
+                                    Microsoft 365 &amp;
+                                    Cloud Services</h1>
+                                <p class="max-w-md text-base text-body-muted md:text-lg">Secure email, collaboration and
+                                    cloud services — set up the right way.</p>
+                                <a href="{{ route('cloud') }}"><button
+                                        class="rounded-full bg-blue-500 px-8 cursor-pointer py-3.5 text-sm font-bold text-white tracking-wide shadow-md transition-all hover:bg-blue-600 hover:shadow-lg focus:outline-none">FIND
+                                        OUT MORE &gt;</button></a>
+                            </div>
+                            <div class="flex justify-center order-1 md:order-2">
+                                <div
+                                    class="relative w-full aspect-4/3 max-w-85 sm:max-w-105 md:max-w-full h-75 sm:h-87.5 md:h-112.5">
+                                    <img alt="Microsoft 365 &amp; Cloud Services" decoding="async" class="object-contain"
+                                        style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
+                                        src="/images/home/hero/cloud-hero.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{-- Slide 5: Telecoms --}}
                     <div class="swiper-slide">
                         <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 pb-8">
                             <div class="flex flex-col items-start space-y-4 md:space-y-6 text-left order-2 md:order-1">
@@ -127,34 +156,6 @@
                             </div>
                         </div>
                     </div>
-                    {{-- Slide 5: Internet --}}
-                    <div class="swiper-slide">
-                        <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 pb-8">
-                            <div class="flex flex-col items-start space-y-4 md:space-y-6 text-left order-2 md:order-1">
-                                <span
-                                    class="inline-block bg-brand-green text-white text-xs font-semibold px-3 py-1.5 rounded-sm hover:bg-brand-green-hover transition-colors">Internet
-                                    &gt;</span>
-                                <h1
-                                    class="whitespace-pre-line text-xl font-extrabold tracking-tight text-heading sm:text-4xl md:text-5xl lg:text-5xl leading-tight">
-                                    NBN &amp; Business
-                                    Internet</h1>
-                                <p class="max-w-md text-base text-body-muted md:text-lg">High-speed, redundant pipelines
-                                    keeping your office fast and reliable.</p>
-                                <a href="{{ route('internet.nbn') }}"><button
-                                        class="rounded-full bg-blue-500 px-8 cursor-pointer py-3.5 text-sm font-bold text-white tracking-wide shadow-md transition-all hover:bg-blue-600 hover:shadow-lg focus:outline-none">FIND
-                                        OUT MORE &gt;</button></a>
-                            </div>
-                            <div class="flex justify-center order-1 md:order-2">
-                                <div
-                                    class="relative w-full aspect-4/3 max-w-85 sm:max-w-105 md:max-w-full h-75 sm:h-87.5 md:h-112.5">
-                                    <img alt="NBN &amp; Business Internet" loading="lazy" decoding="async"
-                                        class="object-contain"
-                                        style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                        src="/images/home/hero/internet-hero.png" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -162,17 +163,8 @@
             <div class="mt-4 border-t border-gray-100 pt-4">
                 <div
                     class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:flex md:items-stretch md:justify-between md:gap-0 divide-x-0 md:divide-x divide-gray-200">
+                    {{-- 1 IT --}}
                     <button onclick="heroSwiper.slideToLoop(0)"
-                        class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t border-t-brand-blue"
-                        data-index="0">
-                        <span class="absolute top-0 left-0 h-0.75 transition-all duration-300 w-full bg-blue-500"></span>
-                        <span
-                            class="text-[11px] leading-tight text-gray-400 font-medium md:text-xs line-clamp-2 min-h-8">Cloud
-                            Services &amp; Microsoft 365</span>
-                        <span class="mt-1 text-xs font-bold leading-tight md:text-sm text-blue-500">Modern cloud
-                            tools</span>
-                    </button>
-                    <button onclick="heroSwiper.slideToLoop(1)"
                         class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t border-t-white"
                         data-index="1">
                         <span
@@ -182,6 +174,19 @@
                         <span class="mt-1 text-xs font-bold leading-tight md:text-sm text-gray-500">Fully Managed &amp;
                             AdHoc</span>
                     </button>
+                    {{-- 2 INTERNET  --}}
+                    <button onclick="heroSwiper.slideToLoop(1)"
+                        class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t border-t-white"
+                        data-index="4">
+                        <span
+                            class="absolute top-0 left-0 h-0.75 transition-all duration-300 w-0 bg-transparent group-hover:w-full group-hover:bg-blue-500"></span>
+                        <span
+                            class="text-[11px] leading-tight text-gray-400 font-medium md:text-xs line-clamp-2 min-h-8">BCT
+                            &amp; Business Internet</span>
+                        <span class="mt-1 text-xs font-bold leading-tight md:text-sm text-gray-500">Internet, Home &amp;
+                            Business</span>
+                    </button>
+                    {{-- 3 CYBER  --}}
                     <button onclick="heroSwiper.slideToLoop(2)"
                         class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t border-t-white"
                         data-index="2">
@@ -193,7 +198,19 @@
                         <span class="mt-1 text-xs font-bold leading-tight md:text-sm text-gray-500">Proactive
                             Security</span>
                     </button>
-                    <button onclick="heroSwiper.slideToLoop(3)"
+                    {{-- 4 Cloud  --}}
+                    <button onclick="heroSwiper.slideToLoop(4)"
+                        class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t border-t-brand-blue"
+                        data-index="0">
+                        <span class="absolute top-0 left-0 h-0.75 transition-all duration-300 w-full bg-blue-500"></span>
+                        <span
+                            class="text-[11px] leading-tight text-gray-400 font-medium md:text-xs line-clamp-2 min-h-8">Cloud
+                            Services &amp; Microsoft 365</span>
+                        <span class="mt-1 text-xs font-bold leading-tight md:text-sm text-blue-500">Modern cloud
+                            tools</span>
+                    </button>
+                    {{-- 5 TELECOM  --}}
+                    <button onclick="heroSwiper.slideToLoop(4)"
                         class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t border-t-white"
                         data-index="3">
                         <span
@@ -203,17 +220,6 @@
                             &amp; Phone Systems</span>
                         <span class="mt-1 text-xs font-bold leading-tight md:text-sm text-gray-500">Modern voice
                             solutions</span>
-                    </button>
-                    <button onclick="heroSwiper.slideToLoop(4)"
-                        class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t border-t-white"
-                        data-index="4">
-                        <span
-                            class="absolute top-0 left-0 h-0.75 transition-all duration-300 w-0 bg-transparent group-hover:w-full group-hover:bg-blue-500"></span>
-                        <span
-                            class="text-[11px] leading-tight text-gray-400 font-medium md:text-xs line-clamp-2 min-h-8">NBN
-                            &amp; Business Internet</span>
-                        <span class="mt-1 text-xs font-bold leading-tight md:text-sm text-gray-500">Internet, Home &amp;
-                            Business</span>
                     </button>
                 </div>
             </div>
@@ -718,7 +724,7 @@
                                     '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-brand-light-bg"><circle cx="12" cy="12" r="10"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"></path></svg>',
                                 'title' => 'Internet',
                                 'description' =>
-                                    'See what we provide in terms of internet services, including NBN, Cel-Fi, Starlink and LTE solutions.',
+                                    'See what we provide in terms of internet services, including BCT, Cel-Fi, Starlink and LTE solutions.',
                             ],
                             [
                                 'icon' =>
