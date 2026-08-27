@@ -226,6 +226,159 @@
         </div>
     </section>
 
+    {{-- ======================== HERO V2 – BCT Exact Match ======================== --}}
+    @php
+        $heroV2Slides = [
+            [
+                'subtitle' => 'Reliable IT. Real-Time Results.',
+                'title' => 'Comprehensive IT Solutions for a Digital World',
+                'desc' =>
+                    'IT Solutions encompass a wide range of services, technologies, and strategies designed to address the technological needs of businesses and organizations.',
+                'image' => '/images/home/hero/hero_1.jpg',
+            ],
+            [
+                'subtitle' => 'Design. Develop. Deliver.',
+                'title' => 'Your Vision, Our Web And App Mastery',
+                'desc' =>
+                    'Streamline operations, increase efficiency, and drive growth with our innovative IT solutions.',
+                'image' => '/images/home/hero/hero_2.jpg',
+            ],
+            [
+                'subtitle' => 'Code. Create. Conquer.',
+                'title' => 'Unlocking the Future with Digital Solutions',
+                'desc' =>
+                    'Digital transformation is the process of integrating digital technology into all aspects of a business, fundamentally changing how it operates.',
+                'image' => '/images/home/hero/hero_3.jpg',
+            ],
+        ];
+    @endphp
+
+    <section id="heroV2" class="hero-v2 relative w-full overflow-hidden bg-[#070d18]">
+        {{-- Inline SVG Clip Path Definition for Left Curved Panel --}}
+        <svg class="absolute w-0 h-0 pointer-events-none" aria-hidden="true">
+            <defs>
+                <clipPath id="bctHeroCurve" clipPathUnits="objectBoundingBox">
+                    <!-- Smooth curved arch extending to the right edge -->
+                    <path d="M 0,0 L 0.82,0 C 0.98,0.25 0.98,0.75 0.82,1 L 0,1 Z" />
+                </clipPath>
+            </defs>
+        </svg>
+
+        <div class="hero-v2-swiper swiper relative w-full h-[650px] md:h-[720px] lg:h-[820px]">
+            <div class="swiper-wrapper">
+                @foreach ($heroV2Slides as $i => $slide)
+                    <div class="swiper-slide relative w-full h-full overflow-hidden">
+
+                        {{-- Right Background Image (Visual side under mask) --}}
+                        <div class="absolute inset-0 w-full h-full z-0">
+                            <img src="{{ $slide['image'] }}" alt="{{ $slide['title'] }}"
+                                class="w-full h-full object-cover object-right lg:object-center" />
+                        </div>
+
+                        {{-- Left Dark Masked Panel with Polygon/Curve --}}
+                        <div
+                            class="bct-curved-panel absolute inset-y-0 left-0 w-full lg:w-[62%] z-10 bg-[#070d18] flex items-center">
+
+                            {{-- Hexagon Network Pattern Background Overlay --}}
+                            <div class="absolute inset-0 opacity-15 pointer-events-none"
+                                style="background-image: radial-gradient(rgba(255, 255, 255, 0.4) 1px, transparent 1px); background-size: 32px 32px;">
+                            </div>
+
+                            <div class="w-full max-w-[1320px] mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 relative z-20">
+                                <div class="max-w-[560px]">
+
+                                    {{-- Subtitle --}}
+                                    <span
+                                        class="hero-v2-subtitle block text-white text-lg sm:text-xl font-medium mb-3 tracking-wide"
+                                        data-swiper-parallax="-150">
+                                        {{ $slide['subtitle'] }}
+                                    </span>
+
+                                    {{-- Main Title --}}
+                                    <h1 class="hero-v2-title text-white text-4xl sm:text-5xl lg:text-[64px] font-bold leading-[1.1] mb-6 tracking-tight"
+                                        data-swiper-parallax="-250">
+                                        {{ $slide['title'] }}
+                                    </h1>
+
+                                    {{-- Description --}}
+                                    <p class="hero-v2-desc text-white/70 text-base sm:text-lg leading-relaxed mb-8 max-w-[480px]"
+                                        data-swiper-parallax="-350">
+                                        {{ $slide['desc'] }}
+                                    </p>
+
+                                    {{-- Button & Connected Dashed Curve Container --}}
+                                    <div class="relative inline-flex items-center" data-swiper-parallax="-450">
+                                        <a href="{{ route('it-support') }}"
+                                            class="inline-flex items-center gap-3 bg-[#1d65f5] hover:bg-[#1450c9] text-white text-base font-semibold rounded-full px-8 py-4 transition-all duration-300 shadow-xl shadow-blue-600/25 group">
+                                            <span>Get Started</span>
+                                            <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                                                fill="none" stroke="currentColor" stroke-width="2.5"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M7 17L17 7M17 7H7M17 7v10" />
+                                            </svg>
+                                        </a>
+
+                                        {{-- Dashed Bezier Arc connecting Button to Video Badge --}}
+                                        <div
+                                            class="hidden xl:block absolute left-[100%] top-[40%] w-[220px] h-[100px] pointer-events-none">
+                                            <svg width="220" height="100" viewBox="0 0 220 100" fill="none"
+                                                class="w-full h-full">
+                                                <path d="M 10 20 Q 120 90, 205 70" stroke="rgba(255, 255, 255, 0.35)"
+                                                    stroke-width="1.5" stroke-dasharray="6 5" fill="none" />
+                                                <polygon points="200,64 212,70 202,78" fill="rgba(255, 255, 255, 0.5)" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {{-- Spinning Badge Overlapping Curve Border --}}
+                            <div
+                                class="hidden lg:flex absolute right-[-70px] xl:right-[-85px] bottom-[10%] z-30 items-center justify-center">
+                                <div
+                                    class="relative flex items-center justify-center w-[160px] h-[160px] xl:w-[180px] xl:h-[180px]">
+
+                                    {{-- Rotating Text Ring --}}
+                                    <div class="absolute inset-0 animate-[spin_12s_linear_infinite]"
+                                        style="will-change: transform;">
+                                        @php
+                                            $spinText = 'BEST IT SOLUTION COMPANY * ';
+                                            $chars = mb_str_split($spinText);
+                                            $total = count($chars);
+                                        @endphp
+                                        @foreach ($chars as $idx => $char)
+                                            <span
+                                                class="absolute left-1/2 top-1/2 text-white/80 font-bold uppercase tracking-widest"
+                                                style="font-size: 10px; transform: translate(-50%, -50%) rotate({{ ($idx * 360) / $total }}deg) translateY(-64px);">
+                                                {{ $char }}
+                                            </span>
+                                        @endforeach
+                                    </div>
+
+                                    {{-- Inner Play Button --}}
+                                    <a href="https://www.youtube.com/watch?v=pQpFebyALV0" target="_blank"
+                                        aria-label="Play Intro Video"
+                                        class="relative z-10 flex items-center justify-center w-14 h-14 xl:w-16 xl:h-16 rounded-full bg-[#070d18] border border-white/20 text-white shadow-2xl hover:scale-110 transition-transform duration-300">
+                                        <svg class="w-5 h-5 ml-1 fill-current" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+
+            {{-- Far-Left Vertical Slider Progress Indicators --}}
+            <div class="hero-v2-pagination absolute left-5 lg:left-8 top-1/2 -translate-y-1/2 z-40 flex flex-col gap-3">
+                {{-- Bullets injected by JS --}}
+            </div>
+        </div>
+    </section>
+
     {{-- ======================== ABOUT SECTION ======================== --}}
     <section id="about-sec" class="relative bg-white py-20 lg:py-28 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div class="absolute top-32 right-0 w-125 h-125 rounded-full pointer-events-none"
@@ -1161,188 +1314,239 @@
 @push('scripts')
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Hero slider with indicators
-            var heroSwiper = new Swiper('.hero-swiper', {
-                loop: true,
-                autoplay: {
-                    delay: 5000,
-                    disableOnInteraction: false
-                },
-                slidesPerView: 1,
-                onSlideChange: function(swiper) {
-                    updateHeroIndicators(swiper.realIndex);
-                }
-            });
-            window.heroSwiper = heroSwiper;
-            updateHeroIndicators(0);
+            const swiperContainer = document.querySelector('.hero-v2-swiper');
+            const paginationWrapper = document.querySelector('.hero-v2-pagination');
 
-            function updateHeroIndicators(activeIndex) {
-                document.querySelectorAll('.hero-indicator').forEach(function(btn, idx) {
-                    var active = idx === activeIndex;
-                    btn.classList.toggle('border-t-brand-blue', active);
-                    btn.classList.toggle('border-t-white', !active);
-                    var bar = btn.querySelector('span:first-child');
-                    if (bar) {
-                        bar.className = active ?
-                            'absolute top-0 left-0 h-0.75 transition-all duration-300 w-full bg-blue-500' :
-                            'absolute top-0 left-0 h-0.75 transition-all duration-300 w-0 bg-transparent group-hover:w-full group-hover:bg-blue-500';
-                    }
-                    var label = btn.querySelector('span:last-child');
-                    if (label) {
-                        label.className = active ?
-                            'mt-1 text-xs font-bold leading-tight md:text-sm text-blue-500' :
-                            'mt-1 text-xs font-bold leading-tight md:text-sm text-gray-500';
+            if (swiperContainer && paginationWrapper) {
+                const slides = swiperContainer.querySelectorAll('.swiper-slide');
+                paginationWrapper.innerHTML = '';
+
+                // Dynamically build vertical pagination indicators
+                slides.forEach((_, idx) => {
+                    const bar = document.createElement('div');
+                    bar.classList.add('hero-v2-bar');
+                    if (idx === 0) bar.classList.add('hero-v2-bar-active');
+                    bar.setAttribute('aria-label', `Go to slide ${idx + 1}`);
+
+                    bar.addEventListener('click', () => {
+                        if (window.heroV2Swiper) {
+                            window.heroV2Swiper.slideToLoop(idx);
+                        }
+                    });
+
+                    paginationWrapper.appendChild(bar);
+                });
+
+                // Swiper slider initialization with Parallax support
+                window.heroV2Swiper = new Swiper('.hero-v2-swiper', {
+                    loop: true,
+                    effect: 'fade',
+                    parallax: true,
+                    fadeEffect: {
+                        crossFade: true
+                    },
+                    speed: 900,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false
+                    },
+                    on: {
+                        slideChange: function(swiper) {
+                            const bars = paginationWrapper.querySelectorAll('.hero-v2-bar');
+                            bars.forEach((bar, index) => {
+                                if (index === swiper.realIndex) {
+                                    bar.classList.add('hero-v2-bar-active');
+                                } else {
+                                    bar.classList.remove('hero-v2-bar-active');
+                                }
+                            });
+                        }
                     }
                 });
             }
+        });
+        // Hero slider with indicators
+        var heroSwiper = new Swiper('.hero-swiper', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            slidesPerView: 1,
+            onSlideChange: function(swiper) {
+                updateHeroIndicators(swiper.realIndex);
+            }
+        });
+        window.heroSwiper = heroSwiper;
+        updateHeroIndicators(0);
 
-            setInterval(function() {
-                if (window.heroSwiper) {
-                    updateHeroIndicators(window.heroSwiper.realIndex);
+        function updateHeroIndicators(activeIndex) {
+            document.querySelectorAll('.hero-indicator').forEach(function(btn, idx) {
+                var active = idx === activeIndex;
+                btn.classList.toggle('border-t-brand-blue', active);
+                btn.classList.toggle('border-t-white', !active);
+                var bar = btn.querySelector('span:first-child');
+                if (bar) {
+                    bar.className = active ?
+                        'absolute top-0 left-0 h-0.75 transition-all duration-300 w-full bg-blue-500' :
+                        'absolute top-0 left-0 h-0.75 transition-all duration-300 w-0 bg-transparent group-hover:w-full group-hover:bg-blue-500';
                 }
-            }, 500);
+                var label = btn.querySelector('span:last-child');
+                if (label) {
+                    label.className = active ?
+                        'mt-1 text-xs font-bold leading-tight md:text-sm text-blue-500' :
+                        'mt-1 text-xs font-bold leading-tight md:text-sm text-gray-500';
+                }
+            });
+        }
 
-            // What We Offer - hover active state
-            var wwoSection = document.querySelector('.what-we-offer');
-            if (wwoSection) {
-                var wwoCards = wwoSection.querySelectorAll('.wwog-card');
-                var wwoBgs = wwoSection.querySelectorAll('.wwog-bg');
+        setInterval(function() {
+            if (window.heroSwiper) {
+                updateHeroIndicators(window.heroSwiper.realIndex);
+            }
+        }, 500);
 
-                wwoCards.forEach(function(card) {
-                    card.addEventListener('mouseenter', function() {
-                        var idx = card.getAttribute('data-index');
+        // What We Offer - hover active state
+        var wwoSection = document.querySelector('.what-we-offer');
+        if (wwoSection) {
+            var wwoCards = wwoSection.querySelectorAll('.wwog-card');
+            var wwoBgs = wwoSection.querySelectorAll('.wwog-bg');
 
-                        wwoCards.forEach(function(c) {
-                            c.classList.remove('bg-slate-950/75', 'backdrop-blur-sm');
-                            c.classList.add('bg-transparent');
-                            var content = c.querySelector('.wwog-content');
-                            if (content) {
-                                content.classList.remove('opacity-100', 'translate-y-0');
-                                content.classList.add('opacity-0', 'translate-y-4');
-                            }
-                        });
+            wwoCards.forEach(function(card) {
+                card.addEventListener('mouseenter', function() {
+                    var idx = card.getAttribute('data-index');
 
-                        card.classList.remove('bg-transparent');
-                        card.classList.add('bg-slate-950/75', 'backdrop-blur-sm');
-                        var activeContent = card.querySelector('.wwog-content');
-                        if (activeContent) {
-                            activeContent.classList.remove('opacity-0', 'translate-y-4');
-                            activeContent.classList.add('opacity-100', 'translate-y-0');
+                    wwoCards.forEach(function(c) {
+                        c.classList.remove('bg-slate-950/75', 'backdrop-blur-sm');
+                        c.classList.add('bg-transparent');
+                        var content = c.querySelector('.wwog-content');
+                        if (content) {
+                            content.classList.remove('opacity-100', 'translate-y-0');
+                            content.classList.add('opacity-0', 'translate-y-4');
                         }
+                    });
 
-                        wwoBgs.forEach(function(bg) {
-                            bg.classList.toggle('opacity-0', bg.getAttribute(
-                                'data-index') !== idx);
-                            bg.classList.toggle('opacity-100', bg.getAttribute(
-                                'data-index') === idx);
-                        });
+                    card.classList.remove('bg-transparent');
+                    card.classList.add('bg-slate-950/75', 'backdrop-blur-sm');
+                    var activeContent = card.querySelector('.wwog-content');
+                    if (activeContent) {
+                        activeContent.classList.remove('opacity-0', 'translate-y-4');
+                        activeContent.classList.add('opacity-100', 'translate-y-0');
+                    }
+
+                    wwoBgs.forEach(function(bg) {
+                        bg.classList.toggle('opacity-0', bg.getAttribute(
+                            'data-index') !== idx);
+                        bg.classList.toggle('opacity-100', bg.getAttribute(
+                            'data-index') === idx);
                     });
                 });
-            }
+            });
+        }
 
-            // Blog slider with navigation & pagination
-            var blogBullets = document.querySelectorAll('.blog-custom-bullet');
-            window.blogSwiper = new Swiper('.blog-swiper', {
-                loop: true,
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false
+        // Blog slider with navigation & pagination
+        var blogBullets = document.querySelectorAll('.blog-custom-bullet');
+        window.blogSwiper = new Swiper('.blog-swiper', {
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false
+            },
+            slidesPerView: 1,
+            spaceBetween: 32,
+            navigation: {
+                prevEl: '.blog-swiper-prev',
+                nextEl: '.blog-swiper-next'
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2
                 },
-                slidesPerView: 1,
-                spaceBetween: 32,
-                navigation: {
-                    prevEl: '.blog-swiper-prev',
-                    nextEl: '.blog-swiper-next'
-                },
-                breakpoints: {
-                    640: {
-                        slidesPerView: 2
-                    },
-                    1024: {
-                        slidesPerView: 3
-                    }
+                1024: {
+                    slidesPerView: 3
+                }
+            }
+        });
+
+        function updateBlogIndicators(realIndex) {
+            var idx = realIndex % 3;
+            blogBullets.forEach(function(b, i) {
+                if (i === idx) {
+                    b.classList.add('blog-bullet-active');
+                } else {
+                    b.classList.remove('blog-bullet-active');
                 }
             });
+        }
 
-            function updateBlogIndicators(realIndex) {
-                var idx = realIndex % 3;
-                blogBullets.forEach(function(b, i) {
-                    if (i === idx) {
-                        b.classList.add('blog-bullet-active');
-                    } else {
-                        b.classList.remove('blog-bullet-active');
-                    }
-                });
+        window.blogSwiper.on('slideChange', function(swiper) {
+            updateBlogIndicators(swiper.realIndex);
+        });
+
+        setInterval(function() {
+            if (window.blogSwiper) {
+                updateBlogIndicators(window.blogSwiper.realIndex);
             }
+        }, 500);
 
-            window.blogSwiper.on('slideChange', function(swiper) {
-                updateBlogIndicators(swiper.realIndex);
+        blogBullets.forEach(function(bullet) {
+            bullet.addEventListener('click', function() {
+                var idx = parseInt(bullet.getAttribute('data-index'));
+                window.blogSwiper.slideToLoop(idx);
+                updateBlogIndicators(idx);
+            });
+        });
+
+        // Team video modal
+        var teamVideoWrapper = document.getElementById('teamVideoWrapper');
+        var teamVideoModal = document.getElementById('teamVideoModal');
+        var teamVideo = document.getElementById('teamVideo');
+        var closeTeamVideo = document.getElementById('closeTeamVideo');
+
+        if (teamVideoWrapper && teamVideoModal) {
+            teamVideoWrapper.addEventListener('click', function() {
+                teamVideoModal.classList.remove('hidden');
+                teamVideoModal.classList.add('flex');
+                teamVideo.play();
             });
 
-            setInterval(function() {
-                if (window.blogSwiper) {
-                    updateBlogIndicators(window.blogSwiper.realIndex);
-                }
-            }, 500);
-
-            blogBullets.forEach(function(bullet) {
-                bullet.addEventListener('click', function() {
-                    var idx = parseInt(bullet.getAttribute('data-index'));
-                    window.blogSwiper.slideToLoop(idx);
-                    updateBlogIndicators(idx);
-                });
+            closeTeamVideo.addEventListener('click', function() {
+                teamVideo.pause();
+                teamVideo.currentTime = 0;
+                teamVideoModal.classList.add('hidden');
+                teamVideoModal.classList.remove('flex');
             });
 
-            // Team video modal
-            var teamVideoWrapper = document.getElementById('teamVideoWrapper');
-            var teamVideoModal = document.getElementById('teamVideoModal');
-            var teamVideo = document.getElementById('teamVideo');
-            var closeTeamVideo = document.getElementById('closeTeamVideo');
-
-            if (teamVideoWrapper && teamVideoModal) {
-                teamVideoWrapper.addEventListener('click', function() {
-                    teamVideoModal.classList.remove('hidden');
-                    teamVideoModal.classList.add('flex');
-                    teamVideo.play();
-                });
-
-                closeTeamVideo.addEventListener('click', function() {
+            teamVideoModal.addEventListener('click', function(e) {
+                if (e.target === teamVideoModal) {
                     teamVideo.pause();
                     teamVideo.currentTime = 0;
                     teamVideoModal.classList.add('hidden');
                     teamVideoModal.classList.remove('flex');
-                });
-
-                teamVideoModal.addEventListener('click', function(e) {
-                    if (e.target === teamVideoModal) {
-                        teamVideo.pause();
-                        teamVideo.currentTime = 0;
-                        teamVideoModal.classList.add('hidden');
-                        teamVideoModal.classList.remove('flex');
-                    }
-                });
-            }
-
-            // Testimonial slider
-            new Swiper('.testimonial-swiper', {
-                loop: true,
-                autoplay: {
-                    delay: 5000,
-                    disableOnInteraction: false
-                },
-                slidesPerView: 1,
-                spaceBetween: 30,
-                navigation: {
-                    prevEl: '.testimonial-prev',
-                    nextEl: '.testimonial-next'
-                },
-                pagination: {
-                    el: '.testimonial-pagination',
-                    clickable: true,
-                    bulletClass: 'w-2 h-2 rounded-full bg-gray-600 cursor-pointer transition-all',
-                    bulletActiveClass: '!w-6 !bg-brand-secondary'
-                },
+                }
             });
+        }
+
+        // Testimonial slider
+        new Swiper('.testimonial-swiper', {
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+        },
+        slidesPerView: 1,
+        spaceBetween: 30,
+        navigation: {
+            prevEl: '.testimonial-prev',
+            nextEl: '.testimonial-next'
+        },
+        pagination: {
+            el: '.testimonial-pagination',
+            clickable: true,
+            bulletClass: 'w-2 h-2 rounded-full bg-gray-600 cursor-pointer transition-all',
+            bulletActiveClass: '!w-6 !bg-brand-secondary'
+        },
+        });
         });
     </script>
     <style>

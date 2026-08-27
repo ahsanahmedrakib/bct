@@ -218,6 +218,105 @@ body {
     }
 }
 
+/* ── Hero V2 (hero-8 style) ─────────────────────────────── */
+.hero-v2 {
+    overflow: hidden;
+}
+
+.hero-v2-swiper {
+    overflow: hidden;
+}
+
+/* Image curved blob shape via CSS mask */
+.hero-v2-img-mask {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000' preserveAspectRatio='none'%3E%3Cpath d='M250,0 L1000,0 L1000,1000 L250,1000 C350,850 350,150 250,0 Z'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000' preserveAspectRatio='none'%3E%3Cpath d='M250,0 L1000,0 L1000,1000 L250,1000 C350,850 350,150 250,0 Z'/%3E%3C/svg%3E");
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+/* Slide entrance animations */
+@keyframes slideinleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Vertical progress-bar pagination */
+.hero-v2-pagination {
+    width: 5px;
+}
+
+.hero-v2-pagination .hero-v2-pag-bullet {
+    width: 100%;
+    height: 70px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.3s;
+}
+
+.hero-v2-pagination .hero-v2-pag-bullet::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-v2-pagination .hero-v2-pag-bullet-active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hero-v2-pagination .hero-v2-pag-bullet-active::before {
+    background-color: #ffffff;
+    animation: hero-v2-slide-progress 5s cubic-bezier(0.3, 0, 0.3, 1) forwards;
+}
+
+.hero-v2-swiper.swiper-paused .hero-v2-pag-bullet-active::before {
+    animation-play-state: paused;
+}
+
+@keyframes hero-v2-slide-progress {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(0); }
+}
+
+/* Responsive: disable mask on smaller screens */
+@media (max-width: 1279px) {
+    .hero-v2-img-mask {
+        -webkit-mask-image: none !important;
+        mask-image: none !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-v2-swiper .swiper-slide * {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+    .hero-v2-pagination .hero-v2-pag-bullet::before {
+        animation: none;
+    }
+}
+
 /* ── Navbar Utilities ─────────────────────────────────────── */
 @utility text-utility {
     font-size: 11px;
@@ -267,3 +366,32 @@ body {
   text-decoration: underline;
   text-decoration-thickness: 2px;
 } */
+/* Apply the SVG Curve Mask on Large Screens */
+@media (min-width: 1024px) {
+    .bct-curved-panel {
+        clip-path: url(#bctHeroCurve);
+    }
+}
+
+@media (max-width: 1023px) {
+    .bct-curved-panel {
+        clip-path: none;
+        background: linear-gradient(to right, rgba(7, 13, 24, 0.98) 50%, rgba(7, 13, 24, 0.75));
+    }
+}
+
+/* Far-Left Vertical Line Pagination Indicators */
+.hero-v2-bar {
+    width: 3px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-v2-bar-active {
+    height: 58px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
