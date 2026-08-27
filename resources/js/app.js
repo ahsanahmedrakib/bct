@@ -165,6 +165,13 @@ document.addEventListener("DOMContentLoaded", function () {
         requestAnimationFrame(function () {
             megaPanel.style.opacity = "1";
         });
+        megaTriggers.forEach(function (t) {
+            if (t.dataset.mega === key) {
+                t.classList.add("nav-active");
+            } else {
+                t.classList.remove("nav-active");
+            }
+        });
     }
 
     function hideMega() {
@@ -173,6 +180,9 @@ document.addEventListener("DOMContentLoaded", function () {
             setTimeout(function () {
                 megaPanel.classList.add("hidden");
             }, 150);
+            megaTriggers.forEach(function (t) {
+                t.classList.remove("nav-active");
+            });
         }, 150);
     }
 

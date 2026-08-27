@@ -100,6 +100,31 @@
         .mega-category {
             display: none;
         }
+
+        [data-mega] {
+            position: relative;
+            padding-bottom: 4px !important;
+        }
+
+        [data-mega]::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: var(--color-brand-blue);
+            transition: width 0.2s ease-in-out;
+        }
+
+        [data-mega]:hover::after,
+        [data-mega].nav-active::after {
+            width: 100%;
+        }
+
+        [data-mega].nav-active {
+            color: var(--color-brand-hover) !important;
+        }
     </style>
 
     @stack('head')
