@@ -253,15 +253,15 @@
         ];
     @endphp
 
-    <div class="th-hero-wrapper hero-8 relative"
+    <div class="th-hero-wrapper hero-8 relative overflow-hidden"
         style="background-image:url('/images/home/hero/hero_bg_8_1.png');background-size:cover;background-position:center">
-        <div class="hero-v2-swiper swiper relative w-full overflow-visible" style="height:820px">
+        <div class="hero-v2-swiper swiper relative w-full overflow-hidden" style="height:820px">
             <div class="swiper-wrapper" style="height:100%">
                 @foreach ($heroV2Slides as $slide)
                     <div class="swiper-slide" style="height:100%">
                         <div class="hero-inner relative w-full" style="height:820px">
                             <div class="container mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 relative z-20 h-full">
-                                <div class="max-w-158 h-full flex flex-col justify-center text-left pt-24">
+                                <div class="max-w-158 h-full flex flex-col justify-center text-left pt-24 pl-16">
                                     <span class="block text-white text-2xl sm:text-3xl font-bold mb-4"
                                         data-swiper-parallax="-150">{{ $slide['subtitle'] }}</span>
                                     <h1 class="text-white text-4xl sm:text-5xl lg:text-[74px] font-bold leading-[1.15] mb-5 capitalize"
@@ -296,7 +296,9 @@
             </div>
         </div>
 
-
+        {{-- Vertical bullet pagination --}}
+        <div class="hero-v2-pagination absolute z-50 flex flex-col items-center gap-3 lg:flex"
+            style="left:40px;top:50%;transform:translateY(-50%)"></div>
 
         {{-- Dashed decorative line --}}
         <div class="absolute hidden xl:block" style="left:24%;bottom:14%;z-index:3">
@@ -1286,6 +1288,12 @@
                         delay: 5000,
                         disableOnInteraction: false
                     },
+                    pagination: {
+                        el: '.hero-v2-pagination',
+                        clickable: true,
+                        bulletClass: 'hero-v2-bullet',
+                        bulletActiveClass: 'hero-v2-bullet-active'
+                    }
 
                 });
             }
@@ -1512,6 +1520,27 @@
             height: 8px;
             border-radius: 9999px;
             background-color: #da3825 !important;
+        }
+
+        .hero-v2-bullet {
+            width: 10px;
+            height: 10px;
+            display: block;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .hero-v2-bullet:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .hero-v2-bullet-active {
+            width: 10px;
+            height: 30px;
+            border-radius: 9999px;
+            background-color: #1d65f5 !important;
         }
     </style>
 @endpush
