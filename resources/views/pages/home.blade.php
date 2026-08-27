@@ -985,6 +985,57 @@
                 @endforeach
             </div>
         </div>
+
+        {{-- Team Video --}}
+        <div class="reveal fade-up mt-16">
+            <div class="relative w-full overflow-hidden rounded-2xl cursor-pointer group" id="teamVideoWrapper">
+                <div class="relative w-full aspect-16/7 bg-gray-900">
+                    <img src="/images/home/video.jpg" alt="BCT Team at work"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <div class="absolute inset-0 bg-black/40 transition-opacity duration-300 group-hover:bg-black/50">
+                    </div>
+
+                    {{-- Play Button --}}
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div
+                            class="relative flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 rounded-full border-2 border-white/60 transition-all duration-300 group-hover:scale-110 group-hover:border-white">
+                            <div class="absolute inset-0 rounded-full bg-white/10 animate-pulse"></div>
+                            <svg class="w-8 h-8 sm:w-10 sm:h-10 text-white ml-1" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    {{-- Bottom Label --}}
+                    <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
+                        <span
+                            class="inline-block bg-brand-green text-white text-xs font-semibold px-3 py-1.5 rounded-sm mb-3">BCT
+                            Team</span>
+                        <h3 class="text-white text-xl sm:text-2xl font-bold tracking-tight">Meet the people behind our
+                            success</h3>
+                    </div>
+                </div>
+            </div>
+
+            {{-- Video Modal --}}
+            <div id="teamVideoModal"
+                class="fixed inset-0 z-9999 hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4">
+                <div class="relative w-full max-w-4xl">
+                    <button id="closeTeamVideo"
+                        class="absolute -top-12 right-0 text-white/70 hover:text-white transition-colors cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M18 6 6 18"></path>
+                            <path d="m6 6 12 12"></path>
+                        </svg>
+                    </button>
+                    <video id="teamVideo" class="w-full rounded-xl" controls preload="none">
+                        <source src="/videos/bct.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
     </section>
 
     {{-- ======================== TESTIMONIALS ======================== --}}
@@ -1241,6 +1292,36 @@
                     updateBlogIndicators(idx);
                 });
             });
+
+            // Team video modal
+            var teamVideoWrapper = document.getElementById('teamVideoWrapper');
+            var teamVideoModal = document.getElementById('teamVideoModal');
+            var teamVideo = document.getElementById('teamVideo');
+            var closeTeamVideo = document.getElementById('closeTeamVideo');
+
+            if (teamVideoWrapper && teamVideoModal) {
+                teamVideoWrapper.addEventListener('click', function() {
+                    teamVideoModal.classList.remove('hidden');
+                    teamVideoModal.classList.add('flex');
+                    teamVideo.play();
+                });
+
+                closeTeamVideo.addEventListener('click', function() {
+                    teamVideo.pause();
+                    teamVideo.currentTime = 0;
+                    teamVideoModal.classList.add('hidden');
+                    teamVideoModal.classList.remove('flex');
+                });
+
+                teamVideoModal.addEventListener('click', function(e) {
+                    if (e.target === teamVideoModal) {
+                        teamVideo.pause();
+                        teamVideo.currentTime = 0;
+                        teamVideoModal.classList.add('hidden');
+                        teamVideoModal.classList.remove('flex');
+                    }
+                });
+            }
 
             // Testimonial slider
             new Swiper('.testimonial-swiper', {
