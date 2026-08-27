@@ -227,93 +227,24 @@ body {
     overflow: hidden;
 }
 
-/* Image curved blob shape via CSS mask */
-.hero-v2-img-mask {
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000' preserveAspectRatio='none'%3E%3Cpath d='M250,0 L1000,0 L1000,1000 L250,1000 C350,850 350,150 250,0 Z'/%3E%3C/svg%3E");
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000' preserveAspectRatio='none'%3E%3Cpath d='M250,0 L1000,0 L1000,1000 L250,1000 C350,850 350,150 250,0 Z'/%3E%3C/svg%3E");
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    mask-position: center;
+/* Vertical progress bar */
+.hero-v2-progress-bar {
+    animation: hero-v2-progress 5s cubic-bezier(0.3, 0, 0.3, 1) forwards;
+    transform: scaleY(0);
 }
 
-/* Slide entrance animations */
-@keyframes slideinleft {
-    0% {
-        opacity: 0;
-        transform: translateX(-40px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/* Vertical progress-bar pagination */
-.hero-v2-pagination {
-    width: 5px;
-}
-
-.hero-v2-pagination .hero-v2-pag-bullet {
-    width: 100%;
-    height: 70px;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border: none;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    padding: 0;
-    transition: background-color 0.3s;
-}
-
-.hero-v2-pagination .hero-v2-pag-bullet::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.hero-v2-pagination .hero-v2-pag-bullet-active {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.hero-v2-pagination .hero-v2-pag-bullet-active::before {
-    background-color: #ffffff;
-    animation: hero-v2-slide-progress 5s cubic-bezier(0.3, 0, 0.3, 1) forwards;
-}
-
-.hero-v2-swiper.swiper-paused .hero-v2-pag-bullet-active::before {
-    animation-play-state: paused;
-}
-
-@keyframes hero-v2-slide-progress {
-    0% { transform: translateY(-100%); }
-    100% { transform: translateY(0); }
-}
-
-/* Responsive: disable mask on smaller screens */
-@media (max-width: 1279px) {
-    .hero-v2-img-mask {
-        -webkit-mask-image: none !important;
-        mask-image: none !important;
-    }
+@keyframes hero-v2-progress {
+    0% { transform: scaleY(0); }
+    100% { transform: scaleY(1); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .hero-v2-swiper .swiper-slide * {
-        animation: none !important;
-        opacity: 1 !important;
-        transform: none !important;
-    }
-    .hero-v2-pagination .hero-v2-pag-bullet::before {
+    .hero-v2-progress-bar {
         animation: none;
+        transform: scaleY(1);
+    }
+    .hero-v2-swiper .swiper-slide * {
+        animation-duration: 0.01ms !important;
     }
 }
 
