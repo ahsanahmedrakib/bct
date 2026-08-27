@@ -232,44 +232,51 @@
             [
                 'subtitle' => 'Reliable IT. Real-Time Results.',
                 'title' => 'Comprehensive IT Solutions for a Digital World',
-                'desc' => 'IT Solutions encompass a wide range of services, technologies, and strategies designed to address the technological needs of businesses and organizations.',
+                'desc' =>
+                    'IT Solutions encompass a wide range of services, technologies, and strategies designed to address the technological needs of businesses and organizations.',
                 'image' => '/images/home/hero/hero_1.jpg',
             ],
             [
                 'subtitle' => 'Design. Develop. Deliver.',
                 'title' => 'Your Vision, Our Web And App Mastery',
-                'desc' => 'Streamline operations, increase efficiency, and drive growth with our innovative IT solutions.',
+                'desc' =>
+                    'Streamline operations, increase efficiency, and drive growth with our innovative IT solutions.',
                 'image' => '/images/home/hero/hero_2.jpg',
             ],
             [
                 'subtitle' => 'Code. Create. Conquer.',
                 'title' => 'Unlocking the Future with Digital Solutions',
-                'desc' => 'Digital transformation is the process of integrating digital technology into all aspects of a business, fundamentally changing how it operates.',
+                'desc' =>
+                    'Digital transformation is the process of integrating digital technology into all aspects of a business, fundamentally changing how it operates.',
                 'image' => '/images/home/hero/hero_3.jpg',
             ],
         ];
     @endphp
 
-    <div class="th-hero-wrapper hero-8 relative" style="background-image:url('/images/home/hero/hero_bg_8_1.png');background-size:cover;background-position:center">
+    <div class="th-hero-wrapper hero-8 relative"
+        style="background-image:url('/images/home/hero/hero_bg_8_1.png');background-size:cover;background-position:center">
         <div class="hero-v2-swiper swiper relative w-full overflow-visible" style="height:820px">
             <div class="swiper-wrapper" style="height:100%">
                 @foreach ($heroV2Slides as $slide)
                     <div class="swiper-slide" style="height:100%">
                         <div class="hero-inner relative w-full" style="height:820px">
                             <div class="container mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 relative z-20 h-full">
-                                <div class="max-w-[632px] h-full flex flex-col justify-center text-left pt-24">
+                                <div class="max-w-158 h-full flex flex-col justify-center text-left pt-24">
                                     <span class="block text-white text-2xl sm:text-3xl font-bold mb-4"
                                         data-swiper-parallax="-150">{{ $slide['subtitle'] }}</span>
                                     <h1 class="text-white text-4xl sm:text-5xl lg:text-[74px] font-bold leading-[1.15] mb-5 capitalize"
                                         data-swiper-parallax="-250">{{ $slide['title'] }}</h1>
-                                    <p class="text-white/80 text-lg leading-relaxed mb-8 max-w-[530px]"
+                                    <p class="text-white/80 text-lg leading-relaxed mb-8 max-w-132.5"
                                         data-swiper-parallax="-350">{{ $slide['desc'] }}</p>
                                     <div data-swiper-parallax="-450">
                                         <a href="{{ route('it-support') }}"
                                             class="inline-flex items-center gap-3 bg-[#1d65f5] hover:bg-[#1450c9] text-white text-base font-semibold rounded-full px-12 py-5 transition-all duration-300 group">
                                             <span>Get Started</span>
-                                            <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+                                            <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                                                fill="none" stroke="currentColor" stroke-width="2.5"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M7 17L17 7M17 7H7M17 7v10" />
                                             </svg>
                                         </a>
                                     </div>
@@ -278,7 +285,8 @@
 
                             {{-- Hero image with mask shape --}}
                             <div class="absolute top-0 right-0 h-full z-10" style="width:55%">
-                                <div class="hero-img-mask w-full h-full" style="mask-image:url('/images/home/hero/hero-8-shape.png');-webkit-mask-image:url('/images/home/hero/hero-8-shape.png');mask-size:100% 100%;-webkit-mask-size:100% 100%;mask-repeat:no-repeat;-webkit-mask-repeat:no-repeat">
+                                <div class="hero-img-mask w-full h-full"
+                                    style="mask-image:url('/images/home/hero/hero-8-shape.png');-webkit-mask-image:url('/images/home/hero/hero-8-shape.png');mask-size:100% 100%;-webkit-mask-size:100% 100%;mask-repeat:no-repeat;-webkit-mask-repeat:no-repeat">
                                     <img src="{{ $slide['image'] }}" alt="" class="w-full h-full object-cover" />
                                 </div>
                             </div>
@@ -288,22 +296,24 @@
             </div>
         </div>
 
-        {{-- Vertical pagination (outside swiper to avoid overflow:hidden clipping) --}}
-        <div class="hero-v2-pagination absolute z-50 w-[5px] hidden lg:block" style="left:80px;top:33%"></div>
+
 
         {{-- Dashed decorative line --}}
         <div class="absolute hidden xl:block" style="left:24%;bottom:14%;z-index:3">
             <svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M 10 10 C 80 10, 120 180, 300 120" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-dasharray="6 5" fill="none" />
+                <path d="M 10 10 C 80 10, 120 180, 300 120" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"
+                    stroke-dasharray="6 5" fill="none" />
                 <polygon points="295,114 310,120 298,128" fill="rgba(255,255,255,0.4)" />
             </svg>
         </div>
 
         {{-- Spinning badge --}}
         <div class="absolute hidden lg:flex items-center justify-center" style="bottom:8%;left:38%;z-index:3">
-            <div class="relative w-[180px] h-[180px] rounded-full border-[1.5px] border-dashed border-white/50 flex items-center justify-center">
+            <div
+                class="relative w-45 h-45 rounded-full border-[1.5px] border-dashed border-white/50 flex items-center justify-center">
                 {{-- Spinning text ring --}}
-                <div class="absolute inset-0 animate-[spin_10s_linear_infinite]" style="animation-direction:reverse;will-change:transform">
+                <div class="absolute inset-0 animate-[spin_10s_linear_infinite]"
+                    style="animation-direction:reverse;will-change:transform">
                     @php
                         $spinText = 'BEST IT SOLUTION COMPANY * ';
                         $chars = mb_str_split($spinText);
@@ -1268,16 +1278,15 @@
                     loop: true,
                     effect: 'fade',
                     parallax: true,
-                    fadeEffect: { crossFade: true },
+                    fadeEffect: {
+                        crossFade: true
+                    },
                     speed: 900,
                     autoplay: {
                         delay: 5000,
                         disableOnInteraction: false
                     },
-                    pagination: {
-                        el: '.hero-v2-pagination',
-                        clickable: true
-                    }
+
                 });
             }
 
@@ -1286,7 +1295,10 @@
             if (heroSwiperEl) {
                 var heroSwiper = new Swiper('.hero-swiper', {
                     loop: true,
-                    autoplay: { delay: 5000, disableOnInteraction: false },
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false
+                    },
                     slidesPerView: 1,
                     onSlideChange: function(swiper) {
                         updateHeroIndicators(swiper.realIndex);
@@ -1347,8 +1359,10 @@
                             activeContent.classList.add('opacity-100', 'translate-y-0');
                         }
                         wwoBgs.forEach(function(bg) {
-                            bg.classList.toggle('opacity-0', bg.getAttribute('data-index') !== idx);
-                            bg.classList.toggle('opacity-100', bg.getAttribute('data-index') === idx);
+                            bg.classList.toggle('opacity-0', bg.getAttribute(
+                                'data-index') !== idx);
+                            bg.classList.toggle('opacity-100', bg.getAttribute(
+                                'data-index') === idx);
                         });
                     });
                 });
@@ -1360,11 +1374,24 @@
             if (blogSwiperEl) {
                 window.blogSwiper = new Swiper('.blog-swiper', {
                     loop: true,
-                    autoplay: { delay: 4000, disableOnInteraction: false },
+                    autoplay: {
+                        delay: 4000,
+                        disableOnInteraction: false
+                    },
                     slidesPerView: 1,
                     spaceBetween: 32,
-                    navigation: { prevEl: '.blog-swiper-prev', nextEl: '.blog-swiper-next' },
-                    breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+                    navigation: {
+                        prevEl: '.blog-swiper-prev',
+                        nextEl: '.blog-swiper-next'
+                    },
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 2
+                        },
+                        1024: {
+                            slidesPerView: 3
+                        }
+                    }
                 });
 
                 function updateBlogIndicators(realIndex) {
@@ -1423,7 +1450,10 @@
             if (testEl) {
                 new Swiper('.testimonial-swiper', {
                     loop: true,
-                    autoplay: { delay: 5000, disableOnInteraction: false },
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false
+                    },
                     slidesPerView: 1,
                     spaceBetween: 30,
                     navigation: {
