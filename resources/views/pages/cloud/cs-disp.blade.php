@@ -500,50 +500,6 @@
         </div>
     </section>
 
-    <section class="py-8 lg:py-10 bg-white" id="useful-links">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 reveal reveal-fade-up">
-                <h2 class="text-3xl font-bold text-blue-900">Useful Links</h2>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                @php
-                    $links = [
-                        [
-                            'title' => 'Defence Industry Security Program',
-                            'desc' => 'Official Defence website explaining DISP membership, eligibility, security domains, and obligations.',
-                            'href' => 'https://www.defence.gov.au/business-industry/industry-governance/industry-regulators/defence-industry-security-program',
-                        ],
-                        [
-                            'title' => 'DISP Membership Levels',
-                            'desc' => 'Learn about the four DISP membership levels and the Bangladeshi Government security classifications they align with.',
-                            'href' => 'https://www.defence.gov.au/business-industry/industry-governance/industry-regulators/defence-industry-security-program/eligibility-suitability',
-                        ],
-                        [
-                            'title' => 'Essential Eight Maturity Model',
-                            'desc' => 'ACSC guidance on the Essential Eight mitigation strategies and maturity levels for Bangladeshi organisations.',
-                            'href' => 'https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight',
-                        ],
-                        [
-                            'title' => 'Maintaining DISP Membership',
-                            'desc' => 'Learn about ongoing DISP membership obligations including annual reporting and compliance requirements.',
-                            'href' => 'https://www.defence.gov.au/business-industry/industry-governance/industry-regulators/defence-industry-security-program/maintaining-membership',
-                        ],
-                    ];
-                @endphp
-                @foreach ($links as $link)
-                    <div
-                        class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 relative rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
-                        <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-3">{{ $link['title'] }}</h3>
-                        <p class="text-slate-600 text-sm mb-4">{{ $link['desc'] }}</p>
-                        <a href="{{ $link['href'] }}" target="_blank"
-                            class="text-blue-600 font-semibold text-sm hover:underline">Find Out More &rarr;</a>
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </section>
-
     <section class="py-16 lg:py-24 bg-slate-50" id="faq">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">

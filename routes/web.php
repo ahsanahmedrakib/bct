@@ -7,6 +7,19 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [App\Http\Controllers\ContactController::class, 'store'])->name('contact.submit');
 Route::get('/industries', [App\Http\Controllers\IndustriesController::class, 'index'])->name('industries');
+Route::prefix('industries')->name('industries.')->group(function () {
+    Route::get('/it-for-agriculture', [App\Http\Controllers\IndustriesController::class, 'agriculture'])->name('agriculture');
+    Route::get('/it-support-for-professional-services', [App\Http\Controllers\IndustriesController::class, 'professionalServices'])->name('professional-services');
+    Route::get('/it-for-transportation', [App\Http\Controllers\IndustriesController::class, 'transportation'])->name('transportation');
+    Route::get('/it-support-for-aged-care', [App\Http\Controllers\IndustriesController::class, 'agedCare'])->name('aged-care');
+    Route::get('/it-support-for-medical', [App\Http\Controllers\IndustriesController::class, 'medical'])->name('medical');
+    Route::get('/it-support-for-veterinary', [App\Http\Controllers\IndustriesController::class, 'veterinary'])->name('veterinary');
+    Route::get('/it-support-for-real-estate', [App\Http\Controllers\IndustriesController::class, 'realEstate'])->name('real-estate');
+    Route::get('/it-support-for-engineering', [App\Http\Controllers\IndustriesController::class, 'engineering'])->name('engineering');
+    Route::get('/it-support-for-accountants', [App\Http\Controllers\IndustriesController::class, 'accountants'])->name('accountants');
+    Route::get('/it-support-for-construction', [App\Http\Controllers\IndustriesController::class, 'construction'])->name('construction');
+    Route::get('/it-support-for-non-profit', [App\Http\Controllers\IndustriesController::class, 'nonProfit'])->name('non-profit');
+});
 
 // ─── IT Support ─────────────────────────────────────────────────
 Route::get('/it-support', [App\Http\Controllers\ItSupportController::class, 'index'])->name('it-support');

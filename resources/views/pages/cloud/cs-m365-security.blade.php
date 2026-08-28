@@ -504,11 +504,6 @@
                             'desc' => 'Data governance and compliance solution for protecting sensitive information across your organisation.',
                             'href' => 'https://www.microsoft.com/en-us/security/business/sensitivity-labels',
                         ],
-                        [
-                            'title' => 'ACSC Essential Eight',
-                            'desc' => 'Bangladeshi Cyber Security Centre framework for protecting against cyber attacks and data breaches.',
-                            'href' => 'https://www.cyber.gov.au/business-and-organisations/essential-cyber-security/essential-eight',
-                        ],
                     ];
                 @endphp
                 @foreach ($usefulLinks as $link)

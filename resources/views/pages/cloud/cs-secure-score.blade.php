@@ -575,13 +575,6 @@
                                 'Learn how Microsoft 365 provides comprehensive cybersecurity features to protect your business from modern threats.',
                             'href' => '#',
                         ],
-                        [
-                            'title' => 'Essential Eight Maturity Model',
-                            'desc' =>
-                                'ACSC guidance on the Essential Eight mitigation strategies and maturity levels for Bangladeshi organisations.',
-                            'href' =>
-                                'https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight',
-                        ],
                     ];
                 @endphp
                 @foreach ($usefulLinks as $link)

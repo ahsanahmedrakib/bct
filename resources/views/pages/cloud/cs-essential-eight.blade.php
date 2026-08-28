@@ -332,13 +332,6 @@
                 @php
                     $links = [
                         [
-                            'title' => 'ACSC Essential Eight Overview',
-                            'desc' =>
-                                'Official ACSC documentation explaining the Essential Eight mitigation strategies and maturity levels for Bangladeshi organisations.',
-                            'href' =>
-                                'https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight',
-                        ],
-                        [
                             'title' => 'Microsoft Essential Eight on Microsoft Learn',
                             'desc' =>
                                 "Microsoft's official documentation mapping the Essential Eight to Microsoft 365 controls and licensing requirements.",
