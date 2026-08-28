@@ -462,9 +462,28 @@ body {
 /* Video circle */
 .video-circle {
     position: absolute;
-    bottom: 13%;
-    left: 38%;
+    bottom: 20%;
+    left: 36%;
     z-index: 2;
+}
+.circle-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: hsla(0, 0%, 100%, 0.26);
+    -webkit-backdrop-filter: blur(39.6px);
+    backdrop-filter: blur(39.6px);
+    display: inline-block;
+}
+.circle-logo .play-icon {
+    height: 80px;
+    width: 80px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 @media (max-width: 1500px) {
     .video-circle {

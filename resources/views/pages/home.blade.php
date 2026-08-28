@@ -309,12 +309,18 @@
         </div>
 
         {{-- Spinning badge --}}
-        <div class="video-circle absolute hidden lg:flex items-center justify-center bg-cover bg-center"
-            style="background-image: url('{{ asset('/images/home/hero/bullets-circle.png') }}');">
-            <div
-                class="relative w-45 h-45 rounded-full border-[1.5px] border-dashed border-white/50 flex items-center justify-center">
+        <div class="video-circle absolute hidden lg:flex items-center justify-center">
+            <div class="circle-logo relative flex items-center justify-center bg-cover bg-center"
+                style="background-image:url('{{ asset('/images/home/hero/bullets-circle.png') }}');background-color:hsla(0,0%,100%,0.26);backdrop-filter:blur(39.6px);-webkit-backdrop-filter:blur(39.6px);border:1px dashed rgba(255,255,255,0.55)">
+                <a href="https://www.youtube.com/watch?v=pQpFebyALV0" target="_blank"
+                    class="play-icon z-10 absolute flex items-center justify-center rounded-full bg-[#1a1b1d] border border-white/20 shadow-2xl hover:scale-110 transition-transform duration-300">
+                    <svg class="w-7 h-7 text-white fill-white" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M8 5.14v13.72c0 .8.87 1.3 1.56.9l11.02-6.86a1.05 1.05 0 0 0 0-1.8L9.56 4.24A1.05 1.05 0 0 0 8 5.14z" />
+                    </svg>
+                </a>
                 {{-- Spinning text ring --}}
-                <div class="absolute inset-0 animate-[spin_10s_linear_infinite]"
+                <div class="absolute inset-0 rounded-full overflow-hidden animate-[spin_10s_linear_infinite]"
                     style="animation-direction:reverse;will-change:transform">
                     @php
                         $spinText = 'BEST IT SOLUTION COMPANY * ';
@@ -322,17 +328,12 @@
                         $total = count($chars);
                     @endphp
                     @foreach ($chars as $idx => $char)
-                        <span class="absolute left-1/2 top-1/2 text-white font-bold uppercase tracking-widest"
-                            style="font-size:10px;transform:translate(-50%,-50%) rotate({{ ($idx * 360) / $total }}deg) translateY(-68px)">
+                        <span class="absolute left-1/2 top-1/2 text-white font-bold uppercase tracking-normal"
+                            style="font-size:11px;transform:translate(-50%,-50%) rotate({{ ($idx * 360) / $total }}deg) translateY(-68px)">
                             {{ $char }}
                         </span>
                     @endforeach
                 </div>
-                {{-- Play button (centered) --}}
-                <a href="https://www.youtube.com/watch?v=pQpFebyALV0" target="_blank"
-                    class="relative z-10 flex items-center justify-center w-14 h-14 rounded-full bg-[#1a1b1d] border border-white/20 shadow-2xl hover:scale-110 transition-transform duration-300">
-                    <img src="/images/home/hero/play.svg" alt="Play" class="w-5 h-5 ml-0.5" />
-                </a>
             </div>
         </div>
     </div>
