@@ -1,123 +1,217 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
-        <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
-            <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
-                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">Web Development
-                </h1>
-                <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">Custom web applications
-                    and websites built with cutting-edge technologies. From simple sites to complex enterprise solutions.
-                </p>
+
+{{-- ==================== HERO ==================== --}}
+<section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
+    <div
+        class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+        {{-- Hero Content --}}
+        <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
+                Professional
+                <span class="text-blue-600 block mt-2">Web Development</span>
+            </h1>
+            <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">Custom-built websites
+                designed to elevate your business and engage your audience.</p>
+            <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed mt-2">From sleek designs
+                to powerful functionality, we bring your vision to life with cutting-edge technology.</p>
+
+            {{-- Action Buttons --}}
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 md:w-3/4 w-full">
+                <a href="{{ route('web.portfolio') }}"
+                    class="group flex cursor-pointer items-center justify-between px-6 py-4 text-white text-sm font-semibold rounded-xl shadow-md transition-all bg-navy hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">
+                    View Our Work
+                    <svg class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </a>
             </div>
-            <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
-                <img alt="Web Development" loading="lazy" class="rounded-lg w-full max-w-md lg:max-w-lg" src="/images/web/development.png" />
-            </div>
-        </div>
-        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-            <svg class="relative block w-full h-16" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path
-                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C73.23,28.79,158.46,59.39,235.9,67.65,264.44,70.67,293.12,61.7,321.39,56.44Z"
-                    fill="#f8fafc"></path>
-            </svg>
-        </div>
-    </section>
 
-    <section class="py-24 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 reveal reveal-fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Development Services</h2>
-                <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">End-to-end web development solutions tailored to
-                    your business needs.</p>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <div
-                    class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow">
-                    <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Custom Web Applications</h3>
-                    <p class="text-slate-600 leading-relaxed">Bespoke web applications built to your exact specifications
-                        using modern frameworks and best practices.</p>
-                </div>
-
-                <div class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow"
-                    style="animation-delay: 0.1s">
-                    <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 7.41A2.25 2.25 0 012.25 5.495V5.25" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Responsive Design</h3>
-                    <p class="text-slate-600 leading-relaxed">Mobile-first responsive designs that look great and function
-                        perfectly on all devices and screen sizes.</p>
-                </div>
-
-                <div class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow"
-                    style="animation-delay: 0.2s">
-                    <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">CMS Development</h3>
-                    <p class="text-slate-600 leading-relaxed">Content management systems that make it easy for you to update
-                        and manage your website content.</p>
-                </div>
-
-                <div
-                    class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow">
-                    <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">API Development</h3>
-                    <p class="text-slate-600 leading-relaxed">RESTful and GraphQL APIs that connect your applications and
-                        enable seamless data integration.</p>
-                </div>
-
-                <div class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow"
-                    style="animation-delay: 0.1s">
-                    <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Progressive Web Apps</h3>
-                    <p class="text-slate-600 leading-relaxed">PWAs that combine the best of web and mobile apps with offline
-                        functionality and push notifications.</p>
-                </div>
-
-                <div class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow"
-                    style="animation-delay: 0.2s">
-                    <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M11.42 15.17l-5.384 3.18A1.125 1.125 0 014.5 17.25V5.25a1.125 1.125 0 011.536-1.048l5.384 3.18a1.125 1.125 0 010 1.938zM18 12a6 6 0 11-12 0 6 6 0 0112 0z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Maintenance & Support</h3>
-                    <p class="text-slate-600 leading-relaxed">Ongoing maintenance, updates, and technical support to keep
-                        your website running smoothly.</p>
-                </div>
-
+            {{-- Support Link --}}
+            <div class="pt-6 border-t border-slate-200/60 flex flex-col items-start gap-3">
+                <p class="text-sky-700 font-semibold text-sm">Need help?</p>
+                <a href="{{ route('contact') }}"
+                    class="px-6 py-2.5 bg-white border border-brand-active text-sky-700 text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer transition-colors hover:bg-navy-active hover:text-white">Contact
+                    Us</a>
             </div>
         </div>
-    </section>
+
+        {{-- Hero Image --}}
+        <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
+            <img alt="BG Image" src="/images/web/development/hero.png" class="rounded-lg w-full max-w-md lg:max-w-lg" />
+        </div>
+    </div>
+
+    {{-- Curved bottom shape --}}
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+        <svg class="relative block w-full h-16" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C73.23,28.79,158.46,59.39,235.9,67.65,264.44,70.67,293.12,61.7,321.39,56.44Z"
+                fill="#f8fafc"></path>
+        </svg>
+    </div>
+</section>
+
+{{-- ==================== OUR WEB DEVELOPMENT SERVICES ==================== --}}
+<section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="reveal reveal-fade-up">
+        <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Our Web Development Services</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+            {{-- Custom Development --}}
+            <div class="border-2 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <div class="flex justify-center pb-6 text-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+                </div>
+                <h3 class="text-xl font-bold text-blue-900 text-center mb-3">Custom Development</h3>
+                <p class="text-slate-600 text-sm text-justify">Tailored solutions built from scratch to match your unique business requirements and goals.</p>
+            </div>
+
+            {{-- Responsive Design --}}
+            <div class="border-2 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <div class="flex justify-center pb-6 text-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                </div>
+                <h3 class="text-xl font-bold text-blue-900 text-center mb-3">Responsive Design</h3>
+                <p class="text-slate-600 text-sm text-justify">Websites that look and perform flawlessly on every device, from desktop to mobile.</p>
+            </div>
+
+            {{-- UI/UX Design --}}
+            <div class="border-2 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <div class="flex justify-center pb-6 text-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                </div>
+                <h3 class="text-xl font-bold text-blue-900 text-center mb-3">UI/UX Design</h3>
+                <p class="text-slate-600 text-sm text-justify">Intuitive and visually stunning interfaces that enhance user engagement and satisfaction.</p>
+            </div>
+
+            {{-- SEO Optimized --}}
+            <div class="border-2 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <div class="flex justify-center pb-6 text-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                </div>
+                <h3 class="text-xl font-bold text-blue-900 text-center mb-3">SEO Optimized</h3>
+                <p class="text-slate-600 text-sm text-justify">Built with search engine best practices to help you rank higher and attract more visitors.</p>
+            </div>
+
+            {{-- Secure & Reliable --}}
+            <div class="border-2 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <div class="flex justify-center pb-6 text-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+                </div>
+                <h3 class="text-xl font-bold text-blue-900 text-center mb-3">Secure & Reliable</h3>
+                <p class="text-slate-600 text-sm text-justify">Robust security measures and reliable hosting to keep your website safe and online.</p>
+            </div>
+
+            {{-- Fast Performance --}}
+            <div class="border-2 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <div class="flex justify-center pb-6 text-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+                </div>
+                <h3 class="text-xl font-bold text-blue-900 text-center mb-3">Fast Performance</h3>
+                <p class="text-slate-600 text-sm text-justify">Optimized for speed with fast load times and smooth interactions for the best user experience.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{{-- ==================== WHAT WE OFFER ==================== --}}
+<section class="py-16 lg:py-24 bg-white">
+    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">What We Offer</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            {{-- Web Application Development --}}
+            <div class="relative border-2 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Web Application Development</h3>
+                <div class="flex items-start mb-3"><svg class="w-5 h-5 mr-2 mt-0.5 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg><span class="text-slate-600 text-sm">Full-stack web application development</span></div>
+                <div class="flex items-start mb-3"><svg class="w-5 h-5 mr-2 mt-0.5 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg><span class="text-slate-600 text-sm">Progressive Web Apps (PWA)</span></div>
+                <div class="flex items-start mb-3"><svg class="w-5 h-5 mr-2 mt-0.5 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg><span class="text-slate-600 text-sm">Single Page Applications (SPA)</span></div>
+                <div class="flex items-start mb-3"><svg class="w-5 h-5 mr-2 mt-0.5 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg><span class="text-slate-600 text-sm">API development and integration</span></div>
+            </div>
+
+            {{-- Frontend Development --}}
+            <div class="relative border-2 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Frontend Development</h3>
+                <div class="flex items-start mb-3"><svg class="w-5 h-5 mr-2 mt-0.5 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg><span class="text-slate-600 text-sm">React, Next.js, and modern frameworks</span></div>
+                <div class="flex items-start mb-3"><svg class="w-5 h-5 mr-2 mt-0.5 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg><span class="text-slate-600 text-sm">Responsive and mobile-first design</span></div>
+                <div class="flex items-start mb-3"><svg class="w-5 h-5 mr-2 mt-0.5 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg><span class="text-slate-600 text-sm">Interactive UI components</span></div>
+                <div class="flex items-start mb-3"><svg class="w-5 h-5 mr-2 mt-0.5 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg><span class="text-slate-600 text-sm">Cross-browser compatibility</span></div>
+            </div>
+
+            {{-- Backend Development --}}
+            <div class="relative border-2 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Backend Development</h3>
+                <div class="flex items-start mb-3"><svg class="w-5 h-5 mr-2 mt-0.5 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg><span class="text-slate-600 text-sm">Server-side logic and APIs</span></div>
+                <div class="flex items-start mb-3"><svg class="w-5 h-5 mr-2 mt-0.5 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg><span class="text-slate-600 text-sm">Database design and management</span></div>
+                <div class="flex items-start mb-3"><svg class="w-5 h-5 mr-2 mt-0.5 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg><span class="text-slate-600 text-sm">Authentication and authorization</span></div>
+                <div class="flex items-start mb-3"><svg class="w-5 h-5 mr-2 mt-0.5 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg><span class="text-slate-600 text-sm">Cloud deployment and scaling</span></div>
+            </div>
+
+            {{-- Maintenance & Support --}}
+            <div class="relative border-2 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Maintenance & Support</h3>
+                <div class="flex items-start mb-3"><svg class="w-5 h-5 mr-2 mt-0.5 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg><span class="text-slate-600 text-sm">Regular updates and patches</span></div>
+                <div class="flex items-start mb-3"><svg class="w-5 h-5 mr-2 mt-0.5 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg><span class="text-slate-600 text-sm">Performance monitoring</span></div>
+                <div class="flex items-start mb-3"><svg class="w-5 h-5 mr-2 mt-0.5 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg><span class="text-slate-600 text-sm">Bug fixes and troubleshooting</span></div>
+                <div class="flex items-start mb-3"><svg class="w-5 h-5 mr-2 mt-0.5 text-blue-500 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg><span class="text-slate-600 text-sm">24/7 technical support</span></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{{-- ==================== BUILDING DIGITAL EXPERIENCES ==================== --}}
+<section class="py-16 lg:py-24 bg-white">
+    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+            <div
+                class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <h2 class="text-3xl font-bold text-blue-900 mb-6 mt-2">Building Digital Experiences That Matter</h2>
+                <p class="text-slate-600 mb-6 leading-relaxed">We craft custom websites that are not only visually stunning
+                    but also highly functional. Our development team uses the latest technologies to ensure your website
+                    stands out in the digital landscape.</p>
+                <p class="text-slate-600 mb-6 leading-relaxed">From concept to launch, we work closely with you to understand
+                    your goals and deliver a website that exceeds expectations. Every project is treated with the same level
+                    of dedication and attention to detail.</p>
+                <a href="{{ route('contact') }}"
+                    class="text-blue-600 font-medium flex items-center hover:text-blue-800">
+                    <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+                    Start Your Project
+                </a>
+            </div>
+        </div>
+        <div class="flex justify-center items-center">
+            <img src="/images/web/development/laptop.jpg" alt="Understanding Network Security Shield Graphic"
+                class="object-cover rounded-xl w-full max-w-lg" />
+        </div>
+    </div>
+</section>
+
+{{-- ==================== PARTNER LOGOS ==================== --}}
+<section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="reveal reveal-fade-up grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 items-center justify-items-center">
+        <img src="/images/web/wp.png" alt="WordPress" class="h-auto w-auto object-contain h-16 opacity-60 hover:opacity-100 transition">
+        <img src="/images/web/cpanel.png" alt="cPanel" class="h-auto w-auto object-contain h-16 opacity-60 hover:opacity-100 transition">
+        <img src="/images/web/yoast.png" alt="Yoast" class="h-auto w-auto object-contain h-16 opacity-60 hover:opacity-100 transition">
+        <img src="/images/web/synergy.png" alt="Synergy" class="h-auto w-auto object-contain h-16 opacity-60 hover:opacity-100 transition">
+        <img src="/images/web/cloudfare.png" alt="Cloudflare" class="h-auto w-auto object-contain h-16 opacity-60 hover:opacity-100 transition">
+    </div>
+</section>
+
 @endsection
