@@ -269,7 +269,7 @@
                                     <p class="text-white/80 text-base md:text-lg leading-relaxed mb-8 max-w-132.5 mx-auto xl:mx-0"
                                         data-swiper-parallax="-350">{{ $slide['desc'] }}</p>
                                     <div data-swiper-parallax="-450">
-                                        <a href="{{ route('it-support') }}"
+                                        <a href="{{ route('contact') }}"
                                             class="inline-flex items-center gap-3 bg-[#1d65f5] hover:bg-[#1450c9] text-white text-base font-semibold rounded-full px-10 md:px-12 py-4 md:py-5 transition-all duration-300 group">
                                             <span>Get Started</span>
                                             <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
@@ -304,12 +304,13 @@
             <svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M 10 10 C 80 10, 120 180, 300 120" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"
                     stroke-dasharray="6 5" fill="none" />
-                <polygon points="295,114 310,120 298,128" fill="rgba(255,255,255,0.4)" />
+                {{-- <polygon points="295,114 310,120 298,128" fill="rgba(255,255,255,0.4)" /> --}}
             </svg>
         </div>
 
         {{-- Spinning badge --}}
-        <div class="video-circle absolute hidden lg:flex items-center justify-center">
+        <div class="video-circle absolute hidden lg:flex items-center justify-center bg-cover bg-center"
+            style="background-image: url('{{ asset('/images/home/hero/bullets-circle.png') }}');">
             <div
                 class="relative w-45 h-45 rounded-full border-[1.5px] border-dashed border-white/50 flex items-center justify-center">
                 {{-- Spinning text ring --}}
