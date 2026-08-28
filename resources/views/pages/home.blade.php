@@ -329,7 +329,7 @@
                     @endphp
                     @foreach ($chars as $idx => $char)
                         <span class="absolute left-1/2 top-1/2 text-white font-bold uppercase tracking-normal"
-                            style="font-size:11px;transform:translate(-50%,-50%) rotate({{ ($idx * 360) / $total }}deg) translateY(-68px)">
+                            style="font-size:11px;transform:translate(-40%,-40%) rotate({{ ($idx * 360) / $total }}deg) translateY(-68px)">
                             {{ $char }}
                         </span>
                     @endforeach
