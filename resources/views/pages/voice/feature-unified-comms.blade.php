@@ -1,199 +1,158 @@
-@extends('layouts.page')
+@extends('layouts.app')
 
 @section('title', 'Unified Communications | Bismillah Computer & Technology')
+@section('description', 'Unified Communications brings voice, video, messaging and collaboration together in one seamless platform to boost productivity and keep your team connected.')
 
 @section('content')
 
-    <section class="relative bg-linear-to-br from-hero-gradient to-white pt-28 pb-20 lg:pt-36 lg:pb-28 overflow-hidden">
-        <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center relative z-10">
-            <div class="space-y-6">
-                <span
-                    class="inline-block px-4 py-1.5 bg-brand-blue/10 text-brand-blue text-sm font-semibold rounded-full">Voice
-                    Features</span>
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
-                    Unified Communications</h1>
-                <p class="text-lg md:text-xl text-slate-700 leading-relaxed">Bring together voice, video, messaging, and
-                    collaboration into a single, seamless platform for maximum productivity.</p>
-            </div>
-            <div class="flex justify-center lg:justify-end">
-                <img alt="Unified Communications" loading="lazy" class="rounded-2xl shadow-lg max-w-md w-full"
-                    src="/images/voice/hero.png" />
-            </div>
-        </div>
-        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-            <svg class="relative block w-full h-16" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path
-                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C73.23,28.79,158.46,59.39,235.9,67.65,264.44,70.67,293.12,61.7,321.39,56.44Z"
-                    fill="#f8fafc"></path>
-            </svg>
-        </div>
-    </section>
-
-    <section class="py-24 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 reveal reveal-fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">One Platform, Every Channel</h2>
-                <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Unified Communications eliminates the need for
-                    separate systems for voice, video, and messaging. Everything works together seamlessly.</p>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <div
-                    class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow">
-                    <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">VoIP Telephony</h3>
-                    <p class="text-slate-600 leading-relaxed">Crystal-clear voice calls with advanced features like auto
-                        attendant, call queues, and voicemail to email.</p>
-                </div>
-
-                <div class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow"
-                    style="animation-delay: 0.1s">
-                    <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Video Conferencing</h3>
-                    <p class="text-slate-600 leading-relaxed">HD video calls and conferences with screen sharing, recording,
-                        and virtual backgrounds for face-to-face collaboration.</p>
-                </div>
-
-                <div class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow"
-                    style="animation-delay: 0.2s">
-                    <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Instant Messaging</h3>
-                    <p class="text-slate-600 leading-relaxed">Real-time text messaging with presence status, file sharing,
-                        and group chats for quick team communication.</p>
-                </div>
-
-                <div
-                    class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow">
-                    <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Presence & Status</h3>
-                    <p class="text-slate-600 leading-relaxed">See who's available, busy, or away at a glance. Reduce missed
-                        connections and improve team responsiveness.</p>
-                </div>
-
-                <div class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow"
-                    style="animation-delay: 0.1s">
-                    <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Mobility</h3>
-                    <p class="text-slate-600 leading-relaxed">Stay connected from any device — desktop, laptop, tablet, or
-                        smartphone. Same features, same number, anywhere.</p>
-                </div>
-
-                <div class="reveal reveal-fade-up bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-lg transition-shadow"
-                    style="animation-delay: 0.2s">
-                    <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M11.42 15.17l-5.1-5.1m0 0L11.42 4.97m-5.1 5.1H21M3 3h18v18H3V3z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">CRM Integration</h3>
-                    <p class="text-slate-600 leading-relaxed">Click-to-call from your CRM, automatic call logging, and
-                        screen pops with customer information on incoming calls.</p>
-                </div>
-
+{{-- ==================== HERO ==================== --}}
+<section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
+    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+        <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
+            <span class="inline-block px-4 py-1.5 bg-brand-blue/10 text-brand-blue text-sm font-semibold rounded-full">Features</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
+                Unified
+                <span class="text-blue-600 block mt-2">Communications</span>
+            </h1>
+            <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">Bring voice, video,
+                messaging, and collaboration together in one seamless platform. Unified Communications (UC) makes it easy
+                for your team to connect and work together from anywhere.</p>
+            <div class="pt-6 border-t border-slate-200/60 flex flex-col items-start gap-3">
+                <p class="text-sky-700 font-semibold text-sm">Need help?</p>
+                <a href="{{ route('contact') }}" class="px-6 py-2.5 bg-white border border-brand-active text-sky-700 text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm hover:bg-navy-active hover:text-white transition-colors">Contact Us</a>
             </div>
         </div>
-    </section>
-
-    <section class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 reveal reveal-fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Benefits of Unified Communications</h2>
-                <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Transform how your team communicates and
-                    collaborates.</p>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="reveal reveal-fade-up flex items-start">
-                    <div
-                        class="w-10 h-10 bg-brand-green/10 rounded-lg flex items-center justify-center mr-4 mt-1 flex-shrink-0">
-                        <svg class="w-5 h-5 text-brand-green" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                        </svg>
-                    </div>
-                    <div>
-                        <h4 class="font-semibold text-slate-900 mb-1">Increased Productivity</h4>
-                        <p class="text-slate-600">Switch between calls, chats, and meetings without switching apps. Less
-                            context switching means more getting done.</p>
-                    </div>
-                </div>
-                <div class="reveal reveal-fade-up flex items-start">
-                    <div
-                        class="w-10 h-10 bg-brand-green/10 rounded-lg flex items-center justify-center mr-4 mt-1 flex-shrink-0">
-                        <svg class="w-5 h-5 text-brand-green" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                        </svg>
-                    </div>
-                    <div>
-                        <h4 class="font-semibold text-slate-900 mb-1">Cost Savings</h4>
-                        <p class="text-slate-600">One platform replaces multiple tools. Reduce licensing costs, maintenance
-                            overhead, and training requirements.</p>
-                    </div>
-                </div>
-                <div class="reveal reveal-fade-up flex items-start">
-                    <div
-                        class="w-10 h-10 bg-brand-green/10 rounded-lg flex items-center justify-center mr-4 mt-1 flex-shrink-0">
-                        <svg class="w-5 h-5 text-brand-green" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                        </svg>
-                    </div>
-                    <div>
-                        <h4 class="font-semibold text-slate-900 mb-1">Better Customer Experience</h4>
-                        <p class="text-slate-600">Faster response times, smarter routing, and complete interaction history
-                            at your fingertips.</p>
-                    </div>
-                </div>
-                <div class="reveal reveal-fade-up flex items-start">
-                    <div
-                        class="w-10 h-10 bg-brand-green/10 rounded-lg flex items-center justify-center mr-4 mt-1 flex-shrink-0">
-                        <svg class="w-5 h-5 text-brand-green" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                        </svg>
-                    </div>
-                    <div>
-                        <h4 class="font-semibold text-slate-900 mb-1">Work From Anywhere</h4>
-                        <p class="text-slate-600">Full UC functionality from any location with internet access. Support
-                            hybrid and remote work seamlessly.</p>
-                    </div>
-                </div>
+        <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
+            <div class="w-full max-w-md lg:max-w-lg aspect-4/3 rounded-2xl border-2 border-dashed border-blue-200 bg-blue-50/40 flex items-center justify-center">
+                <span class="text-blue-300 font-medium text-sm">Add image here</span>
             </div>
         </div>
-    </section>
+    </div>
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+        <svg class="relative block w-full h-16" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C73.23,28.79,158.46,59.39,235.9,67.65,264.44,70.67,293.12,61.7,321.39,56.44Z" fill="#f8fafc"></path>
+        </svg>
+    </div>
+</section>
 
+{{-- ==================== WHAT IS UC ==================== --}}
+<section class="py-16 lg:py-24 bg-white">
+    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+            <h2 class="text-3xl text-left font-bold text-blue-900 mb-6">One Platform, Every Way to Connect</h2>
+            <p class="text-slate-600 leading-relaxed mb-6 text-justify">Unified Communications integrates all your
+                business communication channels — voice calls, video conferencing, instant messaging, presence, and
+                voicemail — into a single, easy-to-use experience.</p>
+            <p class="text-slate-600 leading-relaxed mb-6 text-justify">Instead of juggling separate tools, your team gets
+                one platform that keeps everyone in sync, improving speed, clarity, and productivity.</p>
+            <a href="{{ route('contact') }}" class="text-blue-600 font-medium flex items-center hover:text-blue-800">
+                <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+                Get In Touch
+            </a>
+        </div>
+        <div class="flex justify-center">
+            <div class="w-full max-w-md aspect-4/3 rounded-2xl border-2 border-dashed border-blue-200 bg-blue-50/40 flex items-center justify-center">
+                <span class="text-blue-300 font-medium text-sm">Add image here</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{-- ==================== CHANNELS ==================== --}}
+<section class="py-16 lg:py-24 bg-slate-50">
+    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Everything in One Place</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <div class="relative border-2 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <h3 class="text-lg font-bold text-slate-900 mb-3">Voice &amp; Video</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">High-quality voice and video calls, wherever your team
+                    happens to be.</p>
+            </div>
+            <div class="relative border-2 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <h3 class="text-lg font-bold text-slate-900 mb-3">Instant Messaging</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Quick, secure messaging for fast collaboration between
+                    individuals and teams.</p>
+            </div>
+            <div class="relative border-2 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <h3 class="text-lg font-bold text-slate-900 mb-3">Presence</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">See who is available, busy, or away — so you always reach
+                    the right person.</p>
+            </div>
+            <div class="relative border-2 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <h3 class="text-lg font-bold text-slate-900 mb-3">Conferencing</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Host reliable audio and video conferences with team
+                    members and clients.</p>
+            </div>
+            <div class="relative border-2 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <h3 class="text-lg font-bold text-slate-900 mb-3">Softphone</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Make and receive calls from your desktop or mobile app,
+                    staying connected on the go.</p>
+            </div>
+            <div class="relative border-2 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <h3 class="text-lg font-bold text-slate-900 mb-3">Voicemail</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Unified voicemail to email ensures no message is ever
+                    missed.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{{-- ==================== BENEFITS ==================== --}}
+<section class="py-16 lg:py-24 bg-white">
+    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Why Unified Communications Matters</h2>
+        <p class="text-center text-slate-600 max-w-3xl mx-auto mb-12">A unified platform simplifies communication and makes
+            your business faster, clearer, and more productive.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <div class="relative border-2 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <h3 class="text-lg font-bold text-slate-900 mb-3">Work Anywhere</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Your team stays connected from the office, home, or on the
+                    road with a single system.</p>
+            </div>
+            <div class="relative border-2 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <h3 class="text-lg font-bold text-slate-900 mb-3">Faster Decisions</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Instant messaging and presence let your team respond
+                    quickly without playing phone tag.</p>
+            </div>
+            <div class="relative border-2 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <h3 class="text-lg font-bold text-slate-900 mb-3">Lower Costs</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Reduce the number of separate tools and services you pay
+                    for and manage.</p>
+            </div>
+            <div class="relative border-2 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <h3 class="text-lg font-bold text-slate-900 mb-3">Better Customer Experience</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Route calls and conversations to the right person quickly,
+                    improving service and satisfaction.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{{-- ==================== CTA ==================== --}}
+<section class="py-16 lg:py-24 bg-slate-50">
+    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="relative border-2 rounded-2xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100 text-center">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+            <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Bring Your Communications Together</h2>
+            <p class="text-slate-600 leading-relaxed mb-8 max-w-2xl mx-auto">Discover how unified communications can
+                transform the way your business connects.</p>
+            <a href="{{ route('contact') }}" class="inline-flex px-6 py-2.5 bg-brand-blue text-white text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer transition-colors hover:bg-brand-active">Contact Us</a>
+        </div>
+    </div>
+</section>
 
 @endsection
