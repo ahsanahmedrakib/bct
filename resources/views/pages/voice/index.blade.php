@@ -39,6 +39,10 @@
                     IPECS
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform"><path d="m9 18 6-6-6-6"></path></svg>
                 </a>
+                <a href="{{ route('voice.hardware-celfi') }}" class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg transition-all">
+                    CEL-FI
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform"><path d="m9 18 6-6-6-6"></path></svg>
+                </a>
             </div>
 
             <div class="pt-6 border-t border-slate-200/60 flex flex-col items-start gap-3">
@@ -112,6 +116,17 @@
                 <p class="text-slate-600 text-sm leading-relaxed">iPECS phones and phone systems are LG's solution for
                     Unified Communications (UC) platform focusing on the basics of reliability and scalability.</p>
                 <a href="{{ route('voice.brand-lg-ipecs') }}" class="inline-block mt-4 text-blue-600 font-semibold text-sm hover:underline">Learn More &rarr;</a>
+            </div>
+
+            <div class="relative border-2 rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
+                <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-5">
+                    <span class="text-2xl font-bold text-blue-600">C</span>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Cel-Fi</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Cel-Fi products are the first carrier-class cellular
+                    coverage solution for industry-leading signal gain.</p>
+                <a href="{{ route('voice.hardware-celfi') }}" class="inline-block mt-4 text-blue-600 font-semibold text-sm hover:underline">Learn More &rarr;</a>
             </div>
 
         </div>
@@ -230,17 +245,155 @@
     </div>
 </section>
 
+{{-- ==================== ONBOARDING TABS ==================== --}}
+<section class="py-16 lg:py-24 bg-slate-50">
+    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">A Simple, Stress-Free Process from Day One</h2>
+
+        <div class="flex flex-wrap justify-center gap-4 mb-12" role="tablist">
+            <button onclick="switchTab(this, 'tab-onboarding')" class="px-6 py-3 border-2 rounded-xl font-semibold text-sm bg-brand-blue text-white border-brand-blue shadow-sm cursor-pointer">Onboarding</button>
+            <button onclick="switchTab(this, 'tab-training')" class="px-6 py-3 border-2 rounded-xl font-semibold text-sm border-blue-100 bg-white text-slate-700 hover:border-blue-300 cursor-pointer">Training Your Team</button>
+            <button onclick="switchTab(this, 'tab-programming')" class="px-6 py-3 border-2 rounded-xl font-semibold text-sm border-blue-100 bg-white text-slate-700 hover:border-blue-300 cursor-pointer">Phone Programming</button>
+            <button onclick="switchTab(this, 'tab-transfer')" class="px-6 py-3 border-2 rounded-xl font-semibold text-sm border-blue-100 bg-white text-slate-700 hover:border-blue-300 cursor-pointer">Knowledge Transfer</button>
+            <button onclick="switchTab(this, 'tab-support')" class="px-6 py-3 border-2 rounded-xl font-semibold text-sm border-blue-100 bg-white text-slate-700 hover:border-blue-300 cursor-pointer">Support Services</button>
+        </div>
+
+        <div id="tab-onboarding" class="relative border-2 rounded-2xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100">
+            <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Onboarding, Your Way</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6 text-justify">Implementation can be completed in as
+                        little as 3 business days. We will move at your preferred pace, but if there are no obstacles to
+                        porting, this process can be expedited. Many of our customers opt for a longer timeline, which is
+                        perfectly acceptable.</p>
+                    <a href="{{ route('contact') }}" class="inline-flex px-6 py-2.5 bg-brand-blue text-white text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer transition-colors hover:bg-brand-active">Contact Us</a>
+                </div>
+                <div class="flex justify-center">
+                    <div class="w-full max-w-md aspect-4/3 rounded-2xl border-2 border-dashed border-blue-200 bg-blue-50/40 flex items-center justify-center">
+                        <span class="text-blue-300 font-medium text-sm">Add image here</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-training" class="relative border-2 rounded-2xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100 hidden">
+            <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Training Your Team</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6 text-justify">Implementation can be done in as little
+                        as 3 business days. We'll move at your pace, but if there are no barriers to porting, this
+                        process can happen quickly. Many of our customers prefer a longer timeline, and that is perfectly
+                        acceptable.</p>
+                    <a href="{{ route('contact') }}" class="inline-flex px-6 py-2.5 bg-brand-blue text-white text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer transition-colors hover:bg-brand-active">Contact Us</a>
+                </div>
+                <div class="flex justify-center">
+                    <div class="w-full max-w-md aspect-4/3 rounded-2xl border-2 border-dashed border-blue-200 bg-blue-50/40 flex items-center justify-center">
+                        <span class="text-blue-300 font-medium text-sm">Add image here</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-programming" class="relative border-2 rounded-2xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100 hidden">
+            <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Phone Programming</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6 text-justify">If you decide to keep your existing
+                        phones, we will log in remotely to program them. Most unlocked, modern phones can be easily
+                        programmed. It's a simple process for you.</p>
+                    <a href="{{ route('contact') }}" class="inline-flex px-6 py-2.5 bg-brand-blue text-white text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer transition-colors hover:bg-brand-active">Contact Us</a>
+                </div>
+                <div class="flex justify-center">
+                    <div class="w-full max-w-md aspect-4/3 rounded-2xl border-2 border-dashed border-blue-200 bg-blue-50/40 flex items-center justify-center">
+                        <span class="text-blue-300 font-medium text-sm">Add image here</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-transfer" class="relative border-2 rounded-2xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100 hidden">
+            <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Knowledge Transfer</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6 text-justify">Simply provide us with information on the
+                        number of phones/people, their identities, and their locations. We will handle everything from
+                        there. Our onboarding team will take on the workload, not you.</p>
+                    <a href="{{ route('contact') }}" class="inline-flex px-6 py-2.5 bg-brand-blue text-white text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer transition-colors hover:bg-brand-active">Contact Us</a>
+                </div>
+                <div class="flex justify-center">
+                    <div class="w-full max-w-md aspect-4/3 rounded-2xl border-2 border-dashed border-blue-200 bg-blue-50/40 flex items-center justify-center">
+                        <span class="text-blue-300 font-medium text-sm">Add image here</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-support" class="relative border-2 rounded-2xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100 hidden">
+            <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Support Services</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6 text-justify">Our post-activation support and account
+                        management are as exceptional as our onboarding. We uphold high service standards, including live
+                        24/7/365 support, a 20-second answer time, and a 94% first contact resolution rate. With dedicated
+                        support, account management, and regular service reviews and evaluations, we guarantee your needs
+                        will be met to your complete satisfaction.</p>
+                    <a href="{{ route('contact') }}" class="inline-flex px-6 py-2.5 bg-brand-blue text-white text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer transition-colors hover:bg-brand-active">Contact Us</a>
+                </div>
+                <div class="flex justify-center">
+                    <div class="w-full max-w-md aspect-4/3 rounded-2xl border-2 border-dashed border-blue-200 bg-blue-50/40 flex items-center justify-center">
+                        <span class="text-blue-300 font-medium text-sm">Add image here</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+function switchTab(btn, id) {
+    document.querySelectorAll('[role="tablist"] button').forEach(b => {
+        b.classList.remove('bg-brand-blue', 'text-white', 'border-brand-blue');
+        b.classList.add('bg-white', 'text-slate-700', 'border-blue-100');
+    });
+    btn.classList.add('bg-brand-blue', 'text-white', 'border-brand-blue');
+    btn.classList.remove('bg-white', 'text-slate-700', 'border-blue-100');
+    ['tab-onboarding','tab-training','tab-programming','tab-transfer','tab-support'].forEach(t => {
+        document.getElementById(t).classList.add('hidden');
+    });
+    document.getElementById(id).classList.remove('hidden');
+}
+</script>
+
 {{-- ==================== SUPPORT SERVICES ==================== --}}
 <section class="py-16 lg:py-24 bg-white">
     <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
         <div class="relative border-2 rounded-2xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100">
             <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
             <h2 class="text-3xl text-left font-bold text-blue-900 mb-4">Support Services</h2>
-            <p class="text-slate-600 leading-relaxed mb-6 text-justify">Our post-activation support and account
-                management are as exceptional as our onboarding. We uphold high service standards including live 24/7/365
-                support and a fast answer time, with a high first contact resolution rate. With dedicated support,
-                account management, and regular service reviews and evaluations, we guarantee your needs will be met to
-                your complete satisfaction.</p>
+            <p class="text-slate-600 leading-relaxed mb-6 text-justify">Our post-activation support and account management
+                are as exceptional as our onboarding. We uphold high service standards, including live 24/7/365 support, a
+                20-second answer time, and a 94% first contact resolution rate. With dedicated support, account management,
+                and regular service reviews and evaluations, we guarantee your needs will be met to your complete
+                satisfaction.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="border-2 border-blue-100 rounded-xl p-6 text-center">
+                    <p class="text-3xl font-bold text-blue-600 mb-1">24/7/365</p>
+                    <p class="text-sm text-slate-600">Live Support</p>
+                </div>
+                <div class="border-2 border-blue-100 rounded-xl p-6 text-center">
+                    <p class="text-3xl font-bold text-blue-600 mb-1">20s</p>
+                    <p class="text-sm text-slate-600">Answer Time</p>
+                </div>
+                <div class="border-2 border-blue-100 rounded-xl p-6 text-center">
+                    <p class="text-3xl font-bold text-blue-600 mb-1">94%</p>
+                    <p class="text-sm text-slate-600">First Contact Resolution</p>
+                </div>
+            </div>
             <a href="{{ route('contact') }}" class="inline-flex px-6 py-2.5 bg-brand-blue text-white text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer transition-colors hover:bg-brand-active">Contact Us</a>
         </div>
     </div>
@@ -254,6 +407,8 @@
             @php
             $faqs = [
                 ['q' => 'What is a Small Business Phone System?', 'a' => 'A small business phone system is a telecommunications solution designed specifically for businesses with fewer employees or locations. It provides features like voicemail, call forwarding, and multiple line functionalities to enhance communication within the company and with clients.'],
+                ['q' => 'How does a VoIP Phone System differ from a Traditional Phone System?', 'a' => 'A VoIP (Voice over Internet Protocol) phone system uses the internet to transmit voice calls, while traditional phone systems use landlines or cellular networks. VoIP systems often offer more flexibility, scalability, and features at a lower cost than traditional systems.'],
+                ['q' => 'Can I keep my Existing Phone Number when Switching to a New Phone System?', 'a' => 'Yes, most service providers offer number portability, allowing businesses to retain their existing phone numbers when transitioning to a new phone system.'],
                 ['q' => 'How can a Small Business Phone System benefit my Company?', 'a' => 'A small business phone system can enhance communication, improve customer service, offer scalability as your business grows, and often comes with features like call analytics, conferencing, and integration with other business tools.'],
                 ['q' => 'Is it Expensive to Set up a Phone System for my Small Business?', 'a' => 'The cost of setting up a phone system varies based on the type of system, features required, and the number of users. However, with the advent of cloud-based and VoIP solutions, many affordable options are available for small businesses.'],
             ];
