@@ -858,7 +858,7 @@
                         <a href="tel:+8801972721388"
                             class="bg-brand-blue hover:bg-brand-hover active:bg-brand-active text-white px-pill-px py-pill-py rounded-pill text-phone shadow-pill-glow transition-all duration-200 hover:shadow-md inline-flex items-center gap-1">
                             <span class="font-normal">(+88)</span>
-                            <span class="font-extrabold">0 1972-721388</span>
+                            <span class="font-extrabold">01972721388</span>
                         </a>
                     </div>
                 </nav>
@@ -1047,7 +1047,7 @@
                     <a href="tel:01972721388"
                         class="bg-brand-blue hover:bg-brand-hover active:bg-brand-active text-white px-pill-px py-pill-py rounded-pill text-phone shadow-pill-glow transition-all duration-200 hover:shadow-md inline-flex items-center gap-1">
                         <span class="font-normal">(+88)</span>
-                        <span class="font-extrabold">0 1972-721388</span>
+                        <span class="font-extrabold">01972721388</span>
                     </a>
                 </div>
             </div>
@@ -1133,7 +1133,7 @@
 
     {{-- ═══════════ FOOTER ═══════════ --}}
     <footer class="relative bg-brand-dark-bg text-white font-sans antialiased pb-20 lg:pb-0">
-        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 py-4">
+        <div class="max-w-7xl mx-auto px-1 sm:px-2 lg:px-10 py-4">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8 mb-4">
                 {{-- Column 1: Logo & About --}}
                 <div class="reveal space-y-6" data-variant="fade-right">
@@ -1143,7 +1143,8 @@
                                 style="width:auto;height:auto">
                         </a>
                     </div>
-                    <p class="text-[15px] leading-relaxed text-gray-200 pr-4 text-justify">Bismillah Computer & Technology provides
+                    <p class="text-[15px] leading-relaxed text-gray-200 pr-4 text-justify">Bismillah Computer &
+                        Technology provides
                         modern and secure digital workplaces, focusing on the B2B and B2C market with comprehensive
                         services in IT Managed Services, Telecommunications, Internet, Cloud, Web, Software, Domain,
                         Hosting, and Cyber Security.</p>
@@ -1222,8 +1223,8 @@
                                     </svg>
                                     <span>Email</span>
                                 </div>
-                                <a href="mailto:support@bct.com.bd"
-                                    class="text-[15px] text-gray-200 hover:text-white transition-colors">support@bct.com.bd</a>
+                                <a href="mailto:contact@bct.com.bd"
+                                    class="text-[15px] text-gray-200 hover:text-white transition-colors">contact@bct.com.bd</a>
                             </div>
                             <div>
                                 <div
@@ -1251,7 +1252,7 @@
                                     <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg>
-                                <span>Address</span>
+                                <span>Address (Head Office)</span>
                             </div>
                             <address class="text-[15px] text-gray-200 not-italic leading-relaxed">House# 86, Road# Lake
                                 Drive,<br>Sector#7, Uttara, Dhaka, Bangladesh</address>
@@ -1265,7 +1266,7 @@
                                     <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg>
-                                <span>Address</span>
+                                <span>Address (Branch Office)</span>
                             </div>
                             <address class="text-[15px] text-gray-200 not-italic leading-relaxed">House#6, Road# Shera
                                 Bangal Avenue,<br>Block#B, Dolipara Uttara Dhaka-1230</address>
