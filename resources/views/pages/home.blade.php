@@ -26,7 +26,7 @@
                 'subtitle' => 'Design. Develop. Deliver.',
                 'title' => 'Your Vision, Our Web And App Mastery',
                 'desc' =>
-                    'Streamline operations, increase efficiency, and drive growth with our innovative IT solutions.',
+                    'Streamline operations, increase efficiency, and drive growth with our innovative IT solutions.  We design, deploy, and maintain reliable network infrastructure.',
                 'image' => '/images/home/hero/hero_2.jpg',
             ],
             [
