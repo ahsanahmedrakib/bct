@@ -431,9 +431,13 @@ body {
     }
 }
 
-@media (max-width: 1399px) {
-    .hero-v2-pagination {
-        left: 20px;
+@media (max-width: 1199px) {
+    .hero-v2-pagination .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        left: 20px !important;
+        top: 45% !important;
     }
 }
 

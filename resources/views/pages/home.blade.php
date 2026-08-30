@@ -17,7 +17,7 @@
         $heroV2Slides = [
             [
                 'subtitle' => 'Reliable IT. Real-Time Results.',
-                'title' => 'Comprehensive IT Solutions for a Digital World',
+                'title' => 'Comprehensive IT Solutions for Digital World',
                 'desc' =>
                     'Our IT solutions combine modern technologies, expert strategies, and reliable services to meet the evolving technological needs of businesses and organizations.',
                 'image' => '/images/home/hero/hero_1.jpg',
@@ -52,7 +52,7 @@
                                         data-swiper-parallax="-150">{{ $slide['subtitle'] }}</span>
                                     <h1 class="text-white text-xl sm:text-2xl md:text-2xl lg:text-[40px] xl:text-[50px] font-bold leading-[1.15] mb-5 capitalize"
                                         data-swiper-parallax="-250">{{ $slide['title'] }}</h1>
-                                    <p class="text-white/80 text-base md:text-md leading-relaxed mb-8 max-w-132.5 mx-auto xl:mx-0"
+                                    <p class="text-white/80 text-base md:text-md leading-relaxed mb-8 max-w-132.5 mx-auto xl:mx-0 h-45 md:h-auto"
                                         data-swiper-parallax="-350">{{ $slide['desc'] }}</p>
                                     <div data-swiper-parallax="-450">
                                         <a href="{{ route('contact') }}"
@@ -1025,7 +1025,7 @@
                                     class="text-lg font-semibold text-gray-300 px-2 min-h-14 flex items-center justify-center">
                                     {{ $item['title'] }}</h4>
                             </div>
-                            <p class="text-gray-400 text-sm leading-relaxed font-light mb-8 text-justify">
+                            <p class="text-gray-400 text-sm leading-relaxed font-light mb-4 text-justify">
                                 {{ $item['desc'] }}</p>
                             <div class="mt-auto pt-6 border-t border-gray-800/60">
                                 <h5 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4">
