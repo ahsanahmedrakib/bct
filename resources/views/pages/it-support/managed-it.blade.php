@@ -180,9 +180,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="relative h-75 w-full order-1 lg:order-2">
+                <div class="w-full order-1 lg:order-2">
                     <img src="/images/it-support/managed-it/section-1.jpg" alt="Servers" height="1600" width="1200"
-                        class="object-cover rounded-2xl w-full h-full" />
+                        class="object-cover rounded-2xl w-full h-auto" />
                 </div>
             </div>
         </section>
@@ -190,9 +190,9 @@
         {{-- SECTION 4: Drive Your Digital Transformation --}}
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="it">
             <div class="reveal reveal-fade-up grid lg:grid-cols-2 gap-12 items-center mb-12">
-                <div class="relative h-75 w-full">
+                <div class="w-full">
                     <img src="/images/it-support/managed-it/section-2.jpg" alt="Managed Services" height="1600"
-                        width="1200" class="object-cover rounded-2xl w-full h-full" />
+                        width="1200" class="object-cover rounded-2xl w-full h-auto" />
                 </div>
                 <div>
                     <div

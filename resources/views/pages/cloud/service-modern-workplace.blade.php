@@ -439,9 +439,9 @@
             </div>
             <div class="flex justify-center order-1 lg:order-2">
                 <div
-                    class="relative h-80 w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
+                    class="relative w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
                     <img src="/images/cloud/services/modern-workplace/section-5.jpg" alt="Microsoft Teams Collaboration"
-                        class="w-full h-full object-cover" loading="lazy" />
+                        class="w-full h-auto object-cover" loading="lazy" />
                 </div>
             </div>
         </div>
@@ -450,9 +450,9 @@
     <section class="py-16 lg:py-24 bg-white" id="help">
         <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
             <div
-                class="relative h-80 lg:h-96 rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
+                class="relative w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
                 <img src="/images/cloud/services/modern-workplace/section-6.jpg" alt="Microsoft 365 Support"
-                    class="w-full h-full object-cover" loading="lazy" />
+                    class="w-full h-auto object-cover" loading="lazy" />
             </div>
             <div class="bg-linear-to-br from-blue-600 to-blue-800 rounded-2xl p-8 lg:p-10 text-white">
                 <h2 class="text-2xl lg:text-3xl font-bold mb-6">Partner with a Modern Workplace Specialist</h2>

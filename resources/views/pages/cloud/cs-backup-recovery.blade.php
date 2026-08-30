@@ -311,9 +311,9 @@
                 </div>
             </div>
             <div class="flex justify-center">
-                <div class="relative h-80 w-full rounded-2xl overflow-hidden">
+                <div class="relative w-full rounded-2xl overflow-hidden">
                     <img src="/images/cloud/cyber-security/backup-recovery/section-3.png" alt="Full System Backup"
-                        class="w-full h-full object-cover" loading="lazy" />
+                        class="w-full h-auto object-cover" loading="lazy" />
                 </div>
             </div>
         </div>
@@ -322,9 +322,9 @@
     <section class="py-16 lg:py-24 bg-slate-50" id="mozy-pro">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="flex justify-center">
-                <div class="relative h-80 w-full rounded-2xl overflow-hidden">
+                <div class="relative w-full rounded-2xl overflow-hidden">
                     <img src="/images/cloud/cyber-security/backup-recovery/section-2.jpg" alt="Mozy Pro Cloud Backup"
-                        class="w-full h-full object-cover" loading="lazy" />
+                        class="w-full h-auto object-cover" loading="lazy" />
                 </div>
             </div>
             <div class="reveal reveal-fade-up">
@@ -544,9 +544,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                     </svg></a>
             </div>
-            <div class="relative h-80 lg:h-96 rounded-2xl overflow-hidden order-1 lg:order-2">
+            <div class="relative w-full rounded-2xl overflow-hidden order-1 lg:order-2">
                 <img src="/images/cloud/cyber-security/backup-recovery/section-4.png" alt="Backup and Recovery Support"
-                    class="w-full h-full object-cover" loading="lazy" />
+                    class="w-full h-auto object-cover" loading="lazy" />
             </div>
         </div>
     </section>

@@ -323,8 +323,8 @@
 
     <section id="help" class="py-16 lg:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
-            <div class="relative h-80 lg:h-96 rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 reveal reveal-fade-up">
-                <img alt="Email Signature Support" loading="lazy" class="w-full h-full object-contain p-4"
+            <div class="relative w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 reveal reveal-fade-up">
+                <img alt="Email Signature Support" loading="lazy" class="w-full h-auto object-contain p-4"
                     src="/images/cloud/services/email-signature/section-2.png" />
             </div>
             <div class="bg-linear-to-br from-blue-600 to-blue-800 rounded-2xl p-8 lg:p-10 text-white reveal reveal-fade-up">

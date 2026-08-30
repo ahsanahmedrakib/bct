@@ -196,9 +196,9 @@
                     </svg></a>
             </div>
             <div class="flex justify-center">
-                <div class="relative h-80 w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
+                <div class="relative w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
                     <img src="/images/cloud/cyber-security/disp/section-2.jpg" alt="Essential Eight Maturity Level 2"
-                        class="w-full h-full object-cover" loading="lazy" />
+                        class="w-full h-auto object-cover" loading="lazy" />
                 </div>
             </div>
         </div>
@@ -453,9 +453,9 @@
 
     <section class="py-16 lg:py-24 bg-slate-50" id="help">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
-            <div class="relative h-80 lg:h-96 rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
+            <div class="relative w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
                 <img src="/images/cloud/cyber-security/disp/section-7.jpg" alt="DISP Compliance Support"
-                    class="w-full h-full object-cover" loading="lazy" />
+                    class="w-full h-auto object-cover" loading="lazy" />
             </div>
             <div
                 class="reveal reveal-fade-up bg-linear-to-br from-blue-600 to-blue-800 rounded-2xl p-8 lg:p-10 text-white">

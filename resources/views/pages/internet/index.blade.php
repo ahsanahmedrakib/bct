@@ -83,10 +83,8 @@
             <h2 class="text-3xl font-bold text-blue-900 mb-6 mt-2">Business Internet and Voice</h2>
             <p class="text-slate-600 mb-6 leading-relaxed">In today's digital landscape, a fast and reliable internet connection is crucial for the success of any business. We provide comprehensive Business Internet and Voice solutions designed to keep your operations running smoothly, ensuring you stay connected with clients, colleagues, and partners. Our services offer the speed, reliability, and flexibility your business needs to excel in a competitive environment.</p>
         </div>
-        <div class="order-1 lg:order-2 relative h-100 lg:h-125 w-full flex justify-center items-center rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <div class="relative w-full h-full rounded-2xl overflow-hidden">
-                <img src="/images/internet/voip.jfif" alt="Connectivity and communication" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
-            </div>
+        <div class="order-1 lg:order-2 w-full rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden">
+            <img src="/images/internet/voip.jfif" alt="Connectivity and communication" class="w-full h-auto object-cover rounded-2xl" />
         </div>
     </div>
 </section>
@@ -146,10 +144,8 @@
                 </div>
             </div>
         </div>
-        <div class="order-1 lg:order-2 relative h-100 lg:h-125 w-full flex justify-center items-center rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-            <div class="relative w-full h-full rounded-2xl overflow-hidden">
-                <img src="/images/internet/connected.png" alt="Connectivity and communication" class="object-cover" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
-            </div>
+        <div class="order-1 lg:order-2 w-full rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden">
+            <img src="/images/internet/connected.png" alt="Connectivity and communication" class="w-full h-auto object-cover rounded-2xl" />
         </div>
     </div>
 </section>

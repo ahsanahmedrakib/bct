@@ -49,9 +49,9 @@
 
     <section class="py-16 lg:py-24 bg-white" id="overview">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
-            <div class="flex justify-center h-75">
+            <div class="flex justify-center">
                 <img src="/images/cloud/cyber-security/m365-security/section-1.jpg" alt="Microsoft 365 Cyber Security"
-                    class="w-full object-cover rounded-xl" loading="lazy" />
+                    class="w-full h-auto object-cover rounded-xl" loading="lazy" />
             </div>
             <div class="reveal reveal-fade-up bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 transition-all relative h-full">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -438,9 +438,9 @@
 
     <section class="py-16 lg:py-24 bg-white" id="help">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
-            <div class="reveal reveal-fade-up relative h-80 lg:h-96 rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
+            <div class="reveal reveal-fade-up relative w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
                 <img src="/images/cloud/cyber-security/m365-security/section-1.jpg" alt="Microsoft 365 Security Support"
-                    class="w-full h-full object-cover" loading="lazy" />
+                    class="w-full h-auto object-cover" loading="lazy" />
             </div>
             <div class="reveal reveal-fade-up bg-linear-to-br from-blue-600 to-blue-800 rounded-2xl p-8 lg:p-10 text-white">
                 <h2 class="text-2xl lg:text-3xl font-bold mb-6">Need Help Securing Your Microsoft 365 Environment?</h2>

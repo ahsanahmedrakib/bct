@@ -187,8 +187,8 @@
             </ul>
           </div>
         </div>
-        <div class="relative h-75 w-full order-1 lg:order-2">
-          <img src="/images/it-support/capablities.jpg" alt="Capabilities" class="object-cover rounded-2xl shadow-xl" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" />
+        <div class="w-full order-1 lg:order-2">
+          <img src="/images/it-support/capablities.jpg" alt="Capabilities" class="w-full h-auto object-cover rounded-2xl shadow-xl" />
         </div>
       </div>
 
@@ -226,9 +226,9 @@
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="security">
     <div class="reveal reveal-fade-up">
       <div class="grid lg:grid-cols-2 gap-6 items-center mb-12">
-        <div class="relative h-75 w-full flex justify-center">
-          <div class="relative w-full max-w-md h-full">
-            <img src="/images/it-support/laptop.png" alt="Cyber Security" height="300" width="300" />
+        <div class="w-full flex justify-center">
+          <div class="relative w-full max-w-md">
+            <img src="/images/it-support/laptop.png" alt="Cyber Security" height="300" width="300" class="w-full h-auto" />
           </div>
         </div>
         <div class="h-full">
@@ -290,8 +290,8 @@
             </a>
           </div>
         </div>
-        <div class="relative h-75 w-full order-1 lg:order-2">
-          <img src="/images/it-support/networking.jpg" alt="Servers" class="object-cover rounded-2xl shadow-xl" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" />
+        <div class="w-full order-1 lg:order-2">
+          <img src="/images/it-support/networking.jpg" alt="Servers" class="w-full h-auto object-cover rounded-2xl shadow-xl" />
         </div>
       </div>
 
@@ -324,8 +324,8 @@
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="it">
     <div class="reveal reveal-fade-up">
       <div class="grid lg:grid-cols-2 gap-12 items-center mb-12">
-        <div class="relative h-75 w-full">
-          <img src="/images/it-support/it.jpg" alt="Managed Services" class="object-cover rounded-2xl shadow-xl" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" />
+        <div class="w-full">
+          <img src="/images/it-support/it.jpg" alt="Managed Services" class="w-full h-auto object-cover rounded-2xl shadow-xl" />
         </div>
         <div class="h-full">
           <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative h-full">
@@ -382,8 +382,8 @@
             </a>
           </div>
         </div>
-        <div class="relative h-75 w-full order-1 lg:order-2">
-          <img src="/images/it-support/repair.jpg" alt="Device Repair" class="object-cover rounded-2xl shadow-xl" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" />
+        <div class="w-full order-1 lg:order-2">
+          <img src="/images/it-support/repair.jpg" alt="Device Repair" class="w-full h-auto object-cover rounded-2xl shadow-xl" />
         </div>
       </div>
 

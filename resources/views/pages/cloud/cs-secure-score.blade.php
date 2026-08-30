@@ -77,9 +77,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="flex justify-center">
                 <div
-                    class="relative h-80 w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
+                    class="relative w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
                     <img src="/images/cloud/cyber-security/secure-score/section-1.jpg"
-                        alt="Microsoft Secure Score Dashboard" class="w-full h-full object-cover" loading="lazy" />
+                        alt="Microsoft Secure Score Dashboard" class="w-full h-auto object-cover" loading="lazy" />
                 </div>
             </div>
             <div class="reveal reveal-fade-up h-full">
@@ -227,9 +227,9 @@
             </div>
             <div class="flex justify-center order-1 lg:order-2">
                 <div
-                    class="relative h-80 w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
+                    class="relative w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
                     <img src="/images/cloud/cyber-security/secure-score/section-2.jpg" alt="Secure Score Calculation"
-                        class="w-full h-full object-cover" loading="lazy" />
+                        class="w-full h-auto object-cover" loading="lazy" />
                 </div>
             </div>
         </div>
