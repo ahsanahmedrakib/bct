@@ -1097,34 +1097,43 @@
                     ],
                 ];
             @endphp
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-                @foreach ($team as $index => $member)
-                    <div class="reveal fade-up h-full" style="transition-delay:{{ ($index % 4) * 100 }}ms">
-                        <div class="group cursor-pointer flex flex-col h-full">
-                            <div class="relative w-full aspect-4/5 rounded-xl bg-gray-100">
-                                <div class="absolute inset-0 rounded-xl overflow-hidden">
-                                    <img src="{{ $member['image'] }}" alt="{{ $member['name'] }}"
-                                        class="object-cover transition-transform duration-500 group-hover:scale-105 w-full h-full"
-                                        loading="lazy" />
-                                    <div
-                                        class="absolute inset-0 bg-linear-to-t from-dark-hero/90 via-dark-hero/20 to-transparent transition-opacity duration-300">
+            <div class="swiper team-swiper overflow-hidden pb-2">
+                <div class="swiper-wrapper">
+                    @foreach ($team as $index => $member)
+                        <div class="swiper-slide h-auto">
+                            <div class="reveal fade-up h-full">
+                                <div class="group cursor-pointer flex flex-col h-full">
+                                    <div class="relative w-full aspect-4/5 rounded-xl bg-gray-100">
+                                        <div class="absolute inset-0 rounded-xl overflow-hidden">
+                                            <img src="{{ $member['image'] }}" alt="{{ $member['name'] }}"
+                                                class="object-cover transition-transform duration-500 group-hover:scale-105 w-full h-full"
+                                                loading="lazy" />
+                                            <div
+                                                class="absolute inset-0 bg-linear-to-t from-dark-hero/90 via-dark-hero/20 to-transparent transition-opacity duration-300">
+                                            </div>
+                                        </div>
+                                        <div class="absolute -right-4 bottom-1 select-none pointer-events-none">
+                                            <span class="text-5xl font-bold tracking-normal uppercase text-white"
+                                                style="writing-mode:vertical-rl">{{ $member['label'] }}</span>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5 space-y-1">
+                                        <p class="text-[13px] font-semibold text-gray-500 tracking-wide">/
+                                            {{ $member['role'] }} /
+                                        </p>
+                                        <h3
+                                            class="text-xl font-bold text-dark-hero transition-colors duration-300 group-hover:text-accent-orange">
+                                            {{ $member['name'] }}</h3>
                                     </div>
                                 </div>
-                                <div class="absolute -right-4 bottom-1 select-none pointer-events-none">
-                                    <span class="text-5xl font-bold tracking-normal uppercase text-white"
-                                        style="writing-mode:vertical-rl">{{ $member['label'] }}</span>
-                                </div>
-                            </div>
-                            <div class="mt-5 space-y-1">
-                                <p class="text-[13px] font-semibold text-gray-500 tracking-wide">/ {{ $member['role'] }} /
-                                </p>
-                                <h3
-                                    class="text-xl font-bold text-dark-hero transition-colors duration-300 group-hover:text-accent-orange">
-                                    {{ $member['name'] }}</h3>
                             </div>
                         </div>
-                    </div>
-                @endforeach
+                    @endforeach
+                </div>
+            </div>
+            {{-- Team Navigation --}}
+            <div class="mt-10 flex items-center justify-center">
+                <div class="team-pagination flex items-center space-x-2"></div>
             </div>
         </div>
 
@@ -1448,6 +1457,80 @@
                 });
             }
 
+            // ── Team slider ─────────────────────────────────
+            var teamSwiperEl = document.querySelector('.team-swiper');
+            if (teamSwiperEl) {
+                var teamPaginationEl = document.querySelector('.team-pagination');
+
+                function teamPerView() {
+                    var w = window.innerWidth;
+                    if (w >= 1280) return 4;
+                    if (w >= 1024) return 3;
+                    if (w >= 640) return 2;
+                    return 1;
+                }
+
+                function renderTeamBullets() {
+                    if (!teamPaginationEl || !window.teamSwiper) return;
+                    var total = window.teamSwiper.slides.length;
+                    var groups = Math.ceil(total / teamPerView());
+                    teamPaginationEl.innerHTML = '';
+                    for (var i = 0; i < groups; i++) {
+                        var b = document.createElement('button');
+                        b.className =
+                            'team-bullet w-2.5 h-2.5 rounded-full bg-gray-400 cursor-pointer transition-all';
+                        b.setAttribute('data-slide', (i * teamPerView()) % total);
+                        b.addEventListener('click', function() {
+                            window.teamSwiper.slideToLoop(parseInt(this.getAttribute('data-slide')));
+                        });
+                        teamPaginationEl.appendChild(b);
+                    }
+                    updateTeamBullets();
+                }
+
+                function updateTeamBullets() {
+                    if (!teamPaginationEl || !window.teamSwiper) return;
+                    var bullets = teamPaginationEl.querySelectorAll('.team-bullet');
+                    var idx = window.teamSwiper.realIndex;
+                    var group = Math.floor(idx / teamPerView());
+                    bullets.forEach(function(b, i) {
+                        b.classList.toggle('team-bullet-active', i === group);
+                    });
+                }
+
+                window.teamSwiper = new Swiper('.team-swiper', {
+                    loop: true,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false
+                    },
+                    slidesPerView: 1,
+                    spaceBetween: 24,
+                    on: {
+                        slideChange: function() {
+                            updateTeamBullets();
+                        },
+                        init: function() {
+                            renderTeamBullets();
+                        }
+                    },
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 2
+                        },
+                        1024: {
+                            slidesPerView: 3
+                        },
+                        1280: {
+                            slidesPerView: 4
+                        }
+                    }
+                });
+
+                renderTeamBullets();
+                window.addEventListener('resize', renderTeamBullets);
+            }
+
             // ── Team video modal ────────────────────────────
             var teamVideoWrapper = document.getElementById('teamVideoWrapper');
             var teamVideoModal = document.getElementById('teamVideoModal');
@@ -1538,6 +1621,22 @@
         }
 
         .blog-bullet-active {
+            width: 24px;
+            height: 8px;
+            border-radius: 9999px;
+            background-color: #da3825 !important;
+        }
+
+        .team-bullet {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #0b59db;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .team-bullet-active {
             width: 24px;
             height: 8px;
             border-radius: 9999px;
