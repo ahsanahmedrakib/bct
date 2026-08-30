@@ -11,6 +11,140 @@
 
 @section('content')
 
+
+    {{-- ======================== HERO V2 – BCT hero-8 Match ======================== --}}
+    @php
+        $heroV2Slides = [
+            [
+                'subtitle' => 'Reliable IT. Real-Time Results.',
+                'title' => 'Comprehensive IT Solutions for a Digital World',
+                'desc' =>
+                    'IT Solutions encompass a wide range of services, technologies, and strategies designed to address the technological needs of businesses and organizations.',
+                'image' => '/images/home/hero/hero_1.jpg',
+            ],
+            [
+                'subtitle' => 'Design. Develop. Deliver.',
+                'title' => 'Your Vision, Our Web And App Mastery',
+                'desc' =>
+                    'Streamline operations, increase efficiency, and drive growth with our innovative IT solutions.',
+                'image' => '/images/home/hero/hero_2.jpg',
+            ],
+            [
+                'subtitle' => 'Code. Create. Conquer.',
+                'title' => 'Unlocking the Future with Digital Solutions',
+                'desc' =>
+                    'Digital transformation is the process of integrating digital technology into all aspects of a business, fundamentally changing how it operates.',
+                'image' => '/images/home/hero/hero_3.jpg',
+            ],
+        ];
+    @endphp
+
+    <div class="th-hero-wrapper hero-8 relative overflow-hidden"
+        style="background-image:url('/images/home/hero/hero_bg_8_1.png');background-size:cover;background-position:center">
+        <div class="hero-v2-swiper swiper relative w-full overflow-hidden">
+            <div class="swiper-wrapper">
+                @foreach ($heroV2Slides as $slide)
+                    <div class="swiper-slide">
+                        <div class="hero-inner relative w-full">
+                            <div class="container mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 relative z-20">
+                                <div class="hero-style8 text-center xl:text-left">
+                                    <span class="block text-white text-md sm:text-lg md:text-xl font-bold mb-4"
+                                        data-swiper-parallax="-150">{{ $slide['subtitle'] }}</span>
+                                    <h1 class="text-white text-xl sm:text-2xl md:text-2xl lg:text-[40px] xl:text-[50px] font-bold leading-[1.15] mb-5 capitalize"
+                                        data-swiper-parallax="-250">{{ $slide['title'] }}</h1>
+                                    <p class="text-white/80 text-base md:text-md leading-relaxed mb-8 max-w-132.5 mx-auto xl:mx-0"
+                                        data-swiper-parallax="-350">{{ $slide['desc'] }}</p>
+                                    <div data-swiper-parallax="-450">
+                                        <a href="{{ route('contact') }}"
+                                            class="inline-flex items-center gap-3 bg-[#1d65f5] hover:bg-[#1450c9] text-white text-base font-semibold rounded-full px-10 md:px-12 py-4 md:py-5 transition-all duration-300 group">
+                                            <span>Get Started</span>
+                                            <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                                                fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M7 17L17 7M17 7H7M17 7v10" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {{-- Hero image with mask shape --}}
+                            <div class="th-hero-image">
+                                <div class="hero-img-mask w-full h-full"
+                                    style="mask-image:url('/images/home/hero/hero-8-shape.png');-webkit-mask-image:url('/images/home/hero/hero-8-shape.png');mask-size:100% 100%;-webkit-mask-size:100% 100%;mask-repeat:no-repeat;-webkit-mask-repeat:no-repeat">
+                                    <img src="{{ $slide['image'] }}" alt="" class="w-full h-full object-cover" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+
+        {{-- Vertical bullet pagination --}}
+        <!-- HTML Structure -->
+        <div class="hero-v2-pagination absolute top-50 left-10">
+            <button type="button" class="hero-v2-bullet"></button>
+            <button type="button" class="hero-v2-bullet hero-v2-bullet-active"></button>
+            <button type="button" class="hero-v2-bullet"></button>
+        </div>
+        {{-- Dashed decorative line --}}
+        <div class="dash-shape absolute hidden xl:block" style="left:24%;bottom:14%;z-index:3">
+            <svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 10 10 C 80 10, 120 180, 300 120" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"
+                    stroke-dasharray="6 5" fill="none" />
+                {{-- <polygon points="295,114 310,120 298,128" fill="rgba(255,255,255,0.4)" /> --}}
+            </svg>
+        </div>
+
+        {{-- Spinning badge --}}
+        <div
+            class="video-circle absolute hidden lg:flex items-center justify-center p-1.5 rounded-full border border-dashed border-white/40">
+            <div class="circle-logo relative flex items-center justify-center bg-cover bg-center rounded-full w-47.5 h-47.5"
+                style="background-image:url('{{ asset('/images/home/hero/bullets-circle.png') }}');background-color:hsla(0,0%,100%,0.26);backdrop-filter:blur(39.6px);-webkit-backdrop-filter:blur(39.6px);">
+
+                {{-- Play Icon (Stationary smaller center circle) --}}
+                <a href="https://www.youtube.com/watch?v=pQpFebyALV0" target="_blank"
+                    class="play-icon z-10 absolute flex items-center justify-center w-17 h-17 rounded-full bg-[#0B1423] border border-white/10 shadow-2xl hover:scale-105 transition-transform duration-300">
+                    <img src="/images/home/play.svg"alt="play" class="object-contain" />
+                </a>
+
+                {{-- Spinning text ring (Clockwise then Anti-Clockwise) --}}
+                <div class="absolute inset-0 rounded-full overflow-hidden animate-[rotate-alternate_40s_ease-in-out_infinite]"
+                    style="will-change:transform">
+                    @php
+                        $spinText = 'BEST IT SOLUTION COMPANY * ';
+                        $chars = mb_str_split($spinText);
+                        $total = count($chars);
+                    @endphp
+                    @foreach ($chars as $idx => $char)
+                        <span
+                            class="absolute left-1/2 top-1/2 text-white font-bold uppercase tracking-normal select-none pointer-events-none"
+                            style="font-size:11px; transform: translate(-50%, -50%) rotate({{ ($idx * 360) / $total }}deg) translateY(-60px);">
+                            {{ $char }}
+                        </span>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+
+        <style>
+            @keyframes rotate-alternate {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                50% {
+                    transform: rotate(360deg);
+                }
+
+                100% {
+                    transform: rotate(0deg);
+                }
+            }
+        </style>
+    </div>
+
     {{-- ======================== HERO SLIDER ======================== --}}
     <section class="relative w-full overflow-hidden bg-white py-8 md:pt-16">
         <div class="reveal reveal-fade-up px-4 sm:px-6 lg:px-8">
@@ -169,7 +303,8 @@
                         data-index="1">
                         <span
                             class="absolute top-0 left-0 h-0.75 transition-all duration-300 w-0 bg-transparent group-hover:w-full group-hover:bg-blue-500"></span>
-                        <span class="text-[11px] leading-tight text-gray-400 font-medium md:text-xs line-clamp-2 min-h-8">IT
+                        <span
+                            class="text-[11px] leading-tight text-gray-400 font-medium md:text-xs line-clamp-2 min-h-8">IT
                             Services for Business and Home</span>
                         <span class="mt-1 text-xs font-bold leading-tight md:text-sm text-gray-500">Fully Managed &amp;
                             AdHoc</span>
@@ -226,151 +361,6 @@
         </div>
     </section>
 
-    {{-- ======================== HERO V2 – BCT hero-8 Match ======================== --}}
-    @php
-        $heroV2Slides = [
-            [
-                'subtitle' => 'Reliable IT. Real-Time Results.',
-                'title' => 'Comprehensive IT Solutions for a Digital World',
-                'desc' =>
-                    'IT Solutions encompass a wide range of services, technologies, and strategies designed to address the technological needs of businesses and organizations.',
-                'image' => '/images/home/hero/hero_1.jpg',
-            ],
-            [
-                'subtitle' => 'Design. Develop. Deliver.',
-                'title' => 'Your Vision, Our Web And App Mastery',
-                'desc' =>
-                    'Streamline operations, increase efficiency, and drive growth with our innovative IT solutions.',
-                'image' => '/images/home/hero/hero_2.jpg',
-            ],
-            [
-                'subtitle' => 'Code. Create. Conquer.',
-                'title' => 'Unlocking the Future with Digital Solutions',
-                'desc' =>
-                    'Digital transformation is the process of integrating digital technology into all aspects of a business, fundamentally changing how it operates.',
-                'image' => '/images/home/hero/hero_3.jpg',
-            ],
-        ];
-    @endphp
-
-    <div class="th-hero-wrapper hero-8 relative overflow-hidden"
-        style="background-image:url('/images/home/hero/hero_bg_8_1.png');background-size:cover;background-position:center">
-        <div class="hero-v2-swiper swiper relative w-full overflow-hidden">
-            <div class="swiper-wrapper">
-                @foreach ($heroV2Slides as $slide)
-                    <div class="swiper-slide">
-                        <div class="hero-inner relative w-full">
-                            <div class="container mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 relative z-20">
-                                <div class="hero-style8 text-center xl:text-left">
-                                    <span class="block text-white text-xl sm:text-2xl md:text-3xl font-bold mb-4"
-                                        data-swiper-parallax="-150">{{ $slide['subtitle'] }}</span>
-                                    <h1 class="text-white text-3xl sm:text-4xl md:text-5xl lg:text-[60px] xl:text-[74px] font-bold leading-[1.15] mb-5 capitalize"
-                                        data-swiper-parallax="-250">{{ $slide['title'] }}</h1>
-                                    <p class="text-white/80 text-base md:text-lg leading-relaxed mb-8 max-w-132.5 mx-auto xl:mx-0"
-                                        data-swiper-parallax="-350">{{ $slide['desc'] }}</p>
-                                    <div data-swiper-parallax="-450">
-                                        <a href="{{ route('contact') }}"
-                                            class="inline-flex items-center gap-3 bg-[#1d65f5] hover:bg-[#1450c9] text-white text-base font-semibold rounded-full px-10 md:px-12 py-4 md:py-5 transition-all duration-300 group">
-                                            <span>Get Started</span>
-                                            <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-                                                fill="none" stroke="currentColor" stroke-width="2.5"
-                                                viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    d="M7 17L17 7M17 7H7M17 7v10" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {{-- Hero image with mask shape --}}
-                            <div class="th-hero-image">
-                                <div class="hero-img-mask w-full h-full"
-                                    style="mask-image:url('/images/home/hero/hero-8-shape.png');-webkit-mask-image:url('/images/home/hero/hero-8-shape.png');mask-size:100% 100%;-webkit-mask-size:100% 100%;mask-repeat:no-repeat;-webkit-mask-repeat:no-repeat">
-                                    <img src="{{ $slide['image'] }}" alt="" class="w-full h-full object-cover" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-        </div>
-
-        {{-- Vertical bullet pagination --}}
-        <div class="hero-v2-pagination absolute z-50 flex justify-center gap-3 lg:flex"></div>
-
-        {{-- Dashed decorative line --}}
-        <div class="dash-shape absolute hidden xl:block" style="left:24%;bottom:14%;z-index:3">
-            <svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M 10 10 C 80 10, 120 180, 300 120" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"
-                    stroke-dasharray="6 5" fill="none" />
-                {{-- <polygon points="295,114 310,120 298,128" fill="rgba(255,255,255,0.4)" /> --}}
-            </svg>
-        </div>
-
-        {{-- Spinning badge --}}
-        <div
-            class="video-circle absolute hidden lg:flex items-center justify-center p-1.5 rounded-full border border-dashed border-white/40">
-            <div class="circle-logo relative flex items-center justify-center bg-cover bg-center rounded-full w-47.5 h-47.5"
-                style="background-image:url('{{ asset('/images/home/hero/bullets-circle.png') }}');background-color:hsla(0,0%,100%,0.26);backdrop-filter:blur(39.6px);-webkit-backdrop-filter:blur(39.6px);">
-
-                {{-- Play Icon (Stationary smaller center circle) --}}
-                <a href="https://www.youtube.com/watch?v=pQpFebyALV0" target="_blank"
-                    class="play-icon z-10 absolute flex items-center justify-center w-17 h-17 rounded-full bg-[#0B1423] border border-white/10 shadow-2xl hover:scale-105 transition-transform duration-300">
-                    <img src="/images/home/play.svg"alt="play" class="object-contain" />
-                </a>
-
-                {{-- Spinning text ring (Clockwise then Anti-Clockwise) --}}
-                <div class="absolute inset-0 rounded-full overflow-hidden animate-[rotate-alternate_40s_ease-in-out_infinite]"
-                    style="will-change:transform">
-                    @php
-                        $spinText = 'BEST IT SOLUTION COMPANY * ';
-                        $chars = mb_str_split($spinText);
-                        $total = count($chars);
-                    @endphp
-                    @foreach ($chars as $idx => $char)
-                        <span
-                            class="absolute left-1/2 top-1/2 text-white font-bold uppercase tracking-normal select-none pointer-events-none"
-                            style="font-size:11px; transform: translate(-50%, -50%) rotate({{ ($idx * 360) / $total }}deg) translateY(-60px);">
-                            {{ $char }}
-                        </span>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-
-        <style>
-            @keyframes rotate-alternate {
-                0% {
-                    transform: rotate(0deg);
-                }
-
-                50% {
-                    transform: rotate(360deg);
-                }
-
-                100% {
-                    transform: rotate(0deg);
-                }
-            }
-        </style>
-
-        <style>
-            @keyframes rotate-alternate {
-                0% {
-                    transform: rotate(0deg);
-                }
-
-                50% {
-                    transform: rotate(360deg);
-                }
-
-                100% {
-                    transform: rotate(0deg);
-                }
-            }
-        </style>
-    </div>
 
     {{-- ======================== ABOUT SECTION ======================== --}}
     <section id="about-sec" class="relative bg-white py-20 lg:py-28 px-4 sm:px-6 lg:px-8 overflow-hidden">

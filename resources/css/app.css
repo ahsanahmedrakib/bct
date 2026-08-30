@@ -364,108 +364,79 @@ body {
     }
 }
 
-/* Vertical pagination bullets */
-.hero-v2-pagination {
-    width: 5px;
-    border-radius: 8px;
-    left: 80px;
-    top: 33%;
-    right: auto;
-    transform: none;
-    text-align: left;
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    top: 60% !important;
+    left: 2% !important;
+    width: 1% !important;
 }
+
+/* Vertical pagination bullets */
+/* Container positioned vertically middle and left */
+.hero-v2-pagination {
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 20;
+}
+
+/* Vertical Pill Bullets (Default/Inactive) */
+.hero-v2-bullet {
+    width: 3px;
+    height: 32px;
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+}
+
+.hero-v2-bullet:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Active Bullet (Highlighted White) */
+.hero-v2-bullet-active {
+    width: 3px;
+    height: 32px;
+    background-color: #ffffff !important;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive Left Positioning */
 @media (max-width: 1500px) {
     .hero-v2-pagination {
         left: 40px;
     }
 }
+
 @media (max-width: 1399px) {
     .hero-v2-pagination {
-        left: 25px;
+        left: 20px;
     }
 }
-@media (max-width: 1299px) {
-    .hero-v2-pagination {
-        width: 324px;
-        display: flex;
-        top: 78%;
-        left: 25px;
-        flex-direction: row;
-        gap: 0;
-    }
-}
-@media (max-width: 1199px) {
-    .hero-v2-pagination {
-        top: 35%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-@media (max-width: 991px) {
-    .hero-v2-pagination {
-        top: 38%;
-    }
-}
+
+/* Mobile / Small Screens Hide */
 @media (max-width: 575px) {
     .hero-v2-pagination {
         display: none;
     }
 }
 
-/* Custom hero-v2 bullets */
-.hero-v2-bullet {
-    width: 10px;
-    height: 10px;
-    display: flex;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    border: none;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-    opacity: 1;
-}
-
-.hero-v2-bullet:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
-.hero-v2-bullet-active {
-    width: 30px;
-    height: 10px;
-    border-radius: 9999px;
-    background-color: #1d65f5 !important;
-}
-@media (max-width: 1299px) {
-    .hero-v2-bullet {
-        width: 10px;
-        height: 10px;
-    }
-    .hero-v2-bullet-active {
-        width: 30px;
-        height: 10px;
-    }
-}
-
-/* Spinning badge animation */
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 /* Video circle */
 .video-circle {
     position: absolute;
-    bottom: 20%;
-    left: 36%;
+    bottom: 15%;
+    left: 38%;
     z-index: 2;
 }
+
 .circle-logo {
     width: 150px;
     height: 150px;
