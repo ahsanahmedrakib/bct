@@ -1117,15 +1117,6 @@
                             </svg>
                         </div>
                     </div>
-
-                    {{-- Bottom Label --}}
-                    <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
-                        <span
-                            class="inline-block bg-brand-green text-white text-xs font-semibold px-3 py-1.5 rounded-sm mb-3">BCT
-                            Team</span>
-                        <h3 class="text-white text-xl sm:text-2xl font-bold tracking-tight">Meet the people behind our
-                            success</h3>
-                    </div>
                 </div>
             </div>
 

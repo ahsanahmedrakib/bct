@@ -1143,9 +1143,10 @@
                                 style="width:auto;height:auto">
                         </a>
                     </div>
-                    <p class="text-[15px] leading-relaxed text-gray-200 pr-4">Bismillah Computer & Technology is a
-                        Licensed ISP by Bangladesh Telecommunication Regulatory Commission providing Internet service.
-                        Best internet service provider in Uttara Dhaka.</p>
+                    <p class="text-[15px] leading-relaxed text-gray-200 pr-4 text-justify">Bismillah Computer & Technology provides
+                        modern and secure digital workplaces, focusing on the B2B and B2C market with comprehensive
+                        services in IT Managed Services, Telecommunications, Internet, Cloud, Web, Software, Domain,
+                        Hosting, and Cyber Security.</p>
                     <div class="flex items-center gap-2">
                         <a href="https://www.facebook.com/bct.com.bd" target="_blank" rel="noopener noreferrer"
                             class="flex items-center justify-center p-2 transition-opacity hover:opacity-90 bg-[#1877f2]"
