@@ -3,7 +3,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // ── Scroll reveal (in-view on enter, out on leave) ──
     const reveals = document.querySelectorAll(".reveal");
-    if (typeof IntersectionObserver !== "undefined") {
+
+    function isInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top < window.innerHeight - 32 &&
+            rect.bottom > 0
+        );
+    }
+
+    if (typeof IntersectionObserver !== "undefined" && "IntersectionObserver" in window) {
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
@@ -22,7 +31,19 @@ document.addEventListener("DOMContentLoaded", function () {
             if (variant) el.classList.add("reveal-" + variant);
             if (delay) el.style.transitionDelay = delay + "ms";
             observer.observe(el);
+            // Reveal anything already in viewport so content is never stuck hidden
+            if (isInViewport(el)) el.classList.add("in-view");
         });
+        // Re-check after layout/fonts/images settle to catch any missed elements
+        window.addEventListener(
+            "load",
+            function () {
+                reveals.forEach((el) => {
+                    if (isInViewport(el)) el.classList.add("in-view");
+                });
+            },
+            { once: true },
+        );
     } else {
         reveals.forEach((el) => el.classList.add("in-view"));
     }
