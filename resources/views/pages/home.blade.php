@@ -1069,25 +1069,31 @@
                         'name' => 'Tamzid Hasan',
                         'role' => 'IT Consultant',
                         'label' => 'Consultant',
-                        'image' => '/images/home/team/1.png',
+                        'image' => '/images/home/team/thp.png',
                     ],
                     [
                         'name' => 'Tanzim Hasan Anik',
                         'role' => 'Director',
                         'label' => 'Director',
-                        'image' => '/images/home/team/2.jpg',
+                        'image' => '/images/home/team/tha.jpg',
+                    ],
+                    [
+                        'name' => 'Nazmul Apple',
+                        'role' => 'System Engineer',
+                        'label' => 'Engineer',
+                        'image' => '/images/home/team/na.jpeg',
                     ],
                     [
                         'name' => 'Habibullah Mezbah',
                         'role' => 'Web Developer',
                         'label' => 'Developer',
-                        'image' => '/images/home/team/3.png',
+                        'image' => '/images/home/team/hm.png',
                     ],
                     [
                         'name' => 'Ahsan Ahmed Rakib',
                         'role' => 'Software Engineer',
                         'label' => 'Engineer',
-                        'image' => '/images/home/team/4.jpg',
+                        'image' => '/images/home/team/aar.jpg',
                     ],
                 ];
             @endphp
