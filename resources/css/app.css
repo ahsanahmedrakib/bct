@@ -228,9 +228,15 @@ body {
     overflow: hidden;
 }
 
+@media (min-width: 1200px) {
+    .hero-8 .hero-inner {
+        position: static;
+    }
+}
+
 .hero-8 .th-hero-image {
     position: absolute;
-    top: 0%;
+    top: 0;
     right: 0%;
     max-width: 100%;
 }
