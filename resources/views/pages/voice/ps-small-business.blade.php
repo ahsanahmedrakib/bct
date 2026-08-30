@@ -257,7 +257,7 @@
     </section>
 
     {{-- ==================== SUPPORT ==================== --}}
-    <section class="py-16 lg:py-24 bg-slate-50">
+    <section class="py-16 lg:py-24 big-slate-50">
         <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
 
             <div
