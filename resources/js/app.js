@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 });
             },
-            { threshold: 0.12, rootMargin: "0px 0px -32px 0px" },
+            { threshold: 0, rootMargin: "0px 0px -32px 0px" },
         );
         reveals.forEach((el) => {
             var variant = el.getAttribute("data-variant");
