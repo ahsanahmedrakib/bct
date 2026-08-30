@@ -19,21 +19,21 @@
                 'subtitle' => 'Reliable IT. Real-Time Results.',
                 'title' => 'Comprehensive IT Solutions for a Digital World',
                 'desc' =>
-                    'IT Solutions encompass a wide range of services, technologies, and strategies designed to address the technological needs of businesses and organizations.',
+                    'Our IT solutions combine modern technologies, expert strategies, and reliable services to meet the evolving technological needs of businesses and organizations.',
                 'image' => '/images/home/hero/hero_1.jpg',
             ],
             [
                 'subtitle' => 'Design. Develop. Deliver.',
                 'title' => 'Your Vision, Our Web And App Mastery',
                 'desc' =>
-                    'Streamline operations, increase efficiency, and drive growth with our innovative IT solutions.  We design, deploy, and maintain reliable network infrastructure.',
+                    'Transform your ideas into powerful digital experiences with innovative web and app solutions designed to streamline operations, improve efficiency, and drive growth.',
                 'image' => '/images/home/hero/hero_2.jpg',
             ],
             [
                 'subtitle' => 'Code. Create. Conquer.',
                 'title' => 'Unlocking the Future with Digital Solutions',
                 'desc' =>
-                    'Digital transformation is the process of integrating digital technology into all aspects of a business, fundamentally changing how it operates.',
+                    'Embrace digital transformation with smart technologies and innovative solutions that improve business processes, enhance customer experiences, and create lasting growth.',
                 'image' => '/images/home/hero/hero_3.jpg',
             ],
         ];

@@ -7,6 +7,11 @@ html {
     scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: var(--color-brand-secondary) #f1f1f1;
+    overflow-x: clip;
+}
+
+body {
+    overflow-x: clip;
 }
 
 ::-webkit-scrollbar {
@@ -227,6 +232,14 @@ body {
     position: absolute;
     top: 0%;
     right: 0%;
+    max-width: 100%;
+}
+@media (min-width: 1701px) {
+    .hero-8 .th-hero-image {
+        width: 46%;
+        height: auto;
+        aspect-ratio: 1048 / 950;
+    }
 }
 @media (max-width: 1700px) {
     .hero-8 .th-hero-image {
@@ -247,22 +260,23 @@ body {
     .hero-8 .th-hero-image {
         width: 100%;
         position: relative;
-        height: 668px;
+        height: auto;
+        aspect-ratio: 1048 / 950;
     }
 }
 @media (max-width: 991px) {
     .hero-8 .th-hero-image {
-        height: 576px;
+        aspect-ratio: 921 / 873;
     }
 }
 @media (max-width: 767px) {
     .hero-8 .th-hero-image {
-        height: 520px;
+        aspect-ratio: 543 / 557;
     }
 }
 @media (max-width: 575px) {
     .hero-8 .th-hero-image {
-        height: 315px;
+        aspect-ratio: 412 / 412;
     }
 }
 .hero-8 .th-hero-image .hero-img img,
@@ -270,6 +284,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: bottom;
 }
 @media (max-width: 1199px) {
     .hero-8 .hero-img-mask {
