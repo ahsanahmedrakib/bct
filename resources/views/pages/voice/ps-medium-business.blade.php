@@ -98,7 +98,7 @@
         <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-3 gap-16 items-center">
             <div class="w-full">
                 <img src="/images/voice/phone-systems/medium-business/section-1.jpg" alt="Section"
-                    class="w-full h-auto object-cover rounded-2xl shadow-xl" />
+                    class="w-full h-auto object-cover" />
             </div>
             <div class="lg:col-span-2">
                 <div
@@ -195,7 +195,7 @@
             </div>
             <div class="w-full order-1 lg:order-2">
                 <img src="/images/voice/phone-systems/medium-business/section-2.jpg" alt="Section"
-                    class="w-full h-auto object-cover rounded-2xl shadow-xl" />
+                    class="w-full h-auto object-cover" />
             </div>
         </div>
     </section>

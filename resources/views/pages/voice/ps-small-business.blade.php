@@ -68,7 +68,7 @@
         <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="w-full">
                 <img src="/images/voice/phone-systems/small-business/cloud.png" alt="Section"
-                    class="w-full h-auto object-cover rounded-2xl shadow-xl" />
+                    class="w-full h-auto object-cover" />
             </div>
             <div
                 class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative h-full">
@@ -303,8 +303,7 @@
             </div>
 
             <div class="w-full order-1 lg:order-2">
-                <img src="/images/industries/section.png" alt="Section"
-                    class="w-full h-auto object-cover rounded-2xl shadow-xl" />
+                <img src="/images/industries/section.png" alt="Section" class="w-full h-auto object-cover" />
             </div>
         </div>
     </section>

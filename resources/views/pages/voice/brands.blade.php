@@ -45,7 +45,7 @@
     <section class="py-16 lg:py-24 bg-white">
         <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Brands We Support</h2>
-         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <div class="reveal reveal-fade-up h-full">
                     <div
                         class="bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-xl hover:-translate-y-1 flex flex-col group transition-all duration-300 h-full">
@@ -179,7 +179,8 @@
                     class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative h-full">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <h2 class="text-3xl text-left font-bold text-blue-900 mb-6">The Right Brand for Your Business</h2>
-                    <p class="text-slate-600 leading-relaxed mb-6 text-justify">Every business is different, and so is every
+                    <p class="text-slate-600 leading-relaxed mb-6 text-justify">Every business is different, and so is
+                        every
                         phone
                         system. Our team helps you evaluate cost, features, scalability, and support to recommend the brand
                         that
@@ -198,8 +199,7 @@
                 </div>
             </div>
             <div class="w-full order-1 lg:order-2">
-                <img src="/images/voice/brands/choose.webp" alt="Section"
-                    class="w-full h-auto object-cover rounded-2xl shadow-xl" />
+                <img src="/images/voice/brands/choose.webp" alt="Section" class="w-full h-auto object-cover" />
             </div>
         </div>
     </section>

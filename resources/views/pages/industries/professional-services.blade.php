@@ -29,7 +29,8 @@
 
             {{-- Hero Image --}}
             <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
-                <img alt="BG Image" src="/images/industries/professional-hero.png" class="rounded-lg w-full max-w-md lg:max-w-lg" />
+                <img alt="BG Image" src="/images/industries/professional-hero.png"
+                    class="rounded-lg w-full max-w-md lg:max-w-lg" />
             </div>
         </div>
 
@@ -184,40 +185,44 @@
     <section class="py-20 bg-slate-50">
         <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="order-2 lg:order-1">
-                  <div
+                <div
                     class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative h-full">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                <h2 class="text-3xl text-left font-bold text-blue-900 mb-6">Software specialisation.</h2>
-                <p class="text-slate-600 leading-relaxed mb-6 text-justify">We specialise in supporting the software trusted
-                    by
-                    legal, accounting and advisory firms across Australia, ensuring your core applications run reliably and
-                    securely.</p>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full">Smokeball
-                        experience</span>
-                    <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full">LawVu
-                        experience</span>
-                    <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full">Xero &amp; MYOB
-                        experience</span>
-                    <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full">BGL &amp; HandiSoft
-                        experience</span>
+                    <h2 class="text-3xl text-left font-bold text-blue-900 mb-6">Software specialisation.</h2>
+                    <p class="text-slate-600 leading-relaxed mb-6 text-justify">We specialise in supporting the software
+                        trusted
+                        by
+                        legal, accounting and advisory firms across Australia, ensuring your core applications run reliably
+                        and
+                        securely.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full">Smokeball
+                            experience</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full">LawVu
+                            experience</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full">Xero &amp; MYOB
+                            experience</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full">BGL &amp;
+                            HandiSoft
+                            experience</span>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed mb-6 text-justify">From practice management and document
+                        management
+                        to billing and payroll, our specialists keep your professional services software connected, current
+                        and
+                        protected so your team can work without interruption.</p>
+                    <a href="{{ route('contact') }}"
+                        class="text-blue-600 font-medium flex items-center hover:text-blue-800">
+                        <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                        Get In Touch
+                    </a>
                 </div>
-                <p class="text-slate-600 leading-relaxed mb-6 text-justify">From practice management and document
-                    management
-                    to billing and payroll, our specialists keep your professional services software connected, current and
-                    protected so your team can work without interruption.</p>
-                <a href="{{ route('contact') }}" class="text-blue-600 font-medium flex items-center hover:text-blue-800">
-                    <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="2" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                    </svg>
-                    Get In Touch
-                </a>
             </div>
-            </div>
-             <div class="w-full order-1 lg:order-2">
-                <img src="/images/industries/section.png" alt="Section"
-                    class="w-full h-auto object-cover rounded-2xl shadow-xl" />
+            <div class="w-full order-1 lg:order-2">
+                <img src="/images/industries/section.png" alt="Section" class="w-full h-auto object-cover" />
             </div>
         </div>
     </section>

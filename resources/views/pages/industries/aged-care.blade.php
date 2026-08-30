@@ -219,8 +219,7 @@
                 </div>
             </div>
             <div class="w-full order-1 lg:order-2">
-                <img src="/images/industries/section.png" alt="Capabilities"
-                    class="w-full h-auto object-cover rounded-2xl shadow-xl" />
+                <img src="/images/industries/section.png" alt="Capabilities" class="w-full h-auto object-cover" />
             </div>
         </div>
     </section>

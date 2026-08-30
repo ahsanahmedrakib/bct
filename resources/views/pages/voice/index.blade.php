@@ -86,7 +86,7 @@
                 </div>
             </div>
             <div class="w-full order-1 lg:order-2">
-                <img src="/images/voice/hero.png" alt="Hero" class="w-full h-auto object-cover rounded-2xl shadow-xl" />
+                <img src="/images/voice/hero.png" alt="Hero" class="w-full h-auto object-cover" />
             </div>
         </div>
 
@@ -304,8 +304,7 @@
                 </div>
             </div>
             <div class="w-full order-1 lg:order-2">
-                <img src="/images/voice/dark.jpg" alt="Section"
-                    class="w-full h-auto object-cover rounded-2xl shadow-xl" />
+                <img src="/images/voice/dark.jpg" alt="Section" class="w-full h-auto object-cover" />
             </div>
         </div>
     </section>
@@ -409,9 +408,8 @@
                             Us</a>
                     </div>
                     <div class="w-full">
-                <img src="/images/voice/onboarding.jpg" alt="Section"
-                    class="w-full h-auto object-cover rounded-2xl shadow-xl" />
-            </div>
+                        <img src="/images/voice/onboarding.jpg" alt="Section" class="w-full h-auto object-cover" />
+                    </div>
                 </div>
             </div>
 
@@ -431,9 +429,8 @@
                             Us</a>
                     </div>
                     <div class="w-full">
-                <img src="/images/voice/team.jpg" alt="Section"
-                    class="w-full h-auto object-cover rounded-2xl shadow-xl" />
-            </div>
+                        <img src="/images/voice/team.jpg" alt="Section" class="w-full h-auto object-cover" />
+                    </div>
                 </div>
             </div>
 
@@ -451,9 +448,8 @@
                             Us</a>
                     </div>
                     <div class="w-full">
-                <img src="/images/voice/telephone.png" alt="Section"
-                    class="w-full h-auto object-cover rounded-2xl shadow-xl" />
-            </div>
+                        <img src="/images/voice/telephone.png" alt="Section" class="w-full h-auto object-cover" />
+                    </div>
                 </div>
             </div>
 
@@ -472,9 +468,8 @@
                             Us</a>
                     </div>
                     <div class="w-full">
-                <img src="/images/voice/knowledge.jpg" alt="Section"
-                    class="w-full h-auto object-cover rounded-2xl shadow-xl" />
-            </div>
+                        <img src="/images/voice/knowledge.jpg" alt="Section" class="w-full h-auto object-cover" />
+                    </div>
                 </div>
             </div>
 
@@ -497,9 +492,8 @@
                             Us</a>
                     </div>
                     <div class="w-full">
-                <img src="/images/voice/support.jpg" alt="Section"
-                    class="w-full h-auto object-cover rounded-2xl shadow-xl" />
-            </div>
+                        <img src="/images/voice/support.jpg" alt="Section" class="w-full h-auto object-cover" />
+                    </div>
                 </div>
             </div>
         </div>
