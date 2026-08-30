@@ -9,11 +9,6 @@ class VoiceController extends Controller
         return view('pages.voice.index');
     }
 
-    public function phoneSystems()
-    {
-        return view('pages.voice.phone-systems');
-    }
-
     public function brands()
     {
         return view('pages.voice.brands');

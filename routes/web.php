@@ -39,7 +39,6 @@ Route::prefix('it-support')->name('it-support.')->group(function () {
 // ─── Voice ──────────────────────────────────────────────────────
 Route::get('/voice', [App\Http\Controllers\VoiceController::class, 'index'])->name('voice');
 Route::prefix('voice')->name('voice.')->group(function () {
-    Route::get('/phone-systems', [App\Http\Controllers\VoiceController::class, 'phoneSystems'])->name('phone-systems');
     Route::get('/phone-systems/small-business', [App\Http\Controllers\VoiceController::class, 'psSmallBusiness'])->name('ps-small-business');
     Route::get('/phone-systems/medium-business', [App\Http\Controllers\VoiceController::class, 'psMediumBusiness'])->name('ps-medium-business');
     Route::get('/phone-systems/enterprise-business', [App\Http\Controllers\VoiceController::class, 'psEnterpriseBusiness'])->name('ps-enterprise-business');
