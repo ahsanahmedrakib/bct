@@ -510,8 +510,8 @@
                                     @endphp
                                     @foreach ($chars as $i => $char)
                                         <span
-                                            class="absolute left-1/2 top-1/2 text-theme-navy font-bold uppercase leading-none"
-                                            style="font-size:clamp(9px, 1.4vw, 13px);transform:translate(-50%, -50%) rotate({{ $i * $step }}deg) translateY(-4.8em)">{{ $char }}</span>
+                                            class="spin-badge-char text-theme-navy font-bold uppercase leading-none"
+                                            style="--spin-angle:{{ $i * $step }}deg">{{ $char }}</span>
                                     @endforeach
                                 </div>
                                 <div class="relative w-[45%] h-[45%]">
