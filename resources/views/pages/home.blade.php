@@ -363,7 +363,7 @@
 
 
     {{-- ======================== ABOUT SECTION ======================== --}}
-    <section id="about-sec" class="relative bg-white py-20 lg:py-28 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section id="about-sec" class="relative bg-white py-16 mt-4 px-4 sm:px-6 lg:px-8 lg:overflow-hidden">
         <div class="absolute top-32 right-0 w-125 h-125 rounded-full pointer-events-none"
             style="background:radial-gradient(circle, rgba(11,89,219,0.08) 0%, transparent 70%)"></div>
         <div class="absolute bottom-24 left-0 w-125 h-125 rounded-full pointer-events-none"
@@ -489,9 +489,9 @@
                 </div>
 
                 {{-- Right: image + spinning badge + blue stat card --}}
-                <div class="reveal reveal-fade-left w-full">
+                <div class="reveal reveal-fade-left w-full mb-24">
                     <div class="relative max-w-md mx-auto lg:max-w-none">
-                        <div class="pt-28 pr-28 sm:pt-32 sm:pr-32">
+                        <div class="pt-24 pr-28 sm:pr-32">
                             <div class="rounded-2xl overflow-hidden shadow-[0_25px_60px_-25px_rgba(11,89,219,0.35)]">
                                 <img alt="Bismillah Computer &amp; Technology" loading="lazy" width="305"
                                     height="335" class="w-full h-auto object-cover"
@@ -549,7 +549,8 @@
     {{-- ======================== WHAT WE OFFER (Dark Section) ======================== --}}
     <section class="bg-linear-to-b from-gray-50 via-white to-gray-50 py-10 px-4 sm:px-6 lg:px-8 overflow-hidden relative">
     </section>
-    <div class="reveal reveal-fade-up text-start -mt-2 sm:-mt-6 max-w-7xl mx-auto flex justify-between">
+    <div
+        class="reveal reveal-fade-up text-start -mt-2 sm:-mt-6 max-w-7xl mx-auto flex flex-col md:flex-row justify-between px-2">
         <div>
             <span class="inline-flex items-center gap-3 text-theme-blue text-lg sm:text-xl font-medium tracking-wide">
                 <span class="relative inline-block h-5 w-5 shrink-0" aria-hidden="true">
