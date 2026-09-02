@@ -509,8 +509,7 @@
                                         $step = 360 / count($chars);
                                     @endphp
                                     @foreach ($chars as $i => $char)
-                                        <span
-                                            class="spin-badge-char text-theme-navy font-bold uppercase leading-none"
+                                        <span class="spin-badge-char text-theme-navy font-bold uppercase leading-none"
                                             style="--spin-angle:{{ $i * $step }}deg">{{ $char }}</span>
                                     @endforeach
                                 </div>
@@ -1095,6 +1094,12 @@
                         'role' => 'Software Engineer',
                         'label' => 'Engineer',
                         'image' => '/images/home/team/aar.jpg',
+                    ],
+                    [
+                        'name' => 'Md. Tarikul Islam',
+                        'role' => 'Technical Support Engineer',
+                        'label' => 'Engineer',
+                        'image' => '/images/home/team/ti.jfif',
                     ],
                 ];
             @endphp
