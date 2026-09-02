@@ -14,7 +14,7 @@
 /.vscode
 /.zed
 /auth.json
-/build
+/public/build
 /node_modules
 /public/fonts-manifest.dev.json
 /public/hot
