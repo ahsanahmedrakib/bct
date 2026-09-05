@@ -2,6 +2,16 @@
 
 use Illuminate\Support\Facades\Route;
 
+// ─── Pages ──────────────────────────────────────────────────────
+Route::get('/about', [App\Http\Controllers\PageController::class, 'about'])->name('pages.about');
+Route::get('/services', [App\Http\Controllers\PageController::class, 'services'])->name('pages.services');
+Route::get('/projects', [App\Http\Controllers\PageController::class, 'projects'])->name('pages.projects');
+Route::get('/case-studies', [App\Http\Controllers\PageController::class, 'caseStudies'])->name('pages.case-studies');
+Route::get('/pricing', [App\Http\Controllers\PageController::class, 'pricing'])->name('pages.pricing');
+Route::get('/team', [App\Http\Controllers\PageController::class, 'team'])->name('pages.team');
+Route::get('/faq', [App\Http\Controllers\PageController::class, 'faq'])->name('pages.faq');
+Route::get('/gallery', [App\Http\Controllers\PageController::class, 'gallery'])->name('pages.gallery');
+
 // ─── Home & Contact ─────────────────────────────────────────────
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact');
