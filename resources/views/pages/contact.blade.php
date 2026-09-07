@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('title', 'Contact Us | Bismillah Computer & Technology')
-@section('description', 'Get in touch with Bismillah Computer & Technology. Reach out for IT solutions, cloud services, cyber security, voice and internet solutions in Bangladesh.')
+@section('description',
+    'Get in touch with Bismillah Computer & Technology. Reach out for IT solutions, cloud services,
+    cyber security, voice and internet solutions in Bangladesh.')
 
 @section('content')
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
@@ -21,13 +23,6 @@
                     <a href="#contact-form"
                         class="group flex cursor-pointer items-center justify-between px-6 py-4 text-white text-sm font-semibold rounded-xl shadow-md transition-all bg-navy hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">SEND
                         MESSAGE <svg class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6" />
-                        </svg></a>
-                    <a href="#map"
-                        class="group flex cursor-pointer items-center justify-between px-6 py-4 text-white text-sm font-semibold rounded-xl shadow-md transition-all bg-navy hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">VIEW
-                        MAP <svg class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6" />
@@ -53,7 +48,7 @@
         </div>
     </section>
 
-    <section class="py-16 lg:py-24 bg-white" id="contact-form">
+    <section class="py-16 lg:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-start">
             <div class="bg-white p-10 rounded-xl border-2 border-blue-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] relative">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -166,7 +161,7 @@
         </div>
     </section>
 
-    <section class="py-16 lg:py-24 bg-slate-50">
+    <section class="py-16 lg:py-24 bg-slate-50" id="contact-form">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-white p-10 rounded-xl border-2 border-blue-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] relative">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -177,21 +172,31 @@
                 <form id="contactForm" action="{{ route('contact.submit') }}" method="POST" novalidate>
                     @csrf
                     @php
-                        $inputClass = 'w-full px-4 py-3 rounded-lg border text-slate-900 text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500';
-                        $nameClass = $errors->has('name') ? $inputClass . ' border-red-500' : $inputClass . ' border-blue-200 hover:border-blue-400';
-                        $emailClass = $errors->has('email') ? $inputClass . ' border-red-500' : $inputClass . ' border-blue-200 hover:border-blue-400';
-                        $phoneClass = $errors->has('phone') ? $inputClass . ' border-red-500' : $inputClass . ' border-blue-200 hover:border-blue-400';
-                        $subjectClass = $errors->has('subject') ? $inputClass . ' border-red-500' : $inputClass . ' border-blue-200 hover:border-blue-400';
+                        $inputClass =
+                            'w-full px-4 py-3 rounded-lg border text-slate-900 text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500';
+                        $nameClass = $errors->has('name')
+                            ? $inputClass . ' border-red-500'
+                            : $inputClass . ' border-blue-200 hover:border-blue-400';
+                        $emailClass = $errors->has('email')
+                            ? $inputClass . ' border-red-500'
+                            : $inputClass . ' border-blue-200 hover:border-blue-400';
+                        $phoneClass = $errors->has('phone')
+                            ? $inputClass . ' border-red-500'
+                            : $inputClass . ' border-blue-200 hover:border-blue-400';
+                        $subjectClass = $errors->has('subject')
+                            ? $inputClass . ' border-red-500'
+                            : $inputClass . ' border-blue-200 hover:border-blue-400';
                         $messageClass = $inputClass . ' resize-y';
-                        $messageClass = $errors->has('message') ? $messageClass . ' border-red-500' : $messageClass . ' border-blue-200 hover:border-blue-400';
+                        $messageClass = $errors->has('message')
+                            ? $messageClass . ' border-red-500'
+                            : $messageClass . ' border-blue-200 hover:border-blue-400';
                     @endphp
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
                             <label for="name" class="block text-sm font-semibold text-slate-700 mb-1">Full Name <span
                                     class="text-red-500">*</span></label>
                             <input type="text" id="name" name="name" value="{{ old('name') }}"
-                                placeholder="John Doe"
-                                class="{{ $nameClass }}" />
+                                placeholder="John Doe" class="{{ $nameClass }}" />
                             @error('name')
                                 <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
                             @else
@@ -202,8 +207,7 @@
                             <label for="email" class="block text-sm font-semibold text-slate-700 mb-1">Email Address
                                 <span class="text-red-500">*</span></label>
                             <input type="email" id="email" name="email" value="{{ old('email') }}"
-                                placeholder="john@example.com"
-                                class="{{ $emailClass }}" />
+                                placeholder="john@example.com" class="{{ $emailClass }}" />
                             @error('email')
                                 <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
                             @else
@@ -226,8 +230,7 @@
                             <label for="subject" class="block text-sm font-semibold text-slate-700 mb-1">Subject <span
                                     class="text-red-500">*</span></label>
                             <input type="text" id="subject" name="subject" value="{{ old('subject') }}"
-                                placeholder="How can we help?"
-                                class="{{ $subjectClass }}" />
+                                placeholder="How can we help?" class="{{ $subjectClass }}" />
                             @error('subject')
                                 <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
                             @else
