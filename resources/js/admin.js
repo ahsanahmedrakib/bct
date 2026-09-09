@@ -235,12 +235,12 @@
                     </td>
                     <td class="px-5 py-3 font-medium text-slate-900">${escapeHtml(m.name)}</td>
                     <td class="px-5 py-3 text-slate-600">${escapeHtml(m.email)}</td>
-                    <td class="max-w-[220px] truncate px-5 py-3 text-slate-600">${escapeHtml(m.subject)}</td>
+                    <td class="max-w-55 truncate px-5 py-3 text-slate-600">${escapeHtml(m.subject)}</td>
                     <td class="whitespace-nowrap px-5 py-3 text-xs text-slate-500">${formatDate(m.created_at)}</td>
                     <td class="px-5 py-3">
                         <div class="flex items-center justify-end gap-1.5">
                             <button type="button" data-action="view" data-id="${m.id}"
-                                class="flex h-8 w-8 items-center justify-center rounded-lg text-slate-500 hover:bg-[#157cc1]/10 hover:text-[#157cc1]"
+                                class="flex h-8 w-8 items-center justify-center rounded-lg text-slate-500 hover:bg-brand-blue/10 hover:text-brand-blue"
                                 title="View">
                                 <i class="fa-solid fa-eye text-xs"></i>
                             </button>
@@ -277,7 +277,7 @@
                 html += `<button type="button" data-page="${i}"
                     class="h-8 min-w-8 rounded-lg px-2 text-xs font-semibold ${
                         i === current_page
-                            ? "bg-[#157cc1] text-white"
+                            ? "bg-brand-blue text-white"
                             : "text-slate-600 hover:bg-slate-100"
                     }">${i}</button>`;
             }

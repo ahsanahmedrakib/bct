@@ -2,18 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\View\View;
 use Tymon\JWTAuth\Exceptions\JWTException;
+use Tymon\JWTAuth\Exceptions\TokenExpiredException;
+use Tymon\JWTAuth\JWTGuard;
 
 class AdminAuthController extends Controller
 {
-    public function showLogin()
+    public function showLogin(): View
     {
         return view('admin.login');
     }
 
-    public function login(Request $request)
+    public function login(Request $request): JsonResponse
     {
         $validator = Validator::make($request->all(), [
             'email' => 'required|email|max:255',
@@ -35,12 +39,7 @@ class AdminAuthController extends Controller
         $credentials = $request->only('email', 'password');
 
         try {
-            if (! $token = auth('admin')->attempt($credentials)) {
-                return response()->json([
-                    'success' => false,
-                    'message' => 'Invalid email or password.',
-                ], 401);
-            }
+            $token = $this->guard()->attempt($credentials);
         } catch (JWTException $e) {
             return response()->json([
                 'success' => false,
@@ -48,27 +47,50 @@ class AdminAuthController extends Controller
             ], 500);
         }
 
+        if (! $token) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Invalid email or password.',
+            ], 401);
+        }
+
         return response()->json([
             'success' => true,
             'message' => 'Login successful.',
             'token' => $token,
             'token_type' => 'bearer',
-            'expires_in' => auth('admin')->factory()->getTTL() * 60,
-            'admin' => auth('admin')->user(),
+            'expires_in' => $this->guard()->factory()->getTTL() * 60,
+            'admin' => $this->guard()->user(),
         ]);
     }
 
-    public function me()
+    public function me(): JsonResponse
     {
+        $admin = $this->guard()->user();
+
+        if (! $admin) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Unauthenticated.',
+            ], 401);
+        }
+
         return response()->json([
             'success' => true,
-            'admin' => auth('admin')->user(),
+            'admin' => $admin,
         ]);
     }
 
-    public function logout()
+    public function logout(): JsonResponse
     {
-        auth('admin')->logout();
+        try {
+            $this->guard()->logout();
+        } catch (JWTException $e) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Failed to logout, please try again.',
+            ], 500);
+        }
 
         return response()->json([
             'success' => true,
@@ -76,14 +98,19 @@ class AdminAuthController extends Controller
         ]);
     }
 
-    public function refresh()
+    public function refresh(): JsonResponse
     {
         try {
-            $newToken = auth('admin')->refresh();
+            $newToken = $this->guard()->refresh();
+        } catch (TokenExpiredException $e) {
+            return response()->json([
+                'success' => false,
+                'message' => 'The token has expired.',
+            ], 401);
         } catch (JWTException $e) {
             return response()->json([
                 'success' => false,
-                'message' => 'The token is invalid or has expired.',
+                'message' => 'The token is invalid or cannot be refreshed.',
             ], 401);
         }
 
@@ -91,7 +118,12 @@ class AdminAuthController extends Controller
             'success' => true,
             'token' => $newToken,
             'token_type' => 'bearer',
-            'expires_in' => auth('admin')->factory()->getTTL() * 60,
+            'expires_in' => $this->guard()->factory()->getTTL() * 60,
         ]);
+    }
+
+    private function guard(): JWTGuard
+    {
+        return auth('admin');
     }
 }
