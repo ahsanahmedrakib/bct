@@ -1101,6 +1101,12 @@
                         'label' => 'Engineer',
                         'image' => '/images/home/team/ti.jfif',
                     ],
+                    [
+                        'name' => 'Rizwan Sadat',
+                        'role' => 'IT Executive',
+                        'label' => 'Executive',
+                        'image' => '/images/home/team/rs.jpeg',
+                    ],
                 ];
             @endphp
             <div class="swiper team-swiper overflow-hidden pb-2">

@@ -16,6 +16,12 @@ Route::get('/gallery', [App\Http\Controllers\PageController::class, 'gallery'])-
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [App\Http\Controllers\ContactController::class, 'store'])->name('contact.submit');
+
+// ─── Admin Panel ────────────────────────────────────────────────
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::get('/login', [App\Http\Controllers\AdminAuthController::class, 'showLogin'])->name('login');
+    Route::get('/', [App\Http\Controllers\AdminController::class, 'dashboardView'])->name('dashboard-view');
+});
 Route::get('/industries', [App\Http\Controllers\IndustriesController::class, 'index'])->name('industries');
 Route::prefix('industries')->name('industries.')->group(function () {
     Route::get('/it-for-agriculture', [App\Http\Controllers\IndustriesController::class, 'agriculture'])->name('agriculture');

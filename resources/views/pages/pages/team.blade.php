@@ -62,6 +62,12 @@
                         'label' => 'Engineer',
                         'image' => '/images/home/team/ti.jfif',
                     ],
+                    [
+                        'name' => 'Rizwan Sadat',
+                        'role' => 'IT Executive',
+                        'label' => 'Executive',
+                        'image' => '/images/home/team/rs.jpeg',
+                    ],
                 ];
             @endphp
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -116,5 +122,3 @@
     </section>
 
 @endsection
-
-
