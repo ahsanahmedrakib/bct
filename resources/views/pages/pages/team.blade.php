@@ -68,6 +68,12 @@
                         'label' => 'Executive',
                         'image' => '/images/home/team/rs.jpeg',
                     ],
+                    [
+                        'name' => 'Chandra Barai',
+                        'role' => 'Marketing Executive & Customer Support',
+                        'label' => 'Executive',
+                        'image' => '/images/home/team/cb.jpeg',
+                    ],
                 ];
             @endphp
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -89,8 +95,7 @@
                                 </div>
                             </div>
                             <div class="mt-5 space-y-1">
-                                <p class="text-[13px] font-semibold text-gray-500 tracking-wide">/
-                                    {{ $member['role'] }} /
+                                <p class="text-[13px] font-semibold text-gray-500 tracking-wide">/{{ $member['role'] }}/
                                 </p>
                                 <h3
                                     class="text-xl font-bold text-dark-hero transition-colors duration-300 group-hover:text-accent-orange">

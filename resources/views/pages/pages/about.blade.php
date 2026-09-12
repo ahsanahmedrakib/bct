@@ -116,35 +116,6 @@
         </div>
     </section>
 
-    {{-- Team Preview --}}
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="reveal reveal-fade-up text-center mb-16">
-                <span class="inline-block text-brand-blue font-bold text-sm uppercase tracking-wider mb-3">Team Members</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-heading">Meet Our Expert Members</h2>
-            </div>
-            <div class="reveal reveal-fade-up grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                @php
-                    $teamMembers = [
-                        ['name' => 'Tamzid Hasan', 'role' => 'IT Consultant', 'image' => '/images/home/team/team_1_1.jpg'],
-                        ['name' => 'Habibullah Mezbah', 'role' => 'Web Developer', 'image' => '/images/home/team/team_1_2.jpg'],
-                        ['name' => 'Tanzim Hasan Anik', 'role' => 'Director', 'image' => '/images/home/team/team_1_3.jpg'],
-                        ['name' => 'Tamzid Hasan', 'role' => 'IT Consultant', 'image' => '/images/home/team/team_1_4.jpg'],
-                    ];
-                @endphp
-                @foreach ($teamMembers as $member)
-                    <div class="group text-center">
-                        <div class="relative overflow-hidden rounded-2xl mb-4">
-                            <img src="{{ $member['image'] }}" alt="{{ $member['name'] }}" class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-500" />
-                        </div>
-                        <h4 class="text-lg font-bold text-heading">{{ $member['name'] }}</h4>
-                        <p class="text-sm text-body-muted">{{ $member['role'] }}</p>
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </section>
-
     {{-- FAQ Section --}}
     <section class="py-20 bg-brand-light-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -36,6 +36,27 @@
                     'Embrace digital transformation with smart technologies and innovative solutions that improve business processes, enhance customer experiences, and create lasting growth.',
                 'image' => '/images/home/hero/hero_3.jpg',
             ],
+            [
+                'subtitle' => 'Internet',
+                'title' => 'BCT & Business Internet',
+                'desc' =>
+                    'High-speed, redundant pipelines keeping your office fast and reliable.',
+                'image' => '/images/home/hero/hero_4.jpg',
+            ],
+            [
+                'subtitle' => 'Cyber Security',
+                'title' => 'Cyber Security & Data Protection',
+                'desc' =>
+                    'Proactive real-time monitoring and defenses to keep your data safe.',
+                'image' => '/images/home/hero/hero_5.jpg',
+            ],
+            [
+                'subtitle' => 'Cloud Services',
+                'title' => 'Microsoft 365 & Cloud Services',
+                'desc' =>
+                    'Secure email, collaboration and cloud services — set up the right way.',
+                'image' => '/images/home/hero/hero_6.jpg',
+            ],
         ];
     @endphp
 
@@ -145,14 +166,15 @@
         </style>
     </div>
 
+    {{-- do not removed  --}}
     {{-- ======================== HERO SLIDER ======================== --}}
-    <section class="relative w-full overflow-hidden bg-white py-8 md:pt-16">
+    {{-- <section class="relative w-full overflow-hidden bg-white py-8 md:pt-16">
         <div class="reveal reveal-fade-up px-4 sm:px-6 lg:px-8">
             <div class="swiper hero-swiper w-full">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper"> --}}
 
                     {{-- Slide 1: IT --}}
-                    <div class="swiper-slide">
+                    {{-- <div class="swiper-slide">
                         <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 pb-8">
                             <div class="flex flex-col items-start space-y-4 md:space-y-6 text-left order-2 md:order-1">
                                 <span
@@ -178,9 +200,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     {{-- Slide 2: Internet --}}
-                    <div class="swiper-slide">
+                    {{-- <div class="swiper-slide">
                         <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 pb-8">
                             <div class="flex flex-col items-start space-y-4 md:space-y-6 text-left order-2 md:order-1">
                                 <span
@@ -206,9 +228,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     {{-- Slide 3: Cyber Security --}}
-                    <div class="swiper-slide">
+                    {{-- <div class="swiper-slide">
                         <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 pb-8">
                             <div class="flex flex-col items-start space-y-4 md:space-y-6 text-left order-2 md:order-1">
                                 <span
@@ -234,9 +256,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     {{-- Slide 4: Cloud --}}
-                    <div class="swiper-slide">
+                    {{-- <div class="swiper-slide">
                         <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 pb-8">
                             <div class="flex flex-col items-start space-y-4 md:space-y-6 text-left order-2 md:order-1">
                                 <span
@@ -261,9 +283,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     {{-- Slide 5: Telecoms --}}
-                    <div class="swiper-slide">
+                    {{-- <div class="swiper-slide">
                         <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 pb-8">
                             <div class="flex flex-col items-start space-y-4 md:space-y-6 text-left order-2 md:order-1">
                                 <span
@@ -289,15 +311,14 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </div> --}}
+                {{-- </div>
+            </div> --}}
 
             {{-- Hero Indicators --}}
-            <div class="mt-4 border-t border-gray-100 pt-4">
+            {{-- <div class="mt-4 border-t border-gray-100 pt-4">
                 <div
                     class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:flex md:items-stretch md:justify-between md:gap-0 divide-x-0 md:divide-x divide-gray-200">
-                    {{-- 1 IT --}}
                     <button onclick="heroSwiper.slideToLoop(0)"
                         class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t border-t-white"
                         data-index="1">
@@ -309,7 +330,6 @@
                         <span class="mt-1 text-xs font-bold leading-tight md:text-sm text-gray-500">Fully Managed &amp;
                             AdHoc</span>
                     </button>
-                    {{-- 2 INTERNET  --}}
                     <button onclick="heroSwiper.slideToLoop(1)"
                         class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t border-t-white"
                         data-index="4">
@@ -321,7 +341,6 @@
                         <span class="mt-1 text-xs font-bold leading-tight md:text-sm text-gray-500">Internet, Home &amp;
                             Business</span>
                     </button>
-                    {{-- 3 CYBER  --}}
                     <button onclick="heroSwiper.slideToLoop(2)"
                         class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t border-t-white"
                         data-index="2">
@@ -333,7 +352,6 @@
                         <span class="mt-1 text-xs font-bold leading-tight md:text-sm text-gray-500">Proactive
                             Security</span>
                     </button>
-                    {{-- 4 Cloud  --}}
                     <button onclick="heroSwiper.slideToLoop(4)"
                         class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t border-t-brand-blue"
                         data-index="0">
@@ -344,7 +362,6 @@
                         <span class="mt-1 text-xs font-bold leading-tight md:text-sm text-blue-500">Modern cloud
                             tools</span>
                     </button>
-                    {{-- 5 TELECOM  --}}
                     <button onclick="heroSwiper.slideToLoop(4)"
                         class="hero-indicator group relative flex flex-col items-start p-3 text-left transition-all outline-none md:flex-1 md:px-4 border-t border-t-white"
                         data-index="3">
@@ -359,7 +376,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 
     {{-- ======================== ABOUT SECTION ======================== --}}
@@ -1107,6 +1124,12 @@
                         'label' => 'Executive',
                         'image' => '/images/home/team/rs.jpeg',
                     ],
+                    [
+                        'name' => 'Chandra Barai',
+                        'role' => 'Marketing Executive & Customer Support',
+                        'label' => 'Executive',
+                        'image' => '/images/home/team/cb.jpeg',
+                    ],
                 ];
             @endphp
             <div class="swiper team-swiper overflow-hidden pb-2">
@@ -1130,8 +1153,7 @@
                                         </div>
                                     </div>
                                     <div class="mt-5 space-y-1">
-                                        <p class="text-[13px] font-semibold text-gray-500 tracking-wide">/
-                                            {{ $member['role'] }} /
+                                        <p class="text-[13px] font-semibold text-gray-500 tracking-wide">/{{ $member['role'] }}/
                                         </p>
                                         <h3
                                             class="text-xl font-bold text-dark-hero transition-colors duration-300 group-hover:text-accent-orange">
