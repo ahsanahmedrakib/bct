@@ -1,126 +1,252 @@
 @extends('layouts.app')
 
 @section('title', 'Cloud and Network Security | Bismillah Computer & Technology')
-@section('description', 'In an era where digital transformation is at the core of business operations, ensuring the security of cloud environments and networks is more critical than ever.')
+@section('description', 'In an era where digital transformation is at the core of business operations, ensuring the
+    security of cloud environments and networks is more critical than ever.')
 
 @section('content')
     <main class="flex min-h-screen flex-col font-sans text-slate-800 bg-slate-50">
         {{-- HERO SECTION --}}
         <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
-            <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            <div
+                class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
                 <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                     <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                         Cloud and Network Security <br />
                         <span class="text-blue-600 block mt-2"> Protecting Your Digital Assets</span>
                     </h1>
-                    <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">In an era where digital transformation is at the core of business operations, ensuring the security of cloud environments and networks is more critical than ever. With cyber threats evolving rapidly, organizations must adopt robust security measures to protect sensitive data, applications, and infrastructure. This blog post explores key aspects of cloud and network security, best practices, and emerging trends to help businesses stay ahead of potential threats.</p>
+                    <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">In an era where
+                        digital transformation is at the core of business operations, ensuring the security of cloud
+                        environments and networks is more critical than ever. With cyber threats evolving rapidly,
+                        organizations must adopt robust security measures to protect sensitive data, applications, and
+                        infrastructure. This blog post explores key aspects of cloud and network security, best practices,
+                        and emerging trends to help businesses stay ahead of potential threats.</p>
 
                     <div class="pt-6 border-t border-slate-200/60 flex flex-col items-start gap-3">
                         <p class="text-sky-700 font-semibold text-sm">Need help?</p>
-                        <a href="{{ route('contact') }}" class="px-6 py-2.5 bg-white border border-sky-700 text-sky-700 text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer hover:bg-navy-active hover:text-white transition-colors">
+                        <a href="{{ route('contact') }}"
+                            class="px-6 py-2.5 bg-white border border-sky-700 text-sky-700 text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm cursor-pointer hover:bg-navy-active hover:text-white transition-colors">
                             Contact Us
                         </a>
                     </div>
                 </div>
                 <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
-                    <img src="/images/it-support/cyber-security/cloud-and-network/hero.png" alt="BG Image" height="400" width="600" class="rounded-lg w-full max-w-md lg:max-w-lg" />
+                    <img src="/images/it-support/cyber-security/cloud-and-network/hero.png" alt="BG Image" height="400"
+                        width="600" class="rounded-lg w-full max-w-md lg:max-w-lg" />
                 </div>
             </div>
             <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-                <svg class="relative block w-full h-16" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C73.23,28.79,158.46,59.39,235.9,67.65,264.44,70.67,293.12,61.7,321.39,56.44Z" fill="#f8fafc"></path>
+                <svg class="relative block w-full h-16" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C73.23,28.79,158.46,59.39,235.9,67.65,264.44,70.67,293.12,61.7,321.39,56.44Z"
+                        fill="#f8fafc"></path>
                 </svg>
             </div>
         </section>
 
         {{-- ==================== SECTION 1: Cloud Security Services ==================== --}}
-        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                 <div class="order-2 lg:order-1">
-                    <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                    <div
+                        class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
                         <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                         <div class="flex items-center space-x-3 mb-4">
-                            <div class="w-10 h-10 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-700 shrink-0">
+                            <div
+                                class="w-10 h-10 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-700 shrink-0">
                                 <span class="text-slate-700">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                                    </svg>
                                 </span>
                             </div>
                             <div>
-                                <h3 class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Cloud Security Services</h3>
-                                <h2 class="text-xl sm:text-2xl font-bold text-slate-900 leading-tight">Our Cloud Security Services</h2>
+                                <h3 class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Cloud Security
+                                    Services</h3>
+                                <h2 class="text-xl sm:text-2xl font-bold text-slate-900 leading-tight">Our Cloud Security
+                                    Services</h2>
                             </div>
                         </div>
-                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">We provide <span class="text-blue-600 font-medium">comprehensive cloud security solutions</span> tailored to protect your business assets, ensuring <span class="text-blue-600 font-medium">cloud environments</span> remain secure and resilient against modern threats.</p>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">We provide <span
+                                class="text-blue-600 font-medium">comprehensive cloud security solutions</span> tailored to
+                            protect your business assets, ensuring <span class="text-blue-600 font-medium">cloud
+                                environments</span> remain secure and resilient against modern threats.</p>
                         <h4 class="font-bold text-slate-800 text-sm mb-3">Key Cloud Security Features:</h4>
                         <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600">
-                            <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Data Encryption:</strong> Secure sensitive information using advanced encryption techniques.</span></li>
-                            <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Identity and Access Management (IAM):</strong> Implement strong authentication mechanisms to restrict unauthorized access.</span></li>
-                            <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Threat Detection &amp; Response:</strong> Utilize AI-powered security tools to identify and mitigate threats in real time.</span></li>
-                            <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Regulatory Compliance:</strong> Ensure compliance with industry standards such as <strong class="text-blue-600 font-semibold">GDPR, HIPAA,</strong> and <strong class="text-blue-600 font-semibold">ISO 27001</strong>.</span></li>
-                            <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Multi-Factor Authentication (MFA):</strong> Add an extra layer of security to protect critical systems and data.</span></li>
-                            <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Microsoft 365 Security:</strong> Implement advanced threat protection, spam filtering, and data loss prevention (DLP) across Microsoft 365 applications like Exchange and Teams.</span></li>
-                            <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Microsoft Azure Security:</strong> Utilize Advanced Threat Protection, identity management, compliance control, and secure cloud workloads, virtual machines, and cloud storage in Microsoft Azure.</span></li>
+                            <li class="flex items-start"><span
+                                    class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                        class="text-blue-600 font-semibold">Data Encryption:</strong> Secure sensitive
+                                    information using advanced encryption techniques.</span></li>
+                            <li class="flex items-start"><span
+                                    class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                        class="text-blue-600 font-semibold">Identity and Access Management (IAM):</strong>
+                                    Implement strong authentication mechanisms to restrict unauthorized access.</span></li>
+                            <li class="flex items-start"><span
+                                    class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                        class="text-blue-600 font-semibold">Threat Detection &amp; Response:</strong>
+                                    Utilize AI-powered security tools to identify and mitigate threats in real time.</span>
+                            </li>
+                            <li class="flex items-start"><span
+                                    class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                        class="text-blue-600 font-semibold">Regulatory Compliance:</strong> Ensure
+                                    compliance with industry standards such as <strong
+                                        class="text-blue-600 font-semibold">GDPR, HIPAA,</strong> and <strong
+                                        class="text-blue-600 font-semibold">ISO 27001</strong>.</span></li>
+                            <li class="flex items-start"><span
+                                    class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                        class="text-blue-600 font-semibold">Multi-Factor Authentication (MFA):</strong> Add
+                                    an extra layer of security to protect critical systems and data.</span></li>
+                            <li class="flex items-start"><span
+                                    class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                        class="text-blue-600 font-semibold">Microsoft 365 Security:</strong> Implement
+                                    advanced threat protection, spam filtering, and data loss prevention (DLP) across
+                                    Microsoft 365 applications like Exchange and Teams.</span></li>
+                            <li class="flex items-start"><span
+                                    class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                        class="text-blue-600 font-semibold">Microsoft Azure Security:</strong> Utilize
+                                    Advanced Threat Protection, identity management, compliance control, and secure cloud
+                                    workloads, virtual machines, and cloud storage in Microsoft Azure.</span></li>
                         </ul>
                     </div>
                 </div>
                 <div class="order-1 lg:order-2 flex justify-center items-center">
                     <div class="flex justify-center">
-                        <img src="/images/it-support/cyber-security/cloud-and-network/cloud-security.webp" alt="Cloud Security Services Shield Graphic" height="400" width="600" class="object-cover rounded-xl" />
+                        <img src="/images/it-support/cyber-security/cloud-and-network/cloud-security.webp"
+                            alt="Cloud Security Services Shield Graphic" height="400" width="600"
+                            class="object-cover rounded-xl" />
                     </div>
                 </div>
             </div>
         </section>
 
         {{-- ==================== SECTION 2: Key Elements of Cloud Security ==================== --}}
-        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up">
-                <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                <div
+                    class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-6">Key Elements of Cloud Security:</h2>
                     <ol class="space-y-4 text-xs sm:text-sm text-slate-600 list-decimal list-inside">
-                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Data Encryption:</strong> Encrypting data at rest and in transit to preserve confidentiality and prevent unauthorized access.</li>
-                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Identity and Access Management (IAM):</strong> Implementing strict identity verification to limit resource access to authorized personnel.</li>
-                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Compliance and Governance:</strong> Adhering to regulatory frameworks such as GDPR and ISO 27001 to maintain security standards and legal integrity.</li>
-                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Threat Detection and Response:</strong> Deploying proactive monitoring tools to identify and mitigate security incidents in real-time.</li>
-                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Multi-Factor Authentication (MFA):</strong> Enforcing MFA across all cloud accounts to prevent unauthorized access from compromised credentials.</li>
+                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Data Encryption:</strong> Encrypting
+                            data at rest and in transit to preserve confidentiality and prevent unauthorized access.</li>
+                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Identity and Access Management
+                                (IAM):</strong> Implementing strict identity verification to limit resource access to
+                            authorized personnel.</li>
+                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Compliance and Governance:</strong>
+                            Adhering to regulatory frameworks such as GDPR and ISO 27001 to maintain security standards and
+                            legal integrity.</li>
+                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Threat Detection and
+                                Response:</strong> Deploying proactive monitoring tools to identify and mitigate security
+                            incidents in real-time.</li>
+                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Multi-Factor Authentication
+                                (MFA):</strong> Enforcing MFA across all cloud accounts to prevent unauthorized access from
+                            compromised credentials.</li>
                     </ol>
                 </div>
             </div>
         </section>
 
         {{-- ==================== SECTION 3: Understanding Network Security ==================== --}}
-        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                 <div class="flex justify-center items-center">
                     <div class="flex justify-center">
-                        <img src="/images/it-support/cyber-security/cloud-and-network/network-security.webp" alt="Understanding Network Security Shield Graphic" height="400" width="600" class="object-cover rounded-xl" />
+                        <img src="/images/it-support/cyber-security/cloud-and-network/network-security.webp"
+                            alt="Understanding Network Security Shield Graphic" height="400" width="600"
+                            class="object-cover rounded-xl" />
                     </div>
                 </div>
                 <div>
-                    <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                    <div
+                        class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
                         <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                         <div class="flex items-center space-x-3 mb-4">
-                            <div class="w-10 h-10 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-700 shrink-0">
+                            <div
+                                class="w-10 h-10 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-700 shrink-0">
                                 <span class="text-slate-700">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                                        </path>
+                                        <path d="m9 12 2 2 4-4"></path>
+                                    </svg>
                                 </span>
                             </div>
-                            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 leading-tight">Understanding Network Security</h2>
+                            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 leading-tight">Understanding Network
+                                Security</h2>
                         </div>
-                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">A <span class="text-blue-600 font-medium">comprehensive network security framework</span> prevents unauthorized access, stops cyber threats, and <span class="text-blue-600 font-medium">protects internal network infrastructure from downtime, data breach, and severe financial and operational damage.</span></p>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">A <span
+                                class="text-blue-600 font-medium">comprehensive network security framework</span> prevents
+                            unauthorized access, stops cyber threats, and <span class="text-blue-600 font-medium">protects
+                                internal network infrastructure from downtime, data breach, and severe financial and
+                                operational damage.</span></p>
                         <h4 class="font-bold text-slate-800 text-sm mb-3">Key Network Security Features:</h4>
                         <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600">
-                            <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Next-Gen Firewalls &amp; Penetration Testing (NGFW):</strong> Inspect traffic, block intrusions, and filter malicious web content.</span></li>
-                            <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Zero Trust Security Model:</strong> Enforce continuous authentication and strictly control access.</span></li>
-                            <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">SD-WAN Secure Remote Access:</strong> Ensure safe connectivity for remote workers and branch offices.</span></li>
-                            <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Endpoint Protection:</strong> Protect workstations and mobile devices from cyber attacks.</span></li>
-                            <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">DDoS Protection:</strong> Prevent overwhelming traffic attacks to keep critical services online.</span></li>
-                            <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Virtual Private Networks (VPNs):</strong> Encrypt network connections to provide <strong class="text-blue-600 font-semibold">secure access to corporate networks, ensuring privacy and protection</strong> for remote workers and connecting multiple locations.</span></li>
-                            <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Wi-Fi Security:</strong> Protect wireless networks from unauthorized access, eavesdropping, and cyber threats by implementing <strong class="text-blue-600 font-semibold">strong enterprise WPA3/WPA2 encryption</strong>, proper guest network isolation, and regular security audits.</span></li>
-                            <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Dedicated Internet Access:</strong> Provide high-speed, reliable internet connections with SLA guarantees for operations, ensuring seamless communication and uninterrupted access to cloud services.</span></li>
-                            <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Business Broadband &amp; Fibre Connectivity (FTTP/FTTC):</strong> Fast and reliable connectivity options, including <strong class="text-blue-600 font-semibold">Gigabit networks</strong> to connect office locations, combining high-speed primary connections with redundant backup links for maximum resilience.</span></li>
-                            <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Mobile Device Security:</strong> Safeguard laptops and corporate mobile devices from cyber threats with <strong class="text-blue-600 font-semibold">Mobile Device Management (MDM)</strong> solutions, secure app management, and device encryption.</span></li>
-                            <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Remote Offsite Backup Capability:</strong> Implement automatic daily backups to secure <strong class="text-blue-600 font-semibold">remote offsite locations</strong> for critical server systems, ensuring rapid data recovery and business-critical information.</span></li>
+                            <li class="flex items-start"><span
+                                    class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                        class="text-blue-600 font-semibold">Next-Gen Firewalls &amp; Penetration Testing
+                                        (NGFW):</strong> Inspect traffic, block intrusions, and filter malicious web
+                                    content.</span></li>
+                            <li class="flex items-start"><span
+                                    class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                        class="text-blue-600 font-semibold">Zero Trust Security Model:</strong> Enforce
+                                    continuous authentication and strictly control access.</span></li>
+                            <li class="flex items-start"><span
+                                    class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                        class="text-blue-600 font-semibold">SD-WAN Secure Remote Access:</strong> Ensure
+                                    safe connectivity for remote workers and branch offices.</span></li>
+                            <li class="flex items-start"><span
+                                    class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                        class="text-blue-600 font-semibold">Endpoint Protection:</strong> Protect
+                                    workstations and mobile devices from cyber attacks.</span></li>
+                            <li class="flex items-start"><span
+                                    class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                        class="text-blue-600 font-semibold">DDoS Protection:</strong> Prevent overwhelming
+                                    traffic attacks to keep critical services online.</span></li>
+                            <li class="flex items-start"><span
+                                    class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                        class="text-blue-600 font-semibold">Virtual Private Networks (VPNs):</strong>
+                                    Encrypt network connections to provide <strong
+                                        class="text-blue-600 font-semibold">secure access to corporate networks, ensuring
+                                        privacy and protection</strong> for remote workers and connecting multiple
+                                    locations.</span></li>
+                            <li class="flex items-start"><span
+                                    class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                        class="text-blue-600 font-semibold">Wi-Fi Security:</strong> Protect wireless
+                                    networks from unauthorized access, eavesdropping, and cyber threats by implementing
+                                    <strong class="text-blue-600 font-semibold">strong enterprise WPA3/WPA2
+                                        encryption</strong>, proper guest network isolation, and regular security
+                                    audits.</span></li>
+                            <li class="flex items-start"><span
+                                    class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                        class="text-blue-600 font-semibold">Dedicated Internet Access:</strong> Provide
+                                    high-speed, reliable internet connections with SLA guarantees for operations, ensuring
+                                    seamless communication and uninterrupted access to cloud services.</span></li>
+                            <li class="flex items-start"><span
+                                    class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                        class="text-blue-600 font-semibold">Business Broadband &amp; Fibre Connectivity
+                                        (FTTP/FTTC):</strong> Fast and reliable connectivity options, including <strong
+                                        class="text-blue-600 font-semibold">Gigabit networks</strong> to connect office
+                                    locations, combining high-speed primary connections with redundant backup links for
+                                    maximum resilience.</span></li>
+                            <li class="flex items-start"><span
+                                    class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                        class="text-blue-600 font-semibold">Mobile Device Security:</strong> Safeguard
+                                    laptops and corporate mobile devices from cyber threats with <strong
+                                        class="text-blue-600 font-semibold">Mobile Device Management (MDM)</strong>
+                                    solutions, secure app management, and device encryption.</span></li>
+                            <li class="flex items-start"><span
+                                    class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                        class="text-blue-600 font-semibold">Remote Offsite Backup Capability:</strong>
+                                    Implement automatic daily backups to secure <strong
+                                        class="text-blue-600 font-semibold">remote offsite locations</strong> for critical
+                                    server systems, ensuring rapid data recovery and business-critical information.</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -128,83 +254,158 @@
         </section>
 
         {{-- ==================== SECTION 4: Network Consulting, Design, and Installation ==================== --}}
-        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up">
-                <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                <div
+                    class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">Network Consulting, Design, and Installation</h2>
-                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">Our <span class="text-blue-600 font-medium">network consulting, design, and installation</span> services build <span class="text-blue-600 font-medium">reliable, scalable, and secure network infrastructure</span> aligned with your business goals. From initial planning to full execution, we ensure seamless connectivity.</p>
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">Network Consulting, Design, and
+                        Installation</h2>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">Our <span
+                            class="text-blue-600 font-medium">network consulting, design, and installation</span> services
+                        build <span class="text-blue-600 font-medium">reliable, scalable, and secure network
+                            infrastructure</span> aligned with your business goals. From initial planning to full execution,
+                        we ensure seamless connectivity.</p>
                     <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
-                        <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Network Architecture Planning:</strong> Designing a customized network infrastructure that aligns with your business objectives.</span></li>
-                        <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Security-First Approach:</strong> Implementing advanced security measures to protect against cyber threats.</span></li>
-                        <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Performance Optimization:</strong> Enhancing network speed, reliability, and capability for optimal performance.</span></li>
-                        <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Cloud Integration:</strong> Seamlessly integrating on-premise networks with cloud services for <strong class="text-blue-600 font-semibold">hybrid and multi-cloud environments</strong>.</span></li>
-                        <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Compliance &amp; Risk Management:</strong> Ensuring the network complies with regulatory requirements and industry standards.</span></li>
-                        <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Network Installation Services:</strong> Full setup and configuration of network hardware and software for seamless integration and deployment.</span></li>
+                        <li class="flex items-start"><span
+                                class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                    class="text-blue-600 font-semibold">Network Architecture Planning:</strong> Designing a
+                                customized network infrastructure that aligns with your business objectives.</span></li>
+                        <li class="flex items-start"><span
+                                class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                    class="text-blue-600 font-semibold">Security-First Approach:</strong> Implementing
+                                advanced security measures to protect against cyber threats.</span></li>
+                        <li class="flex items-start"><span
+                                class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                    class="text-blue-600 font-semibold">Performance Optimization:</strong> Enhancing
+                                network speed, reliability, and capability for optimal performance.</span></li>
+                        <li class="flex items-start"><span
+                                class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                    class="text-blue-600 font-semibold">Cloud Integration:</strong> Seamlessly integrating
+                                on-premise networks with cloud services for <strong
+                                    class="text-blue-600 font-semibold">hybrid and multi-cloud
+                                    environments</strong>.</span></li>
+                        <li class="flex items-start"><span
+                                class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                    class="text-blue-600 font-semibold">Compliance &amp; Risk Management:</strong> Ensuring
+                                the network complies with regulatory requirements and industry standards.</span></li>
+                        <li class="flex items-start"><span
+                                class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                    class="text-blue-600 font-semibold">Network Installation Services:</strong> Full setup
+                                and configuration of network hardware and software for seamless integration and
+                                deployment.</span></li>
                     </ul>
                 </div>
             </div>
         </section>
 
         {{-- ==================== SECTION 5: Best Practices ==================== --}}
-        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up">
-                <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                <div
+                    class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-6">Best Practices for Strengthening Cloud and Network Security</h2>
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-6">Best Practices for Strengthening Cloud
+                        and Network Security</h2>
                     <ol class="space-y-4 text-xs sm:text-sm text-slate-600 list-decimal list-inside">
-                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Regular Security Audits:</strong> Conduct periodic assessments to identify vulnerabilities and ensure compliance with security standards.</li>
-                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Employee Training:</strong> Educate employees on security best practices, such as recognizing phishing attacks and using strong passwords.</li>
-                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Automated Security Patching:</strong> Keep software and operating systems updated with the latest security patches.</li>
-                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Least Privilege Access Control:</strong> Limit user access to only what is necessary for their job roles to minimize security risks.</li>
-                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Incident Response Plan:</strong> Develop and test a response strategy to quickly mitigate the impact of any potential cyber incident.</li>
+                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Regular Security Audits:</strong>
+                            Conduct periodic assessments to identify vulnerabilities and ensure compliance with security
+                            standards.</li>
+                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Employee Training:</strong> Educate
+                            employees on security best practices, such as recognizing phishing attacks and using strong
+                            passwords.</li>
+                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Automated Security
+                                Patching:</strong> Keep software and operating systems updated with the latest security
+                            patches.</li>
+                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Least Privilege Access
+                                Control:</strong> Limit user access to only what is necessary for their job roles to
+                            minimize security risks.</li>
+                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Incident Response Plan:</strong>
+                            Develop and test a response strategy to quickly mitigate the impact of any potential cyber
+                            incident.</li>
                     </ol>
                 </div>
             </div>
         </section>
 
         {{-- ==================== SECTION 6: Emerging Trends ==================== --}}
-        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up">
-                <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                <div
+                    class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-6">Emerging Trends in Cloud and Network Security</h2>
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-6">Emerging Trends in Cloud and Network
+                        Security</h2>
                     <ol class="space-y-4 text-xs sm:text-sm text-slate-600 list-decimal list-inside">
-                        <li class="pl-1"><strong class="text-blue-600 font-semibold">AI and Machine Learning in Security:</strong> AI-driven security solutions automate threat detection and response to identify complex attacks in real time.</li>
-                        <li class="pl-1"><strong class="text-blue-600 font-semibold">SASE (Secure Access Service Edge):</strong> A cloud-based framework that integrates network security functions with WAN capabilities for safe remote access.</li>
-                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Zero Trust Architecture:</strong> A security model that assumes every access request is untrusted, ensuring strict identity verification for all users.</li>
-                        <li class="pl-1"><strong class="text-blue-600 font-semibold">IoT Security:</strong> Protecting connected devices and sensors from exploits to prevent entry points into enterprise networks.</li>
-                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Quantum-Safe Cryptography:</strong> Preparing for future threats posed by quantum computing by developing advanced encryption algorithms to protect sensitive data.</li>
+                        <li class="pl-1"><strong class="text-blue-600 font-semibold">AI and Machine Learning in
+                                Security:</strong> AI-driven security solutions automate threat detection and response to
+                            identify complex attacks in real time.</li>
+                        <li class="pl-1"><strong class="text-blue-600 font-semibold">SASE (Secure Access Service
+                                Edge):</strong> A cloud-based framework that integrates network security functions with WAN
+                            capabilities for safe remote access.</li>
+                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Zero Trust Architecture:</strong> A
+                            security model that assumes every access request is untrusted, ensuring strict identity
+                            verification for all users.</li>
+                        <li class="pl-1"><strong class="text-blue-600 font-semibold">IoT Security:</strong> Protecting
+                            connected devices and sensors from exploits to prevent entry points into enterprise networks.
+                        </li>
+                        <li class="pl-1"><strong class="text-blue-600 font-semibold">Quantum-Safe Cryptography:</strong>
+                            Preparing for future threats posed by quantum computing by developing advanced encryption
+                            algorithms to protect sensitive data.</li>
                     </ol>
                 </div>
             </div>
         </section>
 
         {{-- ==================== SECTION 7: Why Choose Us ==================== --}}
-        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up">
-                <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                <div
+                    class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">Why Choose Us For Cloud and Network Security?</h2>
-                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">We are dedicated to delivering <span class="text-blue-600 font-medium">tailored security solutions</span> that align with your <span class="text-blue-600 font-medium">business goals</span>. Our <span class="text-blue-600 font-medium">team of experts</span> is committed to providing:</p>
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">Why Choose Us For Cloud and Network
+                        Security?</h2>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">We are dedicated to delivering <span
+                            class="text-blue-600 font-medium">tailored security solutions</span> that align with your <span
+                            class="text-blue-600 font-medium">business goals</span>. Our <span
+                            class="text-blue-600 font-medium">team of experts</span> is committed to providing:</p>
                     <ul class="space-y-3 text-xs sm:text-sm text-slate-600">
-                        <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Customized security strategies</strong> tailored to your unique needs.</span></li>
-                        <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">24/7 monitoring</strong> and proactive threat detection.</span></li>
-                        <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Compliance with industry standards</strong> and regulations.</span></li>
-                        <li class="flex items-start"><span class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong class="text-blue-600 font-semibold">Scalable solutions</strong> that grow with your business.</span></li>
+                        <li class="flex items-start"><span
+                                class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                    class="text-blue-600 font-semibold">Customized security strategies</strong> tailored to
+                                your unique needs.</span></li>
+                        <li class="flex items-start"><span
+                                class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                    class="text-blue-600 font-semibold">24/7 monitoring</strong> and proactive threat
+                                detection.</span></li>
+                        <li class="flex items-start"><span
+                                class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                    class="text-blue-600 font-semibold">Compliance with industry standards</strong> and
+                                regulations.</span></li>
+                        <li class="flex items-start"><span
+                                class="text-blue-600 mr-2 font-bold">&#x2022;</span><span><strong
+                                    class="text-blue-600 font-semibold">Scalable solutions</strong> that grow with your
+                                business.</span></li>
                     </ul>
                 </div>
             </div>
         </section>
 
         {{-- ==================== SECTION 8: Get Started Today ==================== --}}
-        <section class="py-10 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-10 pb-20 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up">
-                <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                <div
+                    class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">Get Started Today with the Best Cloud and Network Security Solutions</h2>
-                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-8">Don&#x27;t leave your <span class="text-blue-600 font-medium">digital assets vulnerable to cyber threats</span>. <strong class="text-blue-600 font-semibold">Contact us today</strong> to learn how our <span class="text-blue-600 font-medium">cloud and network security solutions</span> can help safeguard your organization.</p>
-                    <p class="text-blue-600 font-semibold text-xs sm:text-sm tracking-wide">Secure your business. Protect your data. Stay ahead of cyber threats.</p>
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">Get Started Today with the Best Cloud and
+                        Network Security Solutions</h2>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-8">Don&#x27;t leave your <span
+                            class="text-blue-600 font-medium">digital assets vulnerable to cyber threats</span>. <strong
+                            class="text-blue-600 font-semibold">Contact us today</strong> to learn how our <span
+                            class="text-blue-600 font-medium">cloud and network security solutions</span> can help
+                        safeguard your organization.</p>
+                    <p class="text-blue-600 font-semibold text-xs sm:text-sm tracking-wide">Secure your business. Protect
+                        your data. Stay ahead of cyber threats.</p>
                 </div>
             </div>
         </section>

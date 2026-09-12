@@ -10,7 +10,7 @@
     {{-- ==================== HERO ==================== --}}
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                     Cloud Phone System
@@ -46,7 +46,7 @@
 
     {{-- ==================== VALUE PROPS ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Why Vodia</h2>
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div
@@ -84,7 +84,7 @@
 
     {{-- ====================  ALL-IN-ONE SOFT-PHONE ==================== --}}
     <section class="py-16 lg:py-24 bg-slate-50">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-2">Feature Overview</h2>
             <h3 class="text-2xl text-center font-bold text-slate-900 mb-6">All in One Softphone to make and manage calls
             </h3>
@@ -136,7 +136,7 @@
 
     {{-- ==================== FEATURES GRID ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Powerful Built-In Features</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
@@ -299,7 +299,7 @@
 
     {{-- ==================== MICROSOFT TEAMS ==================== --}}
     <section class="py-16 lg:py-24 bg-slate-50">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="w-full">
                 <img src="/images/voice/brands/vodia/microsoft.jpg" alt="Section" class="w-full h-auto object-cover" />
             </div>
@@ -328,7 +328,7 @@
 
     {{-- ==================== DESK PHONES ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Desk Phones &amp; Soft Phones</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                 <div

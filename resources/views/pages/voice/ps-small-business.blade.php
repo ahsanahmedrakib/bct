@@ -10,7 +10,7 @@
     {{-- ==================== HERO ==================== --}}
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                     Small Business
@@ -65,7 +65,7 @@
 
     {{-- ==================== WHO IS THE CLOUD PHONE SYSTEM FOR ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="w-full">
                 <img src="/images/voice/phone-systems/small-business/cloud.png" alt="Section"
                     class="w-full h-auto object-cover" />
@@ -117,7 +117,7 @@
 
     {{-- ==================== CLOUD PHONE SYSTEM BENEFITS ==================== --}}
     <section class="py-16 lg:py-24 bg-slate-50">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Cloud Phone System Benefits</h2>
             <div class="grid lg:grid-cols-2 gap-8 items-center">
                 <div
@@ -189,7 +189,7 @@
 
     {{-- ==================== CLOUD PHONE SYSTEM FEATURES ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Cloud Phone System Features</h2>
             <p class="text-center text-slate-600 max-w-3xl mx-auto mb-4">A <strong>cloud-based phone system</strong>
                 provides
@@ -258,7 +258,7 @@
 
     {{-- ==================== SUPPORT ==================== --}}
     <section class="py-16 lg:py-24 big-slate-50">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
 
             <div
                 class="order-2 lg:order-1bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative h-full">
@@ -310,7 +310,7 @@
 
     {{-- ==================== ONBOARDING / SUPPORT SERVICES ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">A Simple, Stress-Free Process from Day One</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div
@@ -383,7 +383,7 @@
 
     {{-- ==================== FAQS ==================== --}}
     <section class="py-16 lg:py-24 bg-slate-50">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Small Business Phone System FAQs</h2>
             <div class="space-y-4">
                 @php

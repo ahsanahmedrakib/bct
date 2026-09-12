@@ -8,7 +8,7 @@
         {{-- HERO SECTION --}}
         <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
             <div
-                class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+                class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
                 <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                     <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                         Cyber Security <br />
@@ -81,7 +81,7 @@
         </section>
 
         {{-- ==================== SECTION 1: Introduction ==================== --}}
-        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up">
                 <div
                     class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
@@ -99,7 +99,7 @@
         </section>
 
         {{-- ==================== SECTION 2: How Does It Work? ==================== --}}
-        <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up">
                 <div
                     class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
@@ -168,7 +168,7 @@
         </section>
 
         {{-- ==================== SECTION 3: Customised Remediation Action Plans ==================== --}}
-        <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up">
                 <div
                     class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
@@ -186,7 +186,7 @@
         </section>
 
         {{-- ==================== SECTION 4: Benefits of Cyber Incident Response Services ==================== --}}
-        <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up">
                 <div
                     class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
@@ -212,7 +212,7 @@
         </section>
 
         {{-- ==================== SECTION 5: Why Choose Total Solutions IT ==================== --}}
-        <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up">
                 <div
                     class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
@@ -282,7 +282,7 @@
         </section>
 
         {{-- ==================== SECTION 6: Contact Us ==================== --}}
-        <section class="pt-6 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="pt-6 pb-16 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up">
                 <div
                     class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">

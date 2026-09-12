@@ -383,7 +383,7 @@
         <div class="absolute bottom-24 left-0 w-125 h-125 rounded-full pointer-events-none"
             style="background:radial-gradient(circle, rgba(11,89,219,0.08) 0%, transparent 70%)"></div>
 
-        <div class="max-w-7xl mx-auto relative z-10">
+        <div class="max-w-356 mx-auto relative z-10">
             {{-- Section Title --}}
             <div class="reveal reveal-fade-up text-center max-w-3xl mx-auto -mt-2 sm:-mt-6">
                 <span class="inline-flex items-center gap-3 text-theme-blue text-lg sm:text-xl font-medium tracking-wide">
@@ -563,7 +563,7 @@
     <section class="bg-linear-to-b from-gray-50 via-white to-gray-50 py-10 px-4 sm:px-6 lg:px-8 overflow-hidden relative">
     </section>
     <div
-        class="reveal reveal-fade-up text-start -mt-2 sm:-mt-6 max-w-7xl mx-auto flex flex-col md:flex-row justify-between px-2">
+        class="reveal reveal-fade-up text-start -mt-2 sm:-mt-6 max-w-356 mx-auto flex flex-col md:flex-row justify-between px-2">
         <div>
             <span class="inline-flex items-center gap-3 text-theme-blue text-lg sm:text-xl font-medium tracking-wide">
                 <span class="relative inline-block h-5 w-5 shrink-0" aria-hidden="true">
@@ -714,7 +714,7 @@
         <div class="absolute top-20 left-1/2 -translate-x-1/2 w-125 h-125 rounded-full pointer-events-none"
             style="background:radial-gradient(circle, rgba(191,219,254,0.15) 0%, transparent 70%);will-change:transform">
         </div>
-        <div class="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto relative z-10">
+        <div class="max-w-356 px-4 sm:px-6 lg:px-8 mx-auto relative z-10">
             <div class="mb-24">
                 <div class="reveal fade-up flex flex-col md:flex-row md:items-end justify-between mb-16">
                     <div>
@@ -788,7 +788,7 @@
 
     {{-- ======================== HOW WE DO (Partner Logos) ======================== --}}
     {{-- <section class="bg-linear-to-b from-gray-50 via-white to-gray-50 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden relative">
-        <div class="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto relative z-10">
+        <div class="max-w-356 px-4 sm:px-6 lg:px-8 mx-auto relative z-10">
             <div class="reveal fade-up text-center md:text-left mb-12">
                 <span
                     class="text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-50 px-3 py-1.5 rounded-md ring-1 ring-blue-600/10">Ecosystem</span>
@@ -835,7 +835,7 @@
         <div class="absolute bottom-0 right-1/4 w-96 h-96 rounded-full pointer-events-none"
             style="background:radial-gradient(circle, rgba(16,185,129,0.04) 0%, transparent 70%);will-change:transform">
         </div>
-        <div class="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-356 mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
             <div class="reveal fade-up text-center max-w-3xl mx-auto mb-16 md:mb-24">
                 <h2 class="text-xl font-bold tracking-wider text-blue-500 uppercase mb-3">Our Approach</h2>
                 <p
@@ -936,7 +936,7 @@
 
     {{-- ======================== OUR TEAM ======================== --}}
     <section class="bg-white py-16 px-4 sm:px-6 lg:px-8 font-sans">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="reveal fade-up text-center max-w-2xl mx-auto mb-16">
                 <span class="inline-flex items-center gap-3 text-theme-blue text-lg sm:text-xl font-medium tracking-wide">
                     <span class="relative inline-block h-5 w-5 shrink-0"><span
@@ -1095,7 +1095,7 @@
 
     {{-- ======================== TESTIMONIALS ======================== --}}
     <section class="bg-dark-hero text-white py-16 md:py-24 font-sans overflow-hidden">
-        <div class="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div class="max-w-356 px-4 sm:px-6 lg:px-8 mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             {{-- Left Column --}}
             <div class="reveal fade-up lg:col-span-5 space-y-8">
                 <div class="flex items-center space-x-2 text-brand-blue font-semibold text-xl tracking-widest uppercase">

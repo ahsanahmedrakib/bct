@@ -10,7 +10,7 @@
     {{-- ==================== HERO ==================== --}}
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <span
                     class="inline-block px-4 py-1.5 bg-brand-blue/10 text-brand-blue text-sm font-semibold rounded-full">Phone
@@ -47,7 +47,7 @@
 
     {{-- ==================== UNDERSTANDING ENTERPRISE PHONE SYSTEMS ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
             <div
                 class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative h-full">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -69,7 +69,7 @@
 
     {{-- ==================== ON-PREMISES ADVANTAGES ==================== --}}
     <section class="py-16 lg:py-24 bg-slate-50">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Advantages of On-Premises PBX Systems</h2>
             <p class="text-center text-slate-600 max-w-3xl mx-auto mb-12">On-premises PBX systems also present unique
                 benefits,
@@ -104,7 +104,7 @@
 
     {{-- ==================== WHY CHOOSE US ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Why Choose Bismillah Computer &amp; Technology?
             </h2>
             <p class="text-center text-slate-600 max-w-3xl mx-auto mb-12">Opting for us for your enterprise phone system
@@ -155,7 +155,7 @@
 
     {{-- ==================== ONBOARDING / SUPPORT SERVICES ==================== --}}
     <section class="py-16 lg:py-24 bg-slate-50">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">A Simple, Stress-Free Process from Day One</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="relative border-2 rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100">
@@ -224,7 +224,7 @@
 
     {{-- ==================== FAQS ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">FAQs</h2>
             <div class="space-y-4">
                 @php

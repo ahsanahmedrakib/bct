@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('title', 'Cloud Cyber Security | Bismillah Computer & Technology')
-@section('description',
-    'Protect your cloud environment with advanced security solutions. From threat detection to compliance, we keep your data safe in the cloud.')
+@section('description', 'Protect your cloud environment with advanced security solutions. From threat detection to
+    compliance, we keep your data safe in the cloud.')
 
 @section('content')
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                     Cloud Cyber
@@ -20,7 +20,9 @@
                     <a href="#services"
                         class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg transition-all">
                         SERVICES
-                        <svg class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <svg class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
                     </a>
@@ -33,7 +35,8 @@
                 </div>
             </div>
             <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
-                <img src="/images/home/hero/cybersecurity-hero.png" alt="Cloud Cyber Security" class="rounded-lg w-full max-w-md lg:max-w-lg" />
+                <img src="/images/home/hero/cybersecurity-hero.png" alt="Cloud Cyber Security"
+                    class="rounded-lg w-full max-w-md lg:max-w-lg" />
             </div>
         </div>
         <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
@@ -46,7 +49,7 @@
     </section>
 
     <section id="services" class="py-20 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl text-center font-bold text-blue-900">Cloud Security Services</h2>
             </div>

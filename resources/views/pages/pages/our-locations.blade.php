@@ -6,7 +6,7 @@
     @include('partials.page-hero', ['pageTitle' => 'Our Locations'])
 
     <section class="py-16 lg:py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
 
             <div class="text-center max-w-2xl mx-auto mb-14">
                 <span
@@ -31,7 +31,7 @@
                     <div class="absolute top-0 left-8 w-16 h-1.5 bg-blue-600 rounded-b-md"></div>
 
                     <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center flex-shrink-0">
+                        <div class="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center shrink-0">
                             <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
@@ -56,9 +56,8 @@
 
                     <ul class="space-y-4 mb-6">
                         <li class="flex items-start gap-3">
-                            <svg class="w-[18px] h-[18px] text-blue-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
+                            <svg class="w-4.5 h-4.5 text-blue-600 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                                 <circle cx="12" cy="10" r="3" />
                             </svg>
@@ -66,9 +65,8 @@
                                 Uttara, Dhaka, Bangladesh</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <svg class="w-[18px] h-[18px] text-blue-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
+                            <svg class="w-4.5 h-4.5 text-blue-600 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path
                                     d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z" />
                             </svg>
@@ -80,9 +78,8 @@
                             </div>
                         </li>
                         <li class="flex items-start gap-3">
-                            <svg class="w-[18px] h-[18px] text-blue-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
+                            <svg class="w-4.5 h-4.5 text-blue-600 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                                 <polyline points="22,6 12,13 2,6" />
                             </svg>
@@ -108,7 +105,7 @@
                     <div class="absolute top-0 left-8 w-16 h-1.5 bg-purple-600 rounded-b-md"></div>
 
                     <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 rounded-xl bg-purple-600 flex items-center justify-center flex-shrink-0">
+                        <div class="w-12 h-12 rounded-xl bg-purple-600 flex items-center justify-center shrink-0">
                             <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
@@ -124,9 +121,8 @@
 
                     <ul class="space-y-4 mb-6">
                         <li class="flex items-start gap-3">
-                            <svg class="w-[18px] h-[18px] text-purple-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
+                            <svg class="w-4.5 h-4.5 text-purple-600 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                                 <circle cx="12" cy="10" r="3" />
                             </svg>
@@ -134,9 +130,8 @@
                                 Block#B, Dolipara, Uttara, Dhaka-1230</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <svg class="w-[18px] h-[18px] text-purple-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
+                            <svg class="w-4.5 h-4.5 text-purple-600 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path
                                     d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z" />
                             </svg>
@@ -148,9 +143,8 @@
                             </div>
                         </li>
                         <li class="flex items-start gap-3">
-                            <svg class="w-[18px] h-[18px] text-purple-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
+                            <svg class="w-4.5 h-4.5 text-purple-600 mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                                 <polyline points="22,6 12,13 2,6" />
                             </svg>
@@ -173,7 +167,10 @@
 
             {{-- Map --}}
             <div class="mt-12 rounded-2xl overflow-hidden border-2 border-slate-100 shadow-sm">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4366.22184000837!2d90.38987879999999!3d23.860799300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c41ec0492547%3A0x9d72192863d92047!2sBismillah%20Computer%20%26%20Technology!5e1!3m2!1sen!2sbd!4v1789211900464!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4366.22184000837!2d90.38987879999999!3d23.860799300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c41ec0492547%3A0x9d72192863d92047!2sBismillah%20Computer%20%26%20Technology!5e1!3m2!1sen!2sbd!4v1789211900464!5m2!1sen!2sbd"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
         </div>
     </section>

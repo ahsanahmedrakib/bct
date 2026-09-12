@@ -10,7 +10,7 @@
     {{-- ==================== HERO ==================== --}}
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                     Avaya IP Office 500 V2
@@ -48,7 +48,7 @@
 
     {{-- ==================== SOLUTION FOR EVERY SIZE ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
             <div
                 class="relative border-2 rounded-2xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -74,7 +74,7 @@
 
     {{-- ==================== #1 SME SOLUTION ==================== --}}
     <section class="py-16 lg:py-24 bg-slate-50">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">The Number 1 SME Solution in the World</h2>
             <p class="text-center text-slate-600 max-w-3xl mx-auto mb-12">The Avaya IP500 v2 phone system has a staggering
                 22%
@@ -149,7 +149,7 @@
 
     {{-- ==================== HANDSETS ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">A Huge Range of Avaya Handsets</h2>
             <p class="text-center text-slate-600 max-w-3xl mx-auto mb-12">The Avaya IP Office 500 v2 phone system offers a
                 staggering range of handsets to suit every budget, need and taste. There are 2 ranges of digital handsets
@@ -200,7 +200,7 @@
 
     {{-- ==================== VOIP + KEY FEATURES ==================== --}}
     <section class="py-16 lg:py-24 bg-slate-50">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">The Avaya IP Office 500 does VoIP brilliantly
             </h2>
             <p class="text-center text-slate-600 max-w-3xl mx-auto mb-12">Moving to VoIP can save you a fortune which is
@@ -303,7 +303,7 @@
 
     {{-- ==================== INTEGRATION ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Connect Your Mobiles, Tablets and PCs</h2>
             <p class="text-center text-slate-600 max-w-3xl mx-auto mb-12">The great thing about modern IP PBX systems is
                 the
@@ -380,7 +380,7 @@
 
     {{-- ==================== USER ROLES ==================== --}}
     <section class="py-16 lg:py-24 bg-slate-50">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Specific Feature Sets for Different Types of
                 Workers
             </h2>
@@ -447,7 +447,7 @@
 
     {{-- ==================== CTA ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
             <div
                 class="relative border-2 rounded-2xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100 text-center">
                 <div class="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-1 bg-blue-600 rounded-b-md"></div>

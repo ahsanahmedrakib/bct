@@ -8,7 +8,7 @@
 @section('content')
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">Backup & Recovery
                     <br />
@@ -63,7 +63,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="overview">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="flex justify-center">
                 <img src="/images/cloud/cyber-security/backup-recovery/section-1.png" alt="Backup and Recovery Solutions"
                     class="rounded-xl shadow-lg w-full" loading="lazy" />
@@ -105,7 +105,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="why-matters">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Why Backup and Recovery Matters</h2>
                 <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Data loss can occur due to various reasons
@@ -179,7 +179,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="solutions">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Our Backup & Recovery Solutions</h2>
                 <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Total Solutions IT takes backups very seriously.
@@ -259,7 +259,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="full-system">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="reveal reveal-fade-up">
                 <div
                     class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 transition-all relative h-full">
@@ -320,7 +320,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="mozy-pro">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="flex justify-center">
                 <div class="relative w-full rounded-2xl overflow-hidden">
                     <img src="/images/cloud/cyber-security/backup-recovery/section-2.jpg" alt="Mozy Pro Cloud Backup"
@@ -379,7 +379,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="types">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Types of Backup Solutions</h2>
                 <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Modern backup solutions combine local backups,
@@ -428,7 +428,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="how-it-works">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">How Our Backup & Recovery Works</h2>
                 <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Our comprehensive approach ensures your data is
@@ -482,7 +482,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="help">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
             <div
                 class="reveal reveal-fade-up bg-linear-to-br from-blue-600 to-blue-800 rounded-2xl p-8 lg:p-10 text-white order-2 lg:order-1">
                 <h2 class="text-2xl lg:text-3xl font-bold mb-6">Need Help with Your Backup Strategy?</h2>
@@ -552,7 +552,7 @@
     </section>
 
     <section class="py-8 lg:py-10 bg-slate-50" id="useful-links">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Useful Links</h2>
             </div>
@@ -598,7 +598,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="faq">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Frequently Asked Questions</h2>
                 <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Common questions about backup and recovery

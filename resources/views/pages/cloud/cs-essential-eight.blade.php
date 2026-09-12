@@ -8,31 +8,41 @@
 @section('content')
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
-                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">How Microsoft 365 Achieves
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">How Microsoft 365
+                    Achieves
                     <span class="text-blue-600 block mt-2">ACSC Essential 8 Compliance</span>
                 </h1>
                 <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">Microsoft 365 provides
                     a comprehensive suite of security tools and features that help organisations achieve and maintain
-                    compliance with the ACSC Essential Eight framework. From identity protection to data backup, Microsoft 365
+                    compliance with the ACSC Essential Eight framework. From identity protection to data backup, Microsoft
+                    365
                     addresses each of the eight mitigation strategies with built-in capabilities.</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 md:w-3/4 w-full">
                     <a href="#overview"
                         class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg transition-all">OVERVIEW
-                        <svg class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <svg class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
                     </a>
                     <a href="#strategies"
-                        class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg transition-all">THE EIGHT STRATEGIES
-                        <svg class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg transition-all">THE
+                        EIGHT STRATEGIES
+                        <svg class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
                     </a>
                     <a href="#features"
-                        class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg transition-all">MICROSOFT 365 FEATURES
-                        <svg class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg transition-all">MICROSOFT
+                        365 FEATURES
+                        <svg class="w-4 h-4 text-sky-300 group-hover:translate-x-1 transition-transform"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
                     </a>
@@ -40,7 +50,8 @@
                 <div class="pt-6 border-t border-slate-200/60 flex flex-col items-start gap-3">
                     <p class="text-sky-700 font-semibold text-sm">Need help?</p>
                     <a href="/contact"
-                        class="px-6 py-2.5 bg-white border border-brand-active text-sky-700 text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm hover:bg-navy-active hover:text-white transition-colors">Contact Us</a>
+                        class="px-6 py-2.5 bg-white border border-brand-active text-sky-700 text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm hover:bg-navy-active hover:text-white transition-colors">Contact
+                        Us</a>
                 </div>
             </div>
             <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
@@ -59,25 +70,30 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="overview">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="flex justify-center">
                 <img src="/images/it-support/cyber-security/acsc.png" alt="Bangladeshi Cyber Security Centre Logo"
                     class="rounded-xl w-full max-w-md object-cover" loading="lazy" />
             </div>
-            <div class="reveal reveal-fade-up bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative h-full">
+            <div
+                class="reveal reveal-fade-up bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative h-full">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                 <span class="text-blue-500 font-bold text-sm tracking-wide mb-3 block">ACSC Essential Eight</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6 leading-tight">What is the ACSC Essential Eight?</h2>
-                <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">The ACSC Essential Eight, developed by the
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6 leading-tight">What is the ACSC Essential
+                    Eight?</h2>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">The ACSC Essential Eight, developed by
+                    the
                     Bangladeshi Cyber Security Centre, is a proven framework designed to help organisations protect against
                     cyber attacks, ransomware, and data breaches. It focuses on practical, high-impact controls that
                     significantly reduce cybersecurity risk when implemented correctly.</p>
-                <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">The framework includes Application Control, Patch
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">The framework includes Application
+                    Control, Patch
                     Applications, and Patch Operating Systems, which work together to prevent malicious software from
                     running and reduce exposure to known vulnerabilities. Restrict Administrative Privileges limits
                     high-risk access, while Multi-Factor Authentication (MFA) strengthens identity security and helps
                     prevent unauthorised access.</p>
-                <p class="text-slate-500 text-sm leading-relaxed mb-8 text-justify">To support resilience and recovery, the Essential
+                <p class="text-slate-500 text-sm leading-relaxed mb-8 text-justify">To support resilience and recovery, the
+                    Essential
                     Eight also mandates regular backups and tested data restoration processes, ensuring business continuity
                     after an incident. When implemented across increasing maturity levels, the ACSC Essential Eight
                     provides a structured, measurable approach to improving cyber security posture, supporting compliance,
@@ -92,7 +108,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="strategies">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl font-bold text-blue-900 mb-4">The ACSC Essential Eight Strategies</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">Eight proven mitigation strategies that
@@ -176,7 +192,8 @@
                         </div>
                         <div class="p-6">
                             <div class="flex items-center gap-3 mb-4">
-                                <div class="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 shrink-0">
+                                <div
+                                    class="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 shrink-0">
                                     <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                                         viewBox="0 0 24 24" stroke-width="1.5"
                                         stroke="currentColor">{!! $strategy['icon'] !!}</svg>
@@ -192,7 +209,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="features">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl font-bold text-blue-900 mb-4">How Microsoft 365 Achieves Essential 8 Compliance
                 </h2>
@@ -283,8 +300,7 @@
                             'title' => 'Azure Sensitivity Labels',
                             'desc' =>
                                 'Azure Sensitivity Labels, part of Microsoft Purview Information Protection, empower organizations to classify, label, and protect sensitive data across Microsoft 365. These labels help enforce data security and compliance by identifying and managing sensitive content in apps like Microsoft Teams, SharePoint, OneDrive, Outlook, Word, and Excel. Azure Sensitivity Labels support zero-trust data protection by ensuring only authorized users access sensitive content, whether stored or shared. They help businesses meet regulatory requirements including GDPR, HIPAA, and ISO 27001.',
-                            'icon' =>
-                                '<path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                            'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />',
                         ],
                         [
@@ -308,7 +324,8 @@
                         <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                         <div class="px-6 py-5">
                             <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
                                     <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                                         viewBox="0 0 24 24" stroke-width="1.5"
                                         stroke="currentColor">{!! $feature['icon'] !!}</svg>
@@ -324,7 +341,7 @@
     </section>
 
     <section class="py-8 lg:py-10 bg-slate-50" id="useful-links">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl font-bold text-blue-900 mb-12">Useful Links</h2>
             </div>
@@ -345,7 +362,8 @@
                         ],
                         [
                             'title' => 'Microsoft Secure Score',
-                            'desc' => "Measure your organisation's security posture with Microsoft Secure Score and get recommendations for improvement.",
+                            'desc' =>
+                                "Measure your organisation's security posture with Microsoft Secure Score and get recommendations for improvement.",
                             'href' =>
                                 'https://www.microsoft.com/en-us/security/business/security-101/what-is-microsoft-secure-score',
                         ],
@@ -366,7 +384,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="faq">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl font-bold text-blue-900 mb-4">Frequently Asked Questions</h2>
                 <p class="text-slate-600 text-center mb-12">Common questions about Microsoft 365 and ACSC Essential Eight
@@ -418,7 +436,8 @@
                     ];
                 @endphp
                 @foreach ($faqs as $faq)
-                    <div class="reveal reveal-fade-up border-2 border-blue-100 rounded-xl overflow-hidden relative faq-item">
+                    <div
+                        class="reveal reveal-fade-up border-2 border-blue-100 rounded-xl overflow-hidden relative faq-item">
                         <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                         <button onclick="toggleFaq(this)"
                             class="w-full flex justify-between items-center px-6 py-5 text-left cursor-pointer hover:bg-slate-50 transition-colors">

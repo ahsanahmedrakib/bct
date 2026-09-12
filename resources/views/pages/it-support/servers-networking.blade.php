@@ -6,7 +6,7 @@
         {{-- HERO SECTION --}}
         <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
             <div
-                class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+                class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
                 <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                     <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                         Servers &
@@ -65,7 +65,7 @@
         </section>
 
         {{-- TESTIMONIALS SECTION --}}
-        <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up">
                 <h2 class="text-center text-3xl font-black text-slate-900 tracking-tight mb-12">What people are talking
                     about us</h2>
@@ -95,7 +95,7 @@
         </section>
 
         {{-- PARTNERS SECTION --}}
-        <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up">
                 <div class="mb-12">
                     <h2 class="text-center text-3xl font-black text-slate-900 tracking-tight mt-3">Our Technology Partners
@@ -126,7 +126,7 @@
         </section>
 
         {{-- SECTION 1: Intro / Top Feature Cards --}}
-        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
                 <div>
                     <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 leading-tight mb-6">
@@ -188,7 +188,7 @@
         </section>
 
         {{-- SECTION 2: Solutions Overview --}}
-        <section class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-12 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up">
                 <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 text-center mb-10">Solutions</h2>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
@@ -240,7 +240,7 @@
 
         {{-- SECTION 3: Networking Solutions (Dark Theme) --}}
         <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-slate-900 text-white w-full" id="networking-solutions">
-            <div class="reveal reveal-fade-up max-w-7xl mx-auto">
+            <div class="reveal reveal-fade-up max-w-356 mx-auto">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12">
                     <div>
                         <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">Networking Solutions</h2>
@@ -366,7 +366,7 @@
         </section>
 
         {{-- SECTION 4: Wireless Network --}}
-        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12">
                     <div>
@@ -451,7 +451,7 @@
 
         {{-- SECTION 5: WAN & Advanced Networking (Dark Theme) --}}
         <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-slate-900 text-white w-full">
-            <div class="reveal reveal-fade-up max-w-7xl mx-auto">
+            <div class="reveal reveal-fade-up max-w-356 mx-auto">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12">
                     <div>
                         <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">WAN & Advanced networking solutions</h2>

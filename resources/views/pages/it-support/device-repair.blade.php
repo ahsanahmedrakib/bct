@@ -11,7 +11,7 @@
         {{-- HERO SECTION --}}
         <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
             <div
-                class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+                class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
                 <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                     <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                         Computer Repair
@@ -67,7 +67,7 @@
         </section>
 
         {{-- ABOUT SECTION --}}
-        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                 <div class="flex justify-center items-center">
                     <img src="/images/it-support/device-repair/about.jpg" alt="Repair Services Graphic" height="400"
@@ -129,7 +129,7 @@
         </section>
 
         {{-- BRANDS WE REPAIR --}}
-        <section class="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-center">
+        <section class="py-8 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full text-center">
             <div class="reveal reveal-fade-up">
                 <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-6">Brands We Repair</h3>
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
@@ -154,7 +154,7 @@
         </section>
 
         {{-- SECTION 1: Repair Services --}}
-        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full" id="repair-services">
+        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full" id="repair-services">
             <div class="reveal reveal-fade-up grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                 <div class="order-2 lg:order-1">
                     <div
@@ -217,7 +217,7 @@
         </section>
 
         {{-- SECTION 2: Security & Cleanup Services --}}
-        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                 <div class="flex justify-center items-center">
                     <img src="/images/it-support/device-repair/security.jpg" alt="Security & Cleanup Services"
@@ -279,7 +279,7 @@
         </section>
 
         {{-- SECTION 3: Data & Backup Services --}}
-        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                 <div class="order-2 lg:order-1">
                     <div
@@ -342,7 +342,7 @@
         </section>
 
         {{-- SECTION 4: Networking & Setup Services --}}
-        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                 <div class="flex justify-center items-center">
                     <img src="/images/it-support/device-repair/networking.jpg" alt="Networking & Setup Services"
@@ -405,7 +405,7 @@
         </section>
 
         {{-- SECTION 5: New Computers & Upgrades --}}
-        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
             <div class="reveal reveal-fade-up grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                 <div class="order-2 lg:order-1">
                     <div
@@ -477,7 +477,7 @@
 
         {{-- SECTION 6: FAQ --}}
         <section class="py-20 bg-white">
-            <div class="reveal reveal-fade-up max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
+            <div class="reveal reveal-fade-up max-w-356 px-4 sm:px-6 lg:px-8 mx-auto">
                 <h2 class="text-3xl font-bold text-center text-brand-blue mb-12">Computer Repair FAQ</h2>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                     <div class="flex flex-col justify-center w-full order-2 lg:order-1">
@@ -565,7 +565,7 @@
         </section>
 
         {{-- SECTION 7: IT Services --}}
-        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full" id="it-services">
+        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full" id="it-services">
             <div class="reveal reveal-fade-up grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                 <div class="flex justify-center items-center">
                     <img src="/images/it-support/device-repair/it-services.jpg" alt="IT Services" height="400"
