@@ -48,4 +48,9 @@ class PageController extends Controller
     {
         return view('pages.pages.blogs');
     }
+
+    public function ourLocations()
+    {
+        return view('pages.pages.our-locations');
+    }
 }

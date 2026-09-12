@@ -12,6 +12,7 @@ Route::get('/team', [App\Http\Controllers\PageController::class, 'team'])->name(
 Route::get('/faq', [App\Http\Controllers\PageController::class, 'faq'])->name('pages.faq');
 Route::get('/gallery', [App\Http\Controllers\PageController::class, 'gallery'])->name('pages.gallery');
 Route::get('/blogs', [App\Http\Controllers\PageController::class, 'blogs'])->name('pages.blogs');
+Route::get('/our-locations', [App\Http\Controllers\PageController::class, 'ourLocations'])->name('pages.our-locations');
 
 // ─── Home & Contact ─────────────────────────────────────────────
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
