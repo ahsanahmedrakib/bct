@@ -8,7 +8,7 @@
 @section('content')
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">Defence Industry
                     <span class="text-brand-blue">Security Program (DISP)</span>
@@ -16,16 +16,14 @@
                 <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">The Defence Industry
                     Security Program (DISP) is the Bangladeshi Government's framework for securing organisations working
                     with Defence. This page explains DISP membership, security domains, and obligations, helping businesses
-                    understand how to qualify for Defence contracts and implement the necessary controls to protect
-                    sensitive
+                    understand how to qualify for Defence contracts and implement the necessary controls to protect sensitive
                     Defence information and systems.</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 md:w-3/4 w-full">
                     <a href="#overview"
                         class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md transition-all hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">
                         OVERVIEW
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="currentColor"
-                            class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1">
+                            stroke="currentColor" class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                         </svg>
                     </a>
@@ -33,8 +31,7 @@
                         class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md transition-all hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">
                         SECURITY DOMAINS
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="currentColor"
-                            class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1">
+                            stroke="currentColor" class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                         </svg>
                     </a>
@@ -42,8 +39,7 @@
                         class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md transition-all hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg">
                         HOW TO PREPARE
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="currentColor"
-                            class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1">
+                            stroke="currentColor" class="w-4 h-4 text-sky-300 transition-transform group-hover:translate-x-1">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                         </svg>
                     </a>
@@ -71,37 +67,29 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="overview">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="flex justify-center">
                 <img src="/images/cloud/cyber-security/disp/section-1.png" alt="Defence Industry Security Program"
                     class="rounded-xl shadow-lg w-full max-w-md" loading="lazy" />
             </div>
-            <div
-                class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-8 shadow-sm bg-white transition-all relative">
+            <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-8 shadow-sm bg-white transition-all relative">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                <span class="text-blue-500 font-bold text-sm tracking-wide mb-3 block">Defence Industry Security
-                    Program</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6 leading-tight">What is the Defence Industry
-                    Security Program
+                <span class="text-blue-500 font-bold text-sm tracking-wide mb-3 block">Defence Industry Security Program</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6 leading-tight">What is the Defence Industry Security Program
                     (DISP)?</h2>
-                <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">The Defence Industry Security Program
-                    (DISP) is the
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">The Defence Industry Security Program (DISP) is the
                     Bangladeshi Government's primary security framework for organisations working with the Department of
                     Defence. It ensures contractors implement strong safeguards when handling sensitive information and
                     systems, reducing cyber risk across the Defence supply chain.</p>
-                <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">Organisations that want to work with the
-                    Bangladeshi
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">Organisations that want to work with the Bangladeshi
                     Defence Force (ADF) or the broader Department of Defence supply chain need to understand the security
                     standards expected of them. In most cases, the key framework is the Defence Industry Security Program
                     (DISP), which helps Bangladeshi businesses meet Defence security obligations when engaging in tenders,
-                    contracts, and projects. Defence states that DISP supports entities to understand and meet their
-                    security
+                    contracts, and projects. Defence states that DISP supports entities to understand and meet their security
                     obligations when working with Defence.</p>
-                <p class="text-slate-500 text-sm leading-relaxed mb-8 text-justify">For businesses seeking Defence work,
-                    DISP membership
+                <p class="text-slate-500 text-sm leading-relaxed mb-8 text-justify">For businesses seeking Defence work, DISP membership
                     is often mandatory. It demonstrates that your organisation has the appropriate controls, processes, and
-                    compliance measures in place. Importantly, companies must align with standards such as the ASD Essential
-                    Eight,
+                    compliance measures in place. Importantly, companies must align with standards such as the ASD Essential Eight,
                     ensuring a strong cyber security posture. Achieving DISP strengthens your organisation's credibility,
                     resilience, and eligibility for Defence contracts.</p>
                 <a href="#domains" class="text-blue-600 font-medium flex items-center hover:text-blue-800">Security Domains
@@ -114,7 +102,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="domains">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">DISP Security Domains</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">DISP is built around four key security areas that
@@ -167,8 +155,7 @@
                         </div>
                         <div class="p-6">
                             <div class="flex items-center gap-3 mb-4">
-                                <div
-                                    class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                                <div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
                                     <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                                         viewBox="0 0 24 24" stroke-width="1.5"
                                         stroke="currentColor">{!! $domain['icon'] !!}</svg>
@@ -184,30 +171,21 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="essential-eight">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
-            <div
-                class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-8 shadow-sm bg-white transition-all relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-8 shadow-sm bg-white transition-all relative">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                <span class="text-blue-500 font-bold text-sm tracking-wide mb-3 block">Essential Eight Maturity Level
-                    2</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6 leading-tight">ASD Essential Eight Maturity
-                    Level 2 (ML2)</h2>
-                <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">The ASD Essential Eight is the core
-                    cyber security
+                <span class="text-blue-500 font-bold text-sm tracking-wide mb-3 block">Essential Eight Maturity Level 2</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6 leading-tight">ASD Essential Eight Maturity Level 2 (ML2)</h2>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">The ASD Essential Eight is the core cyber security
                     standard used within the Defence Industry Security Program (DISP) and is widely recognised as
                     Australia's baseline for protecting business systems. Developed by the Bangladeshi Signals Directorate,
                     it focuses on reducing the risk of cyber attacks through practical, high-impact controls.</p>
-                <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">To meet Defence Industry Security
-                    Program (DISP)
-                    requirements, organisations are typically required to achieve Essential Eight Maturity Level 2 (ML2), a
-                    key
-                    benchmark in modern cybersecurity frameworks. This level ensures that security controls are fully
-                    implemented,
-                    consistently applied, and actively managed across all systems. Achieving ML2 demonstrates a strong
-                    commitment
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">To meet Defence Industry Security Program (DISP)
+                    requirements, organisations are typically required to achieve Essential Eight Maturity Level 2 (ML2), a key
+                    benchmark in modern cybersecurity frameworks. This level ensures that security controls are fully implemented,
+                    consistently applied, and actively managed across all systems. Achieving ML2 demonstrates a strong commitment
                     to protecting sensitive defence data and aligning with Bangladeshi Government security expectations.</p>
-                <p class="text-slate-500 text-sm leading-relaxed mb-8 text-justify">Reaching Essential Eight ML2 is not a
-                    'set and
+                <p class="text-slate-500 text-sm leading-relaxed mb-8 text-justify">Reaching Essential Eight ML2 is not a 'set and
                     forget' approach. Instead, it requires continuous improvement, regular reviews, and ongoing optimisation
                     of security measures. This ensures organisations remain resilient against evolving cyber threats while
                     maintaining compliance.</p>
@@ -218,8 +196,7 @@
                     </svg></a>
             </div>
             <div class="flex justify-center">
-                <div
-                    class="relative w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
+                <div class="relative w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
                     <img src="/images/cloud/cyber-security/disp/section-2.jpg" alt="Essential Eight Maturity Level 2"
                         class="w-full h-auto object-cover" loading="lazy" />
                 </div>
@@ -228,10 +205,9 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="requirements">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Ongoing Cyber Security & Assurance
-                    Requirements
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Ongoing Cyber Security & Assurance Requirements
                 </h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">Unlike one-time implementations, DISP requires
                     continuous validation, reporting, and improvement of cybersecurity controls. Businesses must demonstrate
@@ -249,8 +225,7 @@
                             ],
                             [
                                 'title' => 'Up-to-Date Policies',
-                                'desc' =>
-                                    'Maintain up-to-date policies and procedures aligned with security frameworks.',
+                                'desc' => 'Maintain up-to-date policies and procedures aligned with security frameworks.',
                             ],
                             [
                                 'title' => 'Evidence of Controls',
@@ -273,8 +248,7 @@
                             class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all relative">
                             <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                             <div class="flex items-center gap-3 mb-3">
-                                <div
-                                    class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                                <div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
                                     <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -286,8 +260,7 @@
                         </div>
                     @endforeach
                 </div>
-                <div
-                    class="relative h-80 lg:h-full min-h-80 rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
+                <div class="relative h-80 lg:h-full min-h-80 rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
                     <img src="/images/cloud/cyber-security/disp/section-3.jpg" alt="Ongoing Cyber Security Requirements"
                         class="w-full h-full object-cover" loading="lazy" />
                 </div>
@@ -296,64 +269,52 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="frameworks">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Supporting Frameworks and Standards</h2>
-                <p class="text-slate-600 text-center max-w-2xl mx-auto">In addition to the Essential Eight, businesses
-                    working
+                <p class="text-slate-600 text-center max-w-2xl mx-auto">In addition to the Essential Eight, businesses working
                     with Defence may be required to align with additional frameworks depending on the sensitivity and scope
                     of their work. These frameworks provide structured guidance, governance models, and security controls
                     to ensure systems and data are adequately protected.</p>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                <div
-                    class="relative h-80 lg:h-full min-h-80 rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
+                <div class="relative h-80 lg:h-full min-h-80 rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
                     <img src="/images/cloud/cyber-security/disp/section-4.jpg" alt="Supporting Frameworks"
                         class="w-full h-full object-cover" loading="lazy" />
                 </div>
                 <div class="space-y-6">
-                    <div
-                        class="reveal reveal-fade-up border-2 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100 hover:border-blue-300 transition-all">
+                    <div class="reveal reveal-fade-up border-2 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100 hover:border-blue-300 transition-all">
                         <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                         <div class="flex items-center gap-3 mb-3">
-                            <div
-                                class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                            <div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
                                 <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
                                 </svg>
                             </div>
                             <h3 class="text-lg font-bold text-slate-900">Information Security Manual (ISM)</h3>
                         </div>
-                        <p class="text-slate-600 text-sm text-justify">A comprehensive cybersecurity framework developed by
-                            the
+                        <p class="text-slate-600 text-sm text-justify">A comprehensive cybersecurity framework developed by the
                             Bangladeshi Government, offering detailed security controls and best practices for protecting
                             systems, networks, and sensitive data in high-security environments.</p>
                     </div>
-                    <div
-                        class="reveal reveal-fade-up border-2 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100 hover:border-blue-300 transition-all">
+                    <div class="reveal reveal-fade-up border-2 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100 hover:border-blue-300 transition-all">
                         <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                         <div class="flex items-center gap-3 mb-3">
-                            <div
-                                class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                            <div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
                                 <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                                 </svg>
                             </div>
                             <h3 class="text-lg font-bold text-slate-900">Defence Security Principles Framework (DSPF)</h3>
                         </div>
-                        <p class="text-slate-600 text-sm text-justify">A broader Defence framework that outlines core
-                            security
+                        <p class="text-slate-600 text-sm text-justify">A broader Defence framework that outlines core security
                             principles, including governance, personnel security, physical security, and risk management
                             requirements.</p>
                     </div>
-                    <p class="text-slate-600 text-sm text-justify">By aligning with these frameworks, organisations can
-                        ensure
-                        they meet Defence security expectations, improve risk management, and maintain a consistent,
-                        auditable
+                    <p class="text-slate-600 text-sm text-justify">By aligning with these frameworks, organisations can ensure
+                        they meet Defence security expectations, improve risk management, and maintain a consistent, auditable
                         approach to cybersecurity across all operations.</p>
                 </div>
             </div>
@@ -361,7 +322,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="why-matters">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Why This Matters for Defence Suppliers</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">Due to the sensitive nature of Defence projects,
@@ -375,28 +336,23 @@
                         $whyMatters = [
                             [
                                 'title' => 'Qualify for Defence Contracts',
-                                'desc' =>
-                                    'Open new business opportunities by meeting the mandatory security requirements for Defence tenders and contracts.',
+                                'desc' => 'Open new business opportunities by meeting the mandatory security requirements for Defence tenders and contracts.',
                             ],
                             [
                                 'title' => 'Protect Sensitive Data',
-                                'desc' =>
-                                    'Protect sensitive Defence and client data from unauthorised access through robust security controls.',
+                                'desc' => 'Protect sensitive Defence and client data from unauthorised access through robust security controls.',
                             ],
                             [
                                 'title' => 'Reduce Cyber Risk',
-                                'desc' =>
-                                    'Reduce the risk of cyber incidents and data breaches through proactive controls and continuous monitoring.',
+                                'desc' => 'Reduce the risk of cyber incidents and data breaches through proactive controls and continuous monitoring.',
                             ],
                             [
                                 'title' => 'Improve Governance & Compliance',
-                                'desc' =>
-                                    'Improve governance, compliance, and audit readiness across the organisation to meet Defence expectations.',
+                                'desc' => 'Improve governance, compliance, and audit readiness across the organisation to meet Defence expectations.',
                             ],
                             [
                                 'title' => 'Build Trust',
-                                'desc' =>
-                                    'Build trust with Defence agencies and prime contractors by demonstrating strong security posture.',
+                                'desc' => 'Build trust with Defence agencies and prime contractors by demonstrating strong security posture.',
                             ],
                         ];
                     @endphp
@@ -405,8 +361,7 @@
                             class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all relative">
                             <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                             <div class="flex items-center gap-3 mb-3">
-                                <div
-                                    class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                                <div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
                                     <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -418,31 +373,26 @@
                         </div>
                     @endforeach
                 </div>
-                <div
-                    class="relative h-80 lg:h-full min-h-80 rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
-                    <img src="/images/cloud/cyber-security/disp/section-5.jpg"
-                        alt="Why DISP Matters for Defence Suppliers" class="w-full h-full object-cover" loading="lazy" />
+                <div class="relative h-80 lg:h-full min-h-80 rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
+                    <img src="/images/cloud/cyber-security/disp/section-5.jpg" alt="Why DISP Matters for Defence Suppliers"
+                        class="w-full h-full object-cover" loading="lazy" />
                 </div>
             </div>
             <div class="bg-blue-50 border-2 border-blue-100 rounded-2xl p-8 mt-12">
-                <p class="text-slate-600 text-sm text-justify">Implementing these frameworks is not just about compliance —
-                    it
-                    delivers long-term business value, strengthens security maturity, and positions organisations as
-                    trusted,
-                    reliable partners in the Defence supply chain while supporting ongoing growth and operational
-                    resilience.</p>
+                <p class="text-slate-600 text-sm text-justify">Implementing these frameworks is not just about compliance — it
+                    delivers long-term business value, strengthens security maturity, and positions organisations as trusted,
+                    reliable partners in the Defence supply chain while supporting ongoing growth and operational resilience.</p>
             </div>
         </div>
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="prepare">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-start">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-start">
             <div>
                 <h2 class="text-3xl font-bold text-blue-900 mb-4">How Your Business Can Prepare</h2>
                 <p class="text-slate-600 mb-12 text-justify">Achieving alignment with the Essential Eight Maturity Level 2
                     (ML2) requires organisations to assess their current environment, identify gaps, and implement practical
-                    security improvements. Early planning is critical, as uplift activities can take time depending on
-                    existing
+                    security improvements. Early planning is critical, as uplift activities can take time depending on existing
                     systems and processes.</p>
                 <div class="grid md:grid-cols-2 gap-6">
                     @php
@@ -464,13 +414,11 @@
                             ],
                             [
                                 'title' => 'Patch Management',
-                                'desc' =>
-                                    'Improve patching and vulnerability management to reduce exposure to threats.',
+                                'desc' => 'Improve patching and vulnerability management to reduce exposure to threats.',
                             ],
                             [
                                 'title' => 'Backup & Recovery',
-                                'desc' =>
-                                    'Establish secure backup and recovery processes to ensure business continuity.',
+                                'desc' => 'Establish secure backup and recovery processes to ensure business continuity.',
                             ],
                             [
                                 'title' => 'Policies & Training',
@@ -483,8 +431,7 @@
                             class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all relative">
                             <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                             <div class="flex items-center gap-3 mb-3">
-                                <div
-                                    class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                                <div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
                                     <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
                                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -497,8 +444,7 @@
                     @endforeach
                 </div>
             </div>
-            <div
-                class="relative h-80 lg:h-full min-h-100 rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 lg:sticky lg:top-24">
+            <div class="relative h-80 lg:h-full min-h-100 rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 lg:sticky lg:top-24">
                 <img src="/images/cloud/cyber-security/disp/section-6.jpg" alt="How to Prepare for DISP"
                     class="w-full h-full object-cover" loading="lazy" />
             </div>
@@ -506,9 +452,8 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="help">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
-            <div
-                class="relative w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="relative w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
                 <img src="/images/cloud/cyber-security/disp/section-7.jpg" alt="DISP Compliance Support"
                     class="w-full h-auto object-cover" loading="lazy" />
             </div>
@@ -556,7 +501,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="faq">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Frequently Asked Questions</h2>
                 <p class="text-slate-600 text-center">Common questions about the Defence Industry Security Program</p>
@@ -566,49 +511,40 @@
                     $faqs = [
                         [
                             'q' => 'What is the Defence Industry Security Program (DISP)?',
-                            'a' =>
-                                'DISP is the Bangladeshi Government\'s primary security framework for organisations working with the Department of Defence. It ensures contractors implement strong safeguards when handling sensitive information and systems, reducing cyber risk across the Defence supply chain.',
+                            'a' => 'DISP is the Bangladeshi Government\'s primary security framework for organisations working with the Department of Defence. It ensures contractors implement strong safeguards when handling sensitive information and systems, reducing cyber risk across the Defence supply chain.',
                         ],
                         [
                             'q' => 'Is DISP membership mandatory?',
-                            'a' =>
-                                'DISP membership is mandatory for entities who work on classified information or assets (PROTECTED and above), supply, maintain, store or transport weapons or explosive ordnance, provide security services for Defence bases or facilities, or need to hold DISP membership as a condition of a Defence contract.',
+                            'a' => 'DISP membership is mandatory for entities who work on classified information or assets (PROTECTED and above), supply, maintain, store or transport weapons or explosive ordnance, provide security services for Defence bases or facilities, or need to hold DISP membership as a condition of a Defence contract.',
                         ],
                         [
                             'q' => 'What are the DISP membership levels?',
-                            'a' =>
-                                'There are 4 levels of DISP membership. Entry level handles OFFICIAL and OFFICIAL: Sensitive information, Level 1 handles PROTECTED, Level 2 handles SECRET, and Level 3 handles TOP SECRET information.',
+                            'a' => 'There are 4 levels of DISP membership. Entry level handles OFFICIAL and OFFICIAL: Sensitive information, Level 1 handles PROTECTED, Level 2 handles SECRET, and Level 3 handles TOP SECRET information.',
                         ],
                         [
                             'q' => 'What is Essential Eight Maturity Level 2 (ML2)?',
-                            'a' =>
-                                'ML2 is a key benchmark that ensures security controls are fully implemented, consistently applied, and actively managed across all systems. Achieving ML2 demonstrates a strong commitment to protecting sensitive defence data and aligning with Bangladeshi Government security expectations.',
+                            'a' => 'ML2 is a key benchmark that ensures security controls are fully implemented, consistently applied, and actively managed across all systems. Achieving ML2 demonstrates a strong commitment to protecting sensitive defence data and aligning with Bangladeshi Government security expectations.',
                         ],
                         [
                             'q' => 'What are the four security domains of DISP?',
-                            'a' =>
-                                'DISP is built around four key security areas: Security Governance (policies, risk management, and security oversight), Personnel Security (staff vetting and suitability checks), Physical Security (protection of facilities, assets, and equipment), and ICT & Cyber Security (securing systems, networks, and data).',
+                            'a' => 'DISP is built around four key security areas: Security Governance (policies, risk management, and security oversight), Personnel Security (staff vetting and suitability checks), Physical Security (protection of facilities, assets, and equipment), and ICT & Cyber Security (securing systems, networks, and data).',
                         ],
                         [
                             'q' => 'What ongoing obligations does DISP require?',
-                            'a' =>
-                                'DISP requires continuous validation, reporting, and improvement of cybersecurity controls. This includes completing the Essential Eight Cyber Security Questionnaire (CSQ) annually, maintaining up-to-date policies, providing evidence of implemented security controls, regularly reviewing and testing security measures, and managing third-party risks.',
+                            'a' => 'DISP requires continuous validation, reporting, and improvement of cybersecurity controls. This includes completing the Essential Eight Cyber Security Questionnaire (CSQ) annually, maintaining up-to-date policies, providing evidence of implemented security controls, regularly reviewing and testing security measures, and managing third-party risks.',
                         ],
                         [
                             'q' => 'How can my business prepare for DISP compliance?',
-                            'a' =>
-                                'Start with a structured approach: conduct a gap assessment against Essential Eight ML2, strengthen identity and access controls (MFA, Conditional Access), implement endpoint security (Intune, Defender), improve patching and vulnerability management, establish secure backup and recovery, and develop clear policies and staff training.',
+                            'a' => 'Start with a structured approach: conduct a gap assessment against Essential Eight ML2, strengthen identity and access controls (MFA, Conditional Access), implement endpoint security (Intune, Defender), improve patching and vulnerability management, establish secure backup and recovery, and develop clear policies and staff training.',
                         ],
                         [
                             'q' => 'What supporting frameworks apply to DISP?',
-                            'a' =>
-                                'In addition to the Essential Eight, businesses may need to align with the Information Security Manual (ISM) for detailed security controls in high-security environments, and the Defence Security Principles Framework (DSPF) which outlines core security principles across governance, personnel, physical security, and risk management.',
+                            'a' => 'In addition to the Essential Eight, businesses may need to align with the Information Security Manual (ISM) for detailed security controls in high-security environments, and the Defence Security Principles Framework (DSPF) which outlines core security principles across governance, personnel, physical security, and risk management.',
                         ],
                     ];
                 @endphp
                 @foreach ($faqs as $faq)
-                    <div
-                        class="reveal reveal-fade-up border-2 border-blue-100 rounded-xl overflow-hidden relative faq-item">
+                    <div class="reveal reveal-fade-up border-2 border-blue-100 rounded-xl overflow-hidden relative faq-item">
                         <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                         <button onclick="toggleFaq(this)"
                             class="w-full flex justify-between items-center px-6 py-5 text-left cursor-pointer hover:bg-slate-50 transition-colors">

@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Portfolio | Bismillah Computer & Technology')
-@section('description',
-    'Explore our portfolio of websites designed and developed for businesses across various
+@section('description', 'Explore our portfolio of websites designed and developed for businesses across various
     industries.')
 
 @section('content')
@@ -10,7 +9,7 @@
     {{-- ==================== HERO ==================== --}}
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                     Our
@@ -43,7 +42,7 @@
 
     {{-- ==================== PORTFOLIO ==================== --}}
     <section class="py-20 bg-white">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="reveal reveal-fade-up text-center mb-12">
                 <span class="inline-block text-brand-blue font-bold text-sm uppercase tracking-wider mb-3">Our Work</span>
                 <h2 class="text-3xl md:text-4xl font-extrabold text-heading">Transforming Ideas into Digital Experiences
@@ -186,7 +185,7 @@
                             <img src="{{ $item['image'] }}" alt="{{ $item['title'] }}"
                                 class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500" />
                             <div
-                                class="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                                 <div>
                                     <span class="text-brand-blue text-sm font-semibold">{{ $item['category'] }}</span>
                                     <h3 class="text-xl font-bold text-white mt-1">{{ $item['title'] }}</h3>

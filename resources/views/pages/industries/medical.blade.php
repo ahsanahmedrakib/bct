@@ -4,7 +4,7 @@
     {{-- ==================== HERO ==================== --}}
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             {{-- Hero Content --}}
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
@@ -47,7 +47,7 @@
 
     {{-- ==================== FOCUS ON YOUR SPECIFIC NEEDS ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">A focus on your specific needs.</h2>
             <p class="text-center text-slate-600 max-w-3xl mx-auto mb-12">Delivering specialized IT support for medical
                 practices by ensuring secure patient data, reliable clinical systems and compliant operations.</p>
@@ -107,7 +107,7 @@
 
     {{-- ==================== WHAT WE'LL DO FOR YOU ==================== --}}
     <section class="py-16 lg:py-24 bg-slate-50">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">What we'll do for you</h2>
             <p class="text-center text-slate-600 max-w-3xl mx-auto mb-12">Our services cover the full range of outsourced IT
                 services for medical practices. Here are just a few examples of how you'll benefit from working with us.</p>
@@ -180,7 +180,7 @@
 
     {{-- ==================== SOFTWARE SPECIALISATION ==================== --}}
     <section class="py-20 bg-slate-50">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="order-1 lg:order-2">
 
                 <div

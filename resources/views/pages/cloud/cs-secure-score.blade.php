@@ -9,7 +9,7 @@
     {{-- ================= HERO SECTION ================= --}}
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                     Microsoft Secure Score<br>
@@ -74,7 +74,7 @@
 
     {{-- ================= OVERVIEW SECTION ================= --}}
     <section class="py-16 lg:py-24 bg-white" id="overview">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="flex justify-center">
                 <div
                     class="relative w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
@@ -122,7 +122,7 @@
 
     {{-- ================= WHY SECURE SCORE MATTERS ================= --}}
     <section class="py-16 lg:py-24 bg-slate-50" id="why-matters">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl font-bold text-blue-900 mb-4">Why Microsoft Secure Score Matters</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">Microsoft Secure Score is more than just a number —
@@ -189,7 +189,7 @@
 
     {{-- ================= HOW IS IT CALCULATED ================= --}}
     <section class="py-16 lg:py-24 bg-white" id="how-it-works">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="reveal reveal-fade-up h-full order-2 lg:order-1">
                 <div
                     class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative h-full">
@@ -237,7 +237,7 @@
 
     {{-- ================= SCORE CATEGORIES ================= --}}
     <section class="py-16 lg:py-24 bg-slate-50" id="categories">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl font-bold text-blue-900 mb-4">Secure Score Categories</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">Secure Score is divided into four main categories
@@ -309,7 +309,7 @@
 
     {{-- ================= HOW TO IMPROVE ================= --}}
     <section class="py-16 lg:py-24 bg-white" id="improve">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-start">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-start">
             <div
                 class="relative h-80 lg:h-full min-h-96 rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 lg:sticky lg:top-24">
                 <img src="/images/cloud/cyber-security/secure-score/section-3.jpg" alt="Improve Your Secure Score"
@@ -407,7 +407,7 @@
 
     {{-- ================= REVIEW FREQUENCY ================= --}}
     <section class="py-16 lg:py-24 bg-slate-50" id="review">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl font-bold text-blue-900 mb-4">How Often Should You Review Your Secure Score?</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">Regularly reviewing your Microsoft Secure Score is
@@ -472,7 +472,7 @@
 
     {{-- ================= LIMITATIONS ================= --}}
     <section class="py-8 lg:py-10 bg-white" id="limitations">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="reveal reveal-fade-up bg-blue-50 border-2 border-blue-100 rounded-2xl p-8">
                 <div class="flex items-center gap-3 mb-4">
                     <svg class="w-6 h-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -504,7 +504,7 @@
 
     {{-- ================= NEED HELP ================= --}}
     <section class="py-16 lg:py-24 bg-slate-50" id="help">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div
                 class="reveal reveal-fade-up bg-linear-to-br from-blue-600 to-blue-800 rounded-2xl p-8 lg:p-12 text-white">
                 <h2 class="text-3xl font-bold mb-6">Need Help Improving Your Secure Score?</h2>
@@ -551,7 +551,7 @@
 
     {{-- ================= USEFUL LINKS ================= --}}
     <section class="py-8 lg:py-10 bg-white" id="useful-links">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-12 reveal reveal-fade-up">Useful Links</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 @php
@@ -593,7 +593,7 @@
 
     {{-- ================= FAQ SECTION ================= --}}
     <section class="py-16 lg:py-24 bg-slate-50" id="faq">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl font-bold text-blue-900 mb-4">Frequently Asked Questions</h2>
                 <p class="text-slate-600 text-center">Common questions about Microsoft Secure Score</p>

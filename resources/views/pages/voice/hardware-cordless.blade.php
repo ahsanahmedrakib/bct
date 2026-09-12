@@ -10,7 +10,7 @@
     {{-- ==================== HERO ==================== --}}
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                     Cordless
@@ -45,7 +45,7 @@
 
     {{-- ==================== ANALOGUE CORDLESS ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
             <div
                 class="relative border-2 rounded-2xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -62,7 +62,7 @@
 
     {{-- ==================== IP DECT ==================== --}}
     <section class="py-16 lg:py-24 bg-slate-50">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div
                 class="relative border-2 rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100 order-2 lg:order-1">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -94,7 +94,7 @@
 
     {{-- ==================== UNIDEN ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Uniden Cordless</h2>
             <p class="text-center text-slate-600 max-w-3xl mx-auto mb-12">If you are after a short range solution that just
                 needs to cover the office or home, then the Uniden XDECT range of cordless phone products will be suitable
@@ -136,7 +136,7 @@
 
     {{-- ==================== ENGENIUS ==================== --}}
     <section class="py-16 lg:py-24 bg-slate-50">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">EnGenius Cordless</h2>
             <p class="text-center text-slate-600 max-w-3xl mx-auto mb-6">EnGenius Durafon and the NEW FreeStyl1, the
                 revolutionary cordless phone systems that are crystal clear over long distances and ideal where a number of
@@ -218,7 +218,7 @@
 
     {{-- ==================== CTA ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
             <div
                 class="relative border-2 rounded-2xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100 text-center">
                 <div class="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-1 bg-blue-600 rounded-b-md"></div>

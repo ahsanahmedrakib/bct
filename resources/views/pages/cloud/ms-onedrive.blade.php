@@ -6,10 +6,9 @@
 @section('content')
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
-                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">Microsoft
-                    OneDrive
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">Microsoft OneDrive
                 </h1>
                 <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">Microsoft OneDrive for
                     Business is a secure cloud storage platform within Microsoft 365 that enables organisations to store,
@@ -38,41 +37,30 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="reveal reveal-fade-up flex justify-center">
-                <img src="/images/cloud/microsoft-solutions/onedrive/drive.png" alt="Drive" class="object-cover"
-                    loading="lazy" />
+                <img src="/images/cloud/microsoft-solutions/onedrive/drive.png" alt="Drive"
+                    class="object-cover" loading="lazy" />
             </div>
-            <div
-                class="reveal reveal-fade-up bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative h-full">
+            <div class="reveal reveal-fade-up bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative h-full">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                <span class="text-blue-500 font-bold text-sm tracking-wide mb-3 block">Microsoft OneDrive for
-                    Business</span>
+                <span class="text-blue-500 font-bold text-sm tracking-wide mb-3 block">Microsoft OneDrive for Business</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6 leading-tight">What is OneDrive?</h2>
                 <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">Microsoft OneDrive for Business is a
-                    secure cloud storage platform within Microsoft 365 that enables organisations to store, access, and
-                    share
-                    files from anywhere. Designed for today's modern workplace, OneDrive allows staff to securely
-                    collaborate on
+                    secure cloud storage platform within Microsoft 365 that enables organisations to store, access, and share
+                    files from anywhere. Designed for today's modern workplace, OneDrive allows staff to securely collaborate on
                     documents in real time using Word, Excel, and PowerPoint, whether working in the office or remotely.</p>
-                <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">Files are protected with
-                    enterprise-grade
-                    security, including encryption at rest and in transit, Multi-Factor Authentication (MFA), and
-                    Conditional
-                    Access policies. Built-in version history ensures documents can be restored if changes are made
-                    accidentally,
+                <p class="text-slate-500 text-sm leading-relaxed mb-6 text-justify">Files are protected with enterprise-grade
+                    security, including encryption at rest and in transit, Multi-Factor Authentication (MFA), and Conditional
+                    Access policies. Built-in version history ensures documents can be restored if changes are made accidentally,
                     while advanced sharing controls allow businesses to manage internal and external access securely.</p>
-                <p class="text-slate-500 text-sm leading-relaxed mb-8 text-justify">Seamlessly integrated with Microsoft
-                    Teams
-                    and SharePoint Online, OneDrive provides a central, secure location for personal work files while
-                    supporting
-                    collaborative teamwork. With automatic sync across devices and ransomware detection capabilities,
-                    Microsoft
-                    OneDrive helps organisations improve productivity while maintaining strong data protection and
-                    compliance
+                <p class="text-slate-500 text-sm leading-relaxed mb-8 text-justify">Seamlessly integrated with Microsoft Teams
+                    and SharePoint Online, OneDrive provides a central, secure location for personal work files while supporting
+                    collaborative teamwork. With automatic sync across devices and ransomware detection capabilities, Microsoft
+                    OneDrive helps organisations improve productivity while maintaining strong data protection and compliance
                     standards.</p>
-                <a href="#features" class="text-blue-600 font-medium flex items-center hover:text-blue-800">Key Features
-                    <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                <a href="#features" class="text-blue-600 font-medium flex items-center hover:text-blue-800">Key Features <svg
+                        class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke-width="2" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                     </svg></a>
@@ -81,15 +69,14 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="features">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="reveal reveal-fade-up text-center mb-12">
                 <h2 class="text-3xl font-bold text-blue-900 mb-4">Key Features of Microsoft OneDrive for Business</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">Everything you need for secure cloud storage and
                     seamless collaboration</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                <div
-                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <div class="flex justify-center pb-4 text-brand-active">
                         <svg class="w-11 h-11" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -102,8 +89,7 @@
                     <p class="text-slate-600 text-sm text-justify">1TB+ storage per user with enterprise-grade security,
                         ensuring business data is safely stored in Microsoft's globally secure cloud infrastructure.</p>
                 </div>
-                <div
-                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <div class="flex justify-center pb-4 text-brand-active">
                         <svg class="w-11 h-11" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -116,8 +102,7 @@
                     <p class="text-slate-600 text-sm text-justify">Collaborate live in Word, Excel, and PowerPoint, allowing
                         multiple users to edit documents simultaneously without version conflicts.</p>
                 </div>
-                <div
-                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <div class="flex justify-center pb-4 text-brand-active">
                         <svg class="w-11 h-11" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -130,8 +115,7 @@
                     <p class="text-slate-600 text-sm text-justify">Easily manage internal and external file sharing, with
                         permission levels, expiry dates, and password-protected links.</p>
                 </div>
-                <div
-                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <div class="flex justify-center pb-4 text-brand-active">
                         <svg class="w-11 h-11" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -141,12 +125,10 @@
                         </svg>
                     </div>
                     <h3 class="text-lg font-bold text-slate-900 text-center mb-3">Version History</h3>
-                    <p class="text-slate-600 text-sm text-justify">Automatically track document changes and restore
-                        previous
+                    <p class="text-slate-600 text-sm text-justify">Automatically track document changes and restore previous
                         versions quickly if edits are made in error.</p>
                 </div>
-                <div
-                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <div class="flex justify-center pb-4 text-brand-active">
                         <svg class="w-11 h-11" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -156,12 +138,10 @@
                         </svg>
                     </div>
                     <h3 class="text-lg font-bold text-slate-900 text-center mb-3">Ransomware Detection & Recovery</h3>
-                    <p class="text-slate-600 text-sm text-justify">Built-in ransomware detection and file recovery tools
-                        help
+                    <p class="text-slate-600 text-sm text-justify">Built-in ransomware detection and file recovery tools help
                         protect and restore compromised data.</p>
                 </div>
-                <div
-                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <div class="flex justify-center pb-4 text-brand-active">
                         <svg class="w-11 h-11" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -171,12 +151,10 @@
                         </svg>
                     </div>
                     <h3 class="text-lg font-bold text-slate-900 text-center mb-3">Device Sync</h3>
-                    <p class="text-slate-600 text-sm text-justify">Automatic file synchronisation across desktop, laptop,
-                        and
+                    <p class="text-slate-600 text-sm text-justify">Automatic file synchronisation across desktop, laptop, and
                         mobile devices, keeping files up to date everywhere.</p>
                 </div>
-                <div
-                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <div class="flex justify-center pb-4 text-brand-active">
                         <svg class="w-11 h-11" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -189,8 +167,7 @@
                     <p class="text-slate-600 text-sm text-justify">Access and edit files offline, with changes syncing
                         automatically once reconnected to the internet.</p>
                 </div>
-                <div
-                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <div class="flex justify-center pb-4 text-brand-active">
                         <svg class="w-11 h-11" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -203,8 +180,7 @@
                     <p class="text-slate-600 text-sm text-justify">Files are encrypted at rest and in transit, protecting
                         sensitive information from unauthorised access.</p>
                 </div>
-                <div
-                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <div class="flex justify-center pb-4 text-brand-active">
                         <svg class="w-11 h-11" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -222,33 +198,27 @@
     </section>
 
     <section class="py-8 lg:py-10 bg-slate-50">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="reveal reveal-fade-up text-center mb-12">
                 <h2 class="text-3xl font-bold text-blue-900 mb-4">Usefull Links</h2>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div
-                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 relative rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 relative rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">&bull; Data Backup</h3>
                     <p class="text-slate-600 text-sm mb-4">Microsoft OneDrive PC Cloud Backup automatically protects
-                        important files on your computer by securely syncing your Desktop, Documents, and Pictures folders
-                        to
-                        the cloud. This ensures your data is safely backed up, accessible from any device, and protected
-                        from
+                        important files on your computer by securely syncing your Desktop, Documents, and Pictures folders to
+                        the cloud. This ensures your data is safely backed up, accessible from any device, and protected from
                         hardware failure, accidental deletion, or device loss.</p>
                     <a href="https://www.microsoft.com/en/microsoft-365/onedrive/pc-cloud-backup" target="_blank"
                         class="text-blue-600 font-semibold text-sm hover:underline">Read More &rarr;</a>
                 </div>
-                <div
-                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 relative rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 relative rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">&bull; Photo Storage</h3>
                     <p class="text-slate-600 text-sm mb-4">Microsoft OneDrive Online Photo Storage allows you to securely
-                        store, organise, and access your photos and videos in the cloud. Your images are automatically
-                        backed
-                        up and available from any device, making it easy to view, share, and protect your memories while
-                        keeping
+                        store, organise, and access your photos and videos in the cloud. Your images are automatically backed
+                        up and available from any device, making it easy to view, share, and protect your memories while keeping
                         your phone or computer storage free.</p>
                     <a href="https://www.microsoft.com/en/microsoft-365/onedrive/online-photo-storage" target="_blank"
                         class="text-blue-600 font-semibold text-sm hover:underline">Read More &rarr;</a>
@@ -258,64 +228,51 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="reveal reveal-fade-up text-center mb-12">
                 <h2 class="text-3xl font-bold text-blue-900 mb-4">Benefits of Using OneDrive for Business</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">Why businesses choose OneDrive for secure cloud
                     storage</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div
-                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3">Secure Cloud Storage with Enterprise-Grade Protection
-                    </h3>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3">Secure Cloud Storage with Enterprise-Grade Protection</h3>
                     <p class="text-slate-600 text-sm text-justify">Microsoft OneDrive for Business protects organisational
-                        data with encryption at rest and in transit, Multi-Factor Authentication (MFA), and Conditional
-                        Access
+                        data with encryption at rest and in transit, Multi-Factor Authentication (MFA), and Conditional Access
                         policies. This ensures business files remain secure whether accessed in the office, at home, or on
                         mobile devices.</p>
                 </div>
-                <div
-                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">Enable Remote & Hybrid Work</h3>
-                    <p class="text-slate-600 text-sm text-justify">With secure cloud access from any device, OneDrive
-                        supports
-                        the modern hybrid workplace. Staff can access, edit, and share files from anywhere without relying
-                        on
+                    <p class="text-slate-600 text-sm text-justify">With secure cloud access from any device, OneDrive supports
+                        the modern hybrid workplace. Staff can access, edit, and share files from anywhere without relying on
                         on-premise file servers or VPN connections.</p>
                 </div>
-                <div
-                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">Seamless Real-Time Collaboration</h3>
-                    <p class="text-slate-600 text-sm text-justify">Teams can co-author documents simultaneously in Word,
-                        Excel,
+                    <p class="text-slate-600 text-sm text-justify">Teams can co-author documents simultaneously in Word, Excel,
                         and PowerPoint, reducing email attachments and improving workflow efficiency.</p>
                 </div>
-                <div
-                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">Built-In Data Recovery & Version Control</h3>
                     <p class="text-slate-600 text-sm text-justify">Automatic version history allows businesses to restore
                         previous file versions, while ransomware detection and recovery features add another layer of
                         protection.</p>
                 </div>
-                <div
-                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">Reduced IT Infrastructure Costs</h3>
-                    <p class="text-slate-600 text-sm text-justify">Moving to OneDrive reduces reliance on physical file
-                        servers,
+                    <p class="text-slate-600 text-sm text-justify">Moving to OneDrive reduces reliance on physical file servers,
                         lowering hardware, maintenance, and backup costs.</p>
                 </div>
-                <div
-                    class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
+                <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 relative shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <h3 class="text-lg font-bold text-slate-900 mb-3">Improved Compliance & Governance</h3>
-                    <p class="text-slate-600 text-sm text-justify">OneDrive integrates with Microsoft Purview, enabling
-                        data
+                    <p class="text-slate-600 text-sm text-justify">OneDrive integrates with Microsoft Purview, enabling data
                         retention policies, audit logging, and information protection controls.</p>
                 </div>
             </div>
@@ -323,7 +280,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="reveal reveal-fade-up text-center mb-12">
                 <h2 class="text-3xl font-bold text-blue-900 mb-4">Frequently Asked Questions</h2>
                 <p class="text-slate-600 text-center">Common questions about Microsoft OneDrive</p>
@@ -331,14 +288,12 @@
             <div class="space-y-4">
                 <div class="reveal reveal-fade-up border-2 border-blue-100 rounded-xl overflow-hidden relative">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                    <button
-                        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')"
+                    <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')"
                         class="w-full flex justify-between items-center px-6 py-5 text-left">
                         <span class="font-medium text-slate-900 pr-4">What is the difference between OneDrive and
                             SharePoint?</span>
-                        <svg class="w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="currentColor">
+                        <svg class="w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                         </svg>
                     </button>
@@ -349,31 +304,26 @@
                 </div>
                 <div class="reveal reveal-fade-up border-2 border-blue-100 rounded-xl overflow-hidden relative">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                    <button
-                        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')"
+                    <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')"
                         class="w-full flex justify-between items-center px-6 py-5 text-left">
                         <span class="font-medium text-slate-900 pr-4">Is OneDrive secure for business use?</span>
-                        <svg class="w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="currentColor">
+                        <svg class="w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                         </svg>
                     </button>
                     <div class="hidden px-6 pb-5">
-                        <p class="text-sm text-slate-600 leading-relaxed">Yes. OneDrive includes encryption, MFA,
-                            Conditional
+                        <p class="text-sm text-slate-600 leading-relaxed">Yes. OneDrive includes encryption, MFA, Conditional
                             Access, and advanced threat protection.</p>
                     </div>
                 </div>
                 <div class="reveal reveal-fade-up border-2 border-blue-100 rounded-xl overflow-hidden relative">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                    <button
-                        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')"
+                    <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')"
                         class="w-full flex justify-between items-center px-6 py-5 text-left">
                         <span class="font-medium text-slate-900 pr-4">How much storage does OneDrive provide?</span>
-                        <svg class="w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="currentColor">
+                        <svg class="w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                         </svg>
                     </button>
@@ -384,37 +334,31 @@
                 </div>
                 <div class="reveal reveal-fade-up border-2 border-blue-100 rounded-xl overflow-hidden relative">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                    <button
-                        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')"
+                    <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')"
                         class="w-full flex justify-between items-center px-6 py-5 text-left">
                         <span class="font-medium text-slate-900 pr-4">Can I share files externally?</span>
-                        <svg class="w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="currentColor">
+                        <svg class="w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                         </svg>
                     </button>
                     <div class="hidden px-6 pb-5">
-                        <p class="text-sm text-slate-600 leading-relaxed">Yes. You can securely share files with clients
-                            and
+                        <p class="text-sm text-slate-600 leading-relaxed">Yes. You can securely share files with clients and
                             partners using permission controls and expiry dates.</p>
                     </div>
                 </div>
                 <div class="reveal reveal-fade-up border-2 border-blue-100 rounded-xl overflow-hidden relative">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                    <button
-                        onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')"
+                    <button onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')"
                         class="w-full flex justify-between items-center px-6 py-5 text-left">
                         <span class="font-medium text-slate-900 pr-4">Does OneDrive protect against ransomware?</span>
-                        <svg class="w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="currentColor">
+                        <svg class="w-5 h-5 text-blue-600 shrink-0 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                         </svg>
                     </button>
                     <div class="hidden px-6 pb-5">
-                        <p class="text-sm text-slate-600 leading-relaxed">Yes. OneDrive includes ransomware detection and
-                            file
+                        <p class="text-sm text-slate-600 leading-relaxed">Yes. OneDrive includes ransomware detection and file
                             recovery features.</p>
                     </div>
                 </div>

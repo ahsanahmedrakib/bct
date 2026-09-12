@@ -2,7 +2,7 @@
 
 @section('content')
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32 min-h-screen flex items-center">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <div class="reveal reveal-fade-up">
                 <h1 class="text-9xl font-extrabold text-brand-blue mb-8">404</h1>
                 <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Page Not Found</h2>

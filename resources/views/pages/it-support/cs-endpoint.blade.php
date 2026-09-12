@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'EndPoint Security | Bismillah Computer & Technology')
-@section('description',
-    'Endpoint security protects devices like computers, smartphones, and servers from cyber threats.
+@section('description', 'Endpoint security protects devices like computers, smartphones, and servers from cyber threats.
     It includes antivirus, anti-malware, firewalls, and real-time threat detection to prevent unauthorized access, malware,
     and data breaches.')
 
@@ -11,7 +10,7 @@
         {{-- HERO SECTION --}}
         <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
             <div
-                class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+                class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
                 <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                     <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                         EndPoint Security
@@ -87,7 +86,7 @@
         </section>
 
         {{-- ==================== SECTION 1: Endpoint Security Overview ==================== --}}
-        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full">
+        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
             <div class="reveal reveal-fade-up grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                 {{-- Left Column: Text Overview Card --}}
                 <div class="order-2 lg:order-1">
@@ -184,7 +183,7 @@
         </section>
 
         {{-- ==================== SECTION 2: Why do you need EndPoint Protection? ==================== --}}
-        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full" id="why-need">
+        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full" id="why-need">
             <div class="reveal reveal-fade-up grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                 {{-- Left Column: Phone Lock Key Illustration --}}
                 <div class="flex justify-center items-center">
@@ -283,7 +282,7 @@
         </section>
 
         {{-- ==================== SECTION 4: Microsoft Defender for Business ==================== --}}
-        <section class="py-8 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full" id="defender-for-business">
+        <section class="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full" id="defender-for-business">
             <div class="reveal reveal-fade-up grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                 {{-- Left Column: Solution Card --}}
                 <div class="order-2 lg:order-1">
@@ -371,7 +370,7 @@
         </section>
 
         {{-- ==================== SECTION 5: Sentinel One ==================== --}}
-        <section class="py-8 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full" id="sentinel-one">
+        <section class="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full" id="sentinel-one">
             <div class="reveal reveal-fade-up grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                 {{-- Left Column: SentinelOne Logo Graphic --}}
                 <div class="flex justify-center items-center">
@@ -459,7 +458,7 @@
         </section>
 
         {{-- ==================== SECTION 6: Bit Defender ==================== --}}
-        <section class="py-8 pb-20 px-4 sm:px-6 lg:px-8 max-w-356 mx-auto w-full" id="bit-defender">
+        <section class="py-8 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full" id="bit-defender">
             <div class="reveal reveal-fade-up grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                 {{-- Left Column: Solution Card --}}
                 <div class="order-2 lg:order-1">

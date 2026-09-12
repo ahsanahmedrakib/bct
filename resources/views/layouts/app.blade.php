@@ -308,7 +308,8 @@
                 [
                     'title' => 'BCT',
                     'href' => '',
-                    'desc' => 'Best internet service provider in Dhaka to delivery quality internet to your premises.',
+                    'desc' =>
+                        'Best internet service provider in Dhaka to delivery quality internet to your premises.',
                     'icon' =>
                         '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><path d="M12 20h.01"></path><path d="M2 8.82a15 15 0 0 1 20 0"></path><path d="M5 12.859a10 10 0 0 1 14 0"></path><path d="M8.5 16.429a5 5 0 0 1 7 0"></path></svg>',
                     'links' => [
@@ -1326,56 +1327,27 @@
 
     {{-- ═══════════ FOOTER ═══════════ --}}
     <footer class="relative bg-brand-dark-bg text-white font-sans antialiased pb-20 lg:pb-0">
-        <div class="max-w-356 mx-auto px-4 sm:px-6 lg:px-10 py-10 lg:py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-10 lg:py-4">
             {{-- Mobile Layout --}}
             <div class="lg:hidden space-y-10 mb-3">
                 {{-- Logo & About --}}
                 <div class="space-y-5">
                     <a href="{{ route('home') }}" class="flex items-center gap-3.5">
-                        <img src="/logo-white.svg" alt="Logo" width="180" height="70"
-                            style="width:auto;height:auto">
+                        <img src="/logo-white.svg" alt="Logo" width="180" height="70" style="width:auto;height:auto">
                     </a>
-                    <p class="text-sm leading-relaxed text-gray-200 text-justify">Bismillah Computer & Technology
-                        provides modern and secure digital workplaces, focusing on the B2B and B2C market with
-                        comprehensive services in IT Managed Services, Telecommunications, Internet, Cloud, Web,
-                        Software, Domain, Hosting, and Cyber Security.</p>
+                    <p class="text-sm leading-relaxed text-gray-200 text-justify">Bismillah Computer & Technology provides modern and secure digital workplaces, focusing on the B2B and B2C market with comprehensive services in IT Managed Services, Telecommunications, Internet, Cloud, Web, Software, Domain, Hosting, and Cyber Security.</p>
                     <div class="flex items-center gap-2">
-                        <a href="https://www.facebook.com/bct.com.bd" target="_blank" rel="noopener noreferrer"
-                            class="flex items-center justify-center w-10 h-10 transition-opacity hover:opacity-90 bg-[#1877f2] rounded-lg"
-                            aria-label="Facebook">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 24 24" fill="currentColor" class="text-white">
-                                <path
-                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.773-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                            </svg>
+                        <a href="https://www.facebook.com/bct.com.bd" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-10 h-10 transition-opacity hover:opacity-90 bg-[#1877f2] rounded-lg" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.773-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                         </a>
-                        <a href="https://twitter.com/bct.com.bd" target="_blank" rel="noopener noreferrer"
-                            class="flex items-center justify-center w-10 h-10 transition-opacity hover:opacity-90 bg-black rounded-lg"
-                            aria-label="X/Twitter">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 24 24" fill="currentColor" class="text-white">
-                                <path
-                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                            </svg>
+                        <a href="https://twitter.com/bct.com.bd" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-10 h-10 transition-opacity hover:opacity-90 bg-black rounded-lg" aria-label="X/Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-white"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                         </a>
-                        <a href="https://www.linkedin.com/company/bct.com.bd" target="_blank"
-                            rel="noopener noreferrer"
-                            class="flex items-center justify-center w-10 h-10 transition-opacity hover:opacity-90 bg-[#0a66c2] rounded-lg"
-                            aria-label="LinkedIn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 24 24" fill="currentColor" class="text-white">
-                                <path
-                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                            </svg>
+                        <a href="https://www.linkedin.com/company/bct.com.bd" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-10 h-10 transition-opacity hover:opacity-90 bg-[#0a66c2] rounded-lg" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-white"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                         </a>
-                        <a href="https://www.instagram.com/bct.com.bd" target="_blank" rel="noopener noreferrer"
-                            class="flex items-center justify-center w-10 h-10 transition-opacity hover:opacity-90 bg-linear-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] rounded-lg"
-                            aria-label="Instagram">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 24 24" fill="currentColor" class="text-white">
-                                <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-                            </svg>
+                        <a href="https://www.instagram.com/bct.com.bd" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-10 h-10 transition-opacity hover:opacity-90 bg-linear-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] rounded-lg" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
                         </a>
                     </div>
                 </div>
@@ -1384,24 +1356,12 @@
                 <div>
                     <h3 class="text-lg font-bold mb-4 pb-2 border-b border-white/20">Navigation</h3>
                     <ul class="grid grid-cols-2 gap-x-6 gap-y-3 text-sm text-gray-200">
-                        <li><a href="{{ route('it-support') }}"
-                                class="hover:text-white transition-colors inline-flex items-center gap-2"><span
-                                    class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>IT</a></li>
-                        <li><a href="{{ route('internet') }}"
-                                class="hover:text-white transition-colors inline-flex items-center gap-2"><span
-                                    class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>Internet</a></li>
-                        <li><a href="{{ route('cloud') }}"
-                                class="hover:text-white transition-colors inline-flex items-center gap-2"><span
-                                    class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>Cloud</a></li>
-                        <li><a href="{{ route('web') }}"
-                                class="hover:text-white transition-colors inline-flex items-center gap-2"><span
-                                    class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>Web</a></li>
-                        <li><a href="{{ route('voice') }}"
-                                class="hover:text-white transition-colors inline-flex items-center gap-2"><span
-                                    class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>Voice</a></li>
-                        <li><a href="{{ route('contact') }}"
-                                class="hover:text-white transition-colors inline-flex items-center gap-2"><span
-                                    class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>Contact</a></li>
+                        <li><a href="{{ route('it-support') }}" class="hover:text-white transition-colors inline-flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>IT</a></li>
+                        <li><a href="{{ route('internet') }}" class="hover:text-white transition-colors inline-flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>Internet</a></li>
+                        <li><a href="{{ route('cloud') }}" class="hover:text-white transition-colors inline-flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>Cloud</a></li>
+                        <li><a href="{{ route('web') }}" class="hover:text-white transition-colors inline-flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>Web</a></li>
+                        <li><a href="{{ route('voice') }}" class="hover:text-white transition-colors inline-flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>Voice</a></li>
+                        <li><a href="{{ route('contact') }}" class="hover:text-white transition-colors inline-flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>Contact</a></li>
                     </ul>
                 </div>
 
@@ -1412,73 +1372,45 @@
                     {{-- Email --}}
                     <div class="flex items-start gap-3">
                         <div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="text-brand-blue">
-                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-blue"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path></svg>
                         </div>
                         <div>
                             <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Email</p>
-                            <a href="mailto:contact@bct.com.bd"
-                                class="text-sm text-gray-200 hover:text-white transition-colors">contact@bct.com.bd</a>
+                            <a href="mailto:contact@bct.com.bd" class="text-sm text-gray-200 hover:text-white transition-colors">contact@bct.com.bd</a>
                         </div>
                     </div>
 
                     {{-- Phone --}}
                     <div class="flex items-start gap-3">
                         <div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="text-brand-blue">
-                                <path
-                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                                </path>
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-blue"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                         </div>
                         <div>
                             <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Phone</p>
-                            <a href="tel:+8801972721388"
-                                class="text-sm text-gray-200 hover:text-white transition-colors block">+880
-                                1972-721388</a>
-                            <a href="tel:+8809666777100"
-                                class="text-sm text-gray-200 hover:text-white transition-colors block">+880
-                                9666-777100</a>
+                            <a href="tel:+8801972721388" class="text-sm text-gray-200 hover:text-white transition-colors block">+880 1972-721388</a>
+                            <a href="tel:+8809666777100" class="text-sm text-gray-200 hover:text-white transition-colors block">+880 9666-777100</a>
                         </div>
                     </div>
 
                     {{-- Head Office --}}
                     <div class="flex items-start gap-3">
                         <div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="text-brand-blue">
-                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-blue"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                         </div>
                         <div>
                             <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Head Office</p>
-                            <address class="text-sm text-gray-200 not-italic leading-relaxed">House# 86, Road# Lake
-                                Drive, Sector#7, Uttara, Dhaka, Bangladesh</address>
+                            <address class="text-sm text-gray-200 not-italic leading-relaxed">House# 86, Road# Lake Drive, Sector#7, Uttara, Dhaka, Bangladesh</address>
                         </div>
                     </div>
 
                     {{-- Branch Office --}}
                     <div class="flex items-start gap-3">
                         <div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="text-brand-blue">
-                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-blue"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                         </div>
                         <div>
                             <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Branch Office</p>
-                            <address class="text-sm text-gray-200 not-italic leading-relaxed">House#6, Road# Shera
-                                Bangal Avenue, Block#B, Dolipara Uttara Dhaka-1230</address>
+                            <address class="text-sm text-gray-200 not-italic leading-relaxed">House#6, Road# Shera Bangal Avenue, Block#B, Dolipara Uttara Dhaka-1230</address>
                         </div>
                     </div>
                 </div>
@@ -1489,50 +1421,21 @@
                 {{-- Column 1: Logo & About --}}
                 <div class="reveal space-y-6 col-span-2" data-variant="fade-right">
                     <a href="{{ route('home') }}" class="flex items-center gap-3.5">
-                        <img src="/logo-white.svg" alt="Logo" width="180" height="70"
-                            style="width:auto;height:auto">
+                        <img src="/logo-white.svg" alt="Logo" width="180" height="70" style="width:auto;height:auto">
                     </a>
-                    <p class="text-[15px] leading-relaxed text-gray-200 pr-4 text-justify">Bismillah Computer &
-                        Technology provides modern and secure digital workplaces, focusing on the B2B and B2C market
-                        with comprehensive services in IT Managed Services, Telecommunications, Internet, Cloud, Web,
-                        Software, Domain, Hosting, and Cyber Security.</p>
+                    <p class="text-[15px] leading-relaxed text-gray-200 pr-4 text-justify">Bismillah Computer & Technology provides modern and secure digital workplaces, focusing on the B2B and B2C market with comprehensive services in IT Managed Services, Telecommunications, Internet, Cloud, Web, Software, Domain, Hosting, and Cyber Security.</p>
                     <div class="flex items-center gap-2">
-                        <a href="https://www.facebook.com/bct.com.bd" target="_blank" rel="noopener noreferrer"
-                            class="flex items-center justify-center w-10 h-10 transition-opacity hover:opacity-90 bg-[#1877f2] rounded-lg"
-                            aria-label="Facebook">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 24 24" fill="currentColor" class="text-white">
-                                <path
-                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.773-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                            </svg>
+                        <a href="https://www.facebook.com/bct.com.bd" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-10 h-10 transition-opacity hover:opacity-90 bg-[#1877f2] rounded-lg" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.773-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                         </a>
-                        <a href="https://twitter.com/bct.com.bd" target="_blank" rel="noopener noreferrer"
-                            class="flex items-center justify-center w-10 h-10 transition-opacity hover:opacity-90 bg-black rounded-lg"
-                            aria-label="X/Twitter">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 24 24" fill="currentColor" class="text-white">
-                                <path
-                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                            </svg>
+                        <a href="https://twitter.com/bct.com.bd" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-10 h-10 transition-opacity hover:opacity-90 bg-black rounded-lg" aria-label="X/Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-white"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                         </a>
-                        <a href="https://www.linkedin.com/company/bct.com.bd" target="_blank"
-                            rel="noopener noreferrer"
-                            class="flex items-center justify-center w-10 h-10 transition-opacity hover:opacity-90 bg-[#0a66c2] rounded-lg"
-                            aria-label="LinkedIn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 24 24" fill="currentColor" class="text-white">
-                                <path
-                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                            </svg>
+                        <a href="https://www.linkedin.com/company/bct.com.bd" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-10 h-10 transition-opacity hover:opacity-90 bg-[#0a66c2] rounded-lg" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-white"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                         </a>
-                        <a href="https://www.instagram.com/bct.com.bd" target="_blank" rel="noopener noreferrer"
-                            class="flex items-center justify-center w-10 h-10 transition-opacity hover:opacity-90 bg-linear-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] rounded-lg"
-                            aria-label="Instagram">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 24 24" fill="currentColor" class="text-white">
-                                <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-                            </svg>
+                        <a href="https://www.instagram.com/bct.com.bd" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-10 h-10 transition-opacity hover:opacity-90 bg-linear-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] rounded-lg" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
                         </a>
                     </div>
                 </div>
@@ -1541,24 +1444,12 @@
                 <div class="reveal lg:pl-8" data-variant="fade-up" data-delay="100">
                     <h3 class="text-2xl font-bold mb-6 pb-2 border-b border-white/20">Navigation</h3>
                     <ul class="space-y-3 text-[15px] text-gray-200">
-                        <li><a href="{{ route('it-support') }}"
-                                class="hover:text-white transition-colors inline-flex items-center gap-2"><span
-                                    class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>IT</a></li>
-                        <li><a href="{{ route('internet') }}"
-                                class="hover:text-white transition-colors inline-flex items-center gap-2"><span
-                                    class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>Internet</a></li>
-                        <li><a href="{{ route('cloud') }}"
-                                class="hover:text-white transition-colors inline-flex items-center gap-2"><span
-                                    class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>Cloud</a></li>
-                        <li><a href="{{ route('web') }}"
-                                class="hover:text-white transition-colors inline-flex items-center gap-2"><span
-                                    class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>Web</a></li>
-                        <li><a href="{{ route('voice') }}"
-                                class="hover:text-white transition-colors inline-flex items-center gap-2"><span
-                                    class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>Voice</a></li>
-                        <li><a href="{{ route('contact') }}"
-                                class="hover:text-white transition-colors inline-flex items-center gap-2"><span
-                                    class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>Contact</a></li>
+                        <li><a href="{{ route('it-support') }}" class="hover:text-white transition-colors inline-flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>IT</a></li>
+                        <li><a href="{{ route('internet') }}" class="hover:text-white transition-colors inline-flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>Internet</a></li>
+                        <li><a href="{{ route('cloud') }}" class="hover:text-white transition-colors inline-flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>Cloud</a></li>
+                        <li><a href="{{ route('web') }}" class="hover:text-white transition-colors inline-flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>Web</a></li>
+                        <li><a href="{{ route('voice') }}" class="hover:text-white transition-colors inline-flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>Voice</a></li>
+                        <li><a href="{{ route('contact') }}" class="hover:text-white transition-colors inline-flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-blue rounded-full shrink-0"></span>Contact</a></li>
                     </ul>
                 </div>
 
@@ -1567,81 +1458,47 @@
                     <h3 class="text-2xl font-bold mb-6 pb-2 border-b border-white/20">Contact</h3>
                     <div class="space-y-5">
                         <div class="flex gap-4 flex-wrap">
-                            {{-- Email --}}
-                            <div class="flex items-start gap-3">
-                                <div
-                                    class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" class="text-brand-blue">
-                                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                                        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Email</p>
-                                    <a href="mailto:contact@bct.com.bd"
-                                        class="text-[15px] text-gray-200 hover:text-white transition-colors">contact@bct.com.bd</a>
-                                </div>
-                            </div>
-                            {{-- Phone --}}
-                            <div class="flex items-start gap-3">
-                                <div
-                                    class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" class="text-brand-blue">
-                                        <path
-                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Phone</p>
-                                    <a href="tel:+8801972721388"
-                                        class="text-[15px] text-gray-200 hover:text-white transition-colors block">+880
-                                        1972-721388</a>
-                                    <a href="tel:+8809666777100"
-                                        class="text-[15px] text-gray-200 hover:text-white transition-colors block">+880
-                                        9666-777100</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        {{-- Head Office --}}
+                              {{-- Email --}}
                         <div class="flex items-start gap-3">
-                            <div
-                                class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="text-brand-blue">
-                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
-                                    <circle cx="12" cy="10" r="3"></circle>
-                                </svg>
+                            <div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-blue"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path></svg>
                             </div>
                             <div>
-                                <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Head Office
-                                </p>
-                                <address class="text-[15px] text-gray-200 not-italic leading-relaxed">House# 86, Road#
-                                    Lake Drive, Sector#7, Uttara, Dhaka, Bangladesh</address>
+                                <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Email</p>
+                                <a href="mailto:contact@bct.com.bd" class="text-[15px] text-gray-200 hover:text-white transition-colors">contact@bct.com.bd</a>
+                            </div>
+                        </div>
+                        {{-- Phone --}}
+                        <div class="flex items-start gap-3">
+                            <div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-blue"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Phone</p>
+                                <a href="tel:+8801972721388" class="text-[15px] text-gray-200 hover:text-white transition-colors block">+880 1972-721388</a>
+                                <a href="tel:+8809666777100" class="text-[15px] text-gray-200 hover:text-white transition-colors block">+880 9666-777100</a>
+                            </div>
+                        </div>
+                        </div>
+                      
+                        {{-- Head Office --}}
+                        <div class="flex items-start gap-3">
+                            <div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-blue"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Head Office</p>
+                                <address class="text-[15px] text-gray-200 not-italic leading-relaxed">House# 86, Road# Lake Drive, Sector#7, Uttara, Dhaka, Bangladesh</address>
                             </div>
                         </div>
                         {{-- Branch Office --}}
                         <div class="flex items-start gap-3">
-                            <div
-                                class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="text-brand-blue">
-                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
-                                    <circle cx="12" cy="10" r="3"></circle>
-                                </svg>
+                            <div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center shrink-0 mt-0.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-blue"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                             </div>
                             <div>
-                                <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Branch Office
-                                </p>
-                                <address class="text-[15px] text-gray-200 not-italic leading-relaxed">House#6, Road#
-                                    Shera Bangal Avenue, Block#B, Dolipara Uttara Dhaka-1230</address>
+                                <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Branch Office</p>
+                                <address class="text-[15px] text-gray-200 not-italic leading-relaxed">House#6, Road# Shera Bangal Avenue, Block#B, Dolipara Uttara Dhaka-1230</address>
                             </div>
                         </div>
                     </div>
@@ -1649,11 +1506,8 @@
             </div>
 
             {{-- Bottom Bar --}}
-            <div class="reveal flex flex-col md:flex-row justify-between items-center text-[13px] text-white gap-4 border-t border-white/60 bg-brand-dark-bg pt-4"
-                data-variant="fade-up" data-delay="150">
-                <p>&copy; {{ date('Y') }} <a href="{{ url('/') }}"
-                        class="hover:text-white transition-colors">Bismillah Computer & Technology.</a> All Rights
-                    Reserved</p>
+            <div class="reveal flex flex-col md:flex-row justify-between items-center text-[13px] text-white gap-4 border-t border-white/60 bg-brand-dark-bg pt-4" data-variant="fade-up" data-delay="150">
+                <p>&copy; {{ date('Y') }} <a href="{{ url('/') }}" class="hover:text-white transition-colors">Bismillah Computer & Technology.</a> All Rights Reserved</p>
                 <div class="flex gap-4 flex-wrap justify-center">
                     <a href="#" class="hover:text-white transition-colors font-medium">Terms & Conditions</a>
                     <a href="#" class="hover:text-white transition-colors font-medium">Careers</a>

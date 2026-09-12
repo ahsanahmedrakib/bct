@@ -10,7 +10,7 @@
     {{-- ==================== HERO ==================== --}}
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                     Cel-Fi
@@ -47,7 +47,7 @@
 
     {{-- ==================== STATE OF THE ART ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-6">State of the Art</h2>
             <p class="text-slate-600 text-center max-w-3xl mx-auto mb-12">Supporting configurations that are
                 perfect for small to medium-sized buildings, operator approved, unconditionally network safe, and offering
@@ -91,7 +91,7 @@
 
     {{-- ==================== HOW IT WORKS ==================== --}}
     <section class="py-16 lg:py-24 bg-slate-50">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Let's Talk Cel-Fi</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
@@ -148,7 +148,7 @@
 
     {{-- ==================== SOLUTIONS ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Solutions for Every Situation</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 

@@ -10,7 +10,7 @@
     {{-- ==================== HERO ==================== --}}
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                     Unified
@@ -45,7 +45,7 @@
 
     {{-- ==================== INTRO ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
             <div
                 class="relative border-2 rounded-2xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -85,7 +85,7 @@
 
     {{-- ==================== IPECS UCP ==================== --}}
     <section class="py-16 lg:py-24 bg-slate-50">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-left font-bold text-blue-900 mb-4">iPECS UCP</h2>
             <p class="text-slate-600 leading-relaxed mb-8 max-w-4xl">iPECS UCP is Ericsson-LG Enterprise's unified
                 communications platform and is designed to help organisations communicate and collaborate with all of their
@@ -106,7 +106,7 @@
         </div>
     </section>
 
-    <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
+    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
         <div class="w-full">
             <img src="/images/voice/features/unified/section-2.png" alt="Section" class="w-full h-auto object-cover" />
         </div>
@@ -115,7 +115,7 @@
 
     {{-- ==================== IPECS BENEFITS ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-left font-bold text-blue-900 mb-4">Product Benefits</h2>
             <p class="text-slate-500 font-medium mb-8">Simple Unified Communications</p>
             <p class="text-slate-600 leading-relaxed mb-6 max-w-4xl text-justify">iPECS Unified Communications (UC)
@@ -151,7 +151,7 @@
 
     {{-- ==================== AVAYA + LYNC ==================== --}}
     <section class="py-16 lg:py-24 bg-slate-50">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
             <div
                 class="relative border-2 rounded-2xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -185,7 +185,7 @@
         </div>
     </section>
 
-    <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8 pb-6">
+    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8 pb-6">
         <div class="w-full">
             <img src="/images/voice/features/unified/section-1.png" alt="Section" class="w-full h-auto object-cover" />
         </div>

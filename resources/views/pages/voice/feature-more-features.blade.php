@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Top 15 Phone System Features | Bismillah Computer & Technology')
-@section('description',
-    'The top 15 phone system features most requested across industries — with explanations of how
+@section('description', 'The top 15 phone system features most requested across industries — with explanations of how
     they work and why they matter.')
 
 @section('content')
@@ -10,7 +9,7 @@
     {{-- ==================== HERO ==================== --}}
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                     Top 15
@@ -44,7 +43,7 @@
 
     {{-- ==================== INTRO ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
             <div
                 class="relative border-2 rounded-2xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -64,7 +63,7 @@
 
     {{-- ==================== FEATURES ==================== --}}
     <section class="py-16 lg:py-24 bg-slate-50">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8 space-y-12">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8 space-y-12">
 
             {{-- 1 --}}
             <div
@@ -523,7 +522,7 @@
 
     {{-- ==================== CTA ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
             <div
                 class="relative border-2 rounded-2xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100 text-center">
                 <div class="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-1 bg-blue-600 rounded-b-md"></div>

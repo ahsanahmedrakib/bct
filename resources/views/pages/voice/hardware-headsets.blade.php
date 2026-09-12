@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Headset Solutions | Bismillah Computer & Technology')
-@section('description',
-    'Premium business headsets from Jabra, Sennheiser, iPECS and Avaya — wired, cordless and
+@section('description', 'Premium business headsets from Jabra, Sennheiser, iPECS and Avaya — wired, cordless and
     wireless options for every role.')
 
 @section('content')
@@ -10,7 +9,7 @@
     {{-- ==================== HERO ==================== --}}
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                     Headsets
@@ -46,7 +45,7 @@
 
     {{-- ==================== INTRO ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
             <div
                 class="relative border-2 rounded-2xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -66,7 +65,7 @@
 
     {{-- ==================== BRANDS GRID ==================== --}}
     <section class="py-16 lg:py-24 bg-slate-50">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Headset Brands We Supply</h2>
             <p class="text-center text-slate-600 max-w-3xl mx-auto mb-12">Dependable headsets from market-leading brands,
                 matched to your phone system and the way your team works.</p>
@@ -111,7 +110,7 @@
                 <div
                     class="relative border-2 rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                    <div class="w-full">
+                     <div class="w-full">
                         <img src="/images/voice/hardware/headsets/hs-3.png" alt="Section"
                             class="w-full h-auto object-cover" />
                     </div>
@@ -125,7 +124,7 @@
                 <div
                     class="relative border-2 rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                    <div class="w-full">
+                     <div class="w-full">
                         <img src="/images/voice/hardware/headsets/hs-4.png" alt="Section"
                             class="w-full h-auto object-cover" />
                     </div>
@@ -141,7 +140,7 @@
 
     {{-- ==================== CTA ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
             <div
                 class="relative border-2 rounded-2xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100 text-center">
                 <div class="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-1 bg-blue-600 rounded-b-md"></div>

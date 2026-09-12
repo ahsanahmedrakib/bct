@@ -6,7 +6,7 @@
 @section('content')
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">Microsoft 365
                     Modern
@@ -63,7 +63,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="overview">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="flex justify-center">
                 <img src="/images/cloud/services/modern-workplace/section-1.png" alt="Microsoft 365 Modern Workplace"
                     class="rounded-xl shadow-lg w-full" loading="lazy" />
@@ -99,7 +99,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="core-apps">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Microsoft 365 Core Applications</h2>
             <p class="text-slate-600 text-center max-w-2xl mx-auto mb-12">Microsoft 365 includes the essential tools
                 businesses need to communicate, collaborate, and manage data securely in the cloud</p>
@@ -169,7 +169,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="platforms">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Workplace Collaboration Platforms</h2>
             <p class="text-slate-600 text-center max-w-2xl mx-auto mb-12">Together, these Microsoft 365 essentials create a
                 modern workplace
@@ -217,7 +217,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="advanced">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Advanced Features &amp; Security</h2>
             <p class="text-slate-600 text-center max-w-2xl mx-auto mb-12">Microsoft 365 Advanced Features provide
                 organisations with powerful
@@ -272,7 +272,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="benefits">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Benefits of Microsoft 365 Modern Workplace</h2>
             <p class="text-slate-600 text-center max-w-2xl mx-auto mb-12">By combining productivity, flexibility, cyber
                 security, and scalability, Microsoft 365 Modern Workplace helps organisations improve efficiency,
@@ -344,7 +344,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="services-section">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Our Microsoft 365 Consulting Services</h2>
             <p class="text-slate-600 text-center max-w-2xl mx-auto mb-12">Microsoft 365 Consulting from Total Solutions IT
                 helps businesses
@@ -393,7 +393,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="teams">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div
                 class="border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all relative order-2 lg:order-1">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -448,7 +448,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="help">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
             <div
                 class="relative w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
                 <img src="/images/cloud/services/modern-workplace/section-6.jpg" alt="Microsoft 365 Support"
@@ -496,7 +496,7 @@
     </section>
 
     <section class="py-8 lg:py-10 bg-slate-50" id="useful-links">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Useful Links</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 @php
@@ -541,7 +541,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="faq">
-        <div class="reveal reveal-fade-up max-w-356 mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Frequently Asked Questions</h2>
             <p class="text-slate-600 text-center mb-12">Common questions about Microsoft 365 Modern Workplace</p>
             <div class="space-y-4">
