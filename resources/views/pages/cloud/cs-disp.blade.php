@@ -8,7 +8,7 @@
 @section('content')
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">Defence Industry
                     <span class="text-brand-blue">Security Program (DISP)</span>
@@ -67,7 +67,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="overview">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="flex justify-center">
                 <img src="/images/cloud/cyber-security/disp/section-1.png" alt="Defence Industry Security Program"
                     class="rounded-xl shadow-lg w-full max-w-md" loading="lazy" />
@@ -102,7 +102,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="domains">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">DISP Security Domains</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">DISP is built around four key security areas that
@@ -171,7 +171,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="essential-eight">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="reveal reveal-fade-up border-2 border-blue-100 hover:border-blue-300 rounded-2xl p-8 shadow-sm bg-white transition-all relative">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                 <span class="text-blue-500 font-bold text-sm tracking-wide mb-3 block">Essential Eight Maturity Level 2</span>
@@ -205,7 +205,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="requirements">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Ongoing Cyber Security & Assurance Requirements
                 </h2>
@@ -269,7 +269,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="frameworks">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Supporting Frameworks and Standards</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">In addition to the Essential Eight, businesses working
@@ -322,7 +322,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="why-matters">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Why This Matters for Defence Suppliers</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">Due to the sensitive nature of Defence projects,
@@ -387,7 +387,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="prepare">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-start">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-start">
             <div>
                 <h2 class="text-3xl font-bold text-blue-900 mb-4">How Your Business Can Prepare</h2>
                 <p class="text-slate-600 mb-12 text-justify">Achieving alignment with the Essential Eight Maturity Level 2
@@ -452,7 +452,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="help">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
             <div class="relative w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
                 <img src="/images/cloud/cyber-security/disp/section-7.jpg" alt="DISP Compliance Support"
                     class="w-full h-auto object-cover" loading="lazy" />
@@ -501,7 +501,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="faq">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Frequently Asked Questions</h2>
                 <p class="text-slate-600 text-center">Common questions about the Defence Industry Security Program</p>

@@ -7,7 +7,7 @@
     <main class="flex min-h-screen flex-col font-sans text-slate-800 bg-slate-50">
         {{-- HERO SECTION --}}
         <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
-            <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
                 <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                     <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                         Zero Trust <br />
@@ -34,7 +34,7 @@
         </section>
 
         {{-- ==================== SECTION 1: Header / Overview ==================== --}}
-        <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-justify">
+        <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full text-justify">
             <div class="reveal reveal-fade-up">
                 <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -68,14 +68,14 @@
         </section>
 
         {{-- ==================== SECTION 2: Architecture Diagram ==================== --}}
-        <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full">
             <div class="reveal reveal-fade-up flex justify-center items-center overflow-hidden rounded-lg">
                 <img src="/images/it-support/cyber-security/zero-trust-framework/zero-trust.png" alt="Description of the image" height="600" width="1300" />
             </div>
         </section>
 
         {{-- ==================== SECTION 3: Core Principles ==================== --}}
-        <section class="pt-6 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="pt-6 pb-12 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full">
             <div class="reveal reveal-fade-up grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-justify">
                 {{-- Principle 1 --}}
                 <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">

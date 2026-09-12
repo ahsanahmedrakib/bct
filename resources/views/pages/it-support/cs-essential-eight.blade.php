@@ -7,7 +7,7 @@
     <main class="flex min-h-screen flex-col font-sans text-slate-800 bg-slate-50">
         {{-- HERO SECTION --}}
         <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
-            <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
                 <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                     <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                         Essential Eight <br />
@@ -41,7 +41,7 @@
 
         {{-- Section 2: ACSC Essential Eight --}}
         <section class="bg-white" id="what-is-it">
-            <div class="reveal reveal-fade-up py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="reveal reveal-fade-up py-20 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div class="flex justify-center">
                         <img src="/images/it-support/cyber-security/acsc.png" alt="Bangladeshi Cyber Security Centre Logo" height="400" width="400" class="object-cover" />
@@ -60,7 +60,7 @@
 
         {{-- Section 3: FAQ --}}
         <section class="py-20 bg-white" id="what-are-essentials">
-            <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">WHAT ARE THE ESSENTIAL EIGHT?</h2>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                     <div class="flex flex-col justify-center w-full order-2 lg:order-1">

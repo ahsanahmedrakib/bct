@@ -6,7 +6,7 @@
 @section('content')
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">Microsoft 365
                     <span class="text-brand-blue block mt-2">Co-Pilot</span>
@@ -65,7 +65,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="overview">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="flex justify-center">
                 <img src="/images/cloud/microsoft-solutions/copilot/section.png" alt="Microsoft 365 Co-Pilot"
                     class="object-cover" loading="lazy" />
@@ -99,7 +99,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="features">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Microsoft Co-Pilot Features</h2>
                 <p class="text-slate-600 text-center mb-12">Comprehensive AI capabilities across Microsoft 365</p>
@@ -218,7 +218,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="copilot-chat">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="order-2 lg:order-1">
                 <h2 class="text-3xl font-bold text-blue-900 mb-3">Co-Pilot Chat</h2>
                 <p class="text-slate-600 text-sm italic mb-6">Exploring Microsoft Copilot Chat: The Future of AI-Powered Conversations</p>
@@ -307,7 +307,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="copilot-pages">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="order-2 lg:order-1">
                 <h2 class="text-3xl font-bold text-blue-900 mb-3">Co-Pilot Pages</h2>
                 <p class="text-slate-600 text-sm italic mb-6">Unlocking the Power of Microsoft Copilot Pages: AI-Driven Content Creation</p>
@@ -391,7 +391,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="image-generator">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="order-2 lg:order-1">
                 <h2 class="text-3xl font-bold text-blue-900 mb-3">Image Generator</h2>
                 <p class="text-slate-600 text-sm italic mb-6">Exploring Microsoft Copilot Image Generator: AI-Powered Visual Creativity</p>
@@ -475,7 +475,7 @@
     </section>
 
     <section class="py-8 lg:py-10 bg-slate-50" id="useful-links">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-12 reveal reveal-fade-up">Useful Links</h2>
             @php
                 $usefulLinks = [
@@ -517,7 +517,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="benefits">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Benefits of Microsoft 365 Co-Pilot</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">Why organisations choose Copilot for AI-powered productivity</p>
@@ -564,7 +564,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="faq">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Frequently Asked Questions</h2>
                 <p class="text-slate-600 text-center mb-12">Common questions about Microsoft 365 Co-Pilot</p>

@@ -5,7 +5,7 @@
 {{-- ==================== HERO ==================== --}}
 <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
     <div
-        class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+        class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
         {{-- Hero Content --}}
         <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
             <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
@@ -59,7 +59,7 @@
 </section>
 
 {{-- ==================== ABOUT FIXED WIRELESS ==================== --}}
-<section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+<section class="py-20 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto">
     <div class="reveal reveal-fade-up grid lg:grid-cols-2 gap-16 items-center">
         <div>
             <h2 class="text-3xl text-left font-bold text-blue-900 mb-6">A Faster, Cheaper Alternative to NBN</h2>
@@ -85,7 +85,7 @@
 
 {{-- ==================== INSTALLATION PROCESS ==================== --}}
 <section class="py-16 lg:py-24 bg-white">
-    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="reveal reveal-fade-up max-w-365 mx-auto px-6 lg:px-8">
         <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">What Does the 4G/5G Installation Process Involve?</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
@@ -136,7 +136,7 @@
 
 {{-- ==================== WHY CHOOSE ==================== --}}
 <section class="py-16 lg:py-24 bg-white">
-    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="reveal reveal-fade-up max-w-365 mx-auto px-6 lg:px-8">
         <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Why Choose 4G/5G Fixed Wireless?</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 

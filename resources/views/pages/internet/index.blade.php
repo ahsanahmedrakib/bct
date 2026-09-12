@@ -7,7 +7,7 @@
 
 {{-- ======================== HERO SECTION ======================== --}}
 <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
-    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+    <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
         <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
             <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                 Keeping you <br/>
@@ -50,7 +50,7 @@
 
 {{-- ======================== SERVICES GRID ======================== --}}
 <section class="relative bg-slate-50 py-12 lg:py-16 z-20">
-    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="reveal reveal-fade-up max-w-365 mx-auto px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             @php
             $internetCards = [
@@ -77,7 +77,7 @@
 
 {{-- ======================== INTRO TEXT SECTION ======================== --}}
 <section class="py-16 lg:py-24 bg-slate-50">
-    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="reveal reveal-fade-up max-w-365 mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
         <div class="order-2 lg:order-1 bg-white p-10 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative">
             <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
             <h2 class="text-3xl font-bold text-blue-900 mb-6 mt-2">Business Internet and Voice</h2>
@@ -91,7 +91,7 @@
 
 {{-- ======================== SPLIT SECTION 1 ======================== --}}
 <section class="py-16 lg:py-24 bg-white">
-    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="reveal reveal-fade-up max-w-365 mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
         <div>
             <img src="/images/internet/section.png" alt="Working seamlessly online" height="400" width="400" class="object-cover"/>
         </div>
@@ -110,7 +110,7 @@
 
 {{-- ======================== SPLIT SECTION 2 ======================== --}}
 <section class="py-16 lg:py-24 bg-slate-50">
-    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="reveal reveal-fade-up max-w-365 mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
         <div class="order-2 lg:order-1 bg-white p-10 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative">
             <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
             <h2 class="text-3xl font-bold text-blue-900 mb-6 mt-2">Let us keep you <br class="hidden lg:block"/> connected.</h2>

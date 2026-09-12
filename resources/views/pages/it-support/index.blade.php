@@ -110,7 +110,7 @@
     {{-- ================= HERO SECTION ================= --}}
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                     IT Support Services <br>
@@ -209,7 +209,7 @@
 
     {{-- ================= PARTNERS SECTION ================= --}}
     <section class="bg-slate-50 py-12 relative z-10" id="partners">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <p class="text-blue-600 font-bold tracking-wide uppercase text-sm mb-8 text-center lg:text-left">Our Partners
             </p>
             <div class="swiper partners-swiper" data-swiper>
@@ -229,7 +229,7 @@
     <div class="bg-slate-50 py-24 space-y-32">
 
         {{-- 1. Our Capabilities --}}
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="capabilities">
+        <section class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8" id="capabilities">
             <div class="reveal reveal-fade-up">
                 <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
                     <div class="order-2 lg:order-1 h-full">
@@ -343,7 +343,7 @@
         </section>
 
         {{-- 2. Cyber Security --}}
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="security">
+        <section class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8" id="security">
             <div class="reveal reveal-fade-up">
                 <div class="grid lg:grid-cols-2 gap-6 items-center mb-12">
                     <div class="w-full flex justify-center">
@@ -464,7 +464,7 @@
         </section>
 
         {{-- 3. Servers + Networking --}}
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="networking">
+        <section class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8" id="networking">
             <div class="reveal reveal-fade-up">
                 <div class="grid lg:grid-cols-2 gap-12 items-center mb-12">
                     <div class="order-2 lg:order-1 h-full">
@@ -559,7 +559,7 @@
         </section>
 
         {{-- 4. Managed IT Services --}}
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="it">
+        <section class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8" id="it">
             <div class="reveal reveal-fade-up">
                 <div class="grid lg:grid-cols-2 gap-12 items-center mb-12">
                     <div class="w-full">
@@ -655,7 +655,7 @@
         </section>
 
         {{-- 5. Device Repair --}}
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20" id="repair">
+        <section class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 pb-20" id="repair">
             <div class="reveal reveal-fade-up">
                 <div class="grid lg:grid-cols-2 gap-12 items-center mb-12">
                     <div class="order-2 lg:order-1 h-full">

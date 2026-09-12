@@ -6,7 +6,7 @@
 @section('content')
 
 <section class="relative bg-linear-to-br from-hero-gradient to-white pt-28 pb-20 lg:pt-36 lg:pb-28 overflow-hidden">
-    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+    <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center relative z-10">
         <div class="space-y-6">
             @if(!empty($tagline))
                 <span class="inline-block px-4 py-1.5 bg-brand-blue/10 text-brand-blue text-sm font-semibold rounded-full">{{ $tagline }}</span>
@@ -43,7 +43,7 @@
     @foreach($sections as $section)
         @if(($section['type'] ?? 'content') === 'features-grid')
 <section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
         @if(!empty($section['title']))
         <div class="text-center mb-16 reveal reveal-fade-up">
             <h2 class="text-3xl md:text-4xl font-bold text-slate-900">{{ $section['title'] }}</h2>
@@ -88,7 +88,7 @@
 
         @elseif($section['type'] === 'content-list')
 <section class="py-20 {{ $section['bg'] ?? 'bg-slate-50' }}">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
         @if(!empty($section['title']))
         <div class="text-center mb-16 reveal reveal-fade-up">
             <h2 class="text-3xl md:text-4xl font-bold text-slate-900">{{ $section['title'] }}</h2>
@@ -114,7 +114,7 @@
 
         @elseif($section['type'] === 'info-block')
 <section class="py-20 {{ $section['bg'] ?? 'bg-white' }}">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
             @if(!empty($section['image']))
             <div class="reveal reveal-fade-up">

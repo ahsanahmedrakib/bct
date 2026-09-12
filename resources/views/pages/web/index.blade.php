@@ -7,7 +7,7 @@
 
 {{-- Hero --}}
 <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
-    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+    <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
         <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
             <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                 All your website<br>
@@ -50,7 +50,7 @@
 
 {{-- Icon Feature Cards --}}
 <section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl text-center font-bold text-blue-900 mb-12 reveal reveal-fade-up">
             Services that make your Website Perform
         </h2>
@@ -122,7 +122,7 @@
 
 {{-- Split Section 1 --}}
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div class="reveal reveal-fade-up">
                 <img src="/images/web/web.png" alt="Web Development" class="w-full h-auto rounded-2xl">
@@ -141,7 +141,7 @@
 
 {{-- Split Section 2 --}}
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div class="reveal reveal-fade-up order-2 lg:order-1">
                 <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
@@ -160,7 +160,7 @@
 
 {{-- Service List Cards --}}
 <section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
             {{-- Website Development --}}
@@ -265,7 +265,7 @@
 
 {{-- Partner Logos --}}
 <section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 items-center justify-items-center">
             <div class="reveal reveal-fade-up">
                 <img src="/images/web/wp.png" alt="WordPress" class="h-12 w-auto opacity-60 hover:opacity-100 transition">

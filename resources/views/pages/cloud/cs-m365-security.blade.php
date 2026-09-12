@@ -8,7 +8,7 @@
 @section('content')
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">Microsoft 365
                     <br/>
@@ -48,7 +48,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="overview">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="flex justify-center">
                 <img src="/images/cloud/cyber-security/m365-security/section-1.jpg" alt="Microsoft 365 Cyber Security"
                     class="w-full h-auto object-cover rounded-xl" loading="lazy" />
@@ -77,7 +77,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="security-areas">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Microsoft 365 Security Areas</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">Microsoft 365 provides comprehensive protection
@@ -135,7 +135,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="features">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Essential Cybersecurity Features</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">Essential cybersecurity features of Microsoft 365
@@ -207,7 +207,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="advanced">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Advanced Cybersecurity Features</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">Advanced cybersecurity features in Microsoft 365 are designed to
@@ -367,7 +367,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="essential-eight">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">ACSC Essential Eight Alignment</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto mb-6">The ACSC Essential Eight, developed by the Bangladeshi Cyber Security Centre, is a proven framework designed to help organisations protect against cyber attacks, ransomware, and data breaches.</p>
@@ -437,7 +437,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="help">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
             <div class="reveal reveal-fade-up relative w-full rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100">
                 <img src="/images/cloud/cyber-security/m365-security/section-1.jpg" alt="Microsoft 365 Security Support"
                     class="w-full h-auto object-cover" loading="lazy" />
@@ -482,7 +482,7 @@
     </section>
 
     <section class="py-8 lg:py-10 bg-slate-50" id="useful-links">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Useful Links</h2>
             </div>
@@ -521,7 +521,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="faq">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Frequently Asked Questions</h2>
                 <p class="text-slate-600 text-center">Common questions about Microsoft 365 Cyber Security</p>

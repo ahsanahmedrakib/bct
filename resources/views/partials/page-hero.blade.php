@@ -1,7 +1,7 @@
 @php($pageTitle = $pageTitle ?? $title ?? '')
 
 <section class="relative bg-linear-to-t from-hero-gradient to-white pt-28 pb-32 lg:pt-36 overflow-hidden">
-    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+    <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         @if (!empty($eyebrow))
             <span class="inline-block text-brand-blue font-bold text-sm uppercase tracking-wider mb-3">{{ $eyebrow }}</span>
         @endif

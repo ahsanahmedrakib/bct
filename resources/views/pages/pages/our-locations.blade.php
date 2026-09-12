@@ -6,7 +6,7 @@
     @include('partials.page-hero', ['pageTitle' => 'Our Locations'])
 
     <section class="py-16 lg:py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
 
             <div class="text-center max-w-2xl mx-auto mb-14">
                 <span

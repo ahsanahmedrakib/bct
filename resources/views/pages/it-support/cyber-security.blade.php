@@ -7,7 +7,7 @@
     <main class="flex min-h-screen flex-col font-sans text-slate-800 bg-slate-50">
         {{-- HERO SECTION --}}
         <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
-            <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
                 <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                     <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                         Cyber Security <br />
@@ -42,7 +42,7 @@
         </section>
 
         {{-- Section 1: Cyber Security Grid --}}
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
+        <section class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
             <div class="reveal reveal-fade-up grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
                 <div class="col-span-1 sm:col-span-2 lg:col-span-2 pr-0 md:pr-8 flex flex-col justify-start pt-4">
                     <h2 class="text-blue-600 font-bold text-xl mb-6 tracking-wide">
@@ -165,7 +165,7 @@
         </section>
 
         {{-- Section 2: Security is a Necessity --}}
-        <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" id="cybersecurity">
+        <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto" id="cybersecurity">
             <div class="reveal reveal-fade-up grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div class="order-2 lg:order-1">
                     <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
@@ -184,7 +184,7 @@
 
         {{-- Section 3: What is Cyber Security --}}
         <section class="bg-white">
-            <div class="reveal reveal-fade-up py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="reveal reveal-fade-up py-20 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div class="flex justify-center">
                         <img src="/images/it-support/cyber-security/section-2.png" alt="What is Cyber Security Illustration" height="400" width="400" class="object-cover" />
@@ -203,7 +203,7 @@
         </section>
 
         {{-- Section 4: What We Do --}}
-        <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto">
             <div class="reveal reveal-fade-up grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div class="order-2 lg:order-1">
                     <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
@@ -222,7 +222,7 @@
 
         {{-- Section 5: ACSC Essential Eight --}}
         <section class="bg-white" id="acsc">
-            <div class="reveal reveal-fade-up py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="reveal reveal-fade-up py-20 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div class="flex justify-center">
                         <img src="/images/it-support/cyber-security/acsc.png" alt="Bangladeshi Cyber Security Centre Logo" height="400" width="400" class="object-cover" />
@@ -242,7 +242,7 @@
 
         {{-- Section 6: FAQ --}}
         <section class="py-20 bg-white">
-            <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-center text-brand-blue mb-12">FAQs</h2>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                     <div class="flex flex-col justify-center w-full order-2 lg:order-1">
@@ -327,7 +327,7 @@
 
         {{-- Section 7: Partner Logos --}}
         <section class="py-16 bg-slate-50 border-t border-blue-100">
-            <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16">
                     <img src="/images/it-support/cyber-security/cove.png" alt="Partner Logo" width="120" height="36" class="h-7 md:h-9 w-auto object-contain" />
                     <img src="/images/it-support/cyber-security/nable.png" alt="N-ABLE" width="120" height="36" class="h-7 md:h-9 w-auto object-contain" />

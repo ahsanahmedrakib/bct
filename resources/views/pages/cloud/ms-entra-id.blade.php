@@ -7,7 +7,7 @@
     {{-- ================= HERO SECTION ================= --}}
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">Microsoft
                     <span class="text-blue-600 block mt-2">Entra ID</span>
@@ -39,7 +39,7 @@
 
     {{-- ================= OVERVIEW SECTION ================= --}}
     <section class="py-16 lg:py-24 bg-white" id="overview">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="flex justify-center">
                 <img src="/images/cloud/microsoft-solutions/entra-id/section.png" alt="Microsoft Entra ID"
                     class="object-cover" loading="lazy" />
@@ -72,7 +72,7 @@
 
     {{-- ================= KEY FEATURES ================= --}}
     <section class="py-16 lg:py-24 bg-white" id="features">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Key Features of Microsoft Entra ID</h2>
             <p class="text-slate-600 text-center max-w-2xl mx-auto mb-12">Everything you need for identity and access
                 management across your organisation</p>
@@ -120,7 +120,7 @@
 
     {{-- ================= AZURE AD PLATFORM ================= --}}
     <section class="py-16 lg:py-24 bg-slate-50" id="platform">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-16 items-start">
                 <div>
                     <h2 class="text-3xl font-bold text-blue-900 mb-4">Protect your business with a universal identity
@@ -218,7 +218,7 @@
 
     {{-- ================= FEATURE SECTIONS ================= --}}
     <section class="py-16 lg:py-24 bg-white" id="details">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
             @php
                 $featureSections = [
                     [
@@ -316,7 +316,7 @@
 
     {{-- ================= USEFUL LINKS ================= --}}
     <section class="py-8 lg:py-10 bg-slate-50" id="useful-links">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Useful Links</h2>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 @php
@@ -364,7 +364,7 @@
 
     {{-- ================= BENEFITS SECTION ================= --}}
     <section class="py-16 lg:py-24 bg-slate-50" id="benefits">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Benefits of Using Microsoft Entra ID</h2>
             <p class="text-slate-600 text-center max-w-2xl mx-auto mb-12">Why organisations choose Microsoft Entra ID for
                 identity and access management</p>
@@ -417,10 +417,10 @@
 
     {{-- ================= FAQ SECTION ================= --}}
     <section class="py-16 lg:py-24 bg-white" id="faq">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Frequently Asked Questions</h2>
             <p class="text-slate-600 text-center mb-12">Common questions about Microsoft Entra ID</p>
-            <div class="max-w-7xl mx-auto space-y-4">
+            <div class="max-w-365 mx-auto space-y-4">
                 @php
                     $faqs = [
                         [

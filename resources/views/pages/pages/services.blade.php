@@ -10,7 +10,7 @@
 
     {{-- Services Area --}}
     <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="reveal reveal-fade-up text-center mb-16 max-w-3xl mx-auto">
                 <span class="inline-block text-brand-blue font-bold text-sm uppercase tracking-wider mb-3">What We're
                     Offering</span>
@@ -116,7 +116,7 @@
 
     {{-- CTA Section --}}
     <section class="py-16 bg-brand-dark-bg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Have any project to work with us</h2>
                 <p class="text-white/60 text-lg mb-8">Grab up to 35% off — Limited time offer, don't miss the opportunity

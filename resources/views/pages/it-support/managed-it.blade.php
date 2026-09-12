@@ -10,7 +10,7 @@
         {{-- HERO SECTION --}}
         <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
             <div
-                class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+                class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
                 <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                     <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                         Managed Services that reduce downtime
@@ -67,7 +67,7 @@
         </section>
 
         {{-- WHY CHOOSE US SECTION --}}
-        <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" id="why-choose-us">
+        <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto" id="why-choose-us">
             <div class="reveal reveal-fade-up">
                 <h2 class="text-3xl text-center font-bold text-blue-900 mb-6">Why Choose Us?</h2>
                 <p class="text-slate-600 mb-12 leading-relaxed text-center max-w-3xl mx-auto">
@@ -144,7 +144,7 @@
         </section>
 
         {{-- SECTION 3: Harness Decades of IT Excellence --}}
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="services">
+        <section class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8" id="services">
             <div class="reveal reveal-fade-up grid lg:grid-cols-2 gap-12 items-center my-12">
                 <div class="order-2 lg:order-1">
                     <div
@@ -188,7 +188,7 @@
         </section>
 
         {{-- SECTION 4: Drive Your Digital Transformation --}}
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="it">
+        <section class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8" id="it">
             <div class="reveal reveal-fade-up grid lg:grid-cols-2 gap-12 items-center mb-12">
                 <div class="w-full">
                     <img src="/images/it-support/managed-it/section-2.jpg" alt="Managed Services" height="1600"

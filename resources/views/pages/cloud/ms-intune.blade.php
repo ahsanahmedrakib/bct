@@ -8,7 +8,7 @@
 @section('content')
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">Microsoft
                     <span class="text-brand-blue block mt-2"> Intune</span></h1>
@@ -65,7 +65,7 @@
 
     {{-- Overview Section --}}
     <section class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="reveal reveal-fade-up flex justify-center">
                 <img src="/images/cloud/microsoft-solutions/intune/section.svg" alt="Microsoft Intune"
                     class="w-full max-w-lg object-cover" loading="lazy" />
@@ -98,7 +98,7 @@
 
     {{-- Key Features Section --}}
     <section class="py-24 bg-white" id="key-features">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Key Features of Microsoft Intune</h2>
                 <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Everything you need for comprehensive endpoint management and
@@ -195,7 +195,7 @@
 
     {{-- All Features Section --}}
     <section class="py-24 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Intune Features</h2>
                 <p class="mt-4 text-slate-600">Comprehensive endpoint management capabilities across Microsoft Intune</p>
@@ -604,7 +604,7 @@
 
     {{-- Useful Links Section --}}
     <section class="py-16 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Useful Links</h2>
             </div>
@@ -650,7 +650,7 @@
 
     {{-- Benefits Section --}}
     <section class="py-24 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Benefits of Using Microsoft Intune</h2>
                 <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Why organisations choose Intune for endpoint management</p>
@@ -704,7 +704,7 @@
 
     {{-- FAQ Section --}}
     <section class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Frequently Asked Questions</h2>
                 <p class="mt-4 text-slate-600">Common questions about Microsoft Intune</p>

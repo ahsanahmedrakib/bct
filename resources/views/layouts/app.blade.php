@@ -1327,7 +1327,7 @@
 
     {{-- ═══════════ FOOTER ═══════════ --}}
     <footer class="relative bg-brand-dark-bg text-white font-sans antialiased pb-20 lg:pb-0">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-10 lg:py-4">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-10 py-10 lg:py-4">
             {{-- Mobile Layout --}}
             <div class="lg:hidden space-y-10 mb-3">
                 {{-- Logo & About --}}

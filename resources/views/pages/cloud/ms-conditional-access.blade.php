@@ -6,7 +6,7 @@
 @section('content')
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">Microsoft 365
                     <span class="text-brand-blue block mt-2">Conditional Access</span>
@@ -64,7 +64,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="overview">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="reveal reveal-fade-up flex justify-center">
                 <img src="/images/it-support/cyber-security/cloud-and-network/hero.png" alt="Conditional Access"
                     class="object-cover" loading="lazy" />
@@ -95,7 +95,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="features">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Key Features of Conditional Access</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">Control who can access what, from where, and under
@@ -230,7 +230,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="problem">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-16 items-start">
                 <div class="reveal reveal-fade-up">
                     <h2 class="text-3xl font-bold text-blue-900 mb-4">Why is Conditional Access Needed?</h2>
@@ -332,7 +332,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="conditions">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Policy Conditions</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">The following conditions can be controlled by
@@ -388,7 +388,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="grant-controls">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Access Grant Controls</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">Based on the conditions above, access can be allowed
@@ -428,7 +428,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="policies">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Recommended Conditional Access Policies</h2>
                 <p class="text-slate-600 text-center">Step-by-step deployment guides for the most common Conditional Access
@@ -873,7 +873,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="gotchas">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-8 reveal reveal-fade-up">
                 <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Gotchas</h2>
                 <p class="text-slate-600 text-center">As with most Microsoft solutions, Conditional Access is not without its
@@ -901,7 +901,7 @@
     </section>
 
     <section class="py-8 lg:py-10 bg-slate-50" id="useful-links">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Useful Links</h2>
             </div>
@@ -946,7 +946,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="benefits">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Benefits of Conditional Access</h2>
                 <p class="text-slate-600 text-center max-w-2xl mx-auto">Why organisations implement Conditional Access for
@@ -999,7 +999,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="faq">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Frequently Asked Questions</h2>
                 <p class="text-slate-600 text-center">Common questions about Microsoft 365 Conditional Access</p>

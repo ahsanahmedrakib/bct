@@ -6,7 +6,7 @@
 @section('content')
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                     Microsoft 365
@@ -31,7 +31,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="overview">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="flex justify-center">
                 <img src="/images/cloud/microsoft-solutions/exchange-online/section.png" alt="Exchange Online"
                     class="rounded-2xl shadow-lg w-full" loading="lazy" />
@@ -61,7 +61,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="features">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Key Features of Microsoft Exchange Online</h2>
                 <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Everything you need for secure, reliable business email and collaboration</p>
@@ -132,7 +132,7 @@
     </section>
 
     <section class="py-8 lg:py-10 bg-slate-50" id="useful-links">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl font-bold text-blue-900">Useful Links</h2>
             </div>
@@ -176,7 +176,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="benefits">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl font-bold text-blue-900">Benefits of Using Exchange Online</h2>
                 <p class="text-slate-600 max-w-2xl mx-auto mt-4">Why businesses choose Exchange Online for secure, reliable email</p>
@@ -222,7 +222,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="faq">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl font-bold text-blue-900">Frequently Asked Questions</h2>
                 <p class="text-slate-600 mt-4">Common questions about Microsoft Exchange Online</p>

@@ -7,7 +7,7 @@
 
 {{-- ==================== HERO ==================== --}}
 <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
-    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+    <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
         <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
             <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                 Phone Systems
@@ -36,7 +36,7 @@
 
 {{-- ==================== SOLUTIONS ==================== --}}
 <section class="py-16 lg:py-24 bg-white">
-    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="reveal reveal-fade-up max-w-365 mx-auto px-6 lg:px-8">
         <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Solutions for Every Business</h2>
         <p class="text-center text-slate-600 max-w-3xl mx-auto mb-12">Choose the right phone system for your business size
             and requirements.</p>
@@ -93,7 +93,7 @@
 
 {{-- ==================== FEATURES ==================== --}}
 <section class="py-16 lg:py-24 bg-slate-50">
-    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="reveal reveal-fade-up max-w-365 mx-auto px-6 lg:px-8">
         <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Advanced Features</h2>
         <p class="text-center text-slate-600 max-w-3xl mx-auto mb-12">Modern phone systems come packed with the features
             your business needs to look professional and work efficiently.</p>
@@ -142,7 +142,7 @@
 
 {{-- ==================== WHY CHOOSE US ==================== --}}
 <section class="py-16 lg:py-24 bg-white">
-    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="reveal reveal-fade-up max-w-365 mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
         <div>
             <h2 class="text-3xl text-left font-bold text-blue-900 mb-6">Phone Systems Done Right</h2>
             <p class="text-slate-600 leading-relaxed mb-6 text-justify">We combine telecommunications and IT expertise to
@@ -165,7 +165,7 @@
 
 {{-- ==================== FAQS ==================== --}}
 <section class="py-16 lg:py-24 bg-slate-50">
-    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="reveal reveal-fade-up max-w-365 mx-auto px-6 lg:px-8">
         <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">FAQs</h2>
         <div class="space-y-4">
             @php

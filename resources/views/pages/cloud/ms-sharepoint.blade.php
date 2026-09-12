@@ -6,7 +6,7 @@
 @section('content')
     {{-- ================= HERO SECTION ================= --}}
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+        <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">Microsoft SharePoint</h1>
                 <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">Microsoft SharePoint is a powerful cloud-based document management and collaboration platform within Microsoft 365. It enables organisations to securely store, organise, share, and manage information from anywhere — while maintaining full control over permissions, compliance, and governance.</p>
@@ -28,7 +28,7 @@
 
     {{-- ================= OVERVIEW SECTION ================= --}}
     <section class="py-16 lg:py-24 bg-white" id="overview">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="flex justify-center">
                 <img src="/images/cloud/microsoft-solutions/sharepoint/point.png" alt="Microsoft SharePoint" class="object-cover" loading="lazy" />
             </div>
@@ -46,7 +46,7 @@
 
     {{-- ================= KEY FEATURES ================= --}}
     <section class="py-16 lg:py-24 bg-white" id="features">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Key Features of Microsoft SharePoint</h2>
             <p class="text-slate-600 text-center max-w-2xl mx-auto mb-12">Everything you need for secure document management and team collaboration</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -79,7 +79,7 @@
 
     {{-- ================= USEFUL LINKS ================= --}}
     <section class="py-8 lg:py-10 bg-slate-50" id="useful-links">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Useful Links</h2>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 @php
@@ -103,7 +103,7 @@
 
     {{-- ================= BENEFITS SECTION ================= --}}
     <section class="py-16 lg:py-24 bg-slate-50" id="benefits">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Benefits of Using Microsoft SharePoint</h2>
             <p class="text-slate-600 text-center max-w-2xl mx-auto mb-12">Why businesses choose SharePoint for document management and collaboration</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -132,7 +132,7 @@
 
     {{-- ================= FAQ SECTION ================= --}}
     <section class="py-16 lg:py-24 bg-white" id="faq">
-        <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Frequently Asked Questions</h2>
             <p class="text-slate-600 text-center mb-12">Common questions about Microsoft SharePoint</p>
             <div class="max-w-3xl mx-auto space-y-4">

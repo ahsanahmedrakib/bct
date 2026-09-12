@@ -5,7 +5,7 @@
 
   {{-- HERO SECTION --}}
   <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10 reveal reveal-fade-up">
+    <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10 reveal reveal-fade-up">
       <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
         <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
           Security Awareness <br />
@@ -31,7 +31,7 @@
   </section>
 
   {{-- ==================== SECTION 1: Introduction (Human Error) ==================== --}}
-  <section class="pt-12 sm:pt-16 pb-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-justify">
+  <section class="pt-12 sm:pt-16 pb-6 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full text-justify">
     <div class="reveal reveal-fade-up h-full">
       <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 relative h-full">
         <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -59,7 +59,7 @@
   </section>
 
   {{-- ==================== SECTION 2: HOW IT WORKS ==================== --}}
-  <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-justify">
+  <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full text-justify">
     <div class="reveal reveal-fade-up h-full">
       <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 relative h-full">
         <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -131,7 +131,7 @@
   </section>
 
   {{-- ==================== SECTION 3: HOW IS IT USED? ==================== --}}
-  <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-justify">
+  <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full text-justify">
     <div class="reveal reveal-fade-up h-full">
       <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 relative h-full">
         <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -153,7 +153,7 @@
   </section>
 
   {{-- ==================== SECTION 4: BENEFITS OF SECURITY AWARENESS TRAINING ==================== --}}
-  <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-justify">
+  <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full text-justify">
     <div class="reveal reveal-fade-up h-full">
       <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 relative h-full">
         <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -182,7 +182,7 @@
   </section>
 
   {{-- ==================== SECTION 5: WHY CHOOSE Total Solutions IT? ==================== --}}
-  <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-justify">
+  <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full text-justify">
     <div class="reveal reveal-fade-up h-full">
       <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 relative h-full">
         <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -203,7 +203,7 @@
   </section>
 
   {{-- ==================== SECTION 6: SCHEDULE A DEMO (Contact) ==================== --}}
-  <section class="pt-6 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-justify">
+  <section class="pt-6 pb-16 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full text-justify">
     <div class="reveal reveal-fade-up h-full">
       <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 relative h-full">
         <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>

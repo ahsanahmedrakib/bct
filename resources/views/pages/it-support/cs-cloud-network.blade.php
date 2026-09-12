@@ -7,7 +7,7 @@
     <main class="flex min-h-screen flex-col font-sans text-slate-800 bg-slate-50">
         {{-- HERO SECTION --}}
         <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
-            <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
                 <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                     <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                         Cloud and Network Security <br />
@@ -34,7 +34,7 @@
         </section>
 
         {{-- ==================== SECTION 1: Cloud Security Services ==================== --}}
-        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full">
             <div class="reveal reveal-fade-up grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                 <div class="order-2 lg:order-1">
                     <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
@@ -72,7 +72,7 @@
         </section>
 
         {{-- ==================== SECTION 2: Key Elements of Cloud Security ==================== --}}
-        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full">
             <div class="reveal reveal-fade-up">
                 <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -89,7 +89,7 @@
         </section>
 
         {{-- ==================== SECTION 3: Understanding Network Security ==================== --}}
-        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full">
             <div class="reveal reveal-fade-up grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                 <div class="flex justify-center items-center">
                     <div class="flex justify-center">
@@ -128,7 +128,7 @@
         </section>
 
         {{-- ==================== SECTION 4: Network Consulting, Design, and Installation ==================== --}}
-        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full">
             <div class="reveal reveal-fade-up">
                 <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -147,7 +147,7 @@
         </section>
 
         {{-- ==================== SECTION 5: Best Practices ==================== --}}
-        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full">
             <div class="reveal reveal-fade-up">
                 <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -164,7 +164,7 @@
         </section>
 
         {{-- ==================== SECTION 6: Emerging Trends ==================== --}}
-        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full">
             <div class="reveal reveal-fade-up">
                 <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -181,7 +181,7 @@
         </section>
 
         {{-- ==================== SECTION 7: Why Choose Us ==================== --}}
-        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full">
             <div class="reveal reveal-fade-up">
                 <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
@@ -198,7 +198,7 @@
         </section>
 
         {{-- ==================== SECTION 8: Get Started Today ==================== --}}
-        <section class="py-10 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <section class="py-10 pb-20 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full">
             <div class="reveal reveal-fade-up">
                 <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>

@@ -8,7 +8,7 @@
 @section('content')
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">Microsoft
                     Defender
@@ -35,7 +35,7 @@
 
     {{-- Overview Section --}}
     <section class="py-24 bg-white" id="overview">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="flex justify-center">
                 <img src="/images/cloud/microsoft-solutions/defender/section-1.jpg" alt="Microsoft Defender for Business"
                     class="rounded-xl shadow-lg w-full" loading="lazy" />
@@ -66,7 +66,7 @@
 
     {{-- What Is Section --}}
     <section class="py-24 bg-white" id="what-is">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="reveal reveal-fade-up bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 transition-all relative h-full order-2 lg:order-1">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                 <h2 class="text-3xl text-center font-bold text-blue-900 mb-6">What is Microsoft Defender for Business, and could it suit your Business?</h2>
@@ -91,7 +91,7 @@
 
     {{-- Key Features Section --}}
     <section class="py-24 bg-slate-50" id="features">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Key Features of Microsoft Defender for Business</h2>
                 <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Comprehensive endpoint security with AI-powered threat protection</p>
@@ -163,7 +163,7 @@
 
     {{-- Capabilities Section --}}
     <section class="py-24 bg-white" id="capabilities">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Security Capabilities</h2>
                 <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Enterprise-grade protection designed for small and medium-sized businesses</p>
@@ -210,7 +210,7 @@
 
     {{-- NIST Framework Section --}}
     <section class="py-24 bg-slate-50" id="nist">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">NIST Cyber Security Framework Alignment</h2>
                 <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Defender for Business encompasses functionality across all five key functions outlined in the NIST Cyber Security Framework</p>
@@ -264,7 +264,7 @@
 
     {{-- What's Included Section --}}
     <section class="py-24 bg-white" id="included">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">What Does Defender for Business Include?</h2>
                 <p class="mt-4 text-slate-600">Defender for Business is a collection of capabilities bundled into a single Managed Security Services offering</p>
@@ -316,7 +316,7 @@
 
     {{-- Feature Comparison Table --}}
     <section class="py-24 bg-slate-50" id="comparison">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Feature Comparison</h2>
                 <p class="mt-4 text-slate-600">How Defender for Business compares to Defender for Endpoint P1 and P2</p>
@@ -405,7 +405,7 @@
 
     {{-- Useful Links Section --}}
     <section class="py-16 bg-white" id="useful-links">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Useful Links</h2>
             </div>
@@ -448,7 +448,7 @@
 
     {{-- Benefits Section --}}
     <section class="py-24 bg-slate-50" id="benefits">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Benefits of Using Microsoft Defender for Business</h2>
                 <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Why businesses choose Defender for enterprise-grade endpoint security</p>
@@ -495,7 +495,7 @@
 
     {{-- Limitations Section --}}
     <section class="py-24 bg-white" id="limitations">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Defender for Business Limitations</h2>
                 <p class="mt-4 text-slate-600">While Defender for Business offers robust endpoint protection, certain advanced capabilities available in Defender for Endpoint P2 may not be included</p>
@@ -529,7 +529,7 @@
 
     {{-- FAQ Section --}}
     <section class="py-24 bg-slate-50" id="faq">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Frequently Asked Questions</h2>
                 <p class="mt-4 text-slate-600">Common questions about Microsoft Defender for Business</p>

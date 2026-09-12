@@ -9,7 +9,7 @@
     {{-- ==================== HERO ==================== --}}
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                     Our
@@ -42,7 +42,7 @@
 
     {{-- ==================== PORTFOLIO ==================== --}}
     <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="reveal reveal-fade-up text-center mb-12">
                 <span class="inline-block text-brand-blue font-bold text-sm uppercase tracking-wider mb-3">Our Work</span>
                 <h2 class="text-3xl md:text-4xl font-extrabold text-heading">Transforming Ideas into Digital Experiences

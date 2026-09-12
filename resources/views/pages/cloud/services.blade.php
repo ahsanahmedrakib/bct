@@ -6,7 +6,7 @@
 
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                     <span class="text-blue-600">Ask us about</span><br>
@@ -43,7 +43,7 @@
         </div>
     </section>
 
-    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" id="benefits">
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto" id="benefits">
         <div class="reveal reveal-fade-up">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Right application, right scale, right cost</h2>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -94,7 +94,7 @@
     </section>
 
     <section class="py-20 bg-slate-50" id="services">
-        <div class="reveal reveal-fade-up max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
+        <div class="reveal reveal-fade-up max-w-365 px-4 sm:px-6 lg:px-8 mx-auto">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Cloud Services for the modern business</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 @php

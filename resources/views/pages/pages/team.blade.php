@@ -9,7 +9,7 @@
 
     {{-- ======================== OUR TEAM ======================== --}}
     <section class="bg-white py-16 px-4 sm:px-6 lg:px-8 font-sans">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="reveal fade-up text-center max-w-2xl mx-auto mb-16">
                 <span class="inline-flex items-center gap-3 text-theme-blue text-lg sm:text-xl font-medium tracking-wide">
                     <span class="relative inline-block h-5 w-5 shrink-0"><span
@@ -110,7 +110,7 @@
 
     {{-- CTA Section --}}
     <section class="py-16 bg-brand-dark-bg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Have any project to work with us</h2>
                 <p class="text-white/60 text-lg mb-8">Grab up to 35% off — Limited time offer, don't miss the opportunity

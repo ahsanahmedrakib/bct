@@ -6,7 +6,7 @@
 @section('content')
     <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
         <div
-            class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+            class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
             <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
                 <p class="text-blue-600 font-bold text-sm tracking-wide">Microsoft 365</p>
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">Windows 365</h1>
@@ -30,7 +30,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="overview">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="reveal reveal-fade-up flex justify-center">
                 <img src="/images/cloud/microsoft-solutions/windows-365/section-1.png" alt="Windows 365 Cloud PC"
                     class="object-cover" loading="lazy" />
@@ -62,7 +62,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="features">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Key Features of Windows 365 Cloud PC</h2>
                 <p class="text-slate-600 max-w-2xl mx-auto">Everything you need for a secure, cloud-based desktop experience</p>
@@ -133,7 +133,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="why-vdi">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Why Consider Windows 365 Cloud PC?</h2>
                 <p class="text-slate-600 max-w-2xl mx-auto">A few reasons to consider cloud-based desktop infrastructure</p>
@@ -179,7 +179,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="is-it-for-you">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Is Windows 365 Cloud PC for You?</h2>
                 <p class="text-slate-600">If you can answer &ldquo;yes&rdquo; to any of these questions, Cloud PC might be a good fit for you!</p>
@@ -210,7 +210,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="partner">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
             <div class="reveal reveal-fade-up bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 transition-all relative h-full order-2 lg:order-1">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                 <h2 class="text-3xl font-bold text-blue-900 mb-4">A Partner You Can Trust</h2>
@@ -250,7 +250,7 @@
     </section>
 
     <section class="py-8 lg:py-10 bg-slate-50" id="useful-links">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Useful Links</h2>
             </div>
@@ -292,7 +292,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-slate-50" id="benefits">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Benefits of Using Windows 365 Cloud PC</h2>
                 <p class="text-slate-600 max-w-2xl mx-auto">Why businesses choose Windows 365 for cloud-based desktop infrastructure</p>
@@ -338,7 +338,7 @@
     </section>
 
     <section class="py-16 lg:py-24 bg-white" id="faq">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Frequently Asked Questions</h2>
                 <p class="text-slate-600">Common questions about Windows 365 Cloud PC</p>

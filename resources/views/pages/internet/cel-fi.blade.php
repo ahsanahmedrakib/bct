@@ -5,7 +5,7 @@
 {{-- ==================== HERO ==================== --}}
 <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
     <div
-        class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+        class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
         {{-- Hero Content --}}
         <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
             <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
@@ -59,7 +59,7 @@
 </section>
 
 {{-- ==================== STATE OF THE ART ==================== --}}
-<section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+<section class="py-20 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto">
     <div class="reveal reveal-fade-up">
         <h2 class="text-3xl text-center font-bold text-blue-900 mb-6">State of the Art</h2>
         <p class="text-slate-600 text-center max-w-3xl mx-auto mb-12 text-justify">Supporting configurations that are
@@ -103,7 +103,7 @@
 
 {{-- ==================== LET'S TALK CEL-FI ==================== --}}
 <section class="py-16 lg:py-24 bg-white">
-    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="reveal reveal-fade-up max-w-365 mx-auto px-6 lg:px-8">
         <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Let's Talk Cel-Fi</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
@@ -154,7 +154,7 @@
 
 {{-- ==================== SOLUTIONS FOR EVERY SITUATION ==================== --}}
 <section class="py-16 lg:py-24 bg-white">
-    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="reveal reveal-fade-up max-w-365 mx-auto px-6 lg:px-8">
         <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Solutions for Every Situation</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
