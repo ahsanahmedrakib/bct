@@ -173,9 +173,7 @@
 
             {{-- Map --}}
             <div class="mt-12 rounded-2xl overflow-hidden border-2 border-slate-100 shadow-sm">
-                <iframe src="https://maps.google.com/maps?q=Uttara+Dhaka+Bangladesh&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4366.22184000837!2d90.38987879999999!3d23.860799300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c41ec0492547%3A0x9d72192863d92047!2sBismillah%20Computer%20%26%20Technology!5e1!3m2!1sen!2sbd!4v1789211900464!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
         </div>
     </section>
