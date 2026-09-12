@@ -39,22 +39,19 @@
             [
                 'subtitle' => 'Internet',
                 'title' => 'BCT & Business Internet',
-                'desc' =>
-                    'High-speed, redundant pipelines keeping your office fast and reliable.',
+                'desc' => 'High-speed, redundant pipelines keeping your office fast and reliable.',
                 'image' => '/images/home/hero/hero_4.jpg',
             ],
             [
                 'subtitle' => 'Cyber Security',
                 'title' => 'Cyber Security & Data Protection',
-                'desc' =>
-                    'Proactive real-time monitoring and defenses to keep your data safe.',
+                'desc' => 'Proactive real-time monitoring and defenses to keep your data safe.',
                 'image' => '/images/home/hero/hero_5.jpg',
             ],
             [
                 'subtitle' => 'Cloud Services',
                 'title' => 'Microsoft 365 & Cloud Services',
-                'desc' =>
-                    'Secure email, collaboration and cloud services — set up the right way.',
+                'desc' => 'Secure email, collaboration and cloud services — set up the right way.',
                 'image' => '/images/home/hero/hero_6.jpg',
             ],
         ];
@@ -173,8 +170,8 @@
             <div class="swiper hero-swiper w-full">
                 <div class="swiper-wrapper"> --}}
 
-                    {{-- Slide 1: IT --}}
-                    {{-- <div class="swiper-slide">
+    {{-- Slide 1: IT --}}
+    {{-- <div class="swiper-slide">
                         <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 pb-8">
                             <div class="flex flex-col items-start space-y-4 md:space-y-6 text-left order-2 md:order-1">
                                 <span
@@ -201,8 +198,8 @@
                             </div>
                         </div>
                     </div> --}}
-                    {{-- Slide 2: Internet --}}
-                    {{-- <div class="swiper-slide">
+    {{-- Slide 2: Internet --}}
+    {{-- <div class="swiper-slide">
                         <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 pb-8">
                             <div class="flex flex-col items-start space-y-4 md:space-y-6 text-left order-2 md:order-1">
                                 <span
@@ -229,8 +226,8 @@
                             </div>
                         </div>
                     </div> --}}
-                    {{-- Slide 3: Cyber Security --}}
-                    {{-- <div class="swiper-slide">
+    {{-- Slide 3: Cyber Security --}}
+    {{-- <div class="swiper-slide">
                         <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 pb-8">
                             <div class="flex flex-col items-start space-y-4 md:space-y-6 text-left order-2 md:order-1">
                                 <span
@@ -257,8 +254,8 @@
                             </div>
                         </div>
                     </div> --}}
-                    {{-- Slide 4: Cloud --}}
-                    {{-- <div class="swiper-slide">
+    {{-- Slide 4: Cloud --}}
+    {{-- <div class="swiper-slide">
                         <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 pb-8">
                             <div class="flex flex-col items-start space-y-4 md:space-y-6 text-left order-2 md:order-1">
                                 <span
@@ -284,8 +281,8 @@
                             </div>
                         </div>
                     </div> --}}
-                    {{-- Slide 5: Telecoms --}}
-                    {{-- <div class="swiper-slide">
+    {{-- Slide 5: Telecoms --}}
+    {{-- <div class="swiper-slide">
                         <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 pb-8">
                             <div class="flex flex-col items-start space-y-4 md:space-y-6 text-left order-2 md:order-1">
                                 <span
@@ -312,11 +309,11 @@
                             </div>
                         </div>
                     </div> --}}
-                {{-- </div>
+    {{-- </div>
             </div> --}}
 
-            {{-- Hero Indicators --}}
-            {{-- <div class="mt-4 border-t border-gray-100 pt-4">
+    {{-- Hero Indicators --}}
+    {{-- <div class="mt-4 border-t border-gray-100 pt-4">
                 <div
                     class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:flex md:items-stretch md:justify-between md:gap-0 divide-x-0 md:divide-x divide-gray-200">
                     <button onclick="heroSwiper.slideToLoop(0)"
@@ -712,132 +709,6 @@
         </div>
     </div>
 
-    {{-- ======================== BLOG SECTION ======================== --}}
-    <section class="bg-linear-to-b from-gray-50 via-white to-gray-50 py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="inline-flex items-center gap-3 text-theme-blue text-lg sm:text-xl font-medium tracking-wide">
-                    <span class="relative inline-block h-5 w-5 shrink-0"><span
-                            class="absolute left-0 top-0 h-2.5 w-2.5 bg-theme-border"></span><span
-                            class="absolute bottom-0 right-0 h-2.5 w-2.5 bg-theme-blue"></span></span>
-                    <span class="font-bold uppercase">Our Blog</span>
-                    <span class="relative inline-block h-5 w-5 shrink-0"><span
-                            class="absolute left-0 top-0 h-2.5 w-2.5 bg-theme-blue"></span><span
-                            class="absolute bottom-0 right-0 h-2.5 w-2.5 bg-theme-border"></span></span>
-                </span>
-                <h2
-                    class="text-3xl sm:text-4xl md:text-[44px] xl:text-5xl font-bold text-theme-navy tracking-tight leading-tight mt-4">
-                    Innovations shaping the digital world</h2>
-            </div>
-            <div class="swiper blog-swiper">
-                <div class="swiper-wrapper">
-                    @php
-                        $blogs = [
-                            [
-                                'image' => '/images/home/blog/blog-01.jpg',
-                                'category' => 'CLOUD',
-                                'title' => 'Cloud solutions for scalable IT infrastructure.',
-                                'day' => '09',
-                                'month' => 'APR',
-                                'author' => 'Admin',
-                            ],
-                            [
-                                'image' => '/images/home/blog/blog-02.jpg',
-                                'category' => 'SOFTWARE',
-                                'title' => 'Innovative software solutions for businesses.',
-                                'day' => '09',
-                                'month' => 'APR',
-                                'author' => 'Admin',
-                            ],
-                            [
-                                'image' => '/images/home/blog/blog-03.jpg',
-                                'category' => 'CYBERSAFE',
-                                'title' => 'Practical tips for secure it systems checklist.',
-                                'day' => '09',
-                                'month' => 'APR',
-                                'author' => 'Admin',
-                            ],
-                        ];
-                    @endphp
-                    @foreach (array_merge($blogs, $blogs) as $b)
-                        <div class="swiper-slide h-auto">
-                            <article
-                                class="group relative flex flex-col h-full bg-white rounded-2xl shadow-[0_4px_25px_-5px_rgba(0,0,0,0.04)] duration-300 outline-none overflow-hidden border border-blue-200 hover:border-blue-400 hover:shadow-lg hover:-translate-y-1 transition-all">
-                                <div class="relative w-full aspect-4/3 bg-gray-100 overflow-hidden">
-                                    <img src="{{ $b['image'] }}" alt="{{ $b['title'] }}" loading="lazy"
-                                        class="object-cover transition-transform duration-500 group-hover:scale-105 w-full h-full" />
-                                    <div
-                                        class="absolute bottom-4 left-4 z-20 flex flex-col items-center justify-center bg-brand-secondary text-white w-16 h-16 rounded-xl shadow-lg">
-                                        <span
-                                            class="text-lg font-black tracking-tight leading-none">{{ $b['day'] }}</span>
-                                        <span
-                                            class="text-[10px] font-bold tracking-wider uppercase mt-0.5">{{ $b['month'] }}</span>
-                                    </div>
-                                </div>
-                                <div class="flex flex-col flex-1 p-6 sm:p-8 pt-8">
-                                    <span
-                                        class="text-xs font-bold text-brand-secondary tracking-wider uppercase mb-3">{{ $b['category'] }}</span>
-                                    <h3
-                                        class="text-xl font-bold text-gray-900 leading-snug tracking-tight transition-colors cursor-pointer mb-6 hover:text-brand-blue">
-                                        {{ $b['title'] }}</h3>
-                                    <div
-                                        class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between text-sm text-gray-500 font-medium">
-                                        <div class="flex items-center space-x-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                class="text-brand-blue/60">
-                                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                                                <circle cx="12" cy="7" r="4"></circle>
-                                            </svg>
-                                            <span>{{ $b['author'] }}</span>
-                                        </div>
-                                        <div class="flex items-center space-x-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                class="text-brand-blue/60">
-                                                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"></path>
-                                            </svg>
-                                            <span>0</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-            {{-- Blog Navigation & Pagination --}}
-            <div class="mt-10 flex items-center justify-center gap-6">
-                <button
-                    class="blog-swiper-prev p-2.5 rounded-full border border-gray-200 bg-white text-gray-500 shadow-sm transition-all cursor-pointer hover:text-white hover:bg-brand-secondary hover:border-brand-secondary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M19 12H5"></path>
-                        <path d="m12 19-7-7 7-7"></path>
-                    </svg>
-                </button>
-                <div class="flex items-center space-x-2">
-                    @foreach ($blogs as $i => $blog)
-                        <button aria-label="Go to slide {{ $i + 1 }}" data-index="{{ $i }}"
-                            class="blog-custom-bullet w-2 h-2 rounded-full bg-gray-600 cursor-pointer transition-all {{ $i === 0 ? 'blog-bullet-active' : '' }}"></button>
-                    @endforeach
-                </div>
-                <button
-                    class="blog-swiper-next p-2.5 rounded-full border border-gray-200 bg-white text-gray-500 shadow-sm transition-all cursor-pointer hover:text-white hover:bg-brand-secondary hover:border-brand-secondary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="m12 5 7 7-7 7"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </section>
-
     {{-- ======================== WHAT WE DO ======================== --}}
     <section class="bg-linear-to-b from-gray-50 via-white to-gray-50 py-20 px-4 sm:px-6 lg:px-8 overflow-hidden relative">
         <div class="absolute top-20 left-1/2 -translate-x-1/2 w-125 h-125 rounded-full pointer-events-none"
@@ -1153,7 +1024,8 @@
                                         </div>
                                     </div>
                                     <div class="mt-5 space-y-1">
-                                        <p class="text-[13px] font-semibold text-gray-500 tracking-wide">/{{ $member['role'] }}/
+                                        <p class="text-[13px] font-semibold text-gray-500 tracking-wide">
+                                            /{{ $member['role'] }}/
                                         </p>
                                         <h3
                                             class="text-xl font-bold text-dark-hero transition-colors duration-300 group-hover:text-accent-orange">
@@ -1189,6 +1061,13 @@
                                 <path d="M8 5v14l11-7z" />
                             </svg>
                         </div>
+                    </div>
+                    {{-- Bottom Label --}}
+                    <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
+                        <span
+                            class="inline-block bg-brand-green text-white text-xs font-semibold px-3 py-1.5 rounded-sm mb-3">Bismillah
+                            Computer & Technology</span>
+                        <h3 class="text-white text-xl sm:text-2xl font-bold tracking-tight">Company Profile</h3>
                     </div>
                 </div>
             </div>
@@ -1441,56 +1320,6 @@
                 });
             }
 
-            // ── Blog slider ─────────────────────────────────
-            var blogBullets = document.querySelectorAll('.blog-custom-bullet');
-            var blogSwiperEl = document.querySelector('.blog-swiper');
-            if (blogSwiperEl) {
-                window.blogSwiper = new Swiper('.blog-swiper', {
-                    loop: true,
-                    autoplay: {
-                        delay: 4000,
-                        disableOnInteraction: false
-                    },
-                    slidesPerView: 1,
-                    spaceBetween: 32,
-                    navigation: {
-                        prevEl: '.blog-swiper-prev',
-                        nextEl: '.blog-swiper-next'
-                    },
-                    breakpoints: {
-                        640: {
-                            slidesPerView: 2
-                        },
-                        1024: {
-                            slidesPerView: 3
-                        }
-                    }
-                });
-
-                function updateBlogIndicators(realIndex) {
-                    var idx = realIndex % 3;
-                    blogBullets.forEach(function(b, i) {
-                        b.classList.toggle('blog-bullet-active', i === idx);
-                    });
-                }
-
-                window.blogSwiper.on('slideChange', function(swiper) {
-                    updateBlogIndicators(swiper.realIndex);
-                });
-
-                setInterval(function() {
-                    if (window.blogSwiper) updateBlogIndicators(window.blogSwiper.realIndex);
-                }, 500);
-
-                blogBullets.forEach(function(bullet) {
-                    bullet.addEventListener('click', function() {
-                        var idx = parseInt(bullet.getAttribute('data-index'));
-                        window.blogSwiper.slideToLoop(idx);
-                        updateBlogIndicators(idx);
-                    });
-                });
-            }
-
             // ── Team slider ─────────────────────────────────
             var teamSwiperEl = document.querySelector('.team-swiper');
             if (teamSwiperEl) {
@@ -1642,23 +1471,6 @@
 
         .hero-indicator:hover span:last-child {
             color: #157cc1 !important;
-        }
-
-        .blog-custom-bullet {
-            width: 8px;
-            height: 8px;
-            display: inline-block;
-            border-radius: 50%;
-            background-color: #64748b;
-            cursor: pointer;
-            transition: all 0.2s ease-in-out;
-        }
-
-        .blog-bullet-active {
-            width: 24px;
-            height: 8px;
-            border-radius: 9999px;
-            background-color: #da3825 !important;
         }
 
         .team-bullet {

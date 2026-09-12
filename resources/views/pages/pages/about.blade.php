@@ -91,21 +91,24 @@
                 <h2 class="text-3xl md:text-4xl font-extrabold text-heading">Managed IT Services That Keep You Moving Forward</h2>
             </div>
             <div class="reveal reveal-fade-up grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 text-center group">
+                <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] text-center group">
+                    <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <div class="w-16 h-16 rounded-full bg-brand-blue/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-blue group-hover:text-white transition-all duration-300">
                         <span class="text-xl font-extrabold text-brand-blue group-hover:text-white transition-colors">01</span>
                     </div>
                     <h3 class="text-xl font-bold text-heading mb-3">Consultation & Assessment</h3>
                     <p class="text-body-muted leading-relaxed">We begin with a deep understanding of your business needs, current IT environment, and growth objectives.</p>
                 </div>
-                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 text-center group">
+                <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] text-center group">
+                    <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <div class="w-16 h-16 rounded-full bg-brand-blue/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-blue group-hover:text-white transition-all duration-300">
                         <span class="text-xl font-extrabold text-brand-blue group-hover:text-white transition-colors">02</span>
                     </div>
                     <h3 class="text-xl font-bold text-heading mb-3">Implementation & Integration</h3>
                     <p class="text-body-muted leading-relaxed">Our team ensures seamless integration of new solutions into your existing infrastructure, minimizing disruption.</p>
                 </div>
-                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 text-center group">
+                <div class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] text-center group">
+                    <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <div class="w-16 h-16 rounded-full bg-brand-blue/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-brand-blue group-hover:text-white transition-all duration-300">
                         <span class="text-xl font-extrabold text-brand-blue group-hover:text-white transition-colors">03</span>
                     </div>
@@ -117,9 +120,9 @@
     </section>
 
     {{-- FAQ Section --}}
-    <section class="py-20 bg-brand-light-bg">
+    <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="reveal reveal-fade-up grid lg:grid-cols-2 gap-16">
+            <div class="reveal reveal-fade-up grid lg:grid-cols-2 gap-16 items-start">
                 <div>
                     <span class="inline-block text-brand-blue font-bold text-sm uppercase tracking-wider mb-3">FAQ</span>
                     <h2 class="text-3xl md:text-4xl font-extrabold text-heading mb-6">Frequently Asked Questions</h2>
@@ -139,13 +142,16 @@
                         ];
                     @endphp
                     @foreach ($faqs as $question => $answer)
-                        <div class="bg-white rounded-xl overflow-hidden shadow-sm" x-data="{ open: false }">
-                            <button @click="open = !open" class="w-full flex items-center justify-between p-6 text-left hover:bg-brand-light-bg transition-colors">
-                                <span class="font-semibold text-heading pr-4">{{ $question }}</span>
-                                <svg class="w-5 h-5 text-brand-blue flex-shrink-0 transition-transform duration-300" :class="{ 'rotate-180': open }" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                        <div class="border-2 border-blue-100 rounded-xl overflow-hidden transition-all relative">
+                            <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                            <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center px-6 py-5 text-left cursor-pointer hover:bg-slate-50 transition-colors">
+                                <span class="font-medium text-slate-900 pr-4">{{ $question }}</span>
+                                <span class="faq-icon text-2xl text-blue-600 font-semibold shrink-0 transition-transform duration-300">+</span>
                             </button>
-                            <div x-show="open" x-collapse x-cloak>
-                                <div class="px-6 pb-6 text-body-muted leading-relaxed">{{ $answer }}</div>
+                            <div class="faq-answer">
+                                <div class="overflow-hidden">
+                                    <p class="px-6 pb-5 text-sm text-slate-600 leading-relaxed">{{ $answer }}</p>
+                                </div>
                             </div>
                         </div>
                     @endforeach
@@ -162,7 +168,8 @@
                 <h2 class="text-3xl md:text-4xl font-extrabold text-heading">Real Feedback from Real Clients</h2>
             </div>
             <div class="reveal reveal-fade-up grid md:grid-cols-2 gap-8">
-                <div class="bg-brand-light-bg rounded-2xl p-8">
+                <div class="bg-brand-light-bg p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                    <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <div class="flex items-center gap-1 mb-4">
                         @for ($i = 0; $i < 5; $i++)
                             <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -179,7 +186,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-brand-light-bg rounded-2xl p-8">
+                <div class="bg-brand-light-bg p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                    <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <div class="flex items-center gap-1 mb-4">
                         @for ($i = 0; $i < 5; $i++)
                             <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -199,5 +207,42 @@
             </div>
         </div>
     </section>
+
+    @push('head')
+        <style>
+            .faq-answer {
+                display: grid;
+                grid-template-rows: 0fr;
+                opacity: 0;
+                transition: grid-template-rows 0.3s ease, opacity 0.3s ease;
+            }
+            .faq-answer.faq-open {
+                grid-template-rows: 1fr;
+                opacity: 1;
+            }
+            .faq-icon {
+                transition: transform 0.3s ease;
+            }
+            .faq-icon.faq-open {
+                transform: rotate(45deg);
+            }
+        </style>
+    @endpush
+
+    @push('scripts')
+        <script>
+            function toggleFaq(button) {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('.faq-icon');
+                const isOpen = answer.classList.contains('faq-open');
+                document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('faq-open'));
+                document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('faq-open'));
+                if (!isOpen) {
+                    answer.classList.add('faq-open');
+                    icon.classList.add('faq-open');
+                }
+            }
+        </script>
+    @endpush
 
 @endsection

@@ -11,6 +11,7 @@ Route::get('/pricing', [App\Http\Controllers\PageController::class, 'pricing'])-
 Route::get('/team', [App\Http\Controllers\PageController::class, 'team'])->name('pages.team');
 Route::get('/faq', [App\Http\Controllers\PageController::class, 'faq'])->name('pages.faq');
 Route::get('/gallery', [App\Http\Controllers\PageController::class, 'gallery'])->name('pages.gallery');
+Route::get('/blogs', [App\Http\Controllers\PageController::class, 'blogs'])->name('pages.blogs');
 
 // ─── Home & Contact ─────────────────────────────────────────────
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

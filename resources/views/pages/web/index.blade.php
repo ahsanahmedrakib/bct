@@ -1,34 +1,49 @@
 @extends('layouts.app')
 
+@section('title', 'Web Development | Bismillah Computer & Technology')
+@section('description', 'Professional web development, hosting, SEO, and ecommerce solutions by Bismillah Computer & Technology.')
+
 @section('content')
 
 {{-- Hero --}}
 <section class="relative bg-linear-to-t from-hero-gradient to-white pt-24 pb-32 lg:pt-32">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="reveal reveal-fade-up">
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-blue-900 leading-tight">
-                {{ 'All your website' }}<br>
-                <span class="text-blue-600">{{ 'development needs' }}</span>
+    <div class="reveal reveal-fade-up max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-24 items-center relative z-10">
+        <div class="space-y-8 order-2 lg:order-1 lg:col-span-2">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
+                All your website<br>
+                <span class="text-blue-600 block mt-2">development needs</span>
             </h1>
+            <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">We craft professional, high-performing websites that build trust, showcase your expertise, and convert visitors into loyal clients. From design to development, SEO to hosting — we handle it all.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 md:w-3/4 w-full">
+                <a href="{{ route('web.development') }}" class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg transition-all">
+                    Web Development
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+                </a>
+                <a href="{{ route('web.seo') }}" class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg transition-all">
+                    SEO
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+                </a>
+                <a href="{{ route('web.hosting') }}" class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg transition-all">
+                    Domain &amp; Hosting
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+                </a>
+                <a href="{{ route('web.ecommerce') }}" class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg transition-all">
+                    Ecommerce
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+                </a>
+            </div>
+            <div class="pt-6 border-t border-slate-200/60 flex flex-col items-start gap-3">
+                <p class="text-sky-700 font-semibold text-sm">Need help?</p>
+                <a href="{{ route('contact') }}" class="px-6 py-2.5 bg-white border border-brand-active text-sky-700 text-xs font-bold tracking-wider uppercase rounded-lg shadow-sm hover:bg-navy-active hover:text-white transition-colors">Contact Us</a>
+            </div>
         </div>
-        <div class="reveal reveal-fade-up mt-8 flex flex-wrap justify-center gap-3">
-            <a href="{{ route('web.development') }}" class="px-5 py-2.5 rounded-xl bg-navy text-white text-sm font-medium hover:bg-navy/90 transition">Web Development</a>
-            <a href="{{ route('web.seo') }}" class="px-5 py-2.5 rounded-xl bg-navy text-white text-sm font-medium hover:bg-navy/90 transition">SEO</a>
-            <a href="{{ route('web.hosting') }}" class="px-5 py-2.5 rounded-xl bg-navy text-white text-sm font-medium hover:bg-navy/90 transition">Domain &amp; Hosting</a>
-            <a href="{{ route('web.ecommerce') }}" class="px-5 py-2.5 rounded-xl bg-navy text-white text-sm font-medium hover:bg-navy/90 transition">Ecommerce</a>
-            <a href="{{ route('web.portfolio') }}" class="px-5 py-2.5 rounded-xl bg-navy text-white text-sm font-medium hover:bg-navy/90 transition">Portfolio</a>
-        </div>
-        <div class="reveal reveal-fade-up mt-6 text-sm text-gray-500">
-            Need help?
-            <a href="#" class="text-blue-600 font-medium hover:underline ml-1">Contact Us</a>
-        </div>
-        <div class="reveal reveal-fade-up mt-8">
-            <img src="/images/web/hero.png" alt="Web Development" class="mx-auto w-full max-w-2xl" loading="eager">
+        <div class="flex justify-center lg:justify-end order-1 lg:order-2 lg:col-span-1">
+            <img src="/images/web/hero.png" alt="Web Development" height="400" width="600" class="rounded-lg w-full max-w-md lg:max-w-lg" loading="eager">
         </div>
     </div>
     <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" fill="#f8fafc" class="w-full h-auto block">
-            <path d="M0,120L48,108C96,96,192,72,288,66C384,60,480,72,576,78C672,84,768,84,864,78C960,72,1056,60,1152,60C1248,60,1344,72,1392,78L1440,84V120H0Z"></path>
+        <svg class="relative block w-full h-16" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C73.23,28.79,158.46,59.39,235.9,67.65,264.44,70.67,293.12,61.7,321.39,56.44Z" fill="#f8fafc"></path>
         </svg>
     </div>
 </section>

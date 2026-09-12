@@ -43,4 +43,9 @@ class PageController extends Controller
     {
         return view('pages.pages.gallery');
     }
+
+    public function blogs()
+    {
+        return view('pages.pages.blogs');
+    }
 }

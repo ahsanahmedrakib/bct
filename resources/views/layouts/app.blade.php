@@ -49,7 +49,7 @@
                 '@type' => 'ContactPoint',
                 'telephone' => '+880-1972-721388',
                 'contactType' => 'customer service',
-                'email' => 'support@bct.com.bd',
+                'email' => 'contact@bct.com.bd',
             ],
             'sameAs' => [
                 'https://www.facebook.com/bct.com.bd',
@@ -132,6 +132,33 @@
     </style>
 
     @stack('head')
+
+    <!-- Meta Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '419742132521849');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=419742132521849&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 
 <body class="h-full font-sans antialiased bg-white text-slate-900">
@@ -139,6 +166,61 @@
     @php
         $megaMenus = [
             'IT' => [
+                [
+                    'title' => 'Managed IT',
+                    'href' => route('it-support.managed-it'),
+                    'desc' => 'Maintaining and enhancing an organisation\'s IT Infrastructure.',
+                    'icon' =>
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg>',
+                    'links' => [
+                        ['label' => 'Managed IT Services', 'href' => '#', 'image' => '/images/navbar/it/corporate.svg'],
+                        ['label' => 'Procurement', 'href' => '#', 'image' => '/images/navbar/it/supply-chain.svg'],
+                        ['label' => 'Help Desk Support', 'href' => '#', 'image' => '/images/navbar/it/leadership.svg'],
+                        ['label' => 'Data Management', 'href' => '#', 'image' => '/images/navbar/it/development.svg'],
+                        ['label' => 'IT Consulting', 'href' => '#', 'image' => '/images/navbar/it/online-meeting.svg'],
+                        ['label' => 'IT Outsourcing', 'href' => '#', 'image' => '/images/navbar/it/teamwork.svg'],
+                    ],
+                ],
+                [
+                    'title' => 'Servers + Networking',
+                    'href' => route('it-support.servers-networking'),
+                    'desc' => 'Network and server infrastructure deployment, configuration and management.',
+                    'icon' =>
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>',
+                    'links' => [
+                        [
+                            'label' => 'Network Consulting and Design',
+                            'href' => '#',
+                            'image' => '/images/navbar/it/networking.svg',
+                        ],
+                        ['label' => 'Network Installation', 'href' => '#', 'image' => '/images/navbar/it/net.svg'],
+                        ['label' => 'Wi-Fi Networking', 'href' => '#', 'image' => '/images/navbar/it/router.svg'],
+                        ['label' => 'Network Security', 'href' => '#', 'image' => '/images/navbar/it/credibility.svg'],
+                        ['label' => 'VPN Solutions', 'href' => '#', 'image' => '/images/navbar/it/vpn.svg'],
+                        ['label' => 'Windows Server', 'href' => '#', 'image' => '/images/navbar/it/server.svg'],
+                    ],
+                ],
+                [
+                    'title' => 'Device Repair',
+                    'href' => route('it-support.device-repair'),
+                    'desc' => 'Repairs for Laptops, Desktop, Tablets, Mobile Phones and more.',
+                    'icon' =>
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg>',
+                    'links' => [
+                        [
+                            'label' => 'Virus/Malware Removal',
+                            'href' => '#',
+                            'image' => '/images/navbar/it/computer.svg',
+                        ],
+                        ['label' => 'Data Recovery', 'href' => '#', 'image' => '/images/navbar/it/recovery.svg'],
+                        ['label' => 'Upgrades', 'href' => '#', 'image' => '/images/navbar/it/supply-chain.svg'],
+                        [
+                            'label' => 'PC & Laptop Repairs',
+                            'href' => '#',
+                            'image' => '/images/navbar/it/cloud-computing.svg',
+                        ],
+                    ],
+                ],
                 [
                     'title' => 'Cyber Security',
                     'href' => route('it-support.cyber-security'),
@@ -176,61 +258,6 @@
                             'label' => 'Zero Trust Framework',
                             'href' => route('it-support.cs-zero-trust'),
                             'image' => '/images/navbar/it/requirement.svg',
-                        ],
-                    ],
-                ],
-                [
-                    'title' => 'Servers + Networking',
-                    'href' => route('it-support.servers-networking'),
-                    'desc' => 'Network and server infrastructure deployment, configuration and management.',
-                    'icon' =>
-                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>',
-                    'links' => [
-                        [
-                            'label' => 'Network Consulting and Design',
-                            'href' => '#',
-                            'image' => '/images/navbar/it/networking.svg',
-                        ],
-                        ['label' => 'Network Installation', 'href' => '#', 'image' => '/images/navbar/it/net.svg'],
-                        ['label' => 'Wi-Fi Networking', 'href' => '#', 'image' => '/images/navbar/it/router.svg'],
-                        ['label' => 'Network Security', 'href' => '#', 'image' => '/images/navbar/it/credibility.svg'],
-                        ['label' => 'VPN Solutions', 'href' => '#', 'image' => '/images/navbar/it/vpn.svg'],
-                        ['label' => 'Windows Server', 'href' => '#', 'image' => '/images/navbar/it/server.svg'],
-                    ],
-                ],
-                [
-                    'title' => 'Managed IT',
-                    'href' => route('it-support.managed-it'),
-                    'desc' => 'Maintaining and enhancing an organisation\'s IT Infrastructure.',
-                    'icon' =>
-                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg>',
-                    'links' => [
-                        ['label' => 'Managed IT Services', 'href' => '#', 'image' => '/images/navbar/it/corporate.svg'],
-                        ['label' => 'Procurement', 'href' => '#', 'image' => '/images/navbar/it/supply-chain.svg'],
-                        ['label' => 'Help Desk Support', 'href' => '#', 'image' => '/images/navbar/it/leadership.svg'],
-                        ['label' => 'Data Management', 'href' => '#', 'image' => '/images/navbar/it/development.svg'],
-                        ['label' => 'IT Consulting', 'href' => '#', 'image' => '/images/navbar/it/online-meeting.svg'],
-                        ['label' => 'IT Outsourcing', 'href' => '#', 'image' => '/images/navbar/it/teamwork.svg'],
-                    ],
-                ],
-                [
-                    'title' => 'Device Repair',
-                    'href' => route('it-support.device-repair'),
-                    'desc' => 'Repairs for Laptops, Desktop, Tablets, Mobile Phones and more.',
-                    'icon' =>
-                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg>',
-                    'links' => [
-                        [
-                            'label' => 'Virus/Malware Removal',
-                            'href' => '#',
-                            'image' => '/images/navbar/it/computer.svg',
-                        ],
-                        ['label' => 'Data Recovery', 'href' => '#', 'image' => '/images/navbar/it/recovery.svg'],
-                        ['label' => 'Upgrades', 'href' => '#', 'image' => '/images/navbar/it/supply-chain.svg'],
-                        [
-                            'label' => 'PC & Laptop Repairs',
-                            'href' => '#',
-                            'image' => '/images/navbar/it/cloud-computing.svg',
                         ],
                     ],
                 ],
@@ -730,12 +757,6 @@
                                 '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>',
                         ],
                         [
-                            'label' => 'Services',
-                            'href' => route('pages.services'),
-                            'icon' =>
-                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>',
-                        ],
-                        [
                             'label' => 'Projects',
                             'href' => route('pages.projects'),
                             'icon' =>
@@ -750,12 +771,18 @@
                     ],
                 ],
                 [
-                    'title' => 'General',
+                    'title' => 'Resources',
                     'href' => '#',
                     'desc' => '',
                     'icon' =>
-                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>',
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>',
                     'links' => [
+                        [
+                            'label' => 'Services',
+                            'href' => route('pages.services'),
+                            'icon' =>
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>',
+                        ],
                         [
                             'label' => 'Pricing Plans',
                             'href' => route('pages.pricing'),
@@ -763,22 +790,46 @@
                                 '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>',
                         ],
                         [
+                            'label' => 'FAQs',
+                            'href' => route('pages.faq'),
+                            'icon' =>
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg>',
+                        ],
+                    ],
+                ],
+                [
+                    'title' => 'Media',
+                    'href' => '#',
+                    'desc' => '',
+                    'icon' =>
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>',
+                    'links' => [
+                        [
                             'label' => 'Teams',
                             'href' => route('pages.team'),
                             'icon' =>
                                 '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>',
                         ],
                         [
-                            'label' => 'FAQs',
-                            'href' => route('pages.faq'),
-                            'icon' =>
-                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg>',
-                        ],
-                        [
                             'label' => 'Gallery',
                             'href' => route('pages.gallery'),
                             'icon' =>
                                 '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg>',
+                        ],
+                    ],
+                ],
+                [
+                    'title' => 'Blog',
+                    'href' => '#',
+                    'desc' => '',
+                    'icon' =>
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle></svg>',
+                    'links' => [
+                        [
+                            'label' => 'Blogs',
+                            'href' => route('pages.blogs'),
+                            'icon' =>
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle></svg>',
                         ],
                     ],
                 ],
@@ -804,10 +855,40 @@
                                 '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>',
                         ],
                         [
-                            'label' => 'Email: support@bct.com.bd',
-                            'href' => 'mailto:support@bct.com.bd',
+                            'label' => 'Email: contact@bct.com.bd',
+                            'href' => 'mailto:contact@bct.com.bd',
                             'icon' =>
                                 '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path></svg>',
+                        ],
+                    ],
+                ],
+                [
+                    'title' => 'Head Office',
+                    'href' => '#',
+                    'desc' => '',
+                    'icon' =>
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>',
+                    'links' => [
+                        [
+                            'label' => 'House# 86, Road# Lake Drive, Sector#7, Uttara, Dhaka, Bangladesh',
+                            'href' => '#',
+                            'icon' =>
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>',
+                        ],
+                    ],
+                ],
+                [
+                    'title' => 'Branch Office',
+                    'href' => '#',
+                    'desc' => '',
+                    'icon' =>
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>',
+                    'links' => [
+                        [
+                            'label' => 'House#6, Road# Shera Bangal Avenue, Block#B, Dolipara Uttara Dhaka-1230',
+                            'href' => '#',
+                            'icon' =>
+                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>',
                         ],
                     ],
                 ],
@@ -1168,7 +1249,7 @@
                 <div class="mega-category" data-mega-key="{{ $key }}"
                     data-visible="{{ request()->is('*' . strtolower($key) . '*') ? 'true' : 'false' }}">
                     <div
-                        class="grid {{ $key === 'WEB' ? 'grid-cols-5' : ($key === 'CONTACT' ? 'grid-cols-1' : (count($categories) >= 4 ? 'grid-cols-4' : (count($categories) == 3 ? 'grid-cols-3' : (count($categories) == 2 ? 'grid-cols-2' : 'grid-cols-1')))) }} gap-8">
+                        class="grid {{ $key === 'WEB' ? 'grid-cols-5' : ($key === 'CONTACT' ? 'grid-cols-3' : (count($categories) >= 4 ? 'grid-cols-4' : (count($categories) == 3 ? 'grid-cols-3' : (count($categories) == 2 ? 'grid-cols-2' : 'grid-cols-1')))) }} gap-8">
                         @foreach ($categories as $category)
                             <div class="flex flex-col space-y-4">
                                 <div class="space-y-2">
