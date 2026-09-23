@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Incident Response | Bismillah Computer & Technology')
+@section('title', 'Incident Response - Bismillah Computer & Technology')
 
 @section('content')
     <main class="flex min-h-screen flex-col font-sans text-slate-800 bg-slate-50">
@@ -15,7 +15,7 @@
                         <span class="text-blue-600 block mt-2">Incident Response</span>
                     </h1>
                     <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed">Protect your
-                        business from costly and damaging cybersecurity incidents with Total Solutions IT. Our incident
+                        business from costly and damaging cybersecurity incidents with BCT. Our incident
                         response services are designed to swiftly address and mitigate incidents, minimizing and, where
                         possible, reversing the impact of breaches.</p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 md:w-3/4 w-full">
@@ -211,18 +211,18 @@
             </div>
         </section>
 
-        {{-- ==================== SECTION 5: Why Choose Total Solutions IT ==================== --}}
+        {{-- ==================== SECTION 5: Why Choose BCT ==================== --}}
         <section class="py-6 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full">
             <div class="reveal reveal-fade-up">
                 <div
                     class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-slate-800 mb-4">
-                        Why Choose Total Solutions IT for Cyber Incident Response Services?
+                        Why Choose BCT for Cyber Incident Response Services?
                     </h2>
 
                     <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6 text-justify">
-                        Total Solutions IT, in collaboration with our industry partners,
+                        BCT, in collaboration with our industry partners,
                         develops and implements a 24/7 cyber incident response plan tailored
                         to your unique operational needs. Our services protect against:
                     </p>

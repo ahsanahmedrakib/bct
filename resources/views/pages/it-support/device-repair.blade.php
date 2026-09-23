@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Device Repair | Bismillah Computer & Technology')
+@section('title', 'Device Repair - Bismillah Computer & Technology')
 @section('description',
     'Fast and affordable computer, laptop, and mobile device repair services for individuals and
     businesses.')

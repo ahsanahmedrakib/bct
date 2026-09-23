@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'LG iPECS Phone Systems | Bismillah Computer & Technology')
+@section('title', 'LG iPECS Phone Systems - Bismillah Computer & Technology')
 @section('description',
     'The Ericsson-LG iPECS and eMG100 phone systems are feature rich yet maintain the ease of use LG
     is synonymous with. Learn your system in minutes.')

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Enterprise Phone Systems | Bismillah Computer & Technology')
+@section('title', 'Enterprise Phone Systems - Bismillah Computer & Technology')
 @section('description',
     'Enterprise phone systems tailored to the intricate demands of today\'s businesses, featuring
     advanced capabilities, scalability, and strong performance.')

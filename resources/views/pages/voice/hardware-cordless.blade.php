@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Cordless Phone Solutions | Bismillah Computer & Technology')
+@section('title', 'Cordless Phone Solutions - Bismillah Computer & Technology')
 @section('description',
     'Analogue cordless, IP DECT, Uniden XDECT and EnGenius long-range cordless phone solutions for
     businesses of every size.')

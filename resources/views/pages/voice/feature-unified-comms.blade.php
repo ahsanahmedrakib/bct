@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Unified Communications | Bismillah Computer & Technology')
+@section('title', 'Unified Communications - Bismillah Computer & Technology')
 @section('description',
     'Unified Communications solutions from iPECS UCP and Avaya IP Office — integrate IP telephony,
     video, instant messaging and more.')

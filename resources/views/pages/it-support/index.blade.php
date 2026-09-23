@@ -237,7 +237,7 @@
                             class="bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all relative h-full">
                             <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                             <h2 class="text-3xl font-bold text-blue-900 mb-6 mt-2">Our Capabilities</h2>
-                            <p class="text-slate-600 mb-6 leading-relaxed">Total Solutions IT provides proactive IT support
+                            <p class="text-slate-600 mb-6 leading-relaxed">BCT provides proactive IT support
                                 and strategic guidance. From server installations to daily troubleshooting, our expert team
                                 is ready to enhance your technological efficiency.</p>
                             <ul class="space-y-3">

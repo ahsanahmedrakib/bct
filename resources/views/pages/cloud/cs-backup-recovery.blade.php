@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Backup & Recovery Solutions | Bismillah Computer & Technology')
+@section('title', 'Backup & Recovery Solutions - Bismillah Computer & Technology')
 @section('description',
     'Backup and Data Recovery are essential for protecting your business from data loss, cyber
     attacks, hardware failure, or accidental deletion.')
@@ -182,7 +182,7 @@
         <div class="max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal reveal-fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Our Backup & Recovery Solutions</h2>
-                <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Total Solutions IT takes backups very seriously.
+                <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">BCT takes backups very seriously.
                     That is why we offer a number of solutions to ensure that your systems and business-critical data can be
                     recovered in the event of a failure.</p>
             </div>
@@ -486,7 +486,7 @@
             <div
                 class="reveal reveal-fade-up bg-linear-to-br from-blue-600 to-blue-800 rounded-2xl p-8 lg:p-10 text-white order-2 lg:order-1">
                 <h2 class="text-2xl lg:text-3xl font-bold mb-6">Need Help with Your Backup Strategy?</h2>
-                <p class="text-blue-100 text-sm leading-relaxed mb-6 text-justify">Total Solutions IT provides
+                <p class="text-blue-100 text-sm leading-relaxed mb-6 text-justify">BCT provides
                     comprehensive backup and recovery solutions to protect your business data. Our team of experts can
                     assess your current infrastructure, design a tailored backup strategy, and implement solutions that
                     ensure your data is always protected and recoverable.</p>

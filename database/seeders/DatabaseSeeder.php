@@ -20,5 +20,16 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@bct.com',
             'password' => 'admin123',
         ]);
+
+        $this->call(CategorySeeder::class);
+        $this->call(ProjectSeeder::class);
+        $this->call(TeamMemberSeeder::class);
+        $this->call(HeroSlideSeeder::class);
+        $this->call(MarqueeItemSeeder::class);
+        $this->call(GalleryImageSeeder::class);
+        $this->call(BlogPostSeeder::class);
+        $this->call(PricingPlanSeeder::class);
+        $this->call(LocationSeeder::class);
+        $this->call(FaqSeeder::class);
     }
 }

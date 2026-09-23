@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Voice & Telecom Systems | Bismillah Computer & Technology')
+@section('title', 'Voice & Telecom Systems - Bismillah Computer & Technology')
 @section('description',
     'Professional voice and phone system solutions for businesses. VoIP, cloud phone systems,
     Unified Communications, and hardware from Vodia, Grandstream, Avaya and LG iPECS.')

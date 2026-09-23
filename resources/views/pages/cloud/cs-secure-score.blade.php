@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Microsoft Secure Score | Bismillah Computer & Technology')
+@section('title', 'Microsoft Secure Score - Bismillah Computer & Technology')
 @section('description',
     'Microsoft Secure Score is a built-in security measurement tool that helps organizations
     identify risks and improve their Microsoft 365 security posture.')

@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Grandstream | Bismillah Computer & Technology')
-@section('description', 'Grandstream makes state-of-the-art telephony devices more accessible and easier to deploy than
+@section('title', 'Grandstream - Bismillah Computer & Technology')
+@section('description',
+    'Grandstream makes state-of-the-art telephony devices more accessible and easier to deploy than
     ever before. IP PBX, phones, gateways and more.')
 
 @section('content')

@@ -14,13 +14,17 @@
 
     {{-- ======================== HERO V2 – BCT hero-8 Match ======================== --}}
     @php
-        $heroV2Slides = [
+        // Admin-added (non-seed) slides from the DB render over the seed
+        // slides. When the DB has no hero slides, the array below serves as
+        // the seed fallback content shown on the public website only.
+        $heroV2Slides = $heroV2Slides ?? [
             [
                 'subtitle' => 'Reliable IT. Real-Time Results.',
                 'title' => 'Comprehensive IT Solutions for Digital World',
                 'desc' =>
                     'Our IT solutions combine modern technologies, expert strategies, and reliable services to meet the evolving technological needs of businesses and organizations.',
                 'image' => '/images/home/hero/hero_1.jpg',
+                'link' => null,
             ],
             [
                 'subtitle' => 'Design. Develop. Deliver.',
@@ -28,6 +32,7 @@
                 'desc' =>
                     'Transform your ideas into powerful digital experiences with innovative web and app solutions designed to streamline operations, improve efficiency, and drive growth.',
                 'image' => '/images/home/hero/hero_2.jpg',
+                'link' => null,
             ],
             [
                 'subtitle' => 'Code. Create. Conquer.',
@@ -35,24 +40,28 @@
                 'desc' =>
                     'Embrace digital transformation with smart technologies and innovative solutions that improve business processes, enhance customer experiences, and create lasting growth.',
                 'image' => '/images/home/hero/hero_3.jpg',
+                'link' => null,
             ],
             [
                 'subtitle' => 'Internet',
                 'title' => 'BCT & Business Internet',
                 'desc' => 'High-speed, redundant pipelines keeping your office fast and reliable.',
                 'image' => '/images/home/hero/hero_4.jpg',
+                'link' => null,
             ],
             [
                 'subtitle' => 'Cyber Security',
                 'title' => 'Cyber Security & Data Protection',
                 'desc' => 'Proactive real-time monitoring and defenses to keep your data safe.',
                 'image' => '/images/home/hero/hero_5.jpg',
+                'link' => null,
             ],
             [
                 'subtitle' => 'Cloud Services',
                 'title' => 'Microsoft 365 & Cloud Services',
                 'desc' => 'Secure email, collaboration and cloud services — set up the right way.',
                 'image' => '/images/home/hero/hero_6.jpg',
+                'link' => null,
             ],
         ];
     @endphp
@@ -72,9 +81,15 @@
                                         data-swiper-parallax="-250">{{ $slide['title'] }}</h1>
                                     <p class="text-white/80 text-base md:text-md leading-relaxed mb-8 max-w-132.5 mx-auto xl:mx-0 h-45 md:h-auto"
                                         data-swiper-parallax="-350">{{ $slide['desc'] }}</p>
-                                    <div data-swiper-parallax="-450">
-                                        <a href="{{ route('contact') }}"
-                                            class="inline-flex items-center gap-3 bg-[#1d65f5] hover:bg-[#1450c9] text-white text-base font-semibold rounded-full px-10 md:px-12 py-4 md:py-5 transition-all duration-300 group">
+                                    <div data-swiper-parallax="-450" class="mt-8 md:mt-0">
+                                        @php
+                                            $btnLink = $slide['link'] ?? route('contact');
+                                            if (! preg_match('~^(https?://|#|mailto:|tel:)~i', $btnLink)) {
+                                                $btnLink = url('/'.ltrim($btnLink, '/'));
+                                            }
+                                        @endphp
+                                        <a href="{{ $btnLink }}"
+                                            class="inline-flex items-center gap-3 bg-[#1d65f5] hover:bg-[#1450c9] text-white text-base font-semibold rounded-full px-10 md:px-12 py-4 md:py-5 transition-all duration-300 ">
                                             <span>Get Started</span>
                                             <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
                                                 fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -102,9 +117,10 @@
         {{-- Vertical bullet pagination --}}
         <!-- HTML Structure -->
         <div class="hero-v2-pagination absolute top-50 left-10">
-            <button type="button" class="hero-v2-bullet"></button>
-            <button type="button" class="hero-v2-bullet hero-v2-bullet-active"></button>
-            <button type="button" class="hero-v2-bullet"></button>
+            @foreach ($heroV2Slides as $slide)
+                <button type="button"
+                    class="hero-v2-bullet {{ $loop->first ? 'hero-v2-bullet-active' : '' }}"></button>
+            @endforeach
         </div>
         {{-- Dashed decorative line --}}
         <div class="dash-shape absolute hidden xl:block" style="left:24%;bottom:14%;z-index:3">
@@ -679,7 +695,7 @@
         <div class="w-full overflow-hidden bg-white select-none">
             <div class="flex w-max animate-marquee items-center gap-12">
                 @php
-                    $marqueeItems = ['NETWORK SETUP', 'SOLUTIONS', 'CONSULTING', 'IT SERVICES'];
+                    $marqueeItems = $marqueeItems ?? ['NETWORK SETUP', 'SOLUTIONS', 'CONSULTING', 'IT SERVICES'];
                     $allItems = array_merge($marqueeItems, $marqueeItems, $marqueeItems);
                 @endphp
                 @foreach ($allItems as $index => $item)
@@ -952,84 +968,85 @@
                     Meet our expert team members</h2>
             </div>
             @php
-                $team = [
-                    [
-                        'name' => 'Tamzid Hasan',
-                        'role' => 'IT Consultant',
-                        'label' => 'Consultant',
-                        'image' => '/images/home/team/thp.png',
-                    ],
-                    [
-                        'name' => 'Tanzim Hasan Anik',
-                        'role' => 'Director',
-                        'label' => 'Director',
-                        'image' => '/images/home/team/tha.jpg',
-                    ],
-                    [
-                        'name' => 'Nazmul Apple',
-                        'role' => 'System Engineer',
-                        'label' => 'Engineer',
-                        'image' => '/images/home/team/na.jpeg',
-                    ],
-                    [
-                        'name' => 'Habibullah Mezbah',
-                        'role' => 'Web Developer',
-                        'label' => 'Developer',
-                        'image' => '/images/home/team/hm.png',
-                    ],
-                    [
-                        'name' => 'Ahsan Ahmed Rakib',
-                        'role' => 'Software Engineer',
-                        'label' => 'Engineer',
-                        'image' => '/images/home/team/aar.jpg',
-                    ],
-                    [
-                        'name' => 'Md. Tarikul Islam',
-                        'role' => 'Technical Support Engineer',
-                        'label' => 'Engineer',
-                        'image' => '/images/home/team/ti.jfif',
-                    ],
-                    [
-                        'name' => 'Rizwan Sadat',
-                        'role' => 'IT Executive',
-                        'label' => 'Executive',
-                        'image' => '/images/home/team/rs.jpeg',
-                    ],
-                    [
-                        'name' => 'Chandra Barai',
-                        'role' => 'Marketing Executive & Customer Support',
-                        'label' => 'Executive',
-                        'image' => '/images/home/team/cb.jpeg',
-                    ],
-                ];
+                $team = $teamMembers ?? collect();
             @endphp
             <div class="swiper team-swiper overflow-hidden pb-2">
                 <div class="swiper-wrapper">
-                    @foreach ($team as $index => $member)
+                    @foreach ($team as $member)
                         <div class="swiper-slide h-auto">
                             <div class="reveal fade-up h-full">
                                 <div class="group cursor-pointer flex flex-col h-full">
                                     <div class="relative w-full aspect-4/5 rounded-xl bg-gray-100">
                                         <div class="absolute inset-0 rounded-xl overflow-hidden">
-                                            <img src="{{ $member['image'] }}" alt="{{ $member['name'] }}"
+                                            <img src="{{ $member->image }}" alt="{{ $member->name }}"
                                                 class="object-cover transition-transform duration-500 group-hover:scale-105 w-full h-full"
-                                                loading="lazy" />
+                                                loading="lazy" onerror="this.style.display='none'" />
                                             <div
                                                 class="absolute inset-0 bg-linear-to-t from-dark-hero/90 via-dark-hero/20 to-transparent transition-opacity duration-300">
                                             </div>
                                         </div>
                                         <div class="absolute -right-4 bottom-1 select-none pointer-events-none">
                                             <span class="text-5xl font-bold tracking-normal uppercase text-white"
-                                                style="writing-mode:vertical-rl">{{ $member['label'] }}</span>
+                                                style="writing-mode:vertical-rl">{{ $member->label }}</span>
                                         </div>
                                     </div>
                                     <div class="mt-5 space-y-1">
                                         <p class="text-[13px] font-semibold text-gray-500 tracking-wide">
-                                            /{{ $member['role'] }}/
+                                            /{{ $member->role }}/
                                         </p>
                                         <h3
                                             class="text-xl font-bold text-dark-hero transition-colors duration-300 group-hover:text-accent-orange">
-                                            {{ $member['name'] }}</h3>
+                                            {{ $member->name }}</h3>
+                                        @php
+                                            $socials = [
+                                                'facebook' => $member->facebook,
+                                                'instagram' => $member->instagram,
+                                                'linkedin' => $member->linkedin,
+                                                'x' => $member->x,
+                                            ];
+                                        @endphp
+                                        @if (array_filter($socials))
+                                            <div class="pt-2 flex items-center gap-2">
+                                                @foreach ($socials as $key => $url)
+                                                    @if ($url)
+                                                        <a href="{{ $url }}" target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            aria-label="{{ ucfirst($key) }}"
+                                                            class="flex items-center justify-center w-8 h-8 rounded-full text-white transition-transform duration-300 hover:scale-110 @if ($key === 'facebook') @elseif ($key === 'instagram') bg-linear-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] @elseif ($key === 'linkedin') bg-[#0a66c2] @else @endif">
+                                                            @if ($key === 'facebook')
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                    height="14" viewBox="0 0 24 24" fill="currentColor"
+                                                                    class="text-white">
+                                                                    <path
+                                                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.773-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                                                </svg>
+                                                            @elseif ($key === 'instagram')
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                    height="14" viewBox="0 0 24 24" fill="currentColor"
+                                                                    class="text-white">
+                                                                    <path
+                                                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                                                                </svg>
+                                                            @elseif ($key === 'linkedin')
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                    height="14" viewBox="0 0 24 24" fill="currentColor"
+                                                                    class="text-white">
+                                                                    <path
+                                                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                                                </svg>
+                                                            @else
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                    height="14" viewBox="0 0 24 24" fill="currentColor"
+                                                                    class="text-white">
+                                                                    <path
+                                                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                                                </svg>
+                                                            @endif
+                                                        </a>
+                                                    @endif
+                                                @endforeach
+                                            </div>
+                                        @endif
                                     </div>
                                 </div>
                             </div>

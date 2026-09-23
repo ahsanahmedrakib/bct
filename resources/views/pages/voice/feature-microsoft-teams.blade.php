@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Microsoft Teams Calling | Bismillah Computer & Technology')
+@section('title', 'Microsoft Teams Calling - Bismillah Computer & Technology')
 @section('description',
     'Direct Routing for MS Teams provides direct dialling from Office 365 Teams — collaborate via
     chat, video, voice and conferencing.')

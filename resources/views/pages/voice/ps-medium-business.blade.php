@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Medium Business Phone Systems | Bismillah Computer & Technology')
+@section('title', 'Medium Business Phone Systems - Bismillah Computer & Technology')
 @section('description',
     'Feature-rich phone systems for growing businesses. Connect your locations, people, and
     customers with a complete end-to-end solution.')

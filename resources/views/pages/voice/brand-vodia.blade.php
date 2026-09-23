@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Vodia Cloud Phone System | Bismillah Computer & Technology')
+@section('title', 'Vodia Cloud Phone System - Bismillah Computer & Technology')
 @section('description',
     'Vodia PBX is a cloud phone system for the modern workplace, catering to contemporary companies
     where seamless communication is vital.')

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Cel-Fi Signal Repeaters | Bismillah Computer & Technology')
+@section('title', 'Cel-Fi Signal Repeaters - Bismillah Computer & Technology')
 @section('description',
     'Cel-Fi intelligent signal amplifiers eradicate indoor mobile dead zones and enhance 4G and 5G
     voice and data reception. Solutions for homes, offices and buildings.')

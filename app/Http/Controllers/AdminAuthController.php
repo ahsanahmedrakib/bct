@@ -64,23 +64,6 @@ class AdminAuthController extends Controller
         ]);
     }
 
-    public function me(): JsonResponse
-    {
-        $admin = $this->guard()->user();
-
-        if (! $admin) {
-            return response()->json([
-                'success' => false,
-                'message' => 'Unauthenticated.',
-            ], 401);
-        }
-
-        return response()->json([
-            'success' => true,
-            'admin' => $admin,
-        ]);
-    }
-
     public function logout(): JsonResponse
     {
         try {

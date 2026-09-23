@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Microsoft Entra ID | Bismillah Computer & Technology')
+@section('title', 'Microsoft Entra ID - Bismillah Computer & Technology')
 @section('description', 'Identity and access management with single sign-on, MFA, and conditional access policies.')
 
 @section('content')

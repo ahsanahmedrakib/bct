@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Portfolio | Bismillah Computer & Technology')
-@section('description', 'Explore our portfolio of websites designed and developed for businesses across various
+@section('title', 'Portfolio - Bismillah Computer & Technology')
+@section('description',
+    'Explore our portfolio of websites designed and developed for businesses across various
     industries.')
 
 @section('content')
@@ -52,145 +53,36 @@
             <div x-data="{ active: 'all' }">
                 {{-- Filter Buttons --}}
                 <div class="reveal reveal-fade-up flex flex-wrap items-center justify-center gap-3 mb-12">
-                    @php
-                        $filters = [
-                            'Textile & Garments',
-                            'Fashion & Retail',
-                            'IT & Engineering',
-                            'Business & Corporate',
-                            'Healthcare & Hospitality',
-                        ];
-                    @endphp
                     <button @click="active = 'all'"
                         :class="active === 'all' ? 'bg-brand-blue text-white shadow-md' :
                             'bg-brand-light-bg text-heading hover:bg-brand-blue hover:text-white'"
                         class="px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300">All</button>
-                    @foreach ($filters as $filter)
-                        <button @click="active = '{{ $filter }}'"
-                            :class="active === '{{ $filter }}' ? 'bg-brand-blue text-white shadow-md' :
+                    @foreach ($categories as $category)
+                        <button @click="active = '{{ $category->name }}'"
+                            :class="active === '{{ $category->name }}' ? 'bg-brand-blue text-white shadow-md' :
                                 'bg-brand-light-bg text-heading hover:bg-brand-blue hover:text-white'"
-                            class="px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300">{{ $filter }}</button>
+                            class="px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300">{{ $category->name }}</button>
                     @endforeach
                 </div>
 
                 <div class="reveal reveal-fade-up grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    @php
-                        $portfolio = [
-                            [
-                                'title' => 'Rizqin Abd',
-                                'url' => 'https://rizqinabd.com',
-                                'category' => 'Fashion & Retail',
-                                'image' => '/images/web/portfolio/rizqinabd.png',
-                            ],
-                            [
-                                'title' => 'Blue Arc Sourcing',
-                                'url' => 'https://bluearcsourcing.net',
-                                'category' => 'Business & Corporate',
-                                'image' => '/images/web/portfolio/bluearcsourcing.png',
-                            ],
-                            [
-                                'title' => 'Mahatex BD',
-                                'url' => 'https://mahatexbd.com',
-                                'category' => 'Textile & Garments',
-                                'image' => '/images/web/portfolio/mahatexbd.png',
-                            ],
-                            [
-                                'title' => 'Ahead Solar',
-                                'url' => 'https://aheadsolarbd.com',
-                                'category' => 'IT & Engineering',
-                                'image' => '/images/web/portfolio/aheadsolarbd.png',
-                            ],
-                            [
-                                'title' => 'Bismillah Computer & Technology',
-                                'url' => 'https://bct.com.bd',
-                                'category' => 'IT & Engineering',
-                                'image' => '/images/web/portfolio/bct.png',
-                            ],
-                            [
-                                'title' => 'TS Network',
-                                'url' => 'https://tsnetwork.net.bd',
-                                'category' => 'IT & Engineering',
-                                'image' => '/images/web/portfolio/tsnetwork.png',
-                            ],
-                            [
-                                'title' => 'Trax Textile',
-                                'url' => 'https://traxtextile.com',
-                                'category' => 'Textile & Garments',
-                                'image' => '/images/web/portfolio/traxtextile.png',
-                            ],
-                            [
-                                'title' => 'Texman BD',
-                                'url' => 'https://texman-bd.com',
-                                'category' => 'Textile & Garments',
-                                'image' => '/images/web/portfolio/texman.png',
-                            ],
-                            [
-                                'title' => 'Limbs Engineering',
-                                'url' => 'https://limbsengineering.com',
-                                'category' => 'IT & Engineering',
-                                'image' => '/images/web/portfolio/limbsengineering.png',
-                            ],
-                            [
-                                'title' => 'Ignite Global Ltd',
-                                'url' => 'https://ignitegloballtd.com',
-                                'category' => 'Business & Corporate',
-                                'image' => '/images/web/portfolio/ignitegloballtd.png',
-                            ],
-                            [
-                                'title' => 'Flatknit Sourcing',
-                                'url' => 'https://flatknitsourcing.com',
-                                'category' => 'Textile & Garments',
-                                'image' => '/images/web/portfolio/flatknitsourcing.png',
-                            ],
-                            [
-                                'title' => 'BD Paradise',
-                                'url' => 'https://bdparadise.com',
-                                'category' => 'Healthcare & Hospitality',
-                                'image' => '/images/web/portfolio/bdparadise.png',
-                            ],
-                            [
-                                'title' => 'RM Nursing BD',
-                                'url' => 'https://rmnursingbd.com',
-                                'category' => 'Healthcare & Hospitality',
-                                'image' => '/images/web/portfolio/rmnursingbd.png',
-                            ],
-                            [
-                                'title' => 'Brand Tex BD',
-                                'url' => 'https://brandtexbd.com',
-                                'category' => 'Textile & Garments',
-                                'image' => '/images/web/portfolio/brandtexbd.png',
-                            ],
-                            [
-                                'title' => 'Design Hub BD',
-                                'url' => 'https://designhub-bd.com',
-                                'category' => 'Business & Corporate',
-                                'image' => '/images/web/portfolio/designhubbd.png',
-                            ],
-                            [
-                                'title' => 'Lenient Fashion',
-                                'url' => 'https://lenientfashion.com',
-                                'category' => 'Fashion & Retail',
-                                'image' => '/images/web/portfolio/lenientfashion.png',
-                            ],
-                        ];
-                    @endphp
-                    @foreach ($portfolio as $item)
-                        <a href="{{ $item['url'] }}" target="_blank" rel="noopener noreferrer"
-                            x-show="active === 'all' || active === '{{ $item['category'] }}'"
+                    @foreach ($projects as $item)
+                        <a href="{{ $item->url }}" target="_blank" rel="noopener noreferrer"
+                            x-show="active === 'all' || active === '{{ $item->category?->name }}'"
                             x-transition:enter="transition ease-out duration-500"
                             x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
                             x-transition:leave="transition ease-in duration-300"
                             x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95"
                             class="group relative overflow-hidden rounded-2xl cursor-pointer">
-                            <img src="{{ $item['image'] }}" alt="{{ $item['title'] }}"
+                            <img src="{{ $item->image }}" alt="{{ $item->title }}"
                                 class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500" />
                             <div
                                 class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                                 <div>
-                                    <span class="text-brand-blue text-sm font-semibold">{{ $item['category'] }}</span>
-                                    <h3 class="text-xl font-bold text-white mt-1">{{ $item['title'] }}</h3>
+                                    <span class="text-brand-blue text-sm font-semibold">{{ $item->category?->name }}</span>
+                                    <h3 class="text-xl font-bold text-white mt-1">{{ $item->title }}</h3>
                                     <span class="text-white/70 text-sm mt-2 inline-flex items-center gap-1">
-                                        {{ $item['url'] }}
+                                        {{ $item->url }}
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round" class="shrink-0">

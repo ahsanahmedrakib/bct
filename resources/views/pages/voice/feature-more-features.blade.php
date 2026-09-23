@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Top 15 Phone System Features | Bismillah Computer & Technology')
-@section('description', 'The top 15 phone system features most requested across industries — with explanations of how
+@section('title', 'Top 15 Phone System Features - Bismillah Computer & Technology')
+@section('description',
+    'The top 15 phone system features most requested across industries — with explanations of how
     they work and why they matter.')
 
 @section('content')

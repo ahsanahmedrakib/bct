@@ -12,6 +12,7 @@ Route::get('/team', [App\Http\Controllers\PageController::class, 'team'])->name(
 Route::get('/faq', [App\Http\Controllers\PageController::class, 'faq'])->name('pages.faq');
 Route::get('/gallery', [App\Http\Controllers\PageController::class, 'gallery'])->name('pages.gallery');
 Route::get('/blogs', [App\Http\Controllers\PageController::class, 'blogs'])->name('pages.blogs');
+Route::get('/blogs/{slug}', [App\Http\Controllers\PageController::class, 'blogShow'])->name('pages.blog-show');
 Route::get('/our-locations', [App\Http\Controllers\PageController::class, 'ourLocations'])->name('pages.our-locations');
 
 // ─── Home & Contact ─────────────────────────────────────────────
@@ -23,7 +24,28 @@ Route::post('/contact', [App\Http\Controllers\ContactController::class, 'store']
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/login', [App\Http\Controllers\AdminAuthController::class, 'showLogin'])->name('login');
     Route::get('/', [App\Http\Controllers\AdminController::class, 'dashboardView'])->name('dashboard-view');
+    Route::get('/queries', [App\Http\Controllers\AdminController::class, 'queriesView'])->name('queries');
+    Route::get('/categories', [App\Http\Controllers\AdminController::class, 'categoryView'])->name('categories');
+    Route::get('/portfolio', [App\Http\Controllers\AdminController::class, 'projectView'])->name('portfolio');
+    Route::get('/team', [App\Http\Controllers\AdminController::class, 'teamView'])->name('team');
+    Route::get('/hero-slides', [App\Http\Controllers\AdminController::class, 'heroSlideView'])->name('hero-slides');
+    Route::get('/gallery', [App\Http\Controllers\AdminController::class, 'galleryView'])->name('gallery');
+    Route::get('/blogs', [App\Http\Controllers\AdminController::class, 'blogView'])->name('blogs');
+    Route::get('/pricing-plans', [App\Http\Controllers\AdminController::class, 'pricingView'])->name('pricing-plans');
+    Route::get('/locations', [App\Http\Controllers\AdminController::class, 'locationView'])->name('locations');
+    Route::get('/faqs', [App\Http\Controllers\AdminController::class, 'faqView'])->name('faqs');
+    Route::get('/marquee', [App\Http\Controllers\AdminController::class, 'marqueeView'])->name('marquee');
 });
+Route::get('/api/admin/projects', [App\Http\Controllers\AdminController::class, 'projectApiGateway']);
+Route::get('/api/admin/categories', [App\Http\Controllers\AdminController::class, 'categoryApiGateway']);
+Route::get('/api/admin/team', [App\Http\Controllers\AdminController::class, 'teamApiGateway']);
+Route::get('/api/admin/hero-slides', [App\Http\Controllers\AdminController::class, 'heroSlideApiGateway']);
+Route::get('/api/admin/gallery', [App\Http\Controllers\AdminController::class, 'galleryApiGateway']);
+Route::get('/api/admin/blogs', [App\Http\Controllers\AdminController::class, 'blogApiGateway']);
+Route::get('/api/admin/pricing-plans', [App\Http\Controllers\AdminController::class, 'pricingApiGateway']);
+Route::get('/api/admin/locations', [App\Http\Controllers\AdminController::class, 'locationApiGateway']);
+Route::get('/api/admin/faqs', [App\Http\Controllers\AdminController::class, 'faqApiGateway']);
+Route::get('/api/admin/marquee', [App\Http\Controllers\AdminController::class, 'marqueeApiGateway']);
 Route::get('/industries', [App\Http\Controllers\IndustriesController::class, 'index'])->name('industries');
 Route::prefix('industries')->name('industries.')->group(function () {
     Route::get('/it-for-agriculture', [App\Http\Controllers\IndustriesController::class, 'agriculture'])->name('agriculture');

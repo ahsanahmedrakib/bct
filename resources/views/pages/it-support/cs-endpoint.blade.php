@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'EndPoint Security | Bismillah Computer & Technology')
-@section('description', 'Endpoint security protects devices like computers, smartphones, and servers from cyber threats.
+@section('title', 'EndPoint Security - Bismillah Computer & Technology')
+@section('description',
+    'Endpoint security protects devices like computers, smartphones, and servers from cyber threats.
     It includes antivirus, anti-malware, firewalls, and real-time threat detection to prevent unauthorized access, malware,
     and data breaches.')
 

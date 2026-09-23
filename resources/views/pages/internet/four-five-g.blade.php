@@ -104,7 +104,7 @@
                             class="shrink-0 w-11 h-11 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center">1</span>
                         <h3 class="text-xl font-bold text-slate-900 pt-2">Site Survey / Assessment</h3>
                     </div>
-                    <p class="text-slate-600 text-sm text-justify leading-relaxed">A Total Solutions IT technician will come
+                    <p class="text-slate-600 text-sm text-justify leading-relaxed">A BCT technician will come
                         to your home or business to provide an onsite, no obligation quote. When assessing your location our
                         experienced technicians will carry out an obstruction test which determines the mounting location
                         and

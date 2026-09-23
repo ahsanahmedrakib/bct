@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Headset Solutions | Bismillah Computer & Technology')
-@section('description', 'Premium business headsets from Jabra, Sennheiser, iPECS and Avaya — wired, cordless and
+@section('title', 'Headset Solutions - Bismillah Computer & Technology')
+@section('description',
+    'Premium business headsets from Jabra, Sennheiser, iPECS and Avaya — wired, cordless and
     wireless options for every role.')
 
 @section('content')
@@ -110,7 +111,7 @@
                 <div
                     class="relative border-2 rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                     <div class="w-full">
+                    <div class="w-full">
                         <img src="/images/voice/hardware/headsets/hs-3.png" alt="Section"
                             class="w-full h-auto object-cover" />
                     </div>
@@ -124,7 +125,7 @@
                 <div
                     class="relative border-2 rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                     <div class="w-full">
+                    <div class="w-full">
                         <img src="/images/voice/hardware/headsets/hs-4.png" alt="Section"
                             class="w-full h-auto object-cover" />
                     </div>

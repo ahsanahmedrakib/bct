@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title', 'Admin Panel') | BCT</title>
+    <title>@yield('title', 'Admin Panel') - BCT</title>
     <meta name="robots" content="noindex, nofollow">
 
     <link rel="icon" type="image/png" href="{{ asset('/favicon.png') }}">
@@ -23,27 +23,101 @@
     <div class="min-h-full">
         <aside id="adminSidebar"
             class="fixed inset-y-0 left-0 z-40 w-64 -translate-x-full bg-[#0b1526] text-white transition-transform duration-200 lg:translate-x-0">
-            <div class="flex h-16 items-center gap-3 border-b border-white/10 px-6">
-                <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-[#157cc1] font-extrabold text-white">
-                    B
-                </div>
-                <div class="leading-tight">
-                    <p class="text-sm font-bold">BCT Admin</p>
-                    <p class="text-[11px] text-slate-400">Content Panel</p>
-                </div>
+            <div class="flex h-16 items-center justify-center gap-3 border-b border-white/10 px-6">
+                <a href="{{ route('home') }}">
+                    <img src="{{ asset('logo-white.svg') }}" alt="Logo">
+                </a>
             </div>
 
             <nav class="px-3 py-4">
                 <p class="px-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Menu</p>
-                <a href="#contact-section"
-                    class="mt-2 flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-200 hover:bg-white/10"
+                <a href="{{ route('admin.dashboard-view') }}"
+                    class="mt-1 ml-3 flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium {{ request()->routeIs('admin.dashboard-view') ? 'bg-brand-blue text-white' : 'text-slate-200 hover:bg-white/10' }}"
                     data-smooth>
-                    <i class="fa-solid fa-envelope w-5 text-center text-[#157cc1]"></i>
+                    <i class="fa-solid fa-gauge w-5 text-center {{ request()->routeIs('admin.dashboard-view') ? 'text-white' : 'text-brand-blue' }}"></i>
+                    Dashboard
+                </a>
+
+                <p class="mt-4 px-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">HOMEPAGE</p>
+                <a href="{{ route('admin.hero-slides') }}"
+                    class="mt-1 ml-3 flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium {{ request()->routeIs('admin.hero-slides') ? 'bg-brand-blue text-white' : 'text-slate-200 hover:bg-white/10' }}"
+                    data-smooth>
+                    <i class="fa-solid fa-image w-5 text-center {{ request()->routeIs('admin.hero-slides') ? 'text-white' : 'text-brand-blue' }}"></i>
+                    Hero Slides
+                </a>
+                <a href="{{ route('admin.marquee') }}"
+                    class="mt-0.5 ml-3 flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium {{ request()->routeIs('admin.marquee') ? 'bg-brand-blue text-white' : 'text-slate-200 hover:bg-white/10' }}"
+                    data-smooth>
+                    <i class="fa-solid fa-star w-5 text-center {{ request()->routeIs('admin.marquee') ? 'text-white' : 'text-brand-blue' }}"></i>
+                    Marquee
+                </a>
+
+                <p class="mt-4 px-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">WEB</p>
+                <a href="{{ route('admin.categories') }}"
+                    class="mt-1 ml-3 flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium {{ request()->routeIs('admin.categories') ? 'bg-brand-blue text-white' : 'text-slate-200 hover:bg-white/10' }}"
+                    data-smooth>
+                    <i class="fa-solid fa-tags w-5 text-center {{ request()->routeIs('admin.categories') ? 'text-white' : 'text-brand-blue' }}"></i>
+                    Categories
+                </a>
+                <a href="{{ route('admin.portfolio') }}"
+                    class="mt-0.5 ml-3 flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium {{ request()->routeIs('admin.portfolio') ? 'bg-brand-blue text-white' : 'text-slate-200 hover:bg-white/10' }}"
+                    data-smooth>
+                    <i class="fa-solid fa-folder-open w-5 text-center {{ request()->routeIs('admin.portfolio') ? 'text-white' : 'text-brand-blue' }}"></i>
+                    Portfolio
+                </a>
+                <a href="{{ route('admin.gallery') }}"
+                    class="mt-0.5 ml-3 flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium {{ request()->routeIs('admin.gallery') ? 'bg-brand-blue text-white' : 'text-slate-200 hover:bg-white/10' }}"
+                    data-smooth>
+                    <i class="fa-solid fa-images w-5 text-center {{ request()->routeIs('admin.gallery') ? 'text-white' : 'text-brand-blue' }}"></i>
+                    Gallery
+                </a>
+
+                <p class="mt-4 px-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Company</p>
+                <a href="{{ route('admin.team') }}"
+                    class="mt-1 ml-3 flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium {{ request()->routeIs('admin.team') ? 'bg-brand-blue text-white' : 'text-slate-200 hover:bg-white/10' }}"
+                    data-smooth>
+                    <i class="fa-solid fa-users w-5 text-center {{ request()->routeIs('admin.team') ? 'text-white' : 'text-brand-blue' }}"></i>
+                    Team Members
+                </a>
+                <a href="{{ route('admin.locations') }}"
+                    class="mt-0.5 ml-3 flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium {{ request()->routeIs('admin.locations') ? 'bg-brand-blue text-white' : 'text-slate-200 hover:bg-white/10' }}"
+                    data-smooth>
+                    <i class="fa-solid fa-location-dot w-5 text-center {{ request()->routeIs('admin.locations') ? 'text-white' : 'text-brand-blue' }}"></i>
+                    Our Locations
+                </a>
+
+                <p class="mt-4 px-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Resources</p>
+                <a href="{{ route('admin.pricing-plans') }}"
+                    class="mt-1 ml-3 flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium {{ request()->routeIs('admin.pricing-plans') ? 'bg-brand-blue text-white' : 'text-slate-200 hover:bg-white/10' }}"
+                    data-smooth>
+                    <i class="fa-solid fa-tags w-5 text-center {{ request()->routeIs('admin.pricing-plans') ? 'text-white' : 'text-brand-blue' }}"></i>
+                    Pricing Plans
+                </a>
+                <a href="{{ route('admin.faqs') }}"
+                    class="mt-0.5 ml-3 flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium {{ request()->routeIs('admin.faqs') ? 'bg-brand-blue text-white' : 'text-slate-200 hover:bg-white/10' }}"
+                    data-smooth>
+                    <i class="fa-solid fa-circle-question w-5 text-center {{ request()->routeIs('admin.faqs') ? 'text-white' : 'text-brand-blue' }}"></i>
+                    FAQs
+                </a>
+
+                <p class="mt-4 px-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Blog</p>
+                <a href="{{ route('admin.blogs') }}"
+                    class="mt-1 ml-3 flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium {{ request()->routeIs('admin.blogs') ? 'bg-brand-blue text-white' : 'text-slate-200 hover:bg-white/10' }}"
+                    data-smooth>
+                    <i class="fa-solid fa-newspaper w-5 text-center {{ request()->routeIs('admin.blogs') ? 'text-white' : 'text-brand-blue' }}"></i>
+                    Blogs
+                </a>
+
+                <p class="mt-4 px-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Inbox</p>
+                <a href="{{ route('admin.queries') }}"
+                    class="mt-1 ml-3 flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium {{ request()->routeIs('admin.queries') ? 'bg-brand-blue text-white' : 'text-slate-200 hover:bg-white/10' }}"
+                    data-smooth>
+                    <i class="fa-solid fa-envelope w-5 text-center {{ request()->routeIs('admin.queries') ? 'text-white' : 'text-brand-blue' }}"></i>
                     Contact Queries
                 </a>
                 <a href="{{ route('admin.login') }}" onclick="event.preventDefault(); window.AdminLogout();"
-                    class="mt-2 flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-200 hover:bg-white/10">
-                    <i class="fa-solid fa-arrow-right-from-bracket w-5 text-center text-[#da3825]"></i>
+                    class="mt-4 flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-200 hover:bg-white/10">
+                    <i class="fa-solid fa-arrow-right-from-bracket w-5 text-center text-brand-secondary"></i>
                     Logout
                 </a>
             </nav>
@@ -65,9 +139,9 @@
                     </div>
                 </div>
                 <div class="flex items-center gap-3">
-                    <span id="adminName"
-                        class="hidden text-sm font-medium text-slate-600 sm:inline">Admin</span>
-                    <div class="flex h-9 w-9 items-center justify-center rounded-full bg-[#157cc1] text-sm font-bold text-white">
+                    <span id="adminName" class="hidden text-sm font-medium text-slate-600 sm:inline">Admin</span>
+                    <div
+                        class="flex h-9 w-9 items-center justify-center rounded-full bg-brand-blue text-sm font-bold text-white">
                         A
                     </div>
                 </div>

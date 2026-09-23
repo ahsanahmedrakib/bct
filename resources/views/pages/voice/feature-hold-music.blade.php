@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Hold Music & Messages on Hold | Bismillah Computer & Technology')
-@section('description', 'Custom phone hold messages, welcome messages, auto attendant, IVR and professional on-hold
+@section('title', 'Hold Music & Messages on Hold - Bismillah Computer & Technology')
+@section('description',
+    'Custom phone hold messages, welcome messages, auto attendant, IVR and professional on-hold
     music to transform every call.')
 
 @section('content')

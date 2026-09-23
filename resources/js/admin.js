@@ -12,36 +12,63 @@
         localStorage.removeItem(REFRESH_KEY);
     };
 
-    const api = async (path, options = {}, _retry = true) => {
-        const headers = options.headers || {};
-        headers["Accept"] = "application/json";
-        headers["Content-Type"] = "application/json";
-        if (token()) headers["Authorization"] = "Bearer " + token();
-
-        const res = await fetch("/api/admin" + path, { ...options, headers });
-        const data = await res.json().catch(() => ({}));
-
-        if (res.status === 401 && _retry && !sessionStorage.getItem(REFRESH_KEY)) {
-            sessionStorage.setItem(REFRESH_KEY, "1");
+    // Shared refresh promise so concurrent 401s refresh the token only once.
+    let refreshPromise = null;
+    const refreshToken = async () => {
+        if (refreshPromise) return refreshPromise;
+        refreshPromise = (async () => {
             try {
-                const refreshed = await api("/refresh", { method: "POST" }, false);
-                if (refreshed && refreshed.token) {
-                    setToken(refreshed.token);
-                    sessionStorage.removeItem(REFRESH_KEY);
-                    return api(path, options, false);
+                const headers = { Accept: "application/json" };
+                if (token()) headers["Authorization"] = "Bearer " + token();
+                const res = await fetch("/api/admin/refresh", {
+                    method: "POST",
+                    headers,
+                });
+                const data = await res.json().catch(() => ({}));
+                if (res.ok && data.token) {
+                    setToken(data.token);
+                    return true;
                 }
+                return false;
             } catch (e) {
-                /* fall through to logout */
+                return false;
             }
-            sessionStorage.removeItem(REFRESH_KEY);
+        })().finally(() => {
+            refreshPromise = null;
+        });
+        return refreshPromise;
+    };
+
+    const api = async (path, options = {}, _retry = true) => {
+        const doRequest = async () => {
+            const headers = options.headers || {};
+            headers["Accept"] = "application/json";
+            headers["Content-Type"] = "application/json";
+            if (token()) headers["Authorization"] = "Bearer " + token();
+
+            const res = await fetch("/api/admin" + path, { ...options, headers });
+            const data = await res.json().catch(() => ({}));
+            return { status: res.status, ok: res.ok, ...data };
+        };
+
+        let result = await doRequest();
+
+        if (result.status === 401 && _retry) {
+            const refreshed = await refreshToken();
+            if (refreshed) {
+                sessionStorage.removeItem(REFRESH_KEY);
+                return doRequest();
+            }
             clearTokens();
             window.location.href = "/admin/login";
             return null;
         }
 
-        sessionStorage.removeItem(REFRESH_KEY);
-        return { status: res.status, ok: res.ok, ...data };
+        return result;
     };
+
+    // Expose for usage by page-level inline scripts (projects / categories).
+    window.BctAdminApi = api;
 
     const showToast = (message, type = "success") => {
         const container = document.getElementById("toastContainer");
@@ -103,8 +130,8 @@
                 const showing = input.type === "text";
                 input.type = showing ? "password" : "text";
                 const passwordVisible = input.type === "text";
-                document.getElementById("eyeIcon").classList.toggle("hidden", passwordVisible);
-                document.getElementById("eyeSlashIcon").classList.toggle("hidden", !passwordVisible);
+                document.getElementById("eyeIcon").style.display = passwordVisible ? "none" : "";
+                document.getElementById("eyeSlashIcon").style.display = passwordVisible ? "" : "none";
                 input.focus();
             });
         }
@@ -151,8 +178,8 @@
     }
 
     // ── Auth guard for admin pages ───────────────────────────────
-    const dashboardWrap = document.getElementById("contact-section");
-    if (dashboardWrap) {
+    const adminPage = document.querySelector("[data-admin-page]");
+    if (adminPage) {
         if (!token()) {
             window.location.href = "/admin/login";
             return;
@@ -177,7 +204,70 @@
             a.addEventListener("click", () => closeSidebar());
         });
 
-        // ── Shared UI refs ──
+        // ── Dashboard — page-specific ──────────────────────────
+        const dashWrap = document.getElementById("dashboard-section");
+        if (dashWrap) {
+            (async () => {
+                const res = await api("/dashboard");
+                if (!res || !res.ok) return;
+
+                const s = res.stats || {};
+                document.getElementById("statProjects").textContent = s.projects ?? "—";
+                document.getElementById("statCategories").textContent = s.categories ?? "—";
+                document.getElementById("statTotal").textContent = s.total ?? "—";
+                document.getElementById("statUnread").textContent = s.unread ?? "—";
+
+                const queries = res.recent_queries || [];
+                const qWrap = document.getElementById("recentQueries");
+                if (qWrap) {
+                    qWrap.innerHTML = queries.length
+                        ? queries
+                              .map(
+                                  (q) => `
+                    <div class="flex items-center justify-between gap-3 border-b border-slate-100 px-5 py-3 last:border-0">
+                        <div class="min-w-0">
+                            <p class="flex items-center gap-2 truncate text-sm font-medium text-slate-900">
+                                <span class="h-1.5 w-1.5 shrink-0 rounded-full ${
+                                    q.is_read ? "bg-slate-300" : "bg-red-500"
+                                }"></span>
+                                ${escapeHtml(q.name)}
+                            </p>
+                            <p class="ml-3.5 truncate text-xs text-slate-500">${escapeHtml(q.subject) || "No subject"}</p>
+                        </div>
+                        <span class="shrink-0 text-xs text-slate-400">${formatDate(q.created_at)}</span>
+                    </div>`
+                              )
+                              .join("")
+                        : '<p class="px-5 py-10 text-center text-sm text-slate-500">No contact queries yet.</p>';
+                }
+
+                const projects = res.recent_projects || [];
+                const pWrap = document.getElementById("recentProjects");
+                if (pWrap) {
+                    pWrap.innerHTML = projects.length
+                        ? projects
+                              .map(
+                                  (p) => `
+                    <div class="flex items-center justify-between gap-3 border-b border-slate-100 px-5 py-3 last:border-0">
+                        <div class="min-w-0">
+                            <p class="truncate text-sm font-medium text-slate-900">${escapeHtml(p.title)}</p>
+                            <p class="truncate text-xs text-slate-500">${
+                                p.category ? escapeHtml(p.category.name) : "No category"
+                            }</p>
+                        </div>
+                        <span class="shrink-0 text-xs text-slate-400">${formatDate(p.created_at)}</span>
+                    </div>`
+                              )
+                              .join("")
+                        : '<p class="px-5 py-10 text-center text-sm text-slate-500">No projects yet.</p>';
+                }
+            })();
+        }
+
+        // ── Contact queries — page-specific ────────────────────
+        const dashboardWrap = document.getElementById("queries-section");
+        if (dashboardWrap) {
+            // ── Shared UI refs ──
         const loadingState = document.getElementById("loadingState");
         const emptyState = document.getElementById("emptyState");
         const errorState = document.getElementById("errorState");
@@ -190,11 +280,12 @@
         const pageNumbers = document.getElementById("pageNumbers");
         const prevPage = document.getElementById("prevPage");
         const nextPage = document.getElementById("nextPage");
+        const pageSize = document.getElementById("pageSize");
         const refreshBtn = document.getElementById("refreshBtn");
         const retryBtn = document.getElementById("retryBtn");
         const filterStatus = document.getElementById("filterStatus");
 
-        let state = { page: 1, data: [] };
+        let state = { page: 1, size: 10, data: [] };
 
         const show = (el) => el.classList.remove("hidden");
         const hide = (el) => el.classList.add("hidden");
@@ -287,7 +378,7 @@
         async function loadMessages() {
             setLoadingViews(true);
             const filter = filterStatus.value;
-            const query = new URLSearchParams({ page: state.page });
+            const query = new URLSearchParams({ page: state.page, per_page: state.size });
             if (filter !== "all") query.set("filter", filter);
 
             try {
@@ -325,6 +416,12 @@
         retryBtn.addEventListener("click", () => loadMessages());
 
         filterStatus.addEventListener("change", () => {
+            state.page = 1;
+            loadMessages();
+        });
+
+        pageSize.addEventListener("change", () => {
+            state.size = Number(pageSize.value);
             state.page = 1;
             loadMessages();
         });
@@ -418,13 +515,8 @@
             if (e.key === "Escape") closeModal();
         });
 
-        // ── Admin name ──
-        const adminName = document.getElementById("adminName");
-        api("/me").then((res) => {
-            if (res && res.ok && res.admin) adminName.textContent = res.admin.name;
-        });
-
         loadMessages();
+        } // end dashboardWrap
     }
 
     // ── Logout (called from layout) ──

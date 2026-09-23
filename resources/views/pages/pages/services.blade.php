@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Our Services | Bismillah Computer & Technology')
-@section('description', 'Explore our comprehensive range of IT services including web development, cloud consulting, IT
+@section('title', 'Our Services - Bismillah Computer & Technology')
+@section('description',
+    'Explore our comprehensive range of IT services including web development, cloud consulting, IT
     strategy, and more.')
 
 @section('content')

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Contact Us | Bismillah Computer & Technology')
+@section('title', 'Contact Us - Bismillah Computer & Technology')
 @section('description',
     'Get in touch with Bismillah Computer & Technology. Reach out for IT solutions, cloud services,
     cyber security, voice and internet solutions in Bangladesh.')
@@ -190,6 +190,9 @@
                         $messageClass = $errors->has('message')
                             ? $messageClass . ' border-red-500'
                             : $messageClass . ' border-blue-200 hover:border-blue-400';
+                        $captchaClass = $errors->has('captcha')
+                            ? $inputClass . ' border-red-500'
+                            : $inputClass . ' border-blue-200 hover:border-blue-400';
                     @endphp
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
@@ -247,6 +250,22 @@
                             <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
                         @else
                             <p class="mt-1 text-xs text-red-600 hidden" data-error="message"></p>
+                        @enderror
+                    </div>
+                    <div class="mt-6">
+                        <label class="block text-sm font-semibold text-slate-700 mb-1">Security Check <span
+                                class="text-red-500">*</span></label>
+                        <div class="flex items-center gap-3">
+                            <span id="captchaQuestion"
+                                class="px-4 py-3 rounded-lg bg-blue-50 border border-blue-200 text-slate-800 text-sm font-bold whitespace-nowrap">{{ session('captcha_a', 0) }}
+                                + {{ session('captcha_b', 0) }} = ?</span>
+                            <input type="text" id="captcha" name="captcha" value="{{ old('captcha') }}"
+                                placeholder="Answer" inputmode="numeric" pattern="[0-9]*" class="{{ $captchaClass }}" />
+                        </div>
+                        @error('captcha')
+                            <p class="mt-1 text-xs text-red-600">{{ $message }}</p>
+                        @else
+                            <p class="mt-1 text-xs text-red-600 hidden" data-error="captcha"></p>
                         @enderror
                     </div>
                     <div class="mt-8">
@@ -337,6 +356,10 @@
                     minLength: 10,
                     maxLength: 5000,
                     label: 'Message'
+                },
+                captcha: {
+                    required: true,
+                    label: 'CAPTCHA'
                 },
             };
 
@@ -437,8 +460,10 @@
                         });
                     })
                     .then(function(result) {
+                        if (result.data.captcha_question) updateCaptchaQuestion(result.data.captcha_question);
                         if (result.data.success) {
                             form.reset();
+                            clearError('captcha');
                             showToast(result.data.message, 'success');
                         } else if (result.data.errors) {
                             Object.keys(result.data.errors).forEach(function(field) {
@@ -459,6 +484,11 @@
                         submitBtn.disabled = false;
                     });
             });
+
+            function updateCaptchaQuestion(question) {
+                var el = document.getElementById('captchaQuestion');
+                if (el && question) el.textContent = question;
+            }
 
             function showToast(message, type) {
                 var existing = document.getElementById('toast-success');

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Phone System Brands | Bismillah Computer & Technology')
+@section('title', 'Phone System Brands - Bismillah Computer & Technology')
 @section('description',
     'We supply and support leading phone system brands including Vodia, Grandstream, Avaya and LG
     iPECS. Find the right Unified Communications platform for your business.')

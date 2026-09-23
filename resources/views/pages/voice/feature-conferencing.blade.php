@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Conferencing Solutions | Bismillah Computer & Technology')
+@section('title', 'Conferencing Solutions - Bismillah Computer & Technology')
 @section('description',
     'Konftel teleconferencing IP phones, Logitech GROUP video conferencing and Barco ClickShare
     wireless presentation for your phone system.')

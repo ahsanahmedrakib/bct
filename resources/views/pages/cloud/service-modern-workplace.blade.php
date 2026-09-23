@@ -1,6 +1,6 @@
 @extends('layouts.page')
 
-@section('title', 'Microsoft 365 Modern Workplace | Bismillah Computer & Technology')
+@section('title', 'Microsoft 365 Modern Workplace - Bismillah Computer & Technology')
 @section('description', 'Transform your workplace with Microsoft Teams, SharePoint, and modern collaboration tools.')
 
 @section('content')
@@ -346,7 +346,7 @@
     <section class="py-16 lg:py-24 bg-white" id="services-section">
         <div class="reveal reveal-fade-up max-w-365 mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl text-center font-bold text-blue-900 mb-4">Our Microsoft 365 Consulting Services</h2>
-            <p class="text-slate-600 text-center max-w-2xl mx-auto mb-12">Microsoft 365 Consulting from Total Solutions IT
+            <p class="text-slate-600 text-center max-w-2xl mx-auto mb-12">Microsoft 365 Consulting from BCT
                 helps businesses
                 plan, deploy, and optimise their Microsoft 365 environment to improve productivity, security, and
                 collaboration</p>
@@ -456,7 +456,7 @@
             </div>
             <div class="bg-linear-to-br from-blue-600 to-blue-800 rounded-2xl p-8 lg:p-10 text-white">
                 <h2 class="text-2xl lg:text-3xl font-bold mb-6">Partner with a Modern Workplace Specialist</h2>
-                <p class="text-blue-100 text-sm leading-relaxed mb-6 text-justify">Total Solutions IT helps
+                <p class="text-blue-100 text-sm leading-relaxed mb-6 text-justify">BCT helps
                     businesses unlock the full potential of Microsoft 365. Our experienced consultants work with
                     organisations to ensure Microsoft 365 is configured correctly, aligned with best practices, and
                     delivering maximum value from your cloud investment.</p>

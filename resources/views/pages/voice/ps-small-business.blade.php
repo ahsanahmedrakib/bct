@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Small Business Phone Systems | Bismillah Computer & Technology')
+@section('title', 'Small Business Phone Systems - Bismillah Computer & Technology')
 @section('description',
     'Cloud-based phone systems for small businesses reduce costs while improving flexibility. Auto
     attendants, call routing, voicemail to email, mobile apps and more.')

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Avaya IP Office 500 V2 | Bismillah Computer & Technology')
+@section('title', 'Avaya IP Office 500 V2 - Bismillah Computer & Technology')
 @section('description',
     'The Avaya IP Office 500 V2 phone system is the Number 1 small-medium business solution in the
     world. Scales from 2 to 2000 users.')
