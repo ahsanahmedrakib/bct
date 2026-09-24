@@ -10,6 +10,13 @@ class EnsureViteDevServerStatus
 {
     public function handle(Request $request, Closure $next): Response
     {
+        // Only needed while developing with `npm run dev`. On production the
+        // Vite dev server never runs, so this middleware is a no-op and does
+        // not attempt any sockets on every request.
+        if (! app()->environment('local')) {
+            return $next($request);
+        }
+
         $hotFile = public_path('hot');
 
         if (is_file($hotFile) && ! $this->viteServerIsReachable((string) file_get_contents($hotFile))) {

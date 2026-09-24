@@ -23,10 +23,6 @@
     RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -d
     RewriteRule ^(.*)$ public/$1 [L]
 
-    # Serve the setup/migration runner scripts directly (they live in the
-    # project root, outside the Laravel public directory)
-    RewriteRule ^run-(migrate|clear|autoload)\.php$ - [NC,L]
-
     # Send Everything Else To The Laravel Front Controller
     RewriteRule ^ public/index.php [L]
 </IfModule>
