@@ -153,11 +153,16 @@ document.addEventListener("DOMContentLoaded", function () {
     var megaPanel = document.getElementById("megaMenuPanel");
     var megaNav = document.getElementById("desktopNav");
     var closeTimer = null;
+    var hideTimer = null;
 
     function clearCloseTimer() {
         if (closeTimer) {
             clearTimeout(closeTimer);
             closeTimer = null;
+        }
+        if (hideTimer) {
+            clearTimeout(hideTimer);
+            hideTimer = null;
         }
     }
 
@@ -180,10 +185,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 el.setAttribute("data-visible", "false");
             }
         });
-        megaPanel.classList.remove("hidden");
-        requestAnimationFrame(function () {
-            megaPanel.style.opacity = "1";
-        });
+        if (megaPanel.classList.contains("hidden")) {
+            megaPanel.classList.remove("hidden");
+            megaPanel.style.opacity = "0";
+            void megaPanel.offsetWidth;
+        }
+        megaPanel.style.opacity = "1";
         megaTriggers.forEach(function (t) {
             if (t.dataset.mega === key) {
                 t.classList.add("nav-active");
@@ -195,8 +202,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function hideMega() {
         closeTimer = setTimeout(function () {
+            closeTimer = null;
             megaPanel.style.opacity = "0";
-            setTimeout(function () {
+            hideTimer = setTimeout(function () {
+                hideTimer = null;
                 megaPanel.classList.add("hidden");
             }, 150);
             megaTriggers.forEach(function (t) {
