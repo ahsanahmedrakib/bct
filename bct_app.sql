@@ -65,7 +65,7 @@ CREATE TABLE `blog_posts` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -74,7 +74,7 @@ CREATE TABLE `blog_posts` (
 
 LOCK TABLES `blog_posts` WRITE;
 /*!40000 ALTER TABLE `blog_posts` DISABLE KEYS */;
-INSERT INTO `blog_posts` VALUES (1,'Cloud solutions for scalable IT infrastructure.','cloud-solutions-for-scalable-it-infrastructure','CLOUD','/images/home/blog/blog-01.jpg','<p>Cloud computing has transformed how businesses build and scale their IT infrastructure. From shared storage to on-demand compute, organisations can now provision resources in minutes instead of months.</p><p>With the right cloud strategy, businesses reduce capital expenditure, improve resilience and unlock the flexibility needed to grow. Explore how managed cloud services can keep your operations agile.</p>','Admin','2026-04-09',1,1,'2026-09-18 03:39:53','2026-09-23 13:05:43'),(2,'Innovative software solutions for businesses.','innovative-software-solutions-for-businesses','SOFTWARE','/images/home/blog/blog-02.jpg','<p>Modern software streamlines operations, automates repetitive tasks and delivers insights that drive better decisions. Choosing the right tools makes all the difference.</p><p>Whether it is custom development or integrating proven platforms, the goal is the same: software that works for your people and your goals.</p>','Admin','2026-04-09',1,2,'2026-09-18 03:39:53','2026-09-23 13:05:43'),(3,'Practical tips for secure it systems checklist.','practical-tips-for-secure-it-systems-checklist','CYBERSAFE','/images/home/blog/blog-03.jpg','<p>Security is not a one-off project — it is an ongoing process. A practical IT security checklist keeps employees safe, systems patched and data protected.</p><p>Start with the fundamentals: strong passwords, multi-factor authentication, regular backups and keeping software up to date.</p>','Admin','2026-04-09',1,3,'2026-09-18 03:39:53','2026-09-23 13:05:43'),(4,'vsdvsvs','vsdvsvs','vsvsdsv','/images/home/blog/1790188068_img_20230804_182840.jpg','<p>vsfvsfdvfdvdsv</p><h1><strong>dsv</strong></h1><h1><strong>s</strong></h1><p>svd</p><p>svdv</p><p>sv</p>','vsdvv','2026-09-24',0,0,'2026-09-23 12:27:48','2026-09-23 13:05:43');
+INSERT INTO `blog_posts` VALUES (1,'Cloud solutions for scalable IT infrastructure.','cloud-solutions-for-scalable-it-infrastructure','CLOUD','/images/home/blog/blog-01.jpg','<p>Cloud computing has transformed how businesses build and scale their IT infrastructure. From shared storage to on-demand compute, organisations can now provision resources in minutes instead of months.</p><p>With the right cloud strategy, businesses reduce capital expenditure, improve resilience and unlock the flexibility needed to grow. Explore how managed cloud services can keep your operations agile.</p>','Admin','2026-04-09',1,1,'2026-09-18 03:39:53','2026-09-23 13:05:43'),(2,'Innovative software solutions for businesses.','innovative-software-solutions-for-businesses','SOFTWARE','/images/home/blog/blog-02.jpg','<p>Modern software streamlines operations, automates repetitive tasks and delivers insights that drive better decisions. Choosing the right tools makes all the difference.</p><p>Whether it is custom development or integrating proven platforms, the goal is the same: software that works for your people and your goals.</p>','Admin','2026-04-09',1,2,'2026-09-18 03:39:53','2026-09-23 13:05:43'),(3,'Practical tips for secure it systems checklist.','practical-tips-for-secure-it-systems-checklist','CYBERSAFE','/images/home/blog/blog-03.jpg','<p>Security is not a one-off project — it is an ongoing process. A practical IT security checklist keeps employees safe, systems patched and data protected.</p><p>Start with the fundamentals: strong passwords, multi-factor authentication, regular backups and keeping software up to date.</p>','Admin','2026-04-09',1,3,'2026-09-18 03:39:53','2026-09-23 13:05:43');
 /*!40000 ALTER TABLE `blog_posts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -141,7 +141,7 @@ CREATE TABLE `categories` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `categories_name_unique` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -150,7 +150,7 @@ CREATE TABLE `categories` (
 
 LOCK TABLES `categories` WRITE;
 /*!40000 ALTER TABLE `categories` DISABLE KEYS */;
-INSERT INTO `categories` VALUES (1,'Textile & Garments',1,'2026-09-16 11:28:44','2026-09-16 11:28:44'),(2,'Fashion & Retail',1,'2026-09-16 11:28:44','2026-09-16 11:28:44'),(3,'IT & Engineering',1,'2026-09-16 11:28:44','2026-09-16 11:28:44'),(4,'Business & Corporate',1,'2026-09-16 11:28:44','2026-09-16 11:28:44'),(5,'Healthcare & Hospitality',1,'2026-09-16 11:28:44','2026-09-16 11:28:44'),(9,'Test Repro Cat',0,'2026-09-17 10:59:33','2026-09-17 10:59:33'),(14,'nbib   h',0,'2026-09-17 11:26:14','2026-09-17 11:26:14');
+INSERT INTO `categories` VALUES (1,'Textile & Garments',1,'2026-09-16 11:28:44','2026-09-16 11:28:44'),(2,'Fashion & Retail',1,'2026-09-16 11:28:44','2026-09-16 11:28:44'),(3,'IT & Engineering',1,'2026-09-16 11:28:44','2026-09-16 11:28:44'),(4,'Business & Corporate',1,'2026-09-16 11:28:44','2026-09-16 11:28:44'),(5,'Healthcare & Hospitality',1,'2026-09-16 11:28:44','2026-09-16 11:28:44');
 /*!40000 ALTER TABLE `categories` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -171,7 +171,7 @@ CREATE TABLE `contact_messages` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -180,7 +180,7 @@ CREATE TABLE `contact_messages` (
 
 LOCK TABLES `contact_messages` WRITE;
 /*!40000 ALTER TABLE `contact_messages` DISABLE KEYS */;
-INSERT INTO `contact_messages` VALUES (3,'5tt4ttt','a@gmail.com','01631112475','ffffffff','efwfffff e fwfef',0,'2026-09-23 13:52:27','2026-09-23 13:52:27');
+INSERT INTO `contact_messages` VALUES (3,'5tt4ttt','a@gmail.com','01631112475','ffffffff','efwfffff e fwfef',0,'2026-09-23 13:52:27','2026-09-23 13:52:27'),(4,'Davidexowl','genzprotecton@gmail.com','83385366483','UK Breaking News24x7','et the latest UK breaking news and global headlines with UK Breaking News24x7. Stay updated on politics, business, technology, sports, entertainment, and more—24/7 - ukbreakingnews24x7.com',0,'2026-09-24 01:49:28','2026-09-24 01:49:28'),(5,'Adelaida Annand','info@freeb2bdata.org','92473177','FreeB2BData.org Shutting Down','Hello,\r\n\r\nI am Adelaida Annand from FreeB2BData\r\n\r\nIt is with sad regret to inform you that we are shutting down\r\n\r\nWe have over 252 countries and over 33 million companies available in our database with phone numbers, industries, emails, etc.\r\n\r\nPlease come and download your data in the next 24 hours. \r\n\r\nhttps://Adelaida.freeb2bdata.org\r\n\r\nRegards,\r\nAdelaida Annand',0,'2026-09-24 12:23:49','2026-09-24 12:23:49'),(6,'RobertRen','gregoryj8tl2g@gmail.com','82651914628','Hi, i am write about   the price','Hi, ego volo scire vestri pretium.',0,'2026-09-25 01:13:50','2026-09-25 01:13:50'),(7,'RobertRen','gregoryj8tl2g@gmail.com','84782315662','Hallo  i am writing about your   prices','Kaixo, zure prezioa jakin nahi nuen.',0,'2026-09-25 19:57:09','2026-09-25 19:57:09');
 /*!40000 ALTER TABLE `contact_messages` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -228,7 +228,7 @@ CREATE TABLE `faqs` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -237,7 +237,7 @@ CREATE TABLE `faqs` (
 
 LOCK TABLES `faqs` WRITE;
 /*!40000 ALTER TABLE `faqs` DISABLE KEYS */;
-INSERT INTO `faqs` VALUES (1,'How can IT solutions benefit my business?','In today\'s fast-evolving digital landscape, businesses need a clear IT strategy to align technology with their long-term goals. IT Strategy & Planning services help organizations optimize resources, improve efficiency, enhance security, and drive innovation through a structured approach.',1,1,'2026-09-18 07:15:07','2026-09-18 07:15:07'),(2,'How do I know which IT solution is right for my business?','In today\'s fast-evolving digital landscape, businesses need a clear IT strategy to align technology with their long-term goals. IT Strategy & Planning services help organizations optimize resources, improve efficiency, enhance security, and drive innovation through a structured approach.',1,2,'2026-09-18 07:15:07','2026-09-18 07:15:07'),(3,'What is your approach to risk management?','In today\'s fast-evolving digital landscape, businesses need a clear IT strategy to align technology with their long-term goals. IT Strategy & Planning services help organizations optimize resources, improve efficiency, enhance security, and drive innovation through a structured approach.',1,3,'2026-09-18 07:15:07','2026-09-18 07:15:07'),(4,'What is IT Managed Services, and how does it work?','In today\'s fast-evolving digital landscape, businesses need a clear IT strategy to align technology with their long-term goals. IT Strategy & Planning services help organizations optimize resources, improve efficiency, enhance security, and drive innovation through a structured approach.',1,4,'2026-09-18 07:15:07','2026-09-18 07:15:07'),(5,'How do you ensure data security in IT solutions?','In today\'s fast-evolving digital landscape, businesses need a clear IT strategy to align technology with their long-term goals. IT Strategy & Planning services help organizations optimize resources, improve efficiency, enhance security, and drive innovation through a structured approach.',1,5,'2026-09-18 07:15:07','2026-09-18 07:15:07'),(6,'Can you integrate IT solutions with my existing systems?','In today\'s fast-evolving digital landscape, businesses need a clear IT strategy to align technology with their long-term goals. IT Strategy & Planning services help organizations optimize resources, improve efficiency, enhance security, and drive innovation through a structured approach.',1,6,'2026-09-18 07:15:07','2026-09-18 07:15:07'),(7,'How do you optimize IT infrastructure for scalability?','In today\'s fast-evolving digital landscape, businesses need a clear IT strategy to align technology with their long-term goals. IT Strategy & Planning services help organizations optimize resources, improve efficiency, enhance security, and drive innovation through a structured approach.',1,7,'2026-09-18 07:15:07','2026-09-18 07:15:07'),(8,'dvsdvv','vsddvsdvsdvdsv',0,0,'2026-09-23 12:27:16','2026-09-23 12:27:16'),(9,'dsvsdvvsvsv','svdvsddsvdv',0,0,'2026-09-23 12:27:20','2026-09-23 12:27:20');
+INSERT INTO `faqs` VALUES (1,'How can IT solutions benefit my business?','In today\'s fast-evolving digital landscape, businesses need a clear IT strategy to align technology with their long-term goals. IT Strategy & Planning services help organizations optimize resources, improve efficiency, enhance security, and drive innovation through a structured approach.',1,1,'2026-09-18 07:15:07','2026-09-18 07:15:07'),(2,'How do I know which IT solution is right for my business?','In today\'s fast-evolving digital landscape, businesses need a clear IT strategy to align technology with their long-term goals. IT Strategy & Planning services help organizations optimize resources, improve efficiency, enhance security, and drive innovation through a structured approach.',1,2,'2026-09-18 07:15:07','2026-09-18 07:15:07'),(3,'What is your approach to risk management?','In today\'s fast-evolving digital landscape, businesses need a clear IT strategy to align technology with their long-term goals. IT Strategy & Planning services help organizations optimize resources, improve efficiency, enhance security, and drive innovation through a structured approach.',1,3,'2026-09-18 07:15:07','2026-09-18 07:15:07'),(4,'What is IT Managed Services, and how does it work?','In today\'s fast-evolving digital landscape, businesses need a clear IT strategy to align technology with their long-term goals. IT Strategy & Planning services help organizations optimize resources, improve efficiency, enhance security, and drive innovation through a structured approach.',1,4,'2026-09-18 07:15:07','2026-09-18 07:15:07'),(5,'How do you ensure data security in IT solutions?','In today\'s fast-evolving digital landscape, businesses need a clear IT strategy to align technology with their long-term goals. IT Strategy & Planning services help organizations optimize resources, improve efficiency, enhance security, and drive innovation through a structured approach.',1,5,'2026-09-18 07:15:07','2026-09-18 07:15:07'),(6,'Can you integrate IT solutions with my existing systems?','In today\'s fast-evolving digital landscape, businesses need a clear IT strategy to align technology with their long-term goals. IT Strategy & Planning services help organizations optimize resources, improve efficiency, enhance security, and drive innovation through a structured approach.',1,6,'2026-09-18 07:15:07','2026-09-18 07:15:07'),(7,'How do you optimize IT infrastructure for scalability?','In today\'s fast-evolving digital landscape, businesses need a clear IT strategy to align technology with their long-term goals. IT Strategy & Planning services help organizations optimize resources, improve efficiency, enhance security, and drive innovation through a structured approach.',1,7,'2026-09-18 07:15:07','2026-09-18 07:15:07');
 /*!40000 ALTER TABLE `faqs` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -255,7 +255,7 @@ CREATE TABLE `gallery_images` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -264,7 +264,7 @@ CREATE TABLE `gallery_images` (
 
 LOCK TABLES `gallery_images` WRITE;
 /*!40000 ALTER TABLE `gallery_images` DISABLE KEYS */;
-INSERT INTO `gallery_images` VALUES (1,'/images/pages/gallery/gallery_10_1.jpg',1,1,'2026-09-18 02:14:46','2026-09-18 02:14:46'),(2,'/images/pages/gallery/gallery_10_2.jpg',1,2,'2026-09-18 02:14:46','2026-09-18 02:14:46'),(3,'/images/pages/gallery/gallery_10_3.jpg',1,3,'2026-09-18 02:14:46','2026-09-18 02:14:46'),(4,'/images/pages/gallery/gallery_10_4.jpg',1,4,'2026-09-18 02:14:46','2026-09-18 02:14:46'),(5,'/images/pages/gallery/gallery_10_5.jpg',1,5,'2026-09-18 02:14:46','2026-09-18 02:14:46'),(6,'/images/pages/gallery/gallery_10_6.jpg',1,6,'2026-09-18 02:14:46','2026-09-18 02:14:46'),(7,'/images/pages/gallery/gallery_10_7.jpg',1,7,'2026-09-18 02:14:46','2026-09-18 02:14:46'),(8,'/images/pages/gallery/gallery_10_8.jpg',1,8,'2026-09-18 02:14:46','2026-09-18 02:14:46'),(9,'/images/pages/gallery/gallery_10_9.jpg',1,9,'2026-09-18 02:14:46','2026-09-18 02:14:46'),(10,'/images/pages/gallery/gallery_11.jpg',1,10,'2026-09-18 02:14:47','2026-09-18 02:14:47'),(11,'/images/pages/gallery/gallery_11_1.jpg',1,11,'2026-09-18 02:14:47','2026-09-18 02:14:47'),(12,'/images/pages/gallery/1790187951_chatgpt_image_aug_5,_2026,_01_17_37_pm.png',0,0,'2026-09-23 12:25:51','2026-09-23 12:25:51'),(13,'/images/pages/gallery/1790187960_fb_img_1612082113769.jpg',0,0,'2026-09-23 12:26:00','2026-09-23 12:26:00');
+INSERT INTO `gallery_images` VALUES (1,'/images/pages/gallery/gallery_10_1.jpg',1,1,'2026-09-18 02:14:46','2026-09-18 02:14:46'),(2,'/images/pages/gallery/gallery_10_2.jpg',1,2,'2026-09-18 02:14:46','2026-09-18 02:14:46'),(3,'/images/pages/gallery/gallery_10_3.jpg',1,3,'2026-09-18 02:14:46','2026-09-18 02:14:46'),(4,'/images/pages/gallery/gallery_10_4.jpg',1,4,'2026-09-18 02:14:46','2026-09-18 02:14:46'),(5,'/images/pages/gallery/gallery_10_5.jpg',1,5,'2026-09-18 02:14:46','2026-09-18 02:14:46'),(6,'/images/pages/gallery/gallery_10_6.jpg',1,6,'2026-09-18 02:14:46','2026-09-18 02:14:46'),(7,'/images/pages/gallery/gallery_10_7.jpg',1,7,'2026-09-18 02:14:46','2026-09-18 02:14:46'),(8,'/images/pages/gallery/gallery_10_8.jpg',1,8,'2026-09-18 02:14:46','2026-09-18 02:14:46'),(9,'/images/pages/gallery/gallery_10_9.jpg',1,9,'2026-09-18 02:14:46','2026-09-18 02:14:46'),(10,'/images/pages/gallery/gallery_11.jpg',1,10,'2026-09-18 02:14:47','2026-09-18 02:14:47'),(11,'/images/pages/gallery/gallery_11_1.jpg',1,11,'2026-09-18 02:14:47','2026-09-18 02:14:47');
 /*!40000 ALTER TABLE `gallery_images` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -378,7 +378,7 @@ CREATE TABLE `locations` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -387,7 +387,7 @@ CREATE TABLE `locations` (
 
 LOCK TABLES `locations` WRITE;
 /*!40000 ALTER TABLE `locations` DISABLE KEYS */;
-INSERT INTO `locations` VALUES (1,'Head Office','Dhaka, Bangladesh','House# 86, Road# Lake Drive, Sector#7, Uttara, Dhaka, Bangladesh','+880 1313010180','+880 9666777009','contact@bct.com.bd','https://www.google.com/maps/search/House+86+Road+Lake+Drive+Sector+7+Uttara+Dhaka+Bangladesh','blue',1,1,'2026-09-18 03:39:57','2026-09-18 03:39:57'),(2,'Branch Office','Dhaka, Bangladesh','House#6, Road# Shera Bangal Avenue, Block#B, Dolipara, Uttara, Dhaka-1230','+880 1313010180','+880 9666777009','contact@bct.com.bd','https://www.google.com/maps/search/House+6+Road+Shera+Bangal+Avenue+Block+B+Dolipara+Uttara+Dhaka+1230','purple',1,2,'2026-09-18 03:39:57','2026-09-18 03:39:57'),(3,'dvdv','vdvdvdv','vdvsv f fd f','+8801631112475','+8801631112476',NULL,NULL,'blue',0,0,'2026-09-23 12:26:48','2026-09-23 12:26:48');
+INSERT INTO `locations` VALUES (1,'Head Office','Dhaka, Bangladesh','House# 86, Road# Lake Drive, Sector#7, Uttara, Dhaka, Bangladesh','+880 1313010180','+880 9666777009','contact@bct.com.bd','https://www.google.com/maps/search/House+86+Road+Lake+Drive+Sector+7+Uttara+Dhaka+Bangladesh','blue',1,1,'2026-09-18 03:39:57','2026-09-18 03:39:57'),(2,'Branch Office','Dhaka, Bangladesh','House#6, Road# Shera Bangal Avenue, Block#B, Dolipara, Uttara, Dhaka-1230','+880 1313010180','+880 9666777009','contact@bct.com.bd','https://www.google.com/maps/search/House+6+Road+Shera+Bangal+Avenue+Block+B+Dolipara+Uttara+Dhaka+1230','purple',1,2,'2026-09-18 03:39:57','2026-09-18 03:39:57');
 /*!40000 ALTER TABLE `locations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -483,7 +483,7 @@ CREATE TABLE `pricing_plans` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -492,7 +492,7 @@ CREATE TABLE `pricing_plans` (
 
 LOCK TABLES `pricing_plans` WRITE;
 /*!40000 ALTER TABLE `pricing_plans` DISABLE KEYS */;
-INSERT INTO `pricing_plans` VALUES (1,'Basic Package','৳199.00','/Monthly','[\"Community Support\",\"Dedicated Tech Experts\",\"Unlimited Storage\",\"Custom Domains\",\"24\\/7 System Monitoring\"]',0,1,1,'2026-09-18 03:39:55','2026-09-18 03:39:55'),(2,'Standard Package','৳299.00','/Monthly','[\"Community Support\",\"Dedicated Tech Experts\",\"Unlimited Storage\",\"Custom Domains\",\"24\\/7 System Monitoring\"]',1,1,2,'2026-09-18 03:39:55','2026-09-18 03:39:55'),(3,'Premium Package','৳399.00','/Monthly','[\"Community Support\",\"Dedicated Tech Experts\",\"Unlimited Storage\",\"Custom Domains\",\"24\\/7 System Monitoring\"]',0,1,3,'2026-09-18 03:39:55','2026-09-18 03:39:55'),(4,'adcdsdv','1000','100000','[\"sdfvvsvdsvsv\",\"sdvsdv\",\"vs\",\"dvdv\",\"sdv\"]',1,0,0,'2026-09-23 12:27:08','2026-09-23 12:27:08');
+INSERT INTO `pricing_plans` VALUES (1,'Basic Package','৳199.00','/Monthly','[\"Community Support\",\"Dedicated Tech Experts\",\"Unlimited Storage\",\"Custom Domains\",\"24\\/7 System Monitoring\"]',0,1,1,'2026-09-18 03:39:55','2026-09-18 03:39:55'),(2,'Standard Package','৳299.00','/Monthly','[\"Community Support\",\"Dedicated Tech Experts\",\"Unlimited Storage\",\"Custom Domains\",\"24\\/7 System Monitoring\"]',1,1,2,'2026-09-18 03:39:55','2026-09-18 03:39:55'),(3,'Premium Package','৳399.00','/Monthly','[\"Community Support\",\"Dedicated Tech Experts\",\"Unlimited Storage\",\"Custom Domains\",\"24\\/7 System Monitoring\"]',0,1,3,'2026-09-18 03:39:55','2026-09-18 03:39:55');
 /*!40000 ALTER TABLE `pricing_plans` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -514,7 +514,7 @@ CREATE TABLE `projects` (
   PRIMARY KEY (`id`),
   KEY `projects_category_id_foreign` (`category_id`),
   CONSTRAINT `projects_category_id_foreign` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -523,7 +523,7 @@ CREATE TABLE `projects` (
 
 LOCK TABLES `projects` WRITE;
 /*!40000 ALTER TABLE `projects` DISABLE KEYS */;
-INSERT INTO `projects` VALUES (1,2,'Rizqin Abd','https://rizqinabd.com','/images/web/portfolio/rizqinabd.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(2,4,'Blue Arc Sourcing','https://bluearcsourcing.net','/images/web/portfolio/bluearcsourcing.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(3,1,'Mahatex BD','https://mahatexbd.com','/images/web/portfolio/mahatexbd.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(4,3,'Ahead Solar','https://aheadsolarbd.com','/images/web/portfolio/aheadsolarbd.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(5,3,'Bismillah Computer & Technology','https://bct.com.bd','/images/web/portfolio/bct.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(6,3,'TS Network','https://tsnetwork.net.bd','/images/web/portfolio/tsnetwork.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(7,1,'Trax Textile','https://traxtextile.com','/images/web/portfolio/traxtextile.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(8,1,'Texman BD','https://texman-bd.com','/images/web/portfolio/texman.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(9,3,'Limbs Engineering','https://limbsengineering.com','/images/web/portfolio/limbsengineering.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(10,4,'Ignite Global Ltd','https://ignitegloballtd.com','/images/web/portfolio/ignitegloballtd.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(11,1,'Flatknit Sourcing','https://flatknitsourcing.com','/images/web/portfolio/flatknitsourcing.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(12,5,'BD Paradise','https://bdparadise.com','/images/web/portfolio/bdparadise.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(13,5,'RM Nursing BD','https://rmnursingbd.com','/images/web/portfolio/rmnursingbd.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(14,1,'Brand Tex BD','https://brandtexbd.com','/images/web/portfolio/brandtexbd.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(15,4,'Design Hub BD','https://designhub-bd.com','/images/web/portfolio/designhubbd.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(16,2,'Lenient Fashion','https://lenientfashion.com','/images/web/portfolio/lenientfashion.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(21,9,'dvs','http://127.0.0.1:8000/admin/portfolio','/images/web/portfolio/1790187936_img_20230804_182832.jpg',0,'2026-09-23 12:25:36','2026-09-23 12:25:36');
+INSERT INTO `projects` VALUES (1,2,'Rizqin Abd','https://rizqinabd.com','/images/web/portfolio/rizqinabd.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(2,4,'Blue Arc Sourcing','https://bluearcsourcing.net','/images/web/portfolio/bluearcsourcing.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(3,1,'Mahatex BD','https://mahatexbd.com','/images/web/portfolio/mahatexbd.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(4,3,'Ahead Solar','https://aheadsolarbd.com','/images/web/portfolio/aheadsolarbd.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(5,3,'Bismillah Computer & Technology','https://bct.com.bd','/images/web/portfolio/bct.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(6,3,'TS Network','https://tsnetwork.net.bd','/images/web/portfolio/tsnetwork.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(7,1,'Trax Textile','https://traxtextile.com','/images/web/portfolio/traxtextile.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(8,1,'Texman BD','https://texman-bd.com','/images/web/portfolio/texman.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(9,3,'Limbs Engineering','https://limbsengineering.com','/images/web/portfolio/limbsengineering.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(10,4,'Ignite Global Ltd','https://ignitegloballtd.com','/images/web/portfolio/ignitegloballtd.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(11,1,'Flatknit Sourcing','https://flatknitsourcing.com','/images/web/portfolio/flatknitsourcing.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(12,5,'BD Paradise','https://bdparadise.com','/images/web/portfolio/bdparadise.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(13,5,'RM Nursing BD','https://rmnursingbd.com','/images/web/portfolio/rmnursingbd.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(14,1,'Brand Tex BD','https://brandtexbd.com','/images/web/portfolio/brandtexbd.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(15,4,'Design Hub BD','https://designhub-bd.com','/images/web/portfolio/designhubbd.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28'),(16,2,'Lenient Fashion','https://lenientfashion.com','/images/web/portfolio/lenientfashion.png',1,'2026-09-16 03:33:28','2026-09-16 03:33:28');
 /*!40000 ALTER TABLE `projects` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -576,7 +576,7 @@ CREATE TABLE `team_members` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -585,7 +585,7 @@ CREATE TABLE `team_members` (
 
 LOCK TABLES `team_members` WRITE;
 /*!40000 ALTER TABLE `team_members` DISABLE KEYS */;
-INSERT INTO `team_members` VALUES (1,'Tamzid Hasan','IT Consultant','Consultant','/images/home/team/thp.png',NULL,NULL,NULL,NULL,1,1,'2026-09-17 00:13:01','2026-09-17 00:13:01'),(2,'Tanzim Hasan Anik','Director','Director','/images/home/team/tha.jpg',NULL,NULL,NULL,NULL,1,2,'2026-09-17 00:13:01','2026-09-17 00:13:01'),(3,'Nazmul Apple','System Engineer','Engineer','/images/home/team/na.jpeg',NULL,NULL,NULL,NULL,1,3,'2026-09-17 00:13:01','2026-09-17 00:13:01'),(4,'Habibullah Mezbah','Web Developer','Developer','/images/home/team/hm.png',NULL,NULL,NULL,NULL,1,4,'2026-09-17 00:13:01','2026-09-17 00:13:01'),(5,'Ahsan Ahmed Rakib','Software Engineer','Engineer','/images/home/team/aar.jpg',NULL,NULL,NULL,NULL,1,5,'2026-09-17 00:13:01','2026-09-17 00:13:01'),(6,'Md. Tarikul Islam','Technical Support Engineer','Engineer','/images/home/team/ti.jfif',NULL,NULL,NULL,NULL,1,6,'2026-09-17 00:13:01','2026-09-17 00:13:01'),(7,'Rizwan Sadat','IT Executive','Executive','/images/home/team/rs.jpeg',NULL,NULL,NULL,NULL,1,7,'2026-09-17 00:13:01','2026-09-17 00:13:01'),(8,'Chandra Barai','Marketing Executive & Customer Support','Executive','/images/home/team/cb.jpeg',NULL,NULL,NULL,NULL,1,8,'2026-09-17 00:13:01','2026-09-17 00:13:01'),(9,'cscscc','cscsccsc','scscscscsc','/images/home/team/1790187981_img_20230804_182832.jpg',NULL,NULL,'https://www.linkedin.com/in/ahsanahmedrakib/',NULL,0,0,'2026-09-23 12:26:21','2026-09-23 12:26:21');
+INSERT INTO `team_members` VALUES (1,'Tamzid Hasan','IT Consultant','Consultant','/images/home/team/thp.png',NULL,NULL,NULL,NULL,1,1,'2026-09-17 00:13:01','2026-09-17 00:13:01'),(2,'Tanzim Hasan Anik','Director','Director','/images/home/team/tha.jpg',NULL,NULL,NULL,NULL,1,2,'2026-09-17 00:13:01','2026-09-17 00:13:01'),(3,'Nazmul Apple','System Engineer','Engineer','/images/home/team/na.jpeg',NULL,NULL,NULL,NULL,1,3,'2026-09-17 00:13:01','2026-09-17 00:13:01'),(4,'Habibullah Mezbah','Web Developer','Developer','/images/home/team/hm.png',NULL,NULL,NULL,NULL,1,4,'2026-09-17 00:13:01','2026-09-17 00:13:01'),(5,'Ahsan Ahmed Rakib','Software Engineer','Engineer','/images/home/team/aar.jpg',NULL,NULL,NULL,NULL,1,5,'2026-09-17 00:13:01','2026-09-17 00:13:01'),(6,'Md. Tarikul Islam','Technical Support Engineer','Engineer','/images/home/team/ti.jfif',NULL,NULL,NULL,NULL,1,6,'2026-09-17 00:13:01','2026-09-17 00:13:01'),(7,'Rizwan Sadat','IT Executive','Executive','/images/home/team/rs.jpeg',NULL,NULL,NULL,NULL,1,7,'2026-09-17 00:13:01','2026-09-17 00:13:01'),(8,'Chandra Barai','Marketing Executive & Customer Support','Executive','/images/home/team/cb.jpeg',NULL,NULL,NULL,NULL,1,8,'2026-09-17 00:13:01','2026-09-17 00:13:01');
 /*!40000 ALTER TABLE `team_members` ENABLE KEYS */;
 UNLOCK TABLES;
 
