@@ -272,5 +272,83 @@
                 </div>
             </div>
         </section>
+        {{-- RELATED MANAGED IT SERVICES --}}
+        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full" id="managed-it-services">
+            <div class="reveal reveal-fade-up">
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 text-center mb-4">Managed IT Services In
+                    Detail</h2>
+                <p class="text-slate-500 text-sm leading-relaxed max-w-3xl mx-auto mb-12 text-justify">Each
+                    of our managed IT services can be taken individually or combined into a single managed plan. Explore
+                    what each one covers, then talk to a consultant about the right mix for your business.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    @php
+                        $managedItServices = [
+                            [
+                                'title' => 'Managed IT Services',
+                                'description' => 'Round-the-clock monitoring, maintenance and support with documented service levels and a fixed monthly cost.',
+                                'href' => route('it-support.mi-managed-it-services'),
+                                'icon' => '<rect width="20" height="14" x="2" y="3" rx="2"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line>',
+                            ],
+                            [
+                                'title' => 'Procurement',
+                                'description' => 'Genuine business hardware and licensed software, specified honestly, sourced competitively and warranted.',
+                                'href' => route('it-support.mi-procurement'),
+                                'icon' => '<circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>',
+                            ],
+                            [
+                                'title' => 'Help Desk Support',
+                                'description' => 'One number for your team, with telephone, email, remote and on-site assistance and priority-based response targets.',
+                                'href' => route('it-support.mi-help-desk-support'),
+                                'icon' => '<path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>',
+                            ],
+                            [
+                                'title' => 'Data Management',
+                                'description' => 'Automated and tested backups, off-site copies, retention policies and documented recovery plans.',
+                                'href' => route('it-support.mi-data-management'),
+                                'icon' => '<ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path>',
+                            ],
+                            [
+                                'title' => 'IT Consulting',
+                                'description' => 'Independent, vendor-neutral advice on infrastructure, cloud strategy, security and your technology roadmap.',
+                                'href' => route('it-support.mi-it-consulting'),
+                                'icon' => '<rect width="8" height="4" x="8" y="2" rx="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>',
+                            ],
+                            [
+                                'title' => 'IT Outsourcing',
+                                'description' => 'Your entire IT function delivered by our engineers, with a named service manager and monthly reporting.',
+                                'href' => route('it-support.mi-it-outsourcing'),
+                                'icon' => '<rect width="16" height="20" x="4" y="2" rx="2"></rect><path d="M9 22v-4h6v4"></path><path d="M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"></path>',
+                            ],
+                        ];
+                    @endphp
+                    @foreach ($managedItServices as $service)
+                        <a href="{{ $service['href'] }}"
+                            class="group flex flex-col bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                            <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                            <span class="p-3 bg-blue-50 text-blue-600 rounded-lg w-fit mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    {!! $service['icon'] !!}
+                                </svg>
+                            </span>
+                            <h3 class="text-sm sm:text-base font-bold text-slate-800 mb-3">{{ $service['title'] }}</h3>
+                            <p class="text-xs sm:text-sm text-slate-500 leading-relaxed text-justify flex-1">
+                                {{ $service['description'] }}</p>
+                            <span
+                                class="mt-4 inline-flex items-center text-blue-600 font-semibold text-xs uppercase tracking-wider group-hover:text-blue-800 transition-colors">
+                                Learn More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    @endforeach
+                </div>
+            </div>
+        </section>
     </main>
 @endsection

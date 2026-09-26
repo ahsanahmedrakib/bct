@@ -74,6 +74,28 @@ Route::prefix('it-support')->name('it-support.')->group(function () {
     Route::get('/device-repair', [App\Http\Controllers\ItSupportController::class, 'deviceRepair'])->name('device-repair');
     Route::get('/managed-it', [App\Http\Controllers\ItSupportController::class, 'managedIt'])->name('managed-it');
     Route::get('/servers-and-networking', [App\Http\Controllers\ItSupportController::class, 'serversNetworking'])->name('servers-networking');
+
+    // Managed IT sub-pages
+    Route::get('/managed-it/managed-it-services', [App\Http\Controllers\ItSupportController::class, 'miManagedItServices'])->name('mi-managed-it-services');
+    Route::get('/managed-it/procurement', [App\Http\Controllers\ItSupportController::class, 'miProcurement'])->name('mi-procurement');
+    Route::get('/managed-it/help-desk-support', [App\Http\Controllers\ItSupportController::class, 'miHelpDeskSupport'])->name('mi-help-desk-support');
+    Route::get('/managed-it/data-management', [App\Http\Controllers\ItSupportController::class, 'miDataManagement'])->name('mi-data-management');
+    Route::get('/managed-it/it-consulting', [App\Http\Controllers\ItSupportController::class, 'miItConsulting'])->name('mi-it-consulting');
+    Route::get('/managed-it/it-outsourcing', [App\Http\Controllers\ItSupportController::class, 'miItOutsourcing'])->name('mi-it-outsourcing');
+
+    // Servers + Networking sub-pages
+    Route::get('/servers-and-networking/network-consulting-and-design', [App\Http\Controllers\ItSupportController::class, 'snNetworkConsultingDesign'])->name('sn-network-consulting-design');
+    Route::get('/servers-and-networking/network-installation', [App\Http\Controllers\ItSupportController::class, 'snNetworkInstallation'])->name('sn-network-installation');
+    Route::get('/servers-and-networking/wifi-networking', [App\Http\Controllers\ItSupportController::class, 'snWifiNetworking'])->name('sn-wifi-networking');
+    Route::get('/servers-and-networking/network-security', [App\Http\Controllers\ItSupportController::class, 'snNetworkSecurity'])->name('sn-network-security');
+    Route::get('/servers-and-networking/vpn-solutions', [App\Http\Controllers\ItSupportController::class, 'snVpnSolutions'])->name('sn-vpn-solutions');
+    Route::get('/servers-and-networking/windows-server', [App\Http\Controllers\ItSupportController::class, 'snWindowsServer'])->name('sn-windows-server');
+
+    // Device Repair sub-pages
+    Route::get('/device-repair/virus-and-malware-removal', [App\Http\Controllers\ItSupportController::class, 'drVirusMalwareRemoval'])->name('dr-virus-malware-removal');
+    Route::get('/device-repair/data-recovery', [App\Http\Controllers\ItSupportController::class, 'drDataRecovery'])->name('dr-data-recovery');
+    Route::get('/device-repair/upgrades', [App\Http\Controllers\ItSupportController::class, 'drUpgrades'])->name('dr-upgrades');
+    Route::get('/device-repair/pc-and-laptop-repairs', [App\Http\Controllers\ItSupportController::class, 'drPcLaptopRepairs'])->name('dr-pc-laptop-repairs');
 });
 
 // ─── Voice ──────────────────────────────────────────────────────

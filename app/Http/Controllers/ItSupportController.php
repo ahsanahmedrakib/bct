@@ -58,4 +58,84 @@ class ItSupportController extends Controller
     {
         return view('pages.it-support.cs-zero-trust');
     }
+
+    public function miManagedItServices()
+    {
+        return view('pages.it-support.mi-managed-it-services');
+    }
+
+    public function miProcurement()
+    {
+        return view('pages.it-support.mi-procurement');
+    }
+
+    public function miHelpDeskSupport()
+    {
+        return view('pages.it-support.mi-help-desk-support');
+    }
+
+    public function miDataManagement()
+    {
+        return view('pages.it-support.mi-data-management');
+    }
+
+    public function miItConsulting()
+    {
+        return view('pages.it-support.mi-it-consulting');
+    }
+
+    public function miItOutsourcing()
+    {
+        return view('pages.it-support.mi-it-outsourcing');
+    }
+
+    public function snNetworkConsultingDesign()
+    {
+        return view('pages.it-support.sn-network-consulting-design');
+    }
+
+    public function snNetworkInstallation()
+    {
+        return view('pages.it-support.sn-network-installation');
+    }
+
+    public function snWifiNetworking()
+    {
+        return view('pages.it-support.sn-wifi-networking');
+    }
+
+    public function snNetworkSecurity()
+    {
+        return view('pages.it-support.sn-network-security');
+    }
+
+    public function snVpnSolutions()
+    {
+        return view('pages.it-support.sn-vpn-solutions');
+    }
+
+    public function snWindowsServer()
+    {
+        return view('pages.it-support.sn-windows-server');
+    }
+
+    public function drVirusMalwareRemoval()
+    {
+        return view('pages.it-support.dr-virus-malware-removal');
+    }
+
+    public function drDataRecovery()
+    {
+        return view('pages.it-support.dr-data-recovery');
+    }
+
+    public function drUpgrades()
+    {
+        return view('pages.it-support.dr-upgrades');
+    }
+
+    public function drPcLaptopRepairs()
+    {
+        return view('pages.it-support.dr-pc-laptop-repairs');
+    }
 }

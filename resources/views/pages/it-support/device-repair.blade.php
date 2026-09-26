@@ -611,6 +611,73 @@
             </div>
         </section>
 
+        {{-- RELATED DEVICE REPAIR SERVICES --}}
+        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full" id="repair-services">
+            <div class="reveal reveal-fade-up">
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 text-center mb-4">Device Repair Services In
+                    Detail</h2>
+                <p class="text-slate-500 text-sm leading-relaxed max-w-3xl mx-auto mb-12 text-justify">One
+                    device or fifty, these are the repair services we provide, each with a clear diagnosis, a fixed
+                    quotation and your data protected before any work begins.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    @php
+                        $repairServices = [
+                            [
+                                'title' => 'Virus/Malware Removal',
+                                'description' => 'Full malware cleaning, rootkit removal, browser and startup repair, and hardened security settings.',
+                                'href' => route('it-support.dr-virus-malware-removal'),
+                                'icon' => '<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path><path d="M12 9v4M12 17h.01"></path>',
+                            ],
+                            [
+                                'title' => 'Data Recovery',
+                                'description' => 'Recovery from deleted, formatted and corrupted drives, with the process explained before we start.',
+                                'href' => route('it-support.dr-data-recovery'),
+                                'icon' => '<path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path><path d="M8 16H3v5"></path>',
+                            ],
+                            [
+                                'title' => 'Upgrades',
+                                'description' => 'SSD conversions, memory and storage upgrades, battery replacement and general performance tuning.',
+                                'href' => route('it-support.dr-upgrades'),
+                                'icon' => '<path d="M12 20h.01"></path><path d="M2 8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"></path><path d="M6 6V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"></path>',
+                            ],
+                            [
+                                'title' => 'PC & Laptop Repairs',
+                                'description' => 'Screen, keyboard, motherboard and power repairs, with on-site service for business devices.',
+                                'href' => route('it-support.dr-pc-laptop-repairs'),
+                                'icon' => '<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>',
+                            ],
+                        ];
+                    @endphp
+                    @foreach ($repairServices as $service)
+                        <a href="{{ $service['href'] }}"
+                            class="group flex flex-col bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                            <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                            <span class="p-3 bg-blue-50 text-blue-600 rounded-lg w-fit mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    {!! $service['icon'] !!}
+                                </svg>
+                            </span>
+                            <h3 class="text-sm sm:text-base font-bold text-slate-800 mb-3">{{ $service['title'] }}</h3>
+                            <p class="text-xs sm:text-sm text-slate-500 leading-relaxed text-justify flex-1">
+                                {{ $service['description'] }}</p>
+                            <span
+                                class="mt-4 inline-flex items-center text-blue-600 font-semibold text-xs uppercase tracking-wider group-hover:text-blue-800 transition-colors">
+                                Learn More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    @endforeach
+                </div>
+            </div>
+        </section>
+
     </main>
 
     @push('head')

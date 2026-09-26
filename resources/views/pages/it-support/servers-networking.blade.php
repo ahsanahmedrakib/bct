@@ -631,5 +631,84 @@
             </div>
         </section>
 
+        {{-- RELATED SERVERS & NETWORKING SERVICES --}}
+        <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-365 mx-auto w-full" id="networking-services">
+            <div class="reveal reveal-fade-up">
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 text-center mb-4">Servers &amp; Networking In
+                    Detail</h2>
+                <p class="text-slate-500 text-sm leading-relaxed max-w-3xl mx-auto mb-12 text-justify">From
+                    the first network design meeting to the day your server room is finally decommissioned, these are
+                    the individual services that make up a complete infrastructure project.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    @php
+                        $networkingServices = [
+                            [
+                                'title' => 'Network Consulting and Design',
+                                'description' => 'Site surveys, structured cabling design, IP addressing, switching and routing plans, and a full bill of materials.',
+                                'href' => route('it-support.sn-network-consulting-design'),
+                                'icon' => '<path d="M3 3v18h18"></path><path d="m19 9-5 5-4-4-3 3"></path>',
+                            ],
+                            [
+                                'title' => 'Network Installation',
+                                'description' => 'Cabling, patching, switch, router and access point installation, cable testing and handover documentation.',
+                                'href' => route('it-support.sn-network-installation'),
+                                'icon' => '<path d="M12 20h.01"></path><path d="M2 8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"></path><path d="M6 6V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"></path>',
+                            ],
+                            [
+                                'title' => 'Wi-Fi Networking',
+                                'description' => 'Site surveys, access point placement, roaming between offices, guest networks and controller-based management.',
+                                'href' => route('it-support.sn-wifi-networking'),
+                                'icon' => '<path d="M12 20h.01"></path><path d="M2 8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"></path><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path>',
+                            ],
+                            [
+                                'title' => 'Network Security',
+                                'description' => 'Firewall policy, segmentation, intrusion detection and regular testing against real attack patterns.',
+                                'href' => route('it-support.sn-network-security'),
+                                'icon' => '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>',
+                            ],
+                            [
+                                'title' => 'VPN Solutions',
+                                'description' => 'IPsec and SSL remote access, site-to-site tunnels, multi-factor authentication and split tunnelling policies.',
+                                'href' => route('it-support.sn-vpn-solutions'),
+                                'icon' => '<rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path>',
+                            ],
+                            [
+                                'title' => 'Windows Server',
+                                'description' => 'Server installation, Active Directory, file and print services, migration, patching and performance monitoring.',
+                                'href' => route('it-support.sn-windows-server'),
+                                'icon' => '<rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect><rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect><line x1="6" x2="6.01" y1="6" y2="6"></line><line x1="6" x2="6.01" y1="18" y2="18"></line>',
+                            ],
+                        ];
+                    @endphp
+                    @foreach ($networkingServices as $service)
+                        <a href="{{ $service['href'] }}"
+                            class="group flex flex-col bg-white p-10 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-2 transition-all relative h-full border-blue-100 hover:border-blue-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                            <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
+                            <span class="p-3 bg-blue-50 text-blue-600 rounded-lg w-fit mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    {!! $service['icon'] !!}
+                                </svg>
+                            </span>
+                            <h3 class="text-sm sm:text-base font-bold text-slate-800 mb-3">{{ $service['title'] }}</h3>
+                            <p class="text-xs sm:text-sm text-slate-500 leading-relaxed text-justify flex-1">
+                                {{ $service['description'] }}</p>
+                            <span
+                                class="mt-4 inline-flex items-center text-blue-600 font-semibold text-xs uppercase tracking-wider group-hover:text-blue-800 transition-colors">
+                                Learn More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    @endforeach
+                </div>
+            </div>
+        </section>
+
     </main>
 @endsection

@@ -857,8 +857,7 @@
                 <p
                     class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight bg-linear-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent mb-6">
                     Complete 360° Care of Your IT.</p>
-                <p class="text-gray-400 text-base md:text-lg leading-relaxed font-light text-justify">At Total Solutions
-                    IT, we take a proactive, end-to-end approach to managing your technology. Our proven three-stage
+                <p class="text-gray-400 text-base md:text-lg leading-relaxed font-light text-justify">At BCT, we take a proactive, end-to-end approach to managing your technology. Our proven three-stage
                     framework transforms IT from a constant frustration into a reliable, secure, and scalable business
                     asset.</p>
             </div>

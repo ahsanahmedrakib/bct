@@ -173,12 +173,36 @@
                     'icon' =>
                         '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg>',
                     'links' => [
-                        ['label' => 'Managed IT Services', 'href' => '#', 'image' => '/images/navbar/it/corporate.svg'],
-                        ['label' => 'Procurement', 'href' => '#', 'image' => '/images/navbar/it/supply-chain.svg'],
-                        ['label' => 'Help Desk Support', 'href' => '#', 'image' => '/images/navbar/it/leadership.svg'],
-                        ['label' => 'Data Management', 'href' => '#', 'image' => '/images/navbar/it/development.svg'],
-                        ['label' => 'IT Consulting', 'href' => '#', 'image' => '/images/navbar/it/online-meeting.svg'],
-                        ['label' => 'IT Outsourcing', 'href' => '#', 'image' => '/images/navbar/it/teamwork.svg'],
+                        [
+                            'label' => 'Managed IT Services',
+                            'href' => route('it-support.mi-managed-it-services'),
+                            'image' => '/images/navbar/it/corporate.svg',
+                        ],
+                        [
+                            'label' => 'Procurement',
+                            'href' => route('it-support.mi-procurement'),
+                            'image' => '/images/navbar/it/supply-chain.svg',
+                        ],
+                        [
+                            'label' => 'Help Desk Support',
+                            'href' => route('it-support.mi-help-desk-support'),
+                            'image' => '/images/navbar/it/leadership.svg',
+                        ],
+                        [
+                            'label' => 'Data Management',
+                            'href' => route('it-support.mi-data-management'),
+                            'image' => '/images/navbar/it/development.svg',
+                        ],
+                        [
+                            'label' => 'IT Consulting',
+                            'href' => route('it-support.mi-it-consulting'),
+                            'image' => '/images/navbar/it/online-meeting.svg',
+                        ],
+                        [
+                            'label' => 'IT Outsourcing',
+                            'href' => route('it-support.mi-it-outsourcing'),
+                            'image' => '/images/navbar/it/teamwork.svg',
+                        ],
                     ],
                 ],
                 [
@@ -190,14 +214,34 @@
                     'links' => [
                         [
                             'label' => 'Network Consulting and Design',
-                            'href' => '#',
+                            'href' => route('it-support.sn-network-consulting-design'),
                             'image' => '/images/navbar/it/networking.svg',
                         ],
-                        ['label' => 'Network Installation', 'href' => '#', 'image' => '/images/navbar/it/net.svg'],
-                        ['label' => 'Wi-Fi Networking', 'href' => '#', 'image' => '/images/navbar/it/router.svg'],
-                        ['label' => 'Network Security', 'href' => '#', 'image' => '/images/navbar/it/credibility.svg'],
-                        ['label' => 'VPN Solutions', 'href' => '#', 'image' => '/images/navbar/it/vpn.svg'],
-                        ['label' => 'Windows Server', 'href' => '#', 'image' => '/images/navbar/it/server.svg'],
+                        [
+                            'label' => 'Network Installation',
+                            'href' => route('it-support.sn-network-installation'),
+                            'image' => '/images/navbar/it/net.svg',
+                        ],
+                        [
+                            'label' => 'Wi-Fi Networking',
+                            'href' => route('it-support.sn-wifi-networking'),
+                            'image' => '/images/navbar/it/router.svg',
+                        ],
+                        [
+                            'label' => 'Network Security',
+                            'href' => route('it-support.sn-network-security'),
+                            'image' => '/images/navbar/it/credibility.svg',
+                        ],
+                        [
+                            'label' => 'VPN Solutions',
+                            'href' => route('it-support.sn-vpn-solutions'),
+                            'image' => '/images/navbar/it/vpn.svg',
+                        ],
+                        [
+                            'label' => 'Windows Server',
+                            'href' => route('it-support.sn-windows-server'),
+                            'image' => '/images/navbar/it/server.svg',
+                        ],
                     ],
                 ],
                 [
@@ -209,14 +253,22 @@
                     'links' => [
                         [
                             'label' => 'Virus/Malware Removal',
-                            'href' => '#',
+                            'href' => route('it-support.dr-virus-malware-removal'),
                             'image' => '/images/navbar/it/computer.svg',
                         ],
-                        ['label' => 'Data Recovery', 'href' => '#', 'image' => '/images/navbar/it/recovery.svg'],
-                        ['label' => 'Upgrades', 'href' => '#', 'image' => '/images/navbar/it/supply-chain.svg'],
+                        [
+                            'label' => 'Data Recovery',
+                            'href' => route('it-support.dr-data-recovery'),
+                            'image' => '/images/navbar/it/recovery.svg',
+                        ],
+                        [
+                            'label' => 'Upgrades',
+                            'href' => route('it-support.dr-upgrades'),
+                            'image' => '/images/navbar/it/supply-chain.svg',
+                        ],
                         [
                             'label' => 'PC & Laptop Repairs',
-                            'href' => '#',
+                            'href' => route('it-support.dr-pc-laptop-repairs'),
                             'image' => '/images/navbar/it/cloud-computing.svg',
                         ],
                     ],
@@ -1647,8 +1699,7 @@
             </div>
 
             {{-- Bottom Bar --}}
-            <div class="reveal flex flex-col md:flex-row justify-between items-center text-[13px] text-white gap-4 border-t border-white/60 bg-brand-dark-bg pt-4"
-                data-variant="fade-up" data-delay="150">
+            <div class="flex flex-col md:flex-row justify-between items-center text-[13px] text-white gap-4 border-t border-white/60 bg-brand-dark-bg pt-4">
                 <p>&copy; {{ date('Y') }} <a href="{{ url('/') }}"
                         class="hover:text-white transition-colors">Bismillah Computer & Technology.</a> All Rights
                     Reserved</p>
