@@ -359,7 +359,7 @@
             'INTERNET' => [
                 [
                     'title' => 'BCT',
-                    'href' => '',
+                    'href' => route('bct-internet'),
                     'desc' => 'Best internet service provider in Dhaka to delivery quality internet to your premises.',
                     'icon' =>
                         '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 stroke-[2.5]"><path d="M12 20h.01"></path><path d="M2 8.82a15 15 0 0 1 20 0"></path><path d="M5 12.859a10 10 0 0 1 14 0"></path><path d="M8.5 16.429a5 5 0 0 1 7 0"></path></svg>',
@@ -839,12 +839,6 @@
                             'href' => route('pages.services'),
                             'icon' =>
                                 '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>',
-                        ],
-                        [
-                            'label' => 'Pricing Plans',
-                            'href' => route('pages.pricing'),
-                            'icon' =>
-                                '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-2 shrink-0 text-brand-blue"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>',
                         ],
                         [
                             'label' => 'FAQs',
@@ -1699,7 +1693,8 @@
             </div>
 
             {{-- Bottom Bar --}}
-            <div class="flex flex-col md:flex-row justify-between items-center text-[13px] text-white gap-4 border-t border-white/60 bg-brand-dark-bg pt-4">
+            <div
+                class="flex flex-col md:flex-row justify-between items-center text-[13px] text-white gap-4 border-t border-white/60 bg-brand-dark-bg pt-4">
                 <p>&copy; {{ date('Y') }} <a href="{{ url('/') }}"
                         class="hover:text-white transition-colors">Bismillah Computer & Technology.</a> All Rights
                     Reserved</p>

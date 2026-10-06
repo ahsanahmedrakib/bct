@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Internet Services - Bismillah Computer & Technology')
-@section('description', 'High-speed internet solutions for businesses. NBN, 4G/5G, Starlink, and Cel-Fi connectivity.')
+@section('description', 'High-speed internet solutions for businesses. BCT, 4G/5G, Starlink, and Cel-Fi connectivity.')
 
 @section('content')
 
@@ -18,9 +18,9 @@
                     Voice solutions designed to keep your operations running smoothly, ensuring you stay connected with
                     clients, colleagues, and partners.</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 md:w-3/4 w-full">
-                    <a href="#partners"
+                    <a href="{{ route('bct-internet') }}"
                         class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg transition-all">
-                        NBN internet
+                        BCT internet
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round"
@@ -28,7 +28,7 @@
                             <path d="m9 18 6-6-6-6"></path>
                         </svg>
                     </a>
-                    <a href="#capabilities"
+                    <a href="https://bct.com.bd/internet/4g-5g-internet"
                         class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg transition-all">
                         4G/5G LTE
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
@@ -38,7 +38,7 @@
                             <path d="m9 18 6-6-6-6"></path>
                         </svg>
                     </a>
-                    <a href="#security"
+                    <a href="https://bct.com.bd/internet/starlink"
                         class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg transition-all">
                         Starlink
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
@@ -48,7 +48,7 @@
                             <path d="m9 18 6-6-6-6"></path>
                         </svg>
                     </a>
-                    <a href="#networking"
+                    <a href="https://bct.com.bd/internet/cel-fi"
                         class="group flex cursor-pointer items-center justify-between px-6 py-4 bg-navy text-white text-sm font-semibold rounded-xl shadow-md hover:bg-navy-active hover:-translate-y-0.5 hover:shadow-lg transition-all">
                         Cel-Fi Boosters
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
@@ -88,9 +88,9 @@
                 @php
                     $internetCards = [
                         [
-                            'title' => 'NBN',
+                            'title' => 'BCT',
                             'desc' =>
-                                'BCT delivers the National Broadband Network (NBN) to industry quality commercial and premises.',
+                                'BCT delivers the Nationwide Broadband Network to industry quality commercial and premises.',
                             'img' => '/images/internet/nbn.jpg',
                         ],
                         [
@@ -163,7 +163,7 @@
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                 <h2 class="text-3xl font-bold text-blue-900 mb-6 mt-2">Keeping you online, <br class="hidden lg:block" />
                     without the hassle.</h2>
-                <p class="text-slate-600 mb-6 leading-relaxed">Opting for our NBN services provides you with additional
+                <p class="text-slate-600 mb-6 leading-relaxed">Opting for our BCT services provides you with additional
                     peace of mind and convenience compared to dealing with mainstream, large-scale internet connectivity. We
                     understand the importance of supporting our communities and our commitment extends to providing tailored
                     internet solutions that cater to the unique needs of the area.</p>
@@ -204,7 +204,7 @@
                         </div>
                         <div>
                             <h3 class="text-lg font-bold text-slate-900 mb-2">Personalised local support.</h3>
-                            <p class="text-slate-600 leading-relaxed">Our commitment to providing exceptional NBN services
+                            <p class="text-slate-600 leading-relaxed">Our commitment to providing exceptional BCT services
                                 is complemented by our dedicated local support team.</p>
                         </div>
                     </div>
@@ -220,7 +220,7 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="text-lg font-bold text-slate-900 mb-2">Tailored NBN services.</h3>
+                            <h3 class="text-lg font-bold text-slate-900 mb-2">Tailored BCT services.</h3>
                             <p class="text-slate-600 leading-relaxed">Accessing cutting-edge technology to deliver fast and
                                 steady broadband connectivity, ensuring that you can stream, download, and engage in online
                                 activities without disruptions.</p>

@@ -6,7 +6,6 @@ use App\Models\BlogPost;
 use App\Models\Faq;
 use App\Models\GalleryImage;
 use App\Models\Location;
-use App\Models\PricingPlan;
 use App\Models\TeamMember;
 
 class PageController extends Controller
@@ -29,20 +28,6 @@ class PageController extends Controller
     public function caseStudies()
     {
         return view('pages.pages.case-studies');
-    }
-
-    public function pricing()
-    {
-        // If admin (non-seed) plans exist, only admin plans are shown on
-        // the public pricing page. Otherwise the seed plans are shown.
-        $query = PricingPlan::query();
-        if (PricingPlan::where('seed', false)->exists()) {
-            $query->where('seed', false);
-        }
-
-        $plans = $query->orderBy('sort_order')->orderBy('id')->get();
-
-        return view('pages.pages.pricing', compact('plans'));
     }
 
     public function team()

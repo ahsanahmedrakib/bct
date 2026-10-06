@@ -50,7 +50,6 @@
             <div
                 class="relative border-2 rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100 order-2 lg:order-1">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-
                 <h2 class="text-3xl text-left font-bold text-blue-900 mb-6">Connectivity for the Underserved</h2>
                 <p class="text-slate-600 leading-relaxed mb-6 text-justify">Starlink promises to deliver fast internet
                     speeds, potentially revolutionizing connectivity in remote regions where traditional infrastructure is
@@ -66,11 +65,9 @@
                     Get Started Today
                 </a>
             </div>
-        </div>
-        <div class="w-full order-1 lg:order-2">
-            <img src="/images/internet/starlink.jfif" alt="Section" class="w-full h-auto object-cover" />
-        </div>
-
+            <div class="order-1 lg:order-2 w-full rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden">
+                <img src="/images/internet/starlink.jfif" alt="Section" class="w-full h-auto object-cover" />
+            </div>
         </div>
     </section>
 
@@ -265,19 +262,19 @@
         </div>
     </section>
 
-    {{-- ==================== RELIABILITY VS NBN ==================== --}}
+    {{-- ==================== RELIABILITY VS BCT ==================== --}}
     <section class="py-16 lg:py-24 bg-white">
         <div class="reveal reveal-fade-up max-w-365 mx-auto px-6 lg:px-8">
-            <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Reliability Compared to NBN</h2>
+            <h2 class="text-3xl text-center font-bold text-blue-900 mb-12">Reliability Compared to BCT</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-                {{-- Faster than NBN --}}
+                {{-- Faster than BCT --}}
                 <div
                     class="relative border-2 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Faster Than Fixed Wireless</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Starlink speeds are significantly faster than the NBN
-                        fixed wireless connections and often faster than NBN solutions relying on old copper wiring (i.e.
+                    <p class="text-slate-600 text-sm leading-relaxed">Starlink speeds are significantly faster than the BCT
+                        fixed wireless connections and often faster than BCT solutions relying on old copper wiring (i.e.
                         fibre to the node).</p>
                 </div>
 
@@ -285,11 +282,11 @@
                 <div
                     class="relative border-2 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">When NBN Is Better</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">If you have NBN Satellite or NBN fixed wireless you
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">When BCT Is Better</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">If you have BCT Satellite or BCT fixed wireless you
                         will
                         most likely have increased performance through upgrading to Starlink. However if you currently have
-                        fibre to the curb or fibre to the premises, then NBN would be the better option.</p>
+                        fibre to the curb or fibre to the premises, then BCT would be the better option.</p>
                 </div>
 
             </div>

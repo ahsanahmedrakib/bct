@@ -2,11 +2,27 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\PricingPlan;
+
 class InternetController extends Controller
 {
     public function index()
     {
         return view('pages.internet.index');
+    }
+
+    public function bctInternet()
+    {
+        // If admin (non-seed) plans exist, only admin plans are shown on
+        // the public BCT Internet page. Otherwise the seed plans are shown.
+        $query = PricingPlan::query();
+        if (PricingPlan::where('seed', false)->exists()) {
+            $query->where('seed', false);
+        }
+
+        $plans = $query->orderBy('sort_order')->orderBy('id')->get();
+
+        return view('pages.internet.bct-internet', compact('plans'));
     }
 
     public function nbn()

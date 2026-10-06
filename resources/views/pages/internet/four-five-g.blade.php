@@ -16,7 +16,7 @@
                     such as DSL or Fibre is expensive given an area's small or sparse population.</p>
                 <p class="text-lg text-justify md:text-xl text-slate-700 font-medium leading-relaxed mt-2">However, in
                     residential areas, 4G/5G fixed wireless modems are now also being used as a faster and cheaper
-                    alternative to the NBN. Our technicians possess the skills and experience required to install Fixed
+                    alternative to the BCT. Our technicians possess the skills and experience required to install Fixed
                     Wireless 4G/5G in your home or business.</p>
 
                 {{-- Action Button --}}
@@ -65,7 +65,7 @@
                 class="relative border-2 rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white border-blue-100 order-2 lg:order-1">
                 <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
 
-                <h2 class="text-3xl text-left font-bold text-blue-900 mb-6">A Faster, Cheaper Alternative to NBN</h2>
+                <h2 class="text-3xl text-left font-bold text-blue-900 mb-6">A Faster, Cheaper Alternative to BCT</h2>
                 <p class="text-slate-600 leading-relaxed mb-6 text-justify">Instead of using cable, fixed wireless is
                     delivered by 4G radio signals sent from the nearest transmission tower. These signals are then captured
                     by a built-in high gain antenna installed on a client's roof.</p>
@@ -159,7 +159,7 @@
                 <div
                     class="relative border-2 rounded-2xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-white transition-all h-full border-blue-100 hover:border-blue-300">
                     <div class="absolute top-0 left-8 w-16 h-1 bg-blue-600 rounded-b-md"></div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4">Faster & Cheaper than NBN</h3>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Faster & Cheaper</h3>
                     <div class="flex items-start mb-3"><svg class="w-5 h-5 mr-2 mt-0.5 text-blue-500 shrink-0"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                             stroke="currentColor">

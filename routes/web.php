@@ -7,7 +7,7 @@ Route::get('/about', [App\Http\Controllers\PageController::class, 'about'])->nam
 Route::get('/services', [App\Http\Controllers\PageController::class, 'services'])->name('pages.services');
 Route::get('/projects', [App\Http\Controllers\PageController::class, 'projects'])->name('pages.projects');
 Route::get('/case-studies', [App\Http\Controllers\PageController::class, 'caseStudies'])->name('pages.case-studies');
-Route::get('/pricing', [App\Http\Controllers\PageController::class, 'pricing'])->name('pages.pricing');
+Route::redirect('/pricing', '/bct-internet#pricing')->name('pages.pricing');
 Route::get('/team', [App\Http\Controllers\PageController::class, 'team'])->name('pages.team');
 Route::get('/faq', [App\Http\Controllers\PageController::class, 'faq'])->name('pages.faq');
 Route::get('/gallery', [App\Http\Controllers\PageController::class, 'gallery'])->name('pages.gallery');
@@ -121,6 +121,7 @@ Route::prefix('voice')->name('voice.')->group(function () {
 
 // ─── Internet ───────────────────────────────────────────────────
 Route::get('/internet', [App\Http\Controllers\InternetController::class, 'index'])->name('internet');
+Route::get('/bct-internet', [App\Http\Controllers\InternetController::class, 'bctInternet'])->name('bct-internet');
 Route::prefix('internet')->name('internet.')->group(function () {
     Route::get('/4g-5g-internet', [App\Http\Controllers\InternetController::class, 'fourFiveG'])->name('4g-5g');
     Route::get('/cel-fi', [App\Http\Controllers\InternetController::class, 'celFi'])->name('cel-fi');
